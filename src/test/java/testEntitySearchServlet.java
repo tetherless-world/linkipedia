@@ -19,6 +19,9 @@
 
 import bioportal.BioPortalService;
 import esor.EsorService;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.Row;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -31,12 +34,32 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.*;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
+
+
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 /**
+ import jxl.Cell;
+ import jxl.Sheet;
+ import jxl.Workbook;
+
+ import jxl.read.biff.BiffException;
+
+ import jxl.write.Label;
+ import jxl.write.Number;
+ import jxl.write.WritableSheet;
+ import jxl.write.WritableWorkbook;
+ import jxl.write.WriteException;
+
+
+
+
+ /**
  * Created by xixiluo on 3/16/15.
  */
 public class testEntitySearchServlet {
@@ -68,6 +91,12 @@ public class testEntitySearchServlet {
     List myKeyword;
     HashSet<String> differentRes;
 
+    //WritableWorkbook wworkbook;
+    //WritableSheet wsheet;
+    //int row;
+
+    HashMap<String, List<String>> excelData;
+
     public testEntitySearchServlet(){
         myAttribute = new ArrayList<String>();
         myKeyword = new ArrayList<String>();
@@ -84,6 +113,10 @@ public class testEntitySearchServlet {
         totalList_bio = new ArrayList<String>();
         naTotalList = new HashMap<String, HashSet<String>>();
         naTotalList_bio = new HashMap<String, HashSet<String>>();
+
+        excelData = new HashMap<String, List<String>>();
+        //row = 0;
+
     }
 
     public void run(){
@@ -183,7 +216,7 @@ public class testEntitySearchServlet {
         Attribute a = new Attribute(id, name, label, definition);
 
         return a;
-   }
+    }
 
     private String getTextValue(Element ele, String tagName) {
         String textVal = null;
@@ -303,6 +336,105 @@ public class testEntitySearchServlet {
         }
     }
 
+    private void addDataToExcel(String str, List<ConceptItem> res_esor, List<ConceptItem> res_bio) {
+
+        if(!excelData.containsKey(str)){
+
+            List<String> items = new ArrayList<String>();
+
+
+            int min = Math.min(res_esor.size(), res_bio.size());
+            String str_esor = "";
+            String str_bio = "";
+            for(int i = 0; i < min; i++){
+                str_esor = str_esor + res_esor.get(i).getUri().toString()+ "\n";
+                str_bio = str_bio + res_bio.get(i).getUri().toString()+ "\n";
+                // new Label(2, row+1, res_esor.get(i).getUri().toString()+"\r");
+            }
+
+            items.add(str_bio);
+            items.add(str_esor);
+
+            excelData.put(str, items);
+            //excelData.add(str, new ArrayList<>())
+        }
+
+        /*System.out.println("-------------------------"+str+"-------------------");
+
+        //int row = wsheet.getRows();
+        //int col = wsheet.getColumns();
+
+        Label label = new Label(0, row, str);
+        wsheet.addCell(label);
+
+        int min = Math.min(res_esor.size(), res_bio.size());
+        String str_esor = "";
+        String str_bio = "";
+        for(int i = 0; i < min; i++){
+            str_esor = str_esor + res_esor.get(i).getUri().toString()+ "\n";
+            str_bio = str_bio + res_bio.get(i).getUri().toString()+ "\n";
+            // new Label(2, row+1, res_esor.get(i).getUri().toString()+"\r");
+        }
+
+        Label label_esor = new Label(1, row, str_esor);
+        Label label_bio = new Label(2, row, str_bio);
+
+        wsheet.addCell(label_esor);
+        wsheet.addCell(label_bio);
+
+        row++;
+        */
+    }
+
+    private void generateExcelFile(){
+        HSSFWorkbook workbook = new HSSFWorkbook();
+        HSSFSheet sheet = workbook.createSheet("bio vs esor");
+        CellStyle cs = workbook.createCellStyle();
+        cs.setWrapText(true);
+
+        Set<String> keyset = excelData.keySet();
+        int rownum = 0;
+        for(String key:keyset){
+            Row row = sheet.createRow(rownum++);
+            row.setHeightInPoints(4*sheet.getDefaultRowHeightInPoints());
+
+            List<String> items = excelData.get(key);
+
+            String str_bio = items.get(0);
+            String str_esor = items.get(1);
+
+            int cellnum = 0;
+
+            Cell cell_0 = row.createCell(cellnum++);
+            cell_0.setCellValue(key);
+            cell_0.setCellStyle(cs);
+
+            Cell cell_1 = row.createCell(cellnum++);
+            cell_1.setCellValue(str_bio);
+            cell_1.setCellStyle(cs);
+
+
+
+            Cell cell_2 = row.createCell(cellnum);
+            cell_2.setCellValue(str_esor);
+            cell_2.setCellStyle(cs);
+
+        }
+
+        try {
+            FileOutputStream out =
+                    new FileOutputStream(new File("output.xls"));
+            workbook.write(out);
+            out.close();
+            System.out.println("Excel written successfully..");
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
     private void annotate(String term)  throws Exception{
@@ -321,6 +453,10 @@ public class testEntitySearchServlet {
 
         printResult(ps, res);
         printResult(ps_bio, res_bio);
+
+        if(res_bio.size()>0 && res.size()>0){
+            addDataToExcel(term, res, res_bio);
+        }
     }
 
     private void annotateAttribute(Attribute attr) throws Exception {
@@ -425,7 +561,7 @@ public class testEntitySearchServlet {
     private String parseTerm(String str) throws Exception{
 
         if(str.contains("(")){
-           str =  str.substring(0, str.indexOf("("));
+            str =  str.substring(0, str.indexOf("("));
         }
 
         str = str.replaceAll("\\s+$", "");
@@ -563,6 +699,10 @@ public class testEntitySearchServlet {
 
         BufferedReader br = new BufferedReader(new FileReader(fin));
 
+        //test.wworkbook = Workbook.createWorkbook(new File("output.xls"));
+        //test.wsheet = test.wworkbook.createSheet("First Sheet", 0);
+
+
         String line = null;
 
         try {
@@ -583,8 +723,6 @@ public class testEntitySearchServlet {
                 test.parseAttribute();
                 //System.out.println("-----------------------------");
                 test.ps.println("-----------------------------");
-
-
             };
             test.printStatData();
             test.printStatData_bio();
@@ -596,8 +734,10 @@ public class testEntitySearchServlet {
         }
 
 
-
-
         br.close();
+        test.generateExcelFile();
+        //test.wworkbook.write();
+        //test.wworkbook.close();
+
     }
 }
