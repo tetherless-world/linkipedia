@@ -19,8 +19,10 @@
 
 import bioportal.BioPortalService;
 import esor.EsorService;
+import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.CreationHelper;
 import org.apache.poi.ss.usermodel.Row;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -42,24 +44,13 @@ import java.io.IOException;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.util.CellRangeAddress;
+
+
 
 /**
- import jxl.Cell;
- import jxl.Sheet;
- import jxl.Workbook;
-
- import jxl.read.biff.BiffException;
-
- import jxl.write.Label;
- import jxl.write.Number;
- import jxl.write.WritableSheet;
- import jxl.write.WritableWorkbook;
- import jxl.write.WriteException;
-
-
-
-
- /**
  * Created by xixiluo on 3/16/15.
  */
 public class testEntitySearchServlet {
@@ -95,7 +86,7 @@ public class testEntitySearchServlet {
     //WritableSheet wsheet;
     //int row;
 
-    HashMap<String, List<String>> excelData;
+    HashMap<String, List<List<String>>> excelData;
 
     public testEntitySearchServlet(){
         myAttribute = new ArrayList<String>();
@@ -114,9 +105,8 @@ public class testEntitySearchServlet {
         naTotalList = new HashMap<String, HashSet<String>>();
         naTotalList_bio = new HashMap<String, HashSet<String>>();
 
-        excelData = new HashMap<String, List<String>>();
+        excelData = new HashMap<String, List<List<String>>>();
         //row = 0;
-
     }
 
     public void run(){
@@ -124,7 +114,6 @@ public class testEntitySearchServlet {
         //parseXmlFile();
         //parseKeyword();
         //parseAttribute();
-
     }
 
     private void parseXmlFile(String url){
@@ -340,20 +329,28 @@ public class testEntitySearchServlet {
 
         if(!excelData.containsKey(str)){
 
-            List<String> items = new ArrayList<String>();
+            List<List<String>> items = new ArrayList<List<String>>();
 
 
             int min = Math.min(res_esor.size(), res_bio.size());
-            String str_esor = "";
-            String str_bio = "";
+            List<String> list_esor = new ArrayList<String>();
+            List<String> list_bio = new ArrayList<String>();
+
             for(int i = 0; i < min; i++){
-                str_esor = str_esor + res_esor.get(i).getUri().toString()+ "\n";
-                str_bio = str_bio + res_bio.get(i).getUri().toString()+ "\n";
+
+                String str_esor =  res_esor.get(i).getUri().toString();
+                list_esor.add(str_esor);
+
+                String str_bio = res_bio.get(i).getUri().toString();
+                list_bio.add(str_bio);
+
                 // new Label(2, row+1, res_esor.get(i).getUri().toString()+"\r");
+
+
             }
 
-            items.add(str_bio);
-            items.add(str_esor);
+            items.add(list_bio);
+            items.add(list_esor);
 
             excelData.put(str, items);
             //excelData.add(str, new ArrayList<>())
@@ -389,36 +386,72 @@ public class testEntitySearchServlet {
     private void generateExcelFile(){
         HSSFWorkbook workbook = new HSSFWorkbook();
         HSSFSheet sheet = workbook.createSheet("bio vs esor");
+
+
+        CreationHelper createHelper = workbook.getCreationHelper();
+
+        //cell style for hyperlinks
+        //by default hyperlinks are blue and underlined
+        CellStyle hlink_style = workbook.createCellStyle();
+        Font hlink_font = workbook.createFont();
+        hlink_font.setUnderline(Font.U_SINGLE);
+        hlink_font.setColor(IndexedColors.BLUE.getIndex());
+        hlink_style.setFont(hlink_font);
+
+
+
         CellStyle cs = workbook.createCellStyle();
         cs.setWrapText(true);
 
         Set<String> keyset = excelData.keySet();
         int rownum = 0;
         for(String key:keyset){
-            Row row = sheet.createRow(rownum++);
-            row.setHeightInPoints(4*sheet.getDefaultRowHeightInPoints());
 
-            List<String> items = excelData.get(key);
+            List<List<String>> items = excelData.get(key);
 
-            String str_bio = items.get(0);
-            String str_esor = items.get(1);
+            List<String> list_bio = items.get(0);
+            List<String> list_esor = items.get(1);
 
-            int cellnum = 0;
+            int height = Math.max(list_bio.size(), list_esor.size());
 
-            Cell cell_0 = row.createCell(cellnum++);
+            rownum++;
+            Row row = sheet.createRow(rownum);
+            //row.setHeightInPoints(4*sheet.getDefaultRowHeightInPoints());
+
+            Cell cell_0 = row.createCell(0);
             cell_0.setCellValue(key);
             cell_0.setCellStyle(cs);
+            sheet.addMergedRegion(new CellRangeAddress(rownum, rownum+height-1, 0, 0));
 
-            Cell cell_1 = row.createCell(cellnum++);
-            cell_1.setCellValue(str_bio);
-            cell_1.setCellStyle(cs);
+            sheet.addMergedRegion(new CellRangeAddress(rownum, rownum+height-1, 3, 3));
+            sheet.addMergedRegion(new CellRangeAddress(rownum, rownum+height-1, 4, 4));
 
 
 
-            Cell cell_2 = row.createCell(cellnum);
-            cell_2.setCellValue(str_esor);
-            cell_2.setCellStyle(cs);
+            for(int i = 0 ; i < height; i++){
+                String str_bio = list_bio.get(i);
+                String str_esor = list_esor.get(i);
 
+                Cell cell_1 = row.createCell(1);
+                cell_1.setCellValue(str_bio);
+                Hyperlink link_bio = createHelper.createHyperlink(Hyperlink.LINK_URL);
+                link_bio.setAddress(str_bio);
+                cell_1.setHyperlink(link_bio);
+                cell_1.setCellStyle(hlink_style);
+                cell_1.setCellStyle(cs);
+
+
+                Cell cell_2 = row.createCell(2);
+                cell_2.setCellValue(str_esor);
+                Hyperlink link_esor = createHelper.createHyperlink(Hyperlink.LINK_URL);
+                link_esor.setAddress(str_esor);
+                cell_2.setHyperlink(link_esor);
+                cell_2.setCellStyle(hlink_style);
+                cell_2.setCellStyle(cs);
+
+                rownum++;
+                row = sheet.createRow(rownum);
+            }
         }
 
         try {
