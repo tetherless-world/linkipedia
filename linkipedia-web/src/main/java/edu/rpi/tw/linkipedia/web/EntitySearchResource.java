@@ -401,6 +401,15 @@ public class EntitySearchResource {
 		return result;
 	}
 	
+	static String splitCamelCase(String s) {
+		String regex = String.format("%s|%s",
+				"(?<=[A-Z])(?=[A-Z][a-z])",
+		        "(?<=[^A-Z])(?=[A-Z])"
+		        //"(?<=[A-Za-z])(?=[^A-Za-z])"
+		     );
+		return s.replaceAll(regex," ");
+	}
+	
 	@Path("annotate")
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -410,6 +419,7 @@ public class EntitySearchResource {
 	        @DefaultValue("") @QueryParam("context") String context) {
 		if (query == null) return emptyQuery();
 		
+		query = splitCamelCase(query);
 		List<String> sentences = getSentences(query);
 		
 		long start = System.currentTimeMillis();
@@ -426,7 +436,9 @@ public class EntitySearchResource {
 			Set<String> done = new HashSet<String>();
 			
 			for (String term : terms){
+				
 				term = term.replaceAll("_", "").replaceAll("\\s+", " ").trim();
+				if (term.length() < 2) continue;
 				if (done.contains(term)) {
 					continue;
 				}

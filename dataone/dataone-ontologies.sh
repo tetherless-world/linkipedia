@@ -1,3 +1,5 @@
+mkdir -p dataone-index/NTriple
+
 rapper https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/master/observation/d1-ECSO.owl -i rdfxml -o ntriples > dataone-index/NTriple/ecso.nt
 rapper https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/master/observation/ENVO_import.owl -i rdfxml -o ntriples > dataone-index/NTriple/ENVO_import.nt
 rapper https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/master/observation/UO_import.owl -i rdfxml -o ntriples > dataone-index/NTriple/UO_import.nt
@@ -13,4 +15,7 @@ rapper http://purl.obolibrary.org/obo/envo/imports/pco_import.owl  -i rdfxml -o 
 rapper http://purl.obolibrary.org/obo/envo/imports/po_import.owl  -i rdfxml -o ntriples > dataone-index/NTriple/po.nt
 rapper http://purl.obolibrary.org/obo/envo/imports/ro_import.owl  -i rdfxml -o ntriples > dataone-index/NTriple/ro.nt
 rapper http://purl.obolibrary.org/obo/envo/imports/uberon_import.owl  -i rdfxml -o ntriples > dataone-index/NTriple/uberon.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe.nt
+rapper http://data.bioontology.org/ontologies/OBOE-SBC/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb -i rdfxml -o ntriples > dataone-index/NTriple/oboe-sbc.nt
+
 #rapper ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl -i rdfxml -o ntriples > dataone-index/NTriple/chebi.nt
