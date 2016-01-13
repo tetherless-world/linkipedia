@@ -18,4 +18,16 @@ rapper http://purl.obolibrary.org/obo/envo/imports/uberon_import.owl  -i rdfxml 
 rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe.nt
 rapper http://data.bioontology.org/ontologies/OBOE-SBC/submissions/1/download?apikey=8b5b7825-538d-40e0-9e9e-5ab9274a9aeb -i rdfxml -o ntriples > dataone-index/NTriple/oboe-sbc.nt
 
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-core.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-characteristics.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-characteristics.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-standards.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-standards.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-spatial.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-spatial.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-temporal.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-temporal.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-taxa.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-taxa.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-biology.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-biology.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-ecology.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-ecology.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-environment.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-environment.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-chemistry.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-chemistry.nt
+rapper http://ecoinformatics.org/oboe/oboe.1.0/oboe-anatomy.owl -i rdfxml -o ntriples > dataone-index/NTriple/oboe-anatomy.nt
+
 #rapper ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl -i rdfxml -o ntriples > dataone-index/NTriple/chebi.nt
