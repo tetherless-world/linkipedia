@@ -63,6 +63,15 @@
 					</archive>
 				</configuration>
 			</plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
 		</plugins>
 	</build>
 
@@ -79,7 +88,7 @@
         </repository>
         <repository>
             <id>localrepo</id>
-            <url>file:///Users/jimmccusker/src/linkipedia/localrepo/</url>
+            <url>https://raw.githubusercontent.com/tetherless-world/linkipedia/master/localrepo/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
