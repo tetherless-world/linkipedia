@@ -62,3 +62,19 @@ To deploy the service, set up a Jetty or Tomcat application container and copy `
 Set the `linkipedia.index` system property on the container to point to your generated knowledge index as in the build instructions.
 
 ## Using the Linkipedia service
+
+There are several endpoints one can use when using Linkipedia, but the most advanced one is the `annotate` endpoint.
+When running Linkipedia in maven, the endpoint will be `http://localhost:8080/annotate/annotate/`.
+This endpoint takes the following parameters:
+
+* _query_: the query text to extract from.
+* _numResults_: the number of results for each mention to return. Defaults to 1.
+* _minScore_: the minimum score to return. Defaults to 5.
+* _context_: the context to use when a query does not contain enough text itself. If the query is a noun phrase, it is valuable for this to be the sentence the noun phrase was extracted from.
+
+The `annotate` endpoint performs the following operations:
+
+1. Segment the query into sentences.
+2. "Shingle" the sentences into word tuples from length 1 to 5. It uses the Lucene [ShingleFilter](https://lucene.apache.org/core/4_3_0/analyzers-common/org/apache/lucene/analysis/shingle/ShingleFilter.html) to do this.
+3. For each word shingle, query the index to find matches using either the sentence or the provided context.
+4. Add the matches based on the parameter requirements.
