@@ -3,6 +3,10 @@
 Linkipedia is an entity extraction and linking service that you can set up yourself against a set of ontologies and other RDF datasets you choose.
 It will use the interlinks available in the RDF to score the overall informativeness of each term and use the context of the text you submit to find the closest matches.
 
+You can read more about Linkipedia in our paper:
+
+> Jin G Zheng, Daniel Howsmon, Boliang Zhang, Juergen Hahn, Deborah McGuinness, James Hendler1 and Heng Ji1 [Entity linking for biomedical literature](http://www.biomedcentral.com/1472-6947/15/S1/S4/) _BMC Medical Informatics and Decision Making_ 2015, **15**(Suppl 1):S4  doi:10.1186/1472-6947-15-S1-S4
+
 ## Installing a development Linkipedia in Linux or OS X
 
 Linkipedia uses Maven for build management. Please install Maven 3 and a JDK of 1.7 or newer.
