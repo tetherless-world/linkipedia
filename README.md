@@ -5,7 +5,7 @@ It will use the interlinks available in the RDF to score the overall informative
 
 You can read more about Linkipedia in our paper:
 
-> Jin G Zheng, Daniel Howsmon, Boliang Zhang, Juergen Hahn, Deborah McGuinness, James Hendler1 and Heng Ji1 [Entity linking for biomedical literature](http://www.biomedcentral.com/1472-6947/15/S1/S4/) _BMC Medical Informatics and Decision Making_ 2015, **15**(Suppl 1):S4  doi:10.1186/1472-6947-15-S1-S4
+> Jin G Zheng, Daniel Howsmon, Boliang Zhang, Juergen Hahn, Deborah McGuinness, James Hendler and Heng Ji [Entity linking for biomedical literature](http://www.biomedcentral.com/1472-6947/15/S1/S4/) _BMC Medical Informatics and Decision Making_ 2015, **15**(Suppl 1):S4  doi:10.1186/1472-6947-15-S1-S4
 
 ## Installing a development Linkipedia in Linux or OS X
 
