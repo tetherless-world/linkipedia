@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
@@ -408,6 +409,16 @@ public class EntitySearchResource {
 		        //"(?<=[A-Za-z])(?=[^A-Za-z])"
 		     );
 		return s.replaceAll(regex," ");
+	}
+	
+	@Path("annotate")
+	@POST
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response annotatePost(@QueryParam("query") String query,
+	        @DefaultValue("1") @QueryParam("numResult") int numResult,
+	        @DefaultValue("6") @QueryParam("minScore") int minScore,
+	        @DefaultValue("") @QueryParam("context") String context) {
+		return annotate(query, numResult, minScore, context);
 	}
 	
 	@Path("annotate")
