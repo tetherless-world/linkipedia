@@ -17,6 +17,7 @@ import java.util.Set;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.DefaultValue;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -414,7 +415,8 @@ public class EntitySearchResource {
 	@Path("annotate")
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response annotatePost(@QueryParam("query") String query,
+	@Consumes("text/plain")
+	public Response annotatePost(String query,
 	        @DefaultValue("1") @QueryParam("numResult") int numResult,
 	        @DefaultValue("6") @QueryParam("minScore") int minScore,
 	        @DefaultValue("") @QueryParam("context") String context) {
