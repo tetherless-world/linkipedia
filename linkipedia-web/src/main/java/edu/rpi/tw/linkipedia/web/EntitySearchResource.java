@@ -40,6 +40,9 @@ import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import edu.rpi.tw.linkipedia.search.cache.LRUCache;
 import edu.rpi.tw.linkipedia.search.index.analyzer.AnnotationDecisionFilter;
@@ -417,18 +420,52 @@ public class EntitySearchResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes("text/plain")
 	public Response annotatePost(String query,
-	        @DefaultValue("1") @QueryParam("numResult") int numResult,
-	        @DefaultValue("6") @QueryParam("minScore") int minScore,
+	        @DefaultValue("20") @QueryParam("numResult") int numResult,
+	        @DefaultValue("3") @QueryParam("minScore") int minScore,
+	        @DefaultValue("10") @QueryParam("labelWeight") float labelWeight,
+	        @DefaultValue("5") @QueryParam("contentWeight") float contentWeight,
+	        @DefaultValue("5") @QueryParam("relationWeight") float relationWeight,
+	        @DefaultValue("5") @QueryParam("typeWeight") float typeWeight,
+	        @DefaultValue("6") @QueryParam("defaultWeight") float defaultWeight,
 	        @DefaultValue("") @QueryParam("context") String context) {
-		return annotate(query, numResult, minScore, context);
+		return annotate(query, numResult, minScore, labelWeight, contentWeight, 
+				    	relationWeight, typeWeight, defaultWeight,
+				    	context);
+	}
+	
+	@Path("annotate")
+	@POST
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes("application/json")
+	public Response annotateJsonPost(String data,
+	        @DefaultValue("20") @QueryParam("numResult") int numResult,
+	        @DefaultValue("3") @QueryParam("minScore") int minScore,
+	        @DefaultValue("10") @QueryParam("labelWeight") float labelWeight,
+	        @DefaultValue("5") @QueryParam("contentWeight") float contentWeight,
+	        @DefaultValue("5") @QueryParam("relationWeight") float relationWeight,
+	        @DefaultValue("5") @QueryParam("typeWeight") float typeWeight,
+	        @DefaultValue("6") @QueryParam("defaultWeight") float defaultWeight,
+	        @DefaultValue("") @QueryParam("context") String context) {
+		JsonParser parser = new JsonParser();
+		JsonObject json = parser.parse(data).getAsJsonObject();
+		String query = json.get("query").getAsString();
+		if (json.has("context")) context = json.get("context").getAsString();
+		return annotate(query, numResult, minScore, labelWeight, contentWeight, 
+				        relationWeight, typeWeight, defaultWeight,
+				        context);
 	}
 	
 	@Path("annotate")
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response annotate(@QueryParam("query") String query,
-	        @DefaultValue("1") @QueryParam("numResult") int numResult,
-	        @DefaultValue("6") @QueryParam("minScore") int minScore,
+	        @DefaultValue("20") @QueryParam("numResult") int numResult,
+	        @DefaultValue("3") @QueryParam("minScore") int minScore,
+	        @DefaultValue("10") @QueryParam("labelWeight") float labelWeight,
+	        @DefaultValue("5") @QueryParam("contentWeight") float contentWeight,
+	        @DefaultValue("5") @QueryParam("relationWeight") float relationWeight,
+	        @DefaultValue("5") @QueryParam("typeWeight") float typeWeight,
+	        @DefaultValue("6") @QueryParam("defaultWeight") float defaultWeight,
 	        @DefaultValue("") @QueryParam("context") String context) {
 		if (query == null) return emptyQuery();
 		
@@ -438,6 +475,8 @@ public class EntitySearchResource {
 		long start = System.currentTimeMillis();
 
 		ResultList results = new ResultList();
+		
+		searcher.setWeights(labelWeight, contentWeight, relationWeight, typeWeight, defaultWeight);
 
 		for (String sentence : sentences) {
 			if (context.length() == 0) {
@@ -457,13 +496,13 @@ public class EntitySearchResource {
 				}
 				done.add(term);
 				ArrayList<String> currentRelatedContext = new ArrayList<String>();
+				//currentRelatedContext.add(context);
 				for (String c : contextList){
 					if (term == c) {
 						currentRelatedContext.add(c);
 					} else if (WeightedQuery.isRelated(linker.getSearcher(), term, c.trim())){
 						currentRelatedContext.add(c);
 					}
-	  	
 				}
 				//need to be careful on this decision
 				//  	if(currentRelatedContext.size() == 0)

@@ -68,6 +68,12 @@ public class EntitySearcher {
 			e.printStackTrace();
 		} 
 	}
+	
+	public void setWeights(float labelWeight, float contentWeight, 
+			               float relationWeight, float typeWeight, float defaultWeight) {
+		wquery.setWeights(labelWeight, contentWeight, relationWeight, typeWeight, defaultWeight);
+	}
+	
 	public ArrayList<Annotation> mysearch(String label, String [] contexts, int numResult) {
 		ArrayList<Annotation> results = new ArrayList<Annotation>();    
 		TopScoreDocCollector collector = TopScoreDocCollector.create(numResult, false);
@@ -75,7 +81,7 @@ public class EntitySearcher {
 		try {
 
 			Query finalQuery = wquery.parse(label, contexts);
-			System.out.println("QUERY: "+finalQuery.toString()+"\n");
+			//System.out.println("QUERY: "+finalQuery.toString()+"\n");
 			searcher.search(finalQuery, collector);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -123,7 +129,7 @@ public class EntitySearcher {
 		try {
 
 			Query finalQuery = wquery.getFuzzyQuery(label, contexts);
-			System.out.println("QUERY: "+finalQuery.toString()+"\n");
+			//System.out.println("QUERY: "+finalQuery.toString()+"\n");
 			searcher.search(finalQuery, collector);
 			//for(int i = start; i < )
 		} catch (Exception e) {
