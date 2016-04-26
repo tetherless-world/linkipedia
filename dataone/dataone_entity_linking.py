@@ -5,6 +5,21 @@
 from rdflib import *
 from numpy import character
 from jupyter_client.consoleapp import classes
+import os
+
+
+
+STANFORD_DIR = 'stanford/'
+STANFORD_RELEASE = '2015-12-09'
+
+os.environ['CLASSPATH'] = ':'.join([x % (STANFORD_DIR, STANFORD_RELEASE)
+                                    for x in ['%s/stanford-ner-%s','%s/stanford-parser-full-%s', '%s/stanford-postagger-%s']])
+os.environ['STANFORD_MODELS'] = ':'.join([x % (STANFORD_DIR, STANFORD_RELEASE)
+                                    for x in ['%s/stanford-ner-%s/classifiers',
+                                              '%s/stanford-parser-full-%s',
+                                              '%s/stanford-postagger-%s/models']])
+
+
 manual_annotation_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/test_corpus_F_dev/manual_annotations.tsv.txt'
 data_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/test_corpus_E_id_list.txt'
 dataset_service_url = 'https://cn.dataone.org/cn/v1/query/solr/?wt=json&fl=title,abstract,attributeName,attributeDescription&q=identifier:"%s"'
@@ -18,7 +33,7 @@ Characteristic = URIRef('http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#C
 unit = URIRef('http://purl.obolibrary.org/obo/UO_0000000')
 quality = URIRef('http://purl.obolibrary.org/obo/PATO_0000001')
 
-oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.0/oboe-core.owl#')
+oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#')
 oboe_char = Namespace('http://ecoinformatics.org/oboe/oboe.1.1/oboe-characteristics.owl#')
 cmo = Namespace('http://purl.org/twc/ontologies/cmo.owl#')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
@@ -81,12 +96,14 @@ def get_dataset_abstract(identifier):
         result = None
     return result
 
+
 import nltk
+nltk.download(['punkt','wordnet'])
 from nltk.parse.stanford import StanfordDependencyParser
 from nltk.tokenize import sent_tokenize,word_tokenize
 from nltk.corpus import wordnet as wn
 
-nt_file = '/linkipedia/dataone-index/NTriple/merged.nt'
+nt_file = '../dataone-index/NTriple/merged.nt'
 
 graph = ConjunctiveGraph()
 graph.load(nt_file, format="n3")
@@ -109,7 +126,7 @@ def traverseTree(tree, pos_dict, word_list):
                 word_list.append(node_name)
     return word_list
 
-dep_parser = StanfordDependencyParser()
+dep_parser = StanfordDependencyParser(encoding='utf8')
 def create_mention_sequence(text, parser):
     ret_list = []
     for sent in sent_tokenize(text):
@@ -123,7 +140,7 @@ def create_mention_sequence(text, parser):
                 ret_list.append(words[0])
                 continue
         #print sent
-        iterTree = parser.raw_parse(sent)
+        iterTree = parser.raw_parse(sent.encode("ascii","ignore"))
         try:
             while True:
                 parse = iterTree.next()
@@ -165,11 +182,11 @@ def get_query_response(text, context):
     return response
 
 def extract_mentions(response):
-    urls = set()
+    urls = collections.defaultdict(float)
     for r in response['results']:
         for annotation in r['annotations']:
-            urls.add(annotation['url'])
-    return urls
+            urls[URIRef(annotation['url'])] += annotation['score']
+    return [url for url, score in sorted(urls.items(), key=lambda x: x[1], reverse=True)]
 
 def find_super_class(resources):
     result = collections.defaultdict(list)
@@ -237,8 +254,8 @@ def get_entity_characteristic(text, parser):
             if len(words) == 1:
                 characteristic = words[0]
                 break
-        iterTree = parser.raw_parse(sent)
         try:
+            iterTree = parser.raw_parse(sent.encode("ascii","ignore"))
             while True:
                 parse = iterTree.next()
                 tree = parse.tree()
@@ -298,32 +315,68 @@ def check_related_class(characteristic_word, entity_word, response, g, parser):
     candidates = set()
     resources = extract_mentions(response)
     by_super = find_super_class(resources)
+
     cls = filter_classes(characteristic_word, entity_word, by_super, graph)
     
     for char_uri in cls[Characteristic]:
         for entity_uri in cls[Entity]:
-            c = check_entity_char_pair(graph, entity_uri, char_uri)
+            c = check_entity_char_pair(entity_uri, char_uri)
             if c is not None:
                 candidates.add(c)
     for measurement_uri in cls[measurement]:
         candidates.add(measurement_uri)
     return candidates
 
-def check_entity_char_pair(graph, entity, characteristic):
+def lru(original_function, maxsize=1000):
+    mapping = {}
+
+    PREV, NEXT, KEY, VALUE = 0, 1, 2, 3         # link fields
+    head = [None, None, None, None]        # oldest
+    tail = [head, None, None, None]   #  newest
+    head[NEXT] = tail
+
+    def fn(*key):
+        PREV, NEXT = 0, 1
+
+        link = mapping.get(key, head)
+        if link is head:
+            value = original_function(*key)
+            if len(mapping) >= maxsize:
+                old_prev, old_next, old_key, old_value = head[NEXT]
+                head[NEXT] = old_next
+                old_next[PREV] = head
+                del mapping[old_key]
+            last = tail[PREV]
+            link = [last, tail, key, value]
+            mapping[key] = last[NEXT] = tail[PREV] = link
+        else:
+            link_prev, link_next, key, value = link
+            link_prev[NEXT] = link_next
+            link_next[PREV] = link_prev
+            last = tail[PREV]
+            last[NEXT] = tail[PREV] = link
+            link[PREV] = last
+            link[NEXT] = tail
+        return value
+    return fn
+
+
+@lru
+def check_entity_char_pair(entity, characteristic):
     # Check if there is a restriction about the entity-characteristic pair
     query_str = '''SELECT ?s
         WHERE {
-          ?s <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?restriction1 .
-          ?restriction1 <http://www.w3.org/2002/07/owl#someValuesFrom> <%s> .
-          ?s <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?restriction2 .
-          ?restriction2 <http://www.w3.org/2002/07/owl#someValuesFrom> <%s> .
+          ?r1 owl:onProperty oboe:measuresEntity ; owl:someValuesFrom <%s>.
+          ?r2 owl:onProperty oboe:measuresCharacteristic ;  owl:someValuesFrom <%s>.
+          ?s rdfs:subClassOf ?r1, ?r2.
         }''' % (URIRef(entity), URIRef(characteristic))
-    qres = list(graph.query(query_str))
+    qres = list(graph.query(query_str, initNs=dict(oboe=URIRef("http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#"),
+                                                   owl=OWL,rdfs=RDFS)))
     if len(qres) > 0:
         return qres[0][0]
     return None
 
-def get_manual_annotations(nSize):
+def get_manual_annotations(nSize=-1):
     resp = requests.get(manual_annotation_url)
     annotations = [x for x in csv.DictReader(StringIO(resp.text,newline=None), delimiter="\t")]
     resp.close()
@@ -332,9 +385,11 @@ def get_manual_annotations(nSize):
         if len(annotation['class_id_int'].strip()) == 0:
             continue
         package = annotation['pkg_id']
+        #if package != 'johnwu01.3.18':
+        #    continue
         uri = 'http://purl.dataone.org/odo/ECSO_%08d'%int(annotation['class_id_int'].strip())
         result[package].add(URIRef(uri))
-        if len(result) >= nSize:
+        if nSize > 0 and len(result) >= nSize:
             print 'Size of the manual annotations is %d' % nSize 
             break
     return result
@@ -344,6 +399,30 @@ def arrange_synonyms(synset, original):
         synset.remove(original)
     synset.insert(0, original)
     return
+
+def get_mts():
+    query_str = '''SELECT ?mt ?c ?e WHERE {
+          ?r1 owl:onProperty oboe:measuresEntity ; owl:someValuesFrom ?e.
+          ?r2 owl:onProperty oboe:measuresCharacteristic ;  owl:someValuesFrom ?c.
+          ?mt rdfs:subClassOf ?r1, ?r2.
+        }'''
+    result = collections.defaultdict(dict)
+    for mt, c, e in graph.query(query_str, initNs=dict(oboe=URIRef("http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#"),
+                                                       owl=OWL,rdfs=RDFS)):
+        result[e][c] = mt
+    return result
+
+#measurement_types = get_mts()
+
+#@lru
+#def extract_classes(text, context):
+#    return extract_mentions(get_query_response(text, context))
+
+@lru
+def extract_classes(text, context, c, e):
+    response = get_query_response(text, context)
+    classes = check_related_class(c, e, response, graph, dep_parser)
+    return classes
 
 def match_class(name, description):
     #jason
@@ -375,18 +454,52 @@ def match_class(name, description):
     pre_char = characteristic_word
     pre_ent = entity_word
     classes = set()
+
+
     for e in ent_list:
-        description = description.replace(pre_ent, e)
-        pre_ent = e
-        for c in char_list:
-            description = description.replace(pre_char, c)
-            print 'Trying: ' + description
-            pre_char = c
-            text = name + ' ' + description
-            response = get_query_response(text, text)
-            classes = check_related_class(c, e, response, graph, dep_parser)
-            if len(classes) > 0:
-                return classes
+       description = description.replace(pre_ent, e)
+       pre_ent = e
+       for c in char_list:
+           description = description.replace(pre_char, c)
+           print 'Trying: ' + description
+           pre_char = c
+           text = name + ' ' + description
+           classes = extract_classes(text, text, c, e)
+           if len(classes) > 0:
+               return classes
+
+    # char_classes = set()
+    # for c in char_list:
+    #    char_classes.update(extract_classes(c, description))
+    # char_classes = [x for x in char_classes
+    #                if len(list(graph.query('''SELECT ?r WHERE { ?r owl:onProperty oboe:measuresCharacteristic ; owl:someValuesFrom <%s>.} limit 1'''%x,
+    #                                        initNs=dict(oboe=oboe,owl=OWL)))) > 0]
+
+    # ent_classes = set()
+    # for e in ent_list:
+    #    if e is None:
+    #        continue
+    #    ent_classes.update(extract_classes(e, description))
+    # ent_classes = [x for x in ent_classes
+    #                if len(list(graph.query('''SELECT ?r WHERE { ?r owl:onProperty oboe:measuresEntity ; owl:someValuesFrom <%s>.} limit 1'''%x,
+    #                                        initNs=dict(oboe=oboe,owl=OWL)))) > 0]
+
+    # for e in ent_classes:
+    #    for c in char_classes:
+    #        mt = check_entity_char_pair(e, c)
+    #        if mt is not None:
+    #            print "found", e, c, mt
+    #            classes.add(mt)
+
+    if len(classes) == 0:
+        response = get_query_response(name+' '+description, name+' '+description)
+        resources = extract_mentions(response)
+        by_super = find_super_class(resources)
+
+        if measurement in by_super:
+            return [by_super[measurement][0]]
+
+    
     return classes
 
 def match_abstract_class(text):
@@ -398,7 +511,7 @@ def match_abstract_class(text):
     if len(by_super[Characteristic]) <= 10 and len(by_super[Entity]) <= 10:
         for char_uri in by_super[Characteristic]:
             for entity_uri in by_super[Entity]:
-                c = check_entity_char_pair(graph, entity_uri, char_uri)
+                c = check_entity_char_pair(entity_uri, char_uri)
                 if c is not None:
                     candidates.add(c)
     return candidates
@@ -577,7 +690,7 @@ contentWeight = 6
 relationWeight = 6
 ##########################
 print len(datasets)
-numToProcess = 50
+numToProcess = -1
 scores = pd.DataFrame(columns=['precision','recall','fmeasure',
                                'numResult','minScore','topHits',
                                'contentWeight','relationWeight'])
