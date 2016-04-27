@@ -6,6 +6,8 @@ from rdflib import *
 from numpy import character
 from jupyter_client.consoleapp import classes
 import os
+from multiprocessing import Manager, Process, Pool, Queue, Event, JoinableQueue, cpu_count
+from Queue import Empty
 
 
 
@@ -126,7 +128,6 @@ def traverseTree(tree, pos_dict, word_list):
                 word_list.append(node_name)
     return word_list
 
-dep_parser = StanfordDependencyParser(encoding='utf8')
 def create_mention_sequence(text, parser):
     ret_list = []
     for sent in sent_tokenize(text):
@@ -414,17 +415,19 @@ def get_mts():
 
 #measurement_types = get_mts()
 
-#@lru
-#def extract_classes(text, context):
-#    return extract_mentions(get_query_response(text, context))
+# @lru
+# def extract_classes(text, context):
+#     return extract_mentions(get_query_response(text, context))
 
 @lru
 def extract_classes(text, context, c, e):
+    dep_parser = StanfordDependencyParser(encoding='utf8')
     response = get_query_response(text, context)
     classes = check_related_class(c, e, response, graph, dep_parser)
     return classes
 
 def match_class(name, description):
+    dep_parser = StanfordDependencyParser(encoding='utf8')
     #jason
     #name = 'WS'
     #description = 'Wind speed'
@@ -489,7 +492,7 @@ def match_class(name, description):
     #        mt = check_entity_char_pair(e, c)
     #        if mt is not None:
     #            print "found", e, c, mt
-    #            classes.add(mt)
+    #            return [mt]
 
     if len(classes) == 0:
         response = get_query_response(name+' '+description, name+' '+description)
@@ -523,47 +526,6 @@ def find_mapped_description(description, matched_classes):
     else:
         return None
     
-def automated_matching(datasets):
-    i = 0
-    automated = collections.defaultdict(set)
-    matched_classes = collections.defaultdict(set)
-    for dataset in datasets:
-        print dataset
-        try:
-            #abstract = get_dataset_abstract(dataset)
-            attributes = get_attributes(dataset)
-        except:
-            print "Problem processing the dataset '", dataset, "'."
-            continue
-        #default_classes = set()
-        #if abstract is not None:
-        #    default_classes = match_abstract_class(abstract)
-        #print 'default classes: '
-        #print default_classes
-        for name, description in attributes.items():
-            print description
-            class_set = find_mapped_description(description, matched_classes)
-            classes = set()
-            if class_set is None:
-                classes = match_class(name, description)
-                matched_classes[description] = classes
-            else:
-                classes = class_set
-            if len(classes) > 0:
-                for c in classes:
-                    automated[dataset].add(c)
-            #else:
-            #    for c in default_classes:
-            #        automated[dataset].add(c)
-            print 'generated classes: '
-            print classes
-        i += 1
-        # ftext.value = str(100 * float(i)/len(datasets))
-        # f.value = float(i)/len(datasets)
-        print (str(100 * float(i)/len(datasets)))
-        print i
-    return automated
-
 def get_ir_tuples(annotations):
     result = set()
     for dataset, classes in annotations.items():
@@ -689,30 +651,7 @@ topHits = 100
 contentWeight = 6
 relationWeight = 6
 ##########################
-print len(datasets)
-numToProcess = -1
-scores = pd.DataFrame(columns=['precision','recall','fmeasure',
-                               'numResult','minScore','topHits',
-                               'contentWeight','relationWeight'])
-manual_annotations = get_manual_annotations(numToProcess)
-manual_tuples = get_ir_tuples(manual_annotations)
 
-automated_annotations = automated_matching(manual_annotations.keys())
-automated_tuples = get_ir_tuples(automated_annotations)
-hits = manual_tuples & automated_tuples
-misses = manual_tuples - automated_tuples
-
-precision = float(len(hits)) / len(automated_tuples)
-recall = float(len(hits)) / len(manual_tuples)
-fmeasure = 2 * (precision * recall) / (precision + recall)
-# print '\t'.join([str(x) for x in [precision, recall, fmeasure,
-#                              numResult, minScore, topHits]])
-scores = scores.append(dict(precision=precision, recall=recall, fmeasure=fmeasure,
-                            numResult=numResult, minScore=minScore, topHits=topHits,
-                            contentWeight=contentWeight, relationWeight=relationWeight),
-                       ignore_index=True)
-
-print scores
 
 # 
 # # In[4]:
@@ -722,4 +661,80 @@ print scores
 # # with open("/Users/jimmccusker/Dropbox/Public/ecstra-unstemmed.ttl",'wb') as out:
 # with open("/home/jason/Documents/TWC/linkipedia/output_file/ecstra-unstemmed-dataone-0318.ttl",'wb') as out:
 #     out.write(extracted_graph.serialize(format='turtle'))
+
+NUMBER_OF_PROCESSES = 6
+
+processed = Event()
+
+def work(id, jobs, result):
+    while True:
+        try:
+            dataset = jobs.get(timeout=10)
+            matched_classes = collections.defaultdict(set)
+            r = set()
+            print dataset
+            #abstract = get_dataset_abstract(dataset)
+            attributes = get_attributes(dataset)
+            for name, description in attributes.items():
+                print description
+                class_set = find_mapped_description(description, matched_classes)
+                classes = set()
+                if class_set is None:
+                    classes = match_class(name, description)
+                    matched_classes[description] = classes
+                else:
+                    classes = class_set
+                if len(classes) > 0:
+                    for c in classes:
+                        r.add(c)
+            result.put((dataset, r))
+            jobs.task_done()
+        except Empty:
+            processed.set()
+            break
     
+def main():
+    jobs = JoinableQueue()
+    result = JoinableQueue()
+
+
+    print len(datasets)
+    numToProcess = 50
+    scores = pd.DataFrame(columns=['precision','recall','fmeasure',
+                                   'numResult','minScore','topHits',
+                                   'contentWeight','relationWeight'])
+    manual_annotations = get_manual_annotations(numToProcess)
+    manual_tuples = get_ir_tuples(manual_annotations)
+
+    for key in manual_annotations.keys():
+        jobs.put(key)
+
+    for i in xrange(NUMBER_OF_PROCESSES):
+        p = Process(target=work, args=(i, jobs, result))
+        p.daemon = True
+        p.start()
+
+    automated_annotations = {}
+    while not processed.is_set():
+        dataset, classes = result.get()
+        automated_annotations[dataset] = classes
+        result.task_done()
+
+    automated_tuples = get_ir_tuples(automated_annotations)
+    hits = manual_tuples & automated_tuples
+    misses = manual_tuples - automated_tuples
+    
+    precision = float(len(hits)) / len(automated_tuples)
+    recall = float(len(hits)) / len(manual_tuples)
+    fmeasure = 2 * (precision * recall) / (precision + recall)
+    # print '\t'.join([str(x) for x in [precision, recall, fmeasure,
+    #                              numResult, minScore, topHits]])
+    scores = scores.append(dict(precision=precision, recall=recall, fmeasure=fmeasure,
+                                numResult=numResult, minScore=minScore, topHits=topHits,
+                                contentWeight=contentWeight, relationWeight=relationWeight),
+                        ignore_index=True)
+
+    print scores
+
+if __name__ == '__main__':
+    main()
