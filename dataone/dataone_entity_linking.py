@@ -415,18 +415,20 @@ def get_mts():
 
 #measurement_types = get_mts()
 
-# @lru
-# def extract_classes(text, context):
-#     return extract_mentions(get_query_response(text, context))
+@lru
+def extract_classes(text, context):
+    return extract_mentions(get_query_response(text, context))
 
 @lru
-def extract_classes(text, context, c, e):
+def extract_classes_parse(text, context, c, e):
     dep_parser = StanfordDependencyParser(encoding='utf8')
     response = get_query_response(text, context)
     classes = check_related_class(c, e, response, graph, dep_parser)
     return classes
 
 def match_class(name, description):
+    classes = set()
+
     dep_parser = StanfordDependencyParser(encoding='utf8')
     #jason
     #name = 'WS'
@@ -456,44 +458,43 @@ def match_class(name, description):
         
     pre_char = characteristic_word
     pre_ent = entity_word
-    classes = set()
 
-
-    for e in ent_list:
-       description = description.replace(pre_ent, e)
-       pre_ent = e
-       for c in char_list:
-           description = description.replace(pre_char, c)
-           print 'Trying: ' + description
-           pre_char = c
-           text = name + ' ' + description
-           classes = extract_classes(text, text, c, e)
-           if len(classes) > 0:
-               return classes
-
-    # char_classes = set()
-    # for c in char_list:
-    #    char_classes.update(extract_classes(c, description))
-    # char_classes = [x for x in char_classes
-    #                if len(list(graph.query('''SELECT ?r WHERE { ?r owl:onProperty oboe:measuresCharacteristic ; owl:someValuesFrom <%s>.} limit 1'''%x,
-    #                                        initNs=dict(oboe=oboe,owl=OWL)))) > 0]
-
-    # ent_classes = set()
     # for e in ent_list:
-    #    if e is None:
-    #        continue
-    #    ent_classes.update(extract_classes(e, description))
-    # ent_classes = [x for x in ent_classes
-    #                if len(list(graph.query('''SELECT ?r WHERE { ?r owl:onProperty oboe:measuresEntity ; owl:someValuesFrom <%s>.} limit 1'''%x,
-    #                                        initNs=dict(oboe=oboe,owl=OWL)))) > 0]
+    #    description = description.replace(pre_ent, e)
+    #    pre_ent = e
+    #    for c in char_list:
+    #        description = description.replace(pre_char, c)
+    #        #print 'Trying: ' + description
+    #        pre_char = c
+    #        text = name + ' ' + description
+    #        classes = extract_classes_parse(text, text, c, e)
+    #        if len(classes) > 0:
+    #            return classes
 
-    # for e in ent_classes:
-    #    for c in char_classes:
-    #        mt = check_entity_char_pair(e, c)
-    #        if mt is not None:
-    #            print "found", e, c, mt
-    #            return [mt]
 
+    char_classes = set()
+    for c in char_list:
+       char_classes.update(extract_classes(c, description))
+    char_classes = [x for x in char_classes
+                   if len(list(graph.query('''SELECT ?r WHERE { ?r owl:onProperty oboe:measuresCharacteristic ; owl:someValuesFrom <%s>.} limit 1'''%x,
+                                           initNs=dict(oboe=oboe,owl=OWL)))) > 0]
+
+    ent_classes = set()
+    for e in ent_list:
+       if e is None:
+           continue
+       ent_classes.update(extract_classes(e, description))
+    ent_classes = [x for x in ent_classes
+                   if len(list(graph.query('''SELECT ?r WHERE { ?r owl:onProperty oboe:measuresEntity ; owl:someValuesFrom <%s>.} limit 1'''%x,
+                                           initNs=dict(oboe=oboe,owl=OWL)))) > 0]
+
+    for e in ent_classes:
+       for c in char_classes:
+           mt = check_entity_char_pair(e, c)
+           if mt is not None:
+               print "found", e, c, mt
+               return [mt]
+       
     if len(classes) == 0:
         response = get_query_response(name+' '+description, name+' '+description)
         resources = extract_mentions(response)
@@ -502,7 +503,7 @@ def match_class(name, description):
         if measurement in by_super:
             return [by_super[measurement][0]]
 
-    
+           
     return classes
 
 def match_abstract_class(text):
@@ -670,13 +671,17 @@ def work(id, jobs, result):
     while True:
         try:
             dataset = jobs.get(timeout=10)
+        except Empty:
+            processed.set()
+            break
+        try:
             matched_classes = collections.defaultdict(set)
             r = set()
             print dataset
             #abstract = get_dataset_abstract(dataset)
             attributes = get_attributes(dataset)
             for name, description in attributes.items():
-                print description
+                #print description
                 class_set = find_mapped_description(description, matched_classes)
                 classes = set()
                 if class_set is None:
@@ -688,18 +693,18 @@ def work(id, jobs, result):
                     for c in classes:
                         r.add(c)
             result.put((dataset, r))
+        except Exception as e:
+            print "Error processing dataset:", dataset, e
+        finally:
             jobs.task_done()
-        except Empty:
-            processed.set()
-            break
-    
+            
 def main():
     jobs = JoinableQueue()
     result = JoinableQueue()
 
 
     print len(datasets)
-    numToProcess = 50
+    numToProcess = -1
     scores = pd.DataFrame(columns=['precision','recall','fmeasure',
                                    'numResult','minScore','topHits',
                                    'contentWeight','relationWeight'])

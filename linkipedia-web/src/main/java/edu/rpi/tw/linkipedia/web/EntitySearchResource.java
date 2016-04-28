@@ -489,7 +489,7 @@ public class EntitySearchResource {
 			
 			for (String term : terms){
 				
-				term = term.replaceAll("_", "").replaceAll("\\s+", " ").trim();
+				term = term.replaceAll("_", " ").replaceAll("\\s+", " ").trim();
 				if (term.length() < 2) continue;
 				if (done.contains(term)) {
 					continue;
