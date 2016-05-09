@@ -30,7 +30,7 @@ Next, check out this repository and cd into it, and build it:
 
 To load ontologies, they need to be stored in an index directory that contains a subdirectory called `NTriple`.
 It's easiest to write a script that does the conversion work for you.
-There's an example in `linkipedia/dataone/dataone-ontologies.sh`.
+There's an example in `linkipedia/dataone/dataone-ontologies.py`.
 Run that script to download the ontologies, then run the following to index them:
 
 ```bash
