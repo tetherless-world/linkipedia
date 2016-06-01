@@ -155,6 +155,9 @@ public class SurfaceFormIndexer {
 			            	}
 			            	*/
 			            	spo[2] = spo[2].toLowerCase();
+			            	/* Replace underscore with space by Jason */
+			            	spo[2] = spo[2].replace('_', ' ');
+			            	////////////////////////////
 			            	spo[2] = spo[2]+"|"+getPropertyWeight(spo[1]);
 			            	
 			            	if(spo[1].contains("urlName") || spo[1].contains("redirectName")){
