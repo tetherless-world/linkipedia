@@ -267,10 +267,11 @@ public class EntitySearchResource {
 			String comma = "";
 			for (int k = 0; k < annotations.size() && k < numReuslt; k++) {
 				Annotation current = annotations.get(k);
+                                String url = current.getAnnotation().replaceAll("^<","").replaceAll(">$", "");
 				annotation_result += comma;
 				annotation_result += "{";
-				annotation_result += "\"url\": \"" + current.getAnnotation() + "\",";
-				annotation_result += "\"score\": \"" + current.getScore() + "\",";
+				annotation_result += "\"url\": \"" + url + "\",";
+				annotation_result += "\"score\": " + current.getScore() + ",";
 
 				ArrayList<String> types = filter.getGPOType(current.getAnnotation());
 				if (types.size() == 0) {
