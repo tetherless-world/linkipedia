@@ -286,8 +286,8 @@ def work(id, jobs, result, processed_count):
                     #print mts
                     characteristics = by_super[Characteristic]
                     if len(mts) == 0:
-                        for entity in [e for e in by_super[Entity] + entities + keyword_entities + abstract_entities]:# if restricted_as_entity(e)]:
-                            for characteristic in [c for c in characteristics]:# if restricted_as_characteristic(c)]:
+                        for entity in [e for e in by_super[Entity] + entities + keyword_entities + abstract_entities if restricted_as_entity(e)]:
+                            for characteristic in [c for c in characteristics if restricted_as_characteristic(c)]:
                                 mt_text = graph.label(entity) + " " + graph.label(characteristic)
                                 from_generated = extract_mentions(get_query_response(mt_text))
                                 by_super_from_generated = find_super_class(from_generated)
