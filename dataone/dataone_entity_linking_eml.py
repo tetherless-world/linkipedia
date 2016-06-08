@@ -226,6 +226,14 @@ def extract_from_tags(e, tags, filter_by=lambda x: True):
             result += [u for u in urls if filter_by(u)]
     return result
 
+def dict_from_tags(e, tags):
+    result = collections.defaultdict(str)
+    for tag in tags:
+        label = e.find(tag)
+        if label is not None:
+            result[tag] = label.text
+    return result
+
 def restricted_as_entity(x):
     return len(list(graph.query('''SELECT ?r WHERE {
     ?r owl:onProperty oboe:measuresEntity ;
@@ -243,7 +251,7 @@ def restricted_as_characteristic(x):
 # Linkipedia Param Setting
 numResult = 20
 minScore = 1
-topHits = 100
+topHits = 1
 contentWeight = 6
 relationWeight = 6
 ##########################
@@ -268,39 +276,51 @@ def work(id, jobs, result, processed_count):
             keyword_entities = []
             abstract_entities = []
             keywords = get_keywords(eml)
-            keyword_entities = find_super_class(keywords)[Entity]
+            #keyword_entities = find_super_class(keywords)[Entity]
             abstract = get_abstract_classes(eml)
-            abstract_entities = find_super_class(abstract)[Entity]
+            #abstract_entities = find_super_class(abstract)[Entity]
             for datatable in eml.findall('dataset/dataTable'):
-                entities = extract_from_tags(datatable,
-                                             [('entityName',lambda x: extract_mentions(get_query_response(x))),
-                                              ('entityDescription',lambda x: extract_mentions(get_query_response(x)))])
+                entity = dict_from_tags(datatable, ['entityName','entityDescription'])
                 for attribute in datatable.findall('attributeList/attribute'):
-                    urls = extract_from_tags(attribute,
-                                             [('attributeLabel',lambda x: extract_mentions(get_query_response(x))),
-                                              ('attributeName',lambda x: extract_mentions(get_query_response(x))),
-                                              ('attributeDescription', lambda x: extract_mentions(get_query_response(x)))
-                                             ])
+                    attr = dict_from_tags(attribute, ['attributeLabel','attributeName', 'attributeDescription'])
+                    text = [
+                        #entity['entityName'],
+                        attr['attributeName'],
+                        attr['attributeLabel'],
+                        #attr['attributeDescription'],
+                        #entity['entityDescription'],
+                    ]
+                    unit = attribute.find('.//standardUnit | .//customUnit')
+                    if unit is not None:
+                        text.append(unit)
+                    urls = extract_mentions(get_query_response( ' '.join(text)))
                     by_super = find_super_class(urls)
-                    mts = set(by_super[oboe.MeasurementType])
-                    #print mts
-                    characteristics = by_super[Characteristic]
-                    if len(mts) == 0:
-                        for entity in [e for e in by_super[Entity] + entities + keyword_entities + abstract_entities if restricted_as_entity(e)]:
-                            for characteristic in [c for c in characteristics if restricted_as_characteristic(c)]:
-                                mt_text = graph.label(entity) + " " + graph.label(characteristic)
-                                from_generated = extract_mentions(get_query_response(mt_text))
-                                by_super_from_generated = find_super_class(from_generated)
-                                mts = set(by_super_from_generated[oboe.MeasurementType])
-                                if len(mts) > 0:
-                                    print mt_text, mts
-                                    break
-                                #mt = check_entity_char_pair(entity, characteristic)
-                                #if mt is not None:
-                                #    mts.add(mt)
-                                #    break
-                            if len(mts) > 0:
-                                break
+                    mts = set(by_super[oboe.MeasurementType][:topHits])
+                    #characteristics = by_super[Characteristic]
+                    #if len(mts) == 0:
+                    #    urls = extract_from_tags(attribute,
+                    #                            [('attributeLabel',lambda x: extract_mentions(get_query_response(x))),
+                    #                            ('attributeName',lambda x: extract_mentions(get_query_response(x))),
+                    #                            ('attributeDescription', lambda x: extract_mentions(get_query_response(x)))
+                    #                            ])
+                    #    by_super = find_super_class(urls)
+                    #    mts = set(by_super[oboe.MeasurementType])
+                    
+                    #     for entity in [e for e in by_super[Entity] + entities + keyword_entities + abstract_entities if restricted_as_entity(e)]:
+                    #         for characteristic in [c for c in characteristics if restricted_as_characteristic(c)]:
+                    #             mt_text = graph.label(entity) + " " + graph.label(characteristic)
+                    #             from_generated = extract_mentions(get_query_response(mt_text))
+                    #             by_super_from_generated = find_super_class(from_generated)
+                    #             mts = set(by_super_from_generated[oboe.MeasurementType])
+                    #             if len(mts) > 0:
+                    #                 print mt_text, mts
+                    #                 break
+                    #             #mt = check_entity_char_pair(entity, characteristic)
+                    #             #if mt is not None:
+                    #             #    mts.add(mt)
+                    #             #    break
+                    #         if len(mts) > 0:
+                    #             break
                     r |= mts
             processed_count.increment()
             print dataset, processed_count.value(), r
@@ -317,7 +337,7 @@ def main():
 
 
     print len(datasets)
-    numToProcess = 100
+    numToProcess = -1
     scores = pd.DataFrame(columns=['precision','recall','fmeasure',
                                    'numResult','minScore','topHits',
                                    'contentWeight','relationWeight'])
