@@ -3,8 +3,6 @@
 # In[1]:
 
 from rdflib import *
-from numpy import character
-from jupyter_client.consoleapp import classes
 import os, re
 from multiprocessing import Manager, Process, Pool, Queue, Event, JoinableQueue, cpu_count, Value, Lock
 from Queue import Empty
@@ -209,13 +207,19 @@ def get_ir_tuples(annotations):
 
 def get_keywords(dataset):
     keywords = re.split('[,;]\s*', ', '.join([x.text for x in dataset.findall('dataset/keywordSet/keyword')]))
-    urls = resolve_entity(','.join(keywords))
-    return urls
+    #urls = resolve_entity(','.join(keywords))
+    return keywords
+    #return urls
 
 def get_abstract_classes(dataset):
     abstract = '\n'.join([x.text for x in dataset.findall('dataset/abstract/*')])
     urls = extract_mentions(get_query_response(abstract))
     return urls
+
+def get_abstract(dataset):
+    abstract = '\n'.join([x.text for x in dataset.findall('dataset/abstract/*')])
+    #urls = extract_mentions(get_query_response(abstract))
+    return abstract
 
 def extract_from_tags(e, tags, filter_by=lambda x: True):
     result = []
@@ -275,7 +279,7 @@ def work(id, jobs, result, processed_count):
             eml = get_eml(dataset)
             keyword_entities = []
             abstract_entities = []
-            keywords = get_keywords(eml)
+            keywords = ' '.join(get_keywords(eml))
             #keyword_entities = find_super_class(keywords)[Entity]
             abstract = get_abstract_classes(eml)
             #abstract_entities = find_super_class(abstract)[Entity]
@@ -293,7 +297,12 @@ def work(id, jobs, result, processed_count):
                     unit = attribute.find('.//standardUnit | .//customUnit')
                     if unit is not None:
                         text.append(unit)
-                    urls = extract_mentions(get_query_response( ' '.join(text)))
+                    urls = extract_mentions(get_query_response( ' '.join(text),
+                                                                context=' '.join([attr['attributeDescription'],
+                                                                                  #entity['entityDescription'],
+                                                                                  #abstract, keywords
+                                                                                  ])
+                                                                                  ))
                     by_super = find_super_class(urls)
                     mts = set(by_super[oboe.MeasurementType][:topHits])
                     #characteristics = by_super[Characteristic]
