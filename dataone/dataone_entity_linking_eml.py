@@ -14,17 +14,17 @@ dataset_service_url = 'https://cn.dataone.org/cn/v1/query/solr/?wt=json&fl=title
 service_url = 'http://localhost:8080/annotate/annotate/'
 entity_url = 'http://localhost:8080/annotate/vlinking3/'
 
-oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#')
+oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#')
 
 # measurement = URIRef('http://purl.dataone.org/odo/ECSO_00000039')
-measurement = URIRef('http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType')
+measurement = oboe.MeasurementType
 # entity = URIRef('http://purl.dataone.org/odo/ECSO_00000525')
 Entity = oboe.Entity
 Characteristic = oboe.Characteristic
 unit = URIRef('http://purl.obolibrary.org/obo/UO_0000000')
 quality = URIRef('http://purl.obolibrary.org/obo/PATO_0000001')
 
-oboe_char = Namespace('http://ecoinformatics.org/oboe/oboe.1.1/oboe-characteristics.owl#')
+oboe_char = Namespace('http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#')
 cmo = Namespace('http://purl.org/twc/ontologies/cmo.owl#')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 _prefix = Namespace('http://purl.dataone.org/odo/ECSTRA_')
