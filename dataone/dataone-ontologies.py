@@ -5,10 +5,10 @@ import requests
 import os
 
 ontologies = '''https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/master/observation/d1-ECSO.owl
-http://ecoinformatics.org/oboe/oboe.1.1/oboe.owl
-http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl
-http://ecoinformatics.org/oboe/oboe.1.1/oboe-characteristics.owl
-http://ecoinformatics.org/oboe/oboe.1.1/oboe-standards.owl
+https://raw.githubusercontent.com/NCEAS/oboe/master/oboe.owl
+https://raw.githubusercontent.com/NCEAS/oboe/master/oboe-core.owl
+https://raw.githubusercontent.com/NCEAS/oboe/master/oboe-characteristics.owl
+https://raw.githubusercontent.com/NCEAS/oboe/master/oboe-standards.owl
 http://purl.dataone.org/odo/d1-generated-ECSO.owl
 http://purl.dataone.org/obo/ENVO_import.owl
 http://purl.dataone.org/obo/PATO_import.owl
