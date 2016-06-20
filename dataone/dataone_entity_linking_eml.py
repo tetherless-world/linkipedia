@@ -65,7 +65,7 @@ def get_eml(identifier):
     xml = r.text.encode('utf-8')
     return ET.fromstring(xml)
 
-nt_file = '../dataone-index/NTriple/merged.nt'
+nt_file = '../dataone/dataone-index/NTriple/merged.nt'
 
 graph = ConjunctiveGraph()
 graph.load(nt_file, format="n3")
@@ -286,11 +286,12 @@ def work(id, jobs, result, processed_count):
             for datatable in eml.findall('dataset/dataTable'):
                 entity = dict_from_tags(datatable, ['entityName','entityDescription'])
                 for attribute in datatable.findall('attributeList/attribute'):
-                    attr = dict_from_tags(attribute, ['attributeLabel','attributeName', 'attributeDescription'])
+                    attr = dict_from_tags(attribute, ['attributeLabel','attributeName', 'attributeDefinition'])
                     text = [
                         #entity['entityName'],
                         attr['attributeName'],
                         attr['attributeLabel'],
+                        attr['attributeDefinition'],
                         #attr['attributeDescription'],
                         #entity['entityDescription'],
                     ]
@@ -298,7 +299,7 @@ def work(id, jobs, result, processed_count):
                     if unit is not None:
                         text.append(unit)
                     urls = extract_mentions(get_query_response( ' '.join(text),
-                                                                context=' '.join([attr['attributeDescription'],
+                                                                context=' '.join([attr['attributeDefinition'],
                                                                                   #entity['entityDescription'],
                                                                                   #abstract, keywords
                                                                                   ])
