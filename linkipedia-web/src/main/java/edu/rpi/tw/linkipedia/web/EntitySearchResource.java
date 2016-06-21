@@ -491,7 +491,7 @@ public class EntitySearchResource {
 		
 			Set<String> done = new HashSet<String>();
 			
-			for (String term : terms){
+			for (String term : noun_phrases){
 				
 				term = term.replaceAll("_", " ").replaceAll("\\s+", " ").trim();
 				if (term.length() < 2) continue;
