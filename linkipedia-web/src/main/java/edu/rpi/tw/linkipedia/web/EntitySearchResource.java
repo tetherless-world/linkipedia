@@ -484,8 +484,11 @@ public class EntitySearchResource {
 				context = sentence;
 			}
 			List<String> contextList = tokenize(context,1);
-			List<String> terms = tokenize(sentence, 5);
-			
+		//	List<String> terms = tokenize(sentence, 5);
+		//	use getNounPhrase method from NounPhraseExtractor 
+			NounPhraseExtractor extractor = new NounPhraseExtractor(); 
+			ArrayList<String> noun_phrases = extractor.getNounPhrase(sentence); 
+		
 			Set<String> done = new HashSet<String>();
 			
 			for (String term : terms){
