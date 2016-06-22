@@ -487,11 +487,11 @@ public class EntitySearchResource {
 			List<String> terms = tokenize(sentence, 5);
 		//	use getNounPhrase method from NounPhraseExtractor 
 		//	NounPhraseExtractor extractor = new NounPhraseExtractor(); 
-			ArrayList<String> noun_phrases = extractor.getNounPhrase(sentence); 
+		//	ArrayList<String> noun_phrases = extractor.getNounPhrase(sentence); 
 		
 			Set<String> done = new HashSet<String>();
 			
-			for (String term : noun_phrases){
+			for (String term : terms){
 				
 				term = term.replaceAll("_", " ").replaceAll("\\s+", " ").trim();
 				if (term.length() < 2) continue;
