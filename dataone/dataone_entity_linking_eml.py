@@ -358,14 +358,16 @@ def main():
 
     processed_count = Counter()
         
-    for i in xrange(NUMBER_OF_PROCESSES):
-        p = Process(target=work, args=(i, jobs, result, processed_count))
-        p.daemon = True
-        p.start()
+#    for i in xrange(NUMBER_OF_PROCESSES):
+#        p = Process(target=work, args=(i, jobs, result, processed_count))
+#        p.daemon = True
+#        p.start()
+
+    work(1, jobs, result, processed_count)
 
     automated_annotations = {}
 
-    jobs.join()
+#    jobs.join()
 
     while not result.empty():
         dataset, classes = result.get()
