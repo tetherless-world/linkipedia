@@ -254,7 +254,7 @@ def restricted_as_characteristic(x):
     return len(list(graph.query(q, initNs=dict(oboe=oboe,owl=OWL)))) > 0
 
 # Linkipedia Param Setting
-numResult = 20
+numResult = 1
 minScore = 1
 topHits = 1
 contentWeight = 6

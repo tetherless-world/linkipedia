@@ -24,28 +24,35 @@ def create_ontology(identifier):
     g.bind("owl", OWL)
 
     ontology = infixowl.Ontology(ontology_uri, graph=g)
-    ontology.label = Literal(eml.find('dataset/title').text.strip())
-    ontology.comment = Literal('\n'.join([x.text for x in eml.find('dataset/abstract/para')]).strip())
+    datasetTitle = eml.find('dataset/title')
+    if datasetTitle is not None:
+        ontology.label = Literal(datasetTitle.text.strip())
+    
+    ontology.comment = Literal('\n'.join([x.text for x in eml.findall('dataset/abstract/para')]).strip())
 
     # Data Table:
     i = 0
     for datatable in eml.findall("dataset/dataTable"):
         i += 1
         entity_ident = str(i)
-        entity = infixowl.Class(o_ns['_'.join(['d',entity_ident],graph=g)
+        entity = infixowl.Class(o_ns['_'.join(['d',entity_ident])],graph=g)
         entity.subClassOf = [oboe.Entity]
-        entity.label = Literal(datatable.find('entityName').text.strip())
-        entity.comment = Literal(datatable.find('entityDescription').text.strip())
+        if datatable.find('entityName') is not None:
+            entity.label = Literal(datatable.find('entityName').text.strip())
+        if datatable.find('entityDescription') is not None:
+            entity.comment = Literal(datatable.find('entityDescription').text.strip())
         j = 0
         for attribute in datatable.findall('attributeList/attribute'):
             j +=1
             attribute_ident = str(j)
-            characteristic = infixowl.Class(o_ns['_'.join(['d',entity_ident,'c',attribute_ident]],graph=g)
+            characteristic = infixowl.Class(o_ns['_'.join(['d',entity_ident,'c',attribute_ident])],graph=g)
             characteristic.subClassOf = [oboe.Characteristic]
-            characteristic.label = Literal(datatable.find('.//attributeLabel').text.strip())
-            characteristic.comment = Literal(datatable.find('.//attributeDefinition').text.strip())
+            if datatable.find('.//attributeLabel') is not None:
+                characteristic.label = Literal(datatable.find('.//attributeLabel').text.strip())
+            if datatable.find('.//attributeDefinition') is not None:
+                characteristic.comment = Literal(datatable.find('.//attributeDefinition').text.strip())
 
-            measurement_type = infixowl.Class(o_ns['_'.join(['d',entity_ident,'a',attribute_ident]],graph=g)
+            measurement_type = infixowl.Class(o_ns['_'.join(['d',entity_ident,'a',attribute_ident])],graph=g)
             measurement_type.label = Literal(g.label(entity.identifier) + " " + g.label(characteristic.identifier))
             measurement_type.subClassOf = [
                 oboe.MeasurementType,
