@@ -125,7 +125,8 @@ def find_super_class(resources):
     result = collections.defaultdict(list)
     for url in resources:
         for s in graph.transitive_objects(URIRef(url), RDFS.subClassOf):
-            result[s].append(URIRef(url))
+            if s != url:
+                result[s].append(URIRef(url))
     return result
 
 def create_id():

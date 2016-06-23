@@ -28,20 +28,24 @@ def create_ontology(identifier):
     ontology.comment = Literal('\n'.join([x.text for x in eml.find('dataset/abstract/para')]).strip())
 
     # Data Table:
+    i = 0
     for datatable in eml.findall("dataset/dataTable"):
-        entity_ident = datatable.attrib['id']
-        entity = infixowl.Class(o_ns[entity_ident],graph=g)
+        i += 1
+        entity_ident = str(i)
+        entity = infixowl.Class(o_ns['_'.join(['d',entity_ident],graph=g)
         entity.subClassOf = [oboe.Entity]
         entity.label = Literal(datatable.find('entityName').text.strip())
         entity.comment = Literal(datatable.find('entityDescription').text.strip())
+        j = 0
         for attribute in datatable.findall('attributeList/attribute'):
-            attribute_ident = attribute.attrib['id']
-            characteristic = infixowl.Class(o_ns[attribute_ident],graph=g)
+            j +=1
+            attribute_ident = str(j)
+            characteristic = infixowl.Class(o_ns['_'.join(['d',entity_ident,'c',attribute_ident]],graph=g)
             characteristic.subClassOf = [oboe.Characteristic]
             characteristic.label = Literal(datatable.find('.//attributeLabel').text.strip())
             characteristic.comment = Literal(datatable.find('.//attributeDefinition').text.strip())
 
-            measurement_type = infixowl.Class(o_ns[entity_ident +"_"+attribute_ident],graph=g)
+            measurement_type = infixowl.Class(o_ns['_'.join(['d',entity_ident,'a',attribute_ident]],graph=g)
             measurement_type.label = Literal(g.label(entity.identifier) + " " + g.label(characteristic.identifier))
             measurement_type.subClassOf = [
                 oboe.MeasurementType,
