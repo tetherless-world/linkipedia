@@ -10,6 +10,13 @@ You can read more about Linkipedia in our paper:
 ## Installing a development Linkipedia in Linux or OS X
 
 Linkipedia uses Maven for build management. Please install Maven 3 and a JDK of 1.7 or newer.
+
+```bash
+> sudo apt-get install maven
+
+> sudo apt-get install default-jdk
+```
+
 After doing so, install the raptor utilities for RDF manipulation:
 
 ```bash
@@ -30,10 +37,31 @@ Next, check out this repository and cd into it, and build it:
 
 To load ontologies, they need to be stored in an index directory that contains a subdirectory called `NTriple`.
 It's easiest to write a script that does the conversion work for you.
-There's an example in `linkipedia/dataone/dataone-ontologies.py`.
-Run that script to download the ontologies, then run the following to index them:
+There's an example in `linkipedia/dataone/dataone-ontologies.py`. Run that script to download the ontologies.
+```bash
+> cd dataone
+> python dataone-ontologies.py 
+```
+The system might prompt that certain modules are not present; install the required packages.
 
 ```bash
+# for jupyter
+> pip install --upgrade jupyter
+
+# for pandas
+> sudo apt-get install python-pandas
+
+# for numpy
+> sudo apt-get install python-numpy
+
+# for nltk
+> sudo pip install -U nltk
+```
+
+Then run the following to index them:
+
+```bash
+> cd ..
 > cd linkipedia-search
 > ./dataprocess.sh [path to index dir]
 ```

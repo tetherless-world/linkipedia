@@ -14,17 +14,17 @@ dataset_service_url = 'https://cn.dataone.org/cn/v1/query/solr/?wt=json&fl=title
 service_url = 'http://localhost:8080/annotate/annotate/'
 entity_url = 'http://localhost:8080/annotate/vlinking3/'
 
-oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#')
+oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#')
 
 # measurement = URIRef('http://purl.dataone.org/odo/ECSO_00000039')
-measurement = URIRef('http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType')
+measurement = oboe.MeasurementType
 # entity = URIRef('http://purl.dataone.org/odo/ECSO_00000525')
 Entity = oboe.Entity
 Characteristic = oboe.Characteristic
 unit = URIRef('http://purl.obolibrary.org/obo/UO_0000000')
 quality = URIRef('http://purl.obolibrary.org/obo/PATO_0000001')
 
-oboe_char = Namespace('http://ecoinformatics.org/oboe/oboe.1.1/oboe-characteristics.owl#')
+oboe_char = Namespace('http://ecoinformatics.org/oboe/oboe.1.2/oboe-characteristics.owl#')
 cmo = Namespace('http://purl.org/twc/ontologies/cmo.owl#')
 skos = Namespace('http://www.w3.org/2004/02/skos/core#')
 _prefix = Namespace('http://purl.dataone.org/odo/ECSTRA_')
@@ -65,7 +65,7 @@ def get_eml(identifier):
     xml = r.text.encode('utf-8')
     return ET.fromstring(xml)
 
-nt_file = '../dataone-index/NTriple/merged.nt'
+nt_file = '../dataone/dataone-index/NTriple/merged.nt'
 
 graph = ConjunctiveGraph()
 graph.load(nt_file, format="n3")
@@ -286,11 +286,12 @@ def work(id, jobs, result, processed_count):
             for datatable in eml.findall('dataset/dataTable'):
                 entity = dict_from_tags(datatable, ['entityName','entityDescription'])
                 for attribute in datatable.findall('attributeList/attribute'):
-                    attr = dict_from_tags(attribute, ['attributeLabel','attributeName', 'attributeDescription'])
+                    attr = dict_from_tags(attribute, ['attributeLabel','attributeName', 'attributeDefinition'])
                     text = [
                         #entity['entityName'],
                         attr['attributeName'],
                         attr['attributeLabel'],
+                        attr['attributeDefinition'],
                         #attr['attributeDescription'],
                         #entity['entityDescription'],
                     ]
@@ -298,7 +299,7 @@ def work(id, jobs, result, processed_count):
                     if unit is not None:
                         text.append(unit)
                     urls = extract_mentions(get_query_response( ' '.join(text),
-                                                                context=' '.join([attr['attributeDescription'],
+                                                                context=' '.join([attr['attributeDefinition'],
                                                                                   #entity['entityDescription'],
                                                                                   #abstract, keywords
                                                                                   ])
