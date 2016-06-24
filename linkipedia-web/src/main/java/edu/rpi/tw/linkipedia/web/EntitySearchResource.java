@@ -35,6 +35,7 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
@@ -478,22 +479,31 @@ public class EntitySearchResource {
 		ResultList results = new ResultList();
 		
 		searcher.setWeights(labelWeight, contentWeight, relationWeight, typeWeight, defaultWeight);
-
+		NounPhraseExtractor extractor = new NounPhraseExtractor(); 
 		for (String sentence : sentences) {
 			if (context.length() == 0) {
 				context = sentence;
 			}
-			List<String> contextList = tokenize(context,1);
+//			List<String> contextList = tokenize(context,1);
+			
+			//#1: check if this will help improve performance, remove if it does not help
+			List<String> contextList = extractor.getNounPhrase(context); 
+			
+			
 			List<String> terms = tokenize(sentence, 5);
 		//	use getNounPhrase method from NounPhraseExtractor 
-		//	NounPhraseExtractor extractor = new NounPhraseExtractor(); 
-		//	ArrayList<String> noun_phrases = extractor.getNounPhrase(sentence); 
+			ArrayList<String> noun_phrases = extractor.getNounPhrase(sentence); 
 		
 			Set<String> done = new HashSet<String>();
 			
 			for (String term : terms){
-				
 				term = term.replaceAll("_", " ").replaceAll("\\s+", " ").trim();
+				
+				//escape term
+				if(term.equals(""))
+					continue;	
+				term = QueryParser.escape(term);
+				
 				if (term.length() < 2) continue;
 				if (done.contains(term)) {
 					continue;
@@ -502,6 +512,12 @@ public class EntitySearchResource {
 				ArrayList<String> currentRelatedContext = new ArrayList<String>();
 				//currentRelatedContext.add(context);
 				for (String c : contextList){
+					
+					//remove if getNounPhrase on context(#1) is not helpful
+					if(c.equals(""))
+						continue;	
+					c = QueryParser.escape(c);
+					
 					if (term == c) {
 						currentRelatedContext.add(c);
 					} else if (WeightedQuery.isRelated(linker.getSearcher(), term, c.trim())){
