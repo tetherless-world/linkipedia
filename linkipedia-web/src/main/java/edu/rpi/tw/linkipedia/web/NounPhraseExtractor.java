@@ -1,3 +1,5 @@
+package edu.rpi.tw.linkipedia.web;
+
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -14,17 +16,17 @@ public class NounPhraseExtractor {
 
 	private Tokenizer tokenizer;
 	private POSTaggerME pos_tagger;
-	
+
 	private String tokenizer_model_file = "en-token.bin";
 	private String pos_model_file = "en-pos-maxent.bin";
-	
+
 	public NounPhraseExtractor(){
 		try {
 			InputStream posMdelIn = new FileInputStream(pos_model_file);
 			POSModel model = new POSModel(posMdelIn);
 			pos_tagger = new POSTaggerME(model);
 			posMdelIn.close();
-			
+
 			InputStream modelIn = new FileInputStream(tokenizer_model_file);
 			//InputStream modelIn= this.getClass().getClassLoader().getResourceAsStream(tokenizer_model_file);
 			TokenizerModel token_model = new TokenizerModel(modelIn);
@@ -34,7 +36,7 @@ public class NounPhraseExtractor {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public ArrayList<String> getNounPhrase(String text){
 		ArrayList<String> noun_phrases = new ArrayList<String>();
 		String token_strs [] = tokenizer.tokenize(text);
@@ -56,7 +58,7 @@ public class NounPhraseExtractor {
 		}
 		return noun_phrases;
 	}
-	
+
 	public static void main(String [] args){
 		String text = "San Francisco Fed President John Williams told reporters after a conference at University of California Berkeley's Clausen Center.";
 		NounPhraseExtractor extractor = new NounPhraseExtractor();
@@ -65,5 +67,5 @@ public class NounPhraseExtractor {
 			System.out.println(np);
 		}
 	}
-	
+
 }
