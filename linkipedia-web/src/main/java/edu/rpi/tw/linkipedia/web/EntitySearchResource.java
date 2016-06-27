@@ -479,24 +479,24 @@ public class EntitySearchResource {
 		ResultList results = new ResultList();
 		
 		searcher.setWeights(labelWeight, contentWeight, relationWeight, typeWeight, defaultWeight);
-		NounPhraseExtractor extractor = new NounPhraseExtractor(); 
+		NounPhraseExtractor extractor = new NounPhraseExtractor();
 		for (String sentence : sentences) {
 			if (context.length() == 0) {
 				context = sentence;
 			}
-//			List<String> contextList = tokenize(context,1);
+			//List<String> contextList = tokenize(context,1);
 			
 			//#1: check if this will help improve performance, remove if it does not help
 			List<String> contextList = extractor.getNounPhrase(context); 
 			
 			
-			List<String> terms = tokenize(sentence, 5);
+		//	List<String> terms = tokenize(sentence, 5);
 		//	use getNounPhrase method from NounPhraseExtractor 
 			ArrayList<String> noun_phrases = extractor.getNounPhrase(sentence); 
 		
 			Set<String> done = new HashSet<String>();
 			
-			for (String term : terms){
+			for (String term : noun_phrases){
 				term = term.replaceAll("_", " ").replaceAll("\\s+", " ").trim();
 				
 				//escape term
