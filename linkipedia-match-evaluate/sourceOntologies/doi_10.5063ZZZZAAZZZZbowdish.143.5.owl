@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_1_a_1">
+    <rdfs:label>Science Supporting Online Material Synthesizing U.S. River Restoration Efforts </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne27669a16fa04d8aa79588eb5d3e6549">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N930223eb488b4005ac7463136604ede8">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5">
+    <rdfs:comment>The NRRSS (National River Restoration Science Systhensis) Summary Database is a representative database of stream restoration projects throughout the country, with focus on seven geographic regions--California, Chesapeake Bay, Central US, Pacific Northwest, Southeast, Southwest, and Upper Midwest. These data were collected from a variety of electronic, paper, and human sources from 2002 to 2004. Information from this database has been summarized in Bernhardt et al 2005 (link) as well as published and forthcoming regional summaries. As of December 15, 2005, the information in this database is now freely searchable, downloadable, and usable by members of the public.</rdfs:comment>
+    <rdfs:label>The National River Restoration Science Synthesis database at NBII</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_2_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N589e977b731449d6859dc98cee0c914f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N80f70042d3f0446aa436a6bbd7efd2fb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_2_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>NRRSS Database MS Access 2000 </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_1">
+    <rdfs:comment>Manual for the NRRSS</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+    <rdfs:label>Science Supporting Online Material Synthesizing U.S. River Restoration Efforts</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+    <rdfs:comment>National River Restoration Science Sythesis Database in MS Access 2000 format. This Database does not include any forms, queries or reports. It was downloaded 03/27/06 as a back up to the online database site at http://www.nbii.gov/ or for use for those who want to do their own queries. Directions to download the most recent version of the Access files can currently be found at the online site.</rdfs:comment>
+    <rdfs:label>NRRSS Database MS Access 2000</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_2_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:comment>National River Restoration Science Synthesis (NRRSS)</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/bowdish.143.5#d_1_c_1">
+    <rdfs:comment>Science Supporting Online Material
+Synthesizing U.S. River Restoration Efforts</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+</rdf:RDF>

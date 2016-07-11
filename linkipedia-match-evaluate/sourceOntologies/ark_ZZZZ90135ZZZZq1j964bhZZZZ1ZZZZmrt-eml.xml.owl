@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1j964bh/1/mrt-eml.xml#d_1_a_1">
+    <rdfs:label>No spreadsheet name given </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4b1d2cef74124beba1a0dcfbbb0f4e0c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1j964bh/1/mrt-eml.xml#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ndf8f7f7c9fa142b39564ac19ebb863ae">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1j964bh/1/mrt-eml.xml#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1j964bh/1/mrt-eml.xml">
+    <rdfs:label>Rain and Hail intensity. May 2013</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1j964bh/1/mrt-eml.xml#d_1_c_1">
+    <rdfs:comment>The column contains text. No other description provided by user.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1j964bh/1/mrt-eml.xml#d_1">
+    <rdfs:comment>No description of spreadsheet given</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+    <rdfs:label>No spreadsheet name given</rdfs:label>
+  </owl:Class>
+</rdf:RDF>
