@@ -21,8 +21,8 @@ for o in ontologies:
     ontology.parse(data=requests.get(o).text)
 
 try:
-    os.makedirs('dataone-index/NTriple')
+    os.makedirs('dataone/dataone-index/NTriple')
 except OSError:
     pass
-g.serialize(open("dataone-index/NTriple/d1-ESCO-imported.nt",'w'), format="nt")
+g.serialize(open("dataone/dataone-index/NTriple/d1-ESCO-imported.nt",'w'), format="nt")
 

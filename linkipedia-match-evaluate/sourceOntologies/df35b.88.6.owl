@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne5c318a85999467e8d97035d5c46cd80">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>SpeciesList.csv Genus</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N697bbcff097a47a8ada39c487183381d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/df35b.88.6">
+    <rdfs:label>List of Seabirds Salvaged, Prepared and Curated from the Exxon Valdez Spill (1989) - [UNFORMATTED]</rdfs:label>
+    <rdfs:comment>The University of Washington Burke Museum has received three grants to salvage and preserve samples of birds that were casualties of the Exxon Valdez oil spill. National Science Foundation Grant 92-18534 enabled us to send a crew of workers to sort the carcasses as they were thawed for incineration, and to ship a subset of these birds to the Burke Museum for preparation. NSF Grant 93- 16045 supported preservation of many of these birds, but was insufficient to complete the task because these heavily oiled and, often, rotten specimens were slow to prepare. Grants 97167 and 98167 from the Exxon Valdez Oil Spill Trustee Council allowed us to complete this project. With the initial NSF sort, we salvaged smaller samples of species that were well-represented in collections, and all individuals of species that were either of known scientific interest, rare in collections, or impossible to collect in large numbers.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1_a_1">
+    <rdfs:label>SpeciesList.csv Genus</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N38ba319f1fb5458dad7205569bcff170">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N43fa5fd515574a67a08d914935179737">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Genus</rdfs:label>
+    <rdfs:comment>Taxonomic genus of the speciman.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+    <rdfs:label>SpeciesList.csv</rdfs:label>
+    <rdfs:comment>specimen species list</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.88.6#d_1_c_1">
+    <rdfs:label>Genus</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:comment>Taxonomic genus of the speciman.</rdfs:comment>
+  </owl:Class>
+</rdf:RDF>

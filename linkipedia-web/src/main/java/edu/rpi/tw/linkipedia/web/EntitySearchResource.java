@@ -35,6 +35,7 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
@@ -472,6 +473,11 @@ public class EntitySearchResource {
 		
 		query = splitCamelCase(query);
 		List<String> sentences = getSentences(query);
+		sentences.removeAll(Arrays.asList("", null));
+
+
+		NounPhraseExtractor extractor = new NounPhraseExtractor();
+
 		
 		long start = System.currentTimeMillis();
 
@@ -480,20 +486,31 @@ public class EntitySearchResource {
 		searcher.setWeights(labelWeight, contentWeight, relationWeight, typeWeight, defaultWeight);
 
 		for (String sentence : sentences) {
+		    String result1 = sentence.replaceAll("[^\\dA-Za-z ]", " ").replaceAll("\\s+", " ");
+		//    System.out.println(result1);
 			if (context.length() == 0) {
-				context = sentence;
+				context = result1;
 			}
 			List<String> contextList = tokenize(context,1);
-			List<String> terms = tokenize(sentence, 5);
+			
+			//#1: check if this will help improve performance, remove if it does not help
+			//List<String> contextList = extractor.getNounPhrase(context);
+			
+			
+		//	List<String> terms = tokenize(result1, 5);
 		//	use getNounPhrase method from NounPhraseExtractor 
-			NounPhraseExtractor extractor = new NounPhraseExtractor(); 
-			ArrayList<String> noun_phrases = extractor.getNounPhrase(sentence); 
-		
+			List<String> noun_phrases = extractor.getNounPhrase(result1);
+            System.out.println(noun_phrases);
 			Set<String> done = new HashSet<String>();
 			
 			for (String term : noun_phrases){
-				
 				term = term.replaceAll("_", " ").replaceAll("\\s+", " ").trim();
+				
+				//escape term
+				if(term.equals(""))
+					continue;	
+				term = QueryParser.escape(term);
+				
 				if (term.length() < 2) continue;
 				if (done.contains(term)) {
 					continue;
@@ -502,6 +519,12 @@ public class EntitySearchResource {
 				ArrayList<String> currentRelatedContext = new ArrayList<String>();
 				//currentRelatedContext.add(context);
 				for (String c : contextList){
+					
+					//remove if getNounPhrase on context(#1) is not helpful
+					//if(c.equals(""))
+					//	continue;
+					//c = QueryParser.escape(c);
+					
 					if (term == c) {
 						currentRelatedContext.add(c);
 					} else if (WeightedQuery.isRelated(linker.getSearcher(), term, c.trim())){
