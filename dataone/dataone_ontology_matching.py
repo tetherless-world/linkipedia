@@ -58,15 +58,19 @@ from math import log10
 from rdflib.compare import to_isomorphic
 from io import StringIO
 
+import nltk
+nltk.download(['punkt','wordnet'])
 from nltk.stem import *
 from nltk.tokenize import WordPunctTokenizer
+from nltk.corpus import wordnet as wn
+
 stemmer = PorterStemmer()
 
 datasets = urllib2.urlopen(data_url).read().split("\n")[1:]
 
 from eml2owl import create_ontology as get_eml
 
-nt_file = '../dataone-index/NTriple/merged.nt'
+nt_file = '../dataone/dataone-index/NTriple/merged.nt'
 
 graph = ConjunctiveGraph()
 graph.load(nt_file, format="n3")
@@ -96,7 +100,11 @@ def compute_term_vector(resource):
         for value in resource[label]:
             value = value.value.replace('_'," ")
             for term in [t for t in WordPunctTokenizer().tokenize(value) if t not in stopwords]:
-                terms[term.lower()] += 1
+                #lemma = wn.synsets(term)
+                #if len(lemma) > 0:
+                #    for name in lemma[0].lemma_names():
+                #        terms[name.lower()] += 1
+                terms[stemmer.stem(term.lower())] += 1
     tf = collections.defaultdict(float)
     term_counts = terms.values()
     if len(term_counts) > 0:
@@ -246,8 +254,8 @@ def work(id, jobs, result, processed_count):
             processed.set()
             break
         try:
-            r = set()
-            print dataset
+            r = dict()
+            #print dataset
             source_graph = get_eml(dataset)
             source_classes, local_idf = vectorize_ontology(source_graph, idf)
             source_subtree = set(source_graph.transitive_subjects(RDFS.subClassOf, oboe.MeasurementType))
@@ -259,11 +267,11 @@ def work(id, jobs, result, processed_count):
             for c, dist in distances.items():
                 target, score = min(dist.items(), key=lambda x: x[1])
                 #print sources[c].concept_vector, targets[target].concept_vector
-                if score < 1:
-                    r.add(target)
+                if score < 0.7:
+                    r[target] = score
             
             processed_count.increment()
-            print dataset, processed_count.value(), r
+            print dataset, processed_count.value()
             result.put((dataset, r))
         except Exception as e:
             print "Error processing dataset:", dataset, e
@@ -280,7 +288,7 @@ def main():
     numToProcess = -1
     scores = pd.DataFrame(columns=['precision','recall','fmeasure',
                                    'numResult','minScore','topHits',
-                                   'contentWeight','relationWeight'])
+                                   'contentWeight','relationWeight', 'hits'])
     manual_annotations = get_manual_annotations(numToProcess)
     manual_tuples = get_ir_tuples(manual_annotations)
 
@@ -297,27 +305,37 @@ def main():
     #work(1, jobs, result, processed_count)
 
     automated_annotations = {}
+    distances = {}
 
     jobs.join()
 
     while not result.empty():
         dataset, classes = result.get()
-        automated_annotations[dataset] = classes
+        automated_annotations[dataset] = set(classes.keys())
+        distances[dataset] = classes
         result.task_done()
 
     automated_tuples = get_ir_tuples(automated_annotations)
     hits = manual_tuples & automated_tuples
     misses = manual_tuples - automated_tuples
-    
+    print 
     precision = float(len(hits)) / len(automated_tuples)
     recall = float(len(hits)) / len(manual_tuples)
     fmeasure = 2 * (precision * recall) / (precision + recall)
     # print '\t'.join([str(x) for x in [precision, recall, fmeasure,
     #                              numResult, minScore, topHits]])
-    scores = scores.append(dict(precision=precision, recall=recall, fmeasure=fmeasure),
+    scores = scores.append(dict(precision=precision, recall=recall, fmeasure=fmeasure, hits=len(manual_tuples)),
                         ignore_index=True)
 
     print scores
+    #scores = csv.writer(open("results.csv",'wb'),delimiter=",")
+    #scores.writerow(['dataset','class','distance','hit'])
+    
+    #for dataset, c in automated_tuples:
+    #    distance = distances[dataset][c]
+    #    hit = (dataset,c) in manual_tuples
+    #    scores.writerow([dataset,c,distance,hit])
+
 
 if __name__ == '__main__':
     main()
