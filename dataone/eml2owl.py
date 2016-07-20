@@ -9,7 +9,7 @@ from rdflib.extras import infixowl
 import requests
 
 d1=Namespace('https://cn.dataone.org/cn/v2/object/')
-oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#')
+oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#')
 
 
 def create_ontology(identifier):
@@ -37,20 +37,22 @@ def create_ontology(identifier):
         entity_ident = str(i)
         entity = infixowl.Class(o_ns['_'.join(['d',entity_ident])],graph=g)
         entity.subClassOf = [oboe.Entity]
-        if datatable.find('entityName') is not None:
-            entity.label = Literal(datatable.find('entityName').text.strip())
-        if datatable.find('entityDescription') is not None:
-            entity.comment = Literal(datatable.find('entityDescription').text.strip())
+        entityLabel = []
+        for e in ['entityName','entityDescription']:
+            if datatable.find(e) is not None and datatable.find(e).text is not None:
+                entityLabel.append(datatable.find(e).text.strip())
+        entity.label = Literal(' '.join(entityLabel))
         j = 0
         for attribute in datatable.findall('attributeList/attribute'):
             j +=1
             attribute_ident = str(j)
             characteristic = infixowl.Class(o_ns['_'.join(['d',entity_ident,'c',attribute_ident])],graph=g)
             characteristic.subClassOf = [oboe.Characteristic]
-            if datatable.find('.//attributeLabel') is not None:
-                characteristic.label = Literal(datatable.find('.//attributeLabel').text.strip())
-            if datatable.find('.//attributeDefinition') is not None:
-                characteristic.comment = Literal(datatable.find('.//attributeDefinition').text.strip())
+            label = []
+            for e in ['.//attributeName','.//attributeLabel','.//attributeDefinition']:
+                if attribute.find(e) is not None and attribute.find(e).text is not None:
+                    label.append(attribute.find(e).text.strip())
+            characteristic.label = Literal(' '.join(label))
 
             measurement_type = infixowl.Class(o_ns['_'.join(['d',entity_ident,'a',attribute_ident])],graph=g)
             measurement_type.label = Literal(g.label(entity.identifier) + " " + g.label(characteristic.identifier))
