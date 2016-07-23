@@ -4,162 +4,50 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_16">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_2">
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Date Date Date readings were taken on.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc43e7432960c4e199ba5dfaa0af9d69e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_16"/>
+      <owl:Restriction rdf:nodeID="N6e6c941b0f1b4199b785de83f94b7bd3">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfba691e93d6741c6bc4786a0c215bcfa">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N92ce620af75840729b1610fbc1aeb8bb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_8">
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nea79d840d9c64df58b20f76d8c11e912">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N65c3a4e65a054465a1fb065cc176d6e8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. pH pH pH (opposite of the log of the hydrogen ion concentration).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd6f4224248e84388927e0a8d7384a907">
+      <owl:Restriction rdf:nodeID="Nc1909c344ff04e04a94af688ca2468e5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_13">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N34d91d5b36f5433babd9f9f816876ea0">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N07e1c4b765004adf8a8ed89ce00feda1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_13"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6c4ec791753b400cbf0407300e7e7e3a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_15"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Neae8988543bb4daba560c3e19404f758">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_14">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4bc4699577294c8cbed7eeb2a5a4263e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc92be17bc5394437b63e0e2398366355">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_14"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_9">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N24fcaf87ef3f46c1b75a2ee6ec0e748c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N63c144ce1aa046c3a6ba82f58d1fc527">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_11">
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd32659044ed643268fad829e8b3f45fe">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne9b7751136e9442f8073a2d59a3091b5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_11"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N13c3e9b68e9a49c2b97aec7aa7db8d36">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N38f203836c644c3fa7692de802a44275">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Chl_ug/l Chl_ug/l In Vivo measurement of chlorophyll-a concentration.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9d7617170bda4955b9104a71cc16bcaf">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2efc324c047a41bdb6fb509c00fc07b0">
+      <owl:Restriction rdf:nodeID="Nc487ea4d7de54bd3a28d91e061cdac7d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_12"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_17">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2ada96c557ed472fb59c3165a71fbe42">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_17"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N03663ad3eb37410bb864abef9f96bc89">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N85ae5a46ce684763a6dfcd0fda802878">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -168,206 +56,300 @@
     <rdfs:label>Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006.</rdfs:label>
     <rdfs:comment>Yearly file describing the physical/chemical values recorded at various lakes near Toolik Research Station. Sample site descriptors include site, date, time, depth. Depth profiles of physical measures collected in situwith Hydrolab Datasonde in the field include temperature, conductivity, pH, dissolved oxygen in both percent saturation and mg/l, SCUFA chlorophyll-a values in both volts and µg/l, and PAR.</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_10">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nae1dd97fe08a490b8eb7b2e66b7c96b0">
+      <owl:Restriction rdf:nodeID="N5c876b0634b44c82bdd5b2e0b6642671">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. IBVSvr4a_V IBVSvr4a_V Internal Battery Voltage of the Surveyor 4a Datalogger.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ndcc5937a89714dd8bdd4e596e8e1cd29">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf7ea0c22be9744e98504cbfa9f6ed4c9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_10"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_13">
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. PAR_uEm2s PAR_uEm2s PAR (photosynthetically active radiation) measured below the water surface.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N42b447f4588148bd8f71e07ff1319b27">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N430b8155d3eb46a68656f7903ebf2c79">
+      <owl:Restriction rdf:nodeID="Nd3e221502e3a4299a7c41fd75a81cbf1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb0ad7e3e80474f50a276a9a2a912f5a8">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_13"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_9">
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. DO_Sat DO_Sat The percent saturation of dissolved oxygen at depth.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncf0722e682bd4147a4f4546260abfa56">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N54c9f8323a2f4c69958d00c0efbcf447">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_15">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N75ac6fc9c5fd4af28a9c45daae51e8bc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_15"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne0cd94320eea4cdf9dd2be4c6c3273e9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Secchi_m Secchi_m Measure of water transparency by depth a Secchi Disk is visible to.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_5">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1b208cc4f14a4001bc5c84dd727b0b0c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nba17588e7d514ee78535b5b0cf52be2f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Temp_C Temp_C Water temperature at depth.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne9055ab507c74160baee5c6819556e0c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_5"/>
+      <owl:Restriction rdf:nodeID="N12165cd9dd6c46e09825ea372c9e321a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_7">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbb09c24fba3a46bab33adb4ec50ccafb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Dep_m Dep_m Depth of water measurement taken at starting from the surface as 0.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfe6bdc3e8b1e4ebab35c8b6d97d9565c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_6">
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Cond_uS Cond_uS Electrical conductivity of the water at depth.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7eaa918de355426dad3edbbc791391fa">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9a079ecd6d9844a5b1b625e7a6029260">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N0bbf3f720a614103b4187fc55626d29c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_6"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8f1181e1d02442ebaf84242c5bacd75e">
+      <owl:Restriction rdf:nodeID="Ndeeea15a5e4347979dfa927aca43a8cc">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_10">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3b41b2cc63a7418197f28a027a14be06">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nae339899d465454eb9571601b646b8d8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_4"/>
+      <owl:Restriction rdf:nodeID="N054c13e0928548d682f8577a30e8a532">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. DO_mg/l DO_mg/l The concentration of dissolved oxygen at depth.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_11">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nebe67d0aa41c4a4ba1bfc60927c0247c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2f962c877ea1401a895ddc609182fbf2">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_11"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Chl_V Chl_V In Vivo measurement of chlorophyll-a concentration.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_16">
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Hydrolab Hydrolab This field indicates which Hydrolab Datasonde instrument was used to take measurements</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7f173442bf6f48e39d5f1bd49d9fcc31">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nab8234a975564f3abdd0c7da3db2f8ae">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_16"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_17">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N58446ddebfbd4b528bee33b48ad69085">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Notes Notes Any additional information pertaining to measurments made for a particular depth, place and time.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7f7b4cd9ca9c41d1b934aea7f3d75879">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_17"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2b9faa896bd04ed88378b84cef6f342d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Time_hr_dst Time_hr_dst Exact time that each reading was recorded in Alaska Daylight Savings Time (1 hour ahead of Alaska Standard Time: if 13:00 DST than 12:00 AST)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N52e3bd3149154dbbb2cb85b92de3b42d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N92e415a71d6b4fb2a4789664cc10ec14">
+      <owl:Restriction rdf:nodeID="N7e984036e2fd44ffac580501c6794226">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. Site Site Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne20f80e47efc4c6abf6591ba02ba1886">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf11143fc814b4b3999bbb241fd715bf0">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf592f8a282e04d08afe16640f902ef1c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N831688b5e15e489e9a848a6745e8b6ae">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_16">
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_13">
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_17">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_a_14">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006. refPAR_uEm2s refPAR_uEm2s PAR (photosynthetically active radiation) measured with Deck unit to correct for changes in ambient light.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7ad42354a6b24433881e5ddec620b292">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N521fea8c573f4f63a60a87096c1978f3">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_14"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
+    <rdfs:label>Chl_ug/l Chl_ug/l In Vivo measurement of chlorophyll-a concentration.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_1">
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_11">
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_5">
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_2">
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_10">
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:label>Site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_8">
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_3">
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv</rdfs:label>
-    <rdfs:comment>Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:label>Site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_14">
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_7">
-    <rdfs:label>Site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_16">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Hydrolab Hydrolab This field indicates which Hydrolab Datasonde instrument was used to take measurements</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:comment>
-    <rdfs:label>Site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>DO_Sat DO_Sat The percent saturation of dissolved oxygen at depth.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_17">
+    <rdfs:label>Notes Notes Any additional information pertaining to measurments made for a particular depth, place and time.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date Date Date readings were taken on.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_8">
+    <rdfs:label>pH pH pH (opposite of the log of the hydrogen ion concentration).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>2006_ArcticLTER_Lakes_physchem.csv Physical and chemical data for various lakes near Toolik Research Station, Arctic LTER Summer 2006.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Cond_uS Cond_uS Electrical conductivity of the water at depth.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_14">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>refPAR_uEm2s refPAR_uEm2s PAR (photosynthetically active radiation) measured with Deck unit to correct for changes in ambient light.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_7">
+    <rdfs:label>Dep_m Dep_m Depth of water measurement taken at starting from the surface as 0.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_15">
+    <rdfs:label>Secchi_m Secchi_m Measure of water transparency by depth a Secchi Disk is visible to.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Chl_V Chl_V In Vivo measurement of chlorophyll-a concentration.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_3">
+    <rdfs:label>Time_hr_dst Time_hr_dst Exact time that each reading was recorded in Alaska Daylight Savings Time (1 hour ahead of Alaska Standard Time: if 13:00 DST than 12:00 AST)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>IBVSvr4a_V IBVSvr4a_V Internal Battery Voltage of the Surveyor 4a Datalogger.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Site Site Site Name: Name of the lake where measurements were taken. There are discrete sampling sites defined by water depth, generally they are at the point of maximum depth.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_13">
+    <rdfs:label>PAR_uEm2s PAR_uEm2s PAR (photosynthetically active radiation) measured below the water surface.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_10">
+    <rdfs:label>DO_mg/l DO_mg/l The concentration of dissolved oxygen at depth.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/knb-lter-arc.10132.4#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Temp_C Temp_C Water temperature at depth.</rdfs:label>
   </owl:Class>
 </rdf:RDF>

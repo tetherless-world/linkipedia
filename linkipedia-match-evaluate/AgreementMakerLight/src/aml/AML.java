@@ -75,8 +75,8 @@ public class AML
 	//The ontology and alignment data structures
 	private URIMap uris;
 	private RelationshipMap rels;
-	private Ontology2Match source;
-	private Ontology2Match target;
+	public static Ontology2Match source;
+	public static Ontology2Match target;
 	private BKOntology bk;
 	private Alignment a;
 	private Alignment ref;
@@ -92,8 +92,8 @@ public class AML
 	private double fMeasure;
 	//General matching settings
 	private boolean useReasoner = true;
-	private final String LOG = "log4j.properties";
-	private final String BK_PATH = "store/knowledge/";
+	private final String LOG = "C:\\Users\\prakash\\Desktop\\sabitaInternship\\7_12_2016\\AgreementMakerLight\\target\\log4j.properties";
+	private final String BK_PATH = "C:\\Users\\prakash\\Desktop\\sabitaInternship\\7_12_2016\\AgreementMakerLight\\store\\knowledge\\";
 	private Vector<String> bkSources; //The list of files under the BK_PATH
     private LanguageSetting lang;
 	private SizeCategory size;
@@ -199,7 +199,7 @@ public class AML
     public void defaultConfig()
     {
 		bkSources = new Vector<String>();		
-		File ontRoot = new File(dir + BK_PATH);
+		File ontRoot = new File(BK_PATH);
 		if(ontRoot.exists())
 		{
 			FileFilter ont = new ExtensionFilter("Ontology Files (*.owl, *.rdf, *.rdfs, *.xml)",
@@ -694,7 +694,7 @@ public class AML
 		uris = new URIMap();
 		rels = new RelationshipMap();
 		if(useReasoner)
-			PropertyConfigurator.configure(dir + LOG);
+			PropertyConfigurator.configure(LOG);
 		long time = System.currentTimeMillis()/1000;
 		System.out.println("Loading source ontology");	
 		source = new Ontology2Match(src);

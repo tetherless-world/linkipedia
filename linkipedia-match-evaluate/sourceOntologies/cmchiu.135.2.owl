@@ -4,153 +4,152 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_4">
+    <rdfs:label>Book1.csv Biomass Volume(m3) Tree is volume</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na6b79f989c5f4d8ba76e1225ae48656c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nf5b2a3dc4cff4a4cb6f158e3952f9eeb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Book1.csv </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6df45cb32f0545d2b43f165258fa3df0">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nb88cddb58a1b4a1e8ce8aec96a31af6f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2b1a2c159b5a4537a8190c0833ca6ce5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Book1.csv Biomass Ht(m) The height of tree growth.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2dfafb660bfd43d89d65e38c6b96d3ca">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_5">
-    <rdfs:label>Book1.csv </rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3663c5e3819f4db4ab2ff787eceb9563">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N52a50ef0aaed4c769e74665e4e525f58">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N6a3e1d8369ec44ce8fcb2a8458079301">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Book1.csv Biomass Stem biomass Stem biomass</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nea956d2628eb4c9f987dd8a96b2d031e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Book1.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N610b79ed214d4895bca63528d026eb30">
+      <owl:Restriction rdf:nodeID="Ne98e4b5338874193a8b734158f1eaffb">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_1">
-    <rdfs:label>Book1.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N170d9c6e91884ccfbc83f2e99dcf820b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N37da87daf46245069472dadccfc87aa6">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N56d68e08837e429288057908a7d29688">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nef59d8541e5d4358b581c5acc6c47993">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Book1.csv </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_2">
-    <rdfs:label>Book1.csv </rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne63dae4c20ba43619853347ae7ee3352">
+      <owl:Restriction rdf:nodeID="N416fd4b1d26a48cc913a72c3893a09be">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Book1.csv Biomass DBH(cm) DBH, about 1.3m. above the ground.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N441e3c103b8c4012ba75aaea72b3f348">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nbcef2d96e45143c7ad76ff71f9a27eeb">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_7">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_6">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N95fd0d696c054a4fb88ba704e7cb9332">
+      <owl:Restriction rdf:nodeID="N36f9af92cbda4c6e98cd2f6e954628f8">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Book1.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb6f9b4d561d94ba3b4e04df01fb527bc">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nefbe16b52ec54988af945d7b436d30d9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>Book1.csv Biomass Branch biomass Branch biomass</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N25cea5e5a33d4c3ebf4eb665e9abe543">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Book1.csv Biomass Number tree number</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7e423374c013484fabcc43cb88552d23">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2">
-    <rdfs:comment>本報告探討台灣紅檜人工林生長與生物量，砍伐不同徑級3.0-35.0 cm之紅檜人工林，樣木共84株，求出台灣紅檜人工林樹高與胸徑相關曲線或材積式及不同部位幹、枝、葉生物量和胸徑及材積廻歸式V=0.3514(D2H)0.8905，樹幹生物量和材積之轉換係數M=426.16V，求算地上部生物量和材積之生物量擴展係數M=544.85V，並用以估算不同徑級之紅檜材積、生物量與碳吸存量。本試驗並以六龜試驗林不同疏伐策略之人工林為例，進行分析與估算，發現不同疏伐處理及時間系列對木材密度（8個年輪特徵值），除疏伐處理除對LW影響不顯著外，餘特徵值皆有顯著或極顯著之影響，林齡對木材密度之8個年輪特徵值皆有顯著或極顯著之影響，而疏伐對碳含量之影響不明顯，但林齡對碳含量之影響極顯著。紅檜人工林疏伐後經過5、20、25年，林分現存材積均以對照區最多，強度疏伐區最小，但若以材積淨生長量則呈現相反趨勢，顯示適度之疏伐，並將疏伐木搬出利用，可增進林分碳吸存效果。</rdfs:comment>
     <rdfs:label>紅檜人工林生物量和不同疏伐策略對二氧化碳吸存之效應</rdfs:label>
+    <rdfs:comment>本報告探討台灣紅檜人工林生長與生物量，砍伐不同徑級3.0-35.0 cm之紅檜人工林，樣木共84株，求出台灣紅檜人工林樹高與胸徑相關曲線或材積式及不同部位幹、枝、葉生物量和胸徑及材積廻歸式V=0.3514(D2H)0.8905，樹幹生物量和材積之轉換係數M=426.16V，求算地上部生物量和材積之生物量擴展係數M=544.85V，並用以估算不同徑級之紅檜材積、生物量與碳吸存量。本試驗並以六龜試驗林不同疏伐策略之人工林為例，進行分析與估算，發現不同疏伐處理及時間系列對木材密度（8個年輪特徵值），除疏伐處理除對LW影響不顯著外，餘特徵值皆有顯著或極顯著之影響，林齡對木材密度之8個年輪特徵值皆有顯著或極顯著之影響，而疏伐對碳含量之影響不明顯，但林齡對碳含量之影響極顯著。紅檜人工林疏伐後經過5、20、25年，林分現存材積均以對照區最多，強度疏伐區最小，但若以材積淨生長量則呈現相反趨勢，顯示適度之疏伐，並將疏伐木搬出利用，可增進林分碳吸存效果。</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1">
-    <rdfs:label>Book1.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Biomass</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_6">
-    <rdfs:comment>tree number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_a_7">
+    <rdfs:label>Book1.csv Biomass Foliage biomass Foliage biomass</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd0137b0201a947d499ea113aedf069eb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N62a0e95d0cf340bcbb2d3155145f3a1b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_3">
-    <rdfs:comment>tree number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>tree number</rdfs:comment>
+    <rdfs:label>Ht(m) The height of tree growth.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>tree number</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>DBH(cm) DBH, about 1.3m. above the ground.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>tree number</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1">
+    <rdfs:label>Book1.csv Biomass</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_4">
-    <rdfs:comment>tree number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_6">
+    <rdfs:label>Branch biomass Branch biomass</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_5">
-    <rdfs:comment>tree number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Stem biomass Stem biomass</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_7">
+    <rdfs:label>Foliage biomass Foliage biomass</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_1">
+    <rdfs:label>Number tree number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cmchiu.135.2#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Volume(m3) Tree is volume</rdfs:label>
   </owl:Class>
 </rdf:RDF>

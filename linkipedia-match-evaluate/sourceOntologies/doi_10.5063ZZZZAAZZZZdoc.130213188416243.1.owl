@@ -4,53 +4,52 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N316bcc82339f405f8bd95a25857f0677">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N395dfd3b1d5b464aac353dc196ce866f">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>gpp_CR800_sensor0_2011-04-06 10:12:26-2011-04-06 10:53:56 </rdfs:label>
-  </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1">
-    <rdfs:comment>This metadata record describes the dataset for sensor "sensor0" located at site "gpp" for the time period "2011-04-06 10:12:26" and "2011-04-06 10:53:56"</rdfs:comment>
     <rdfs:label>Dataset for sensor:"sensor0" at site:"gpp" for time period "2011-04-06 10:12:26" and "2011-04-06 10:53:56"</rdfs:label>
+    <rdfs:comment>This metadata record describes the dataset for sensor "sensor0" located at site "gpp" for the time period "2011-04-06 10:12:26" and "2011-04-06 10:53:56"</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_a_1">
-    <rdfs:label>gpp_CR800_sensor0_2011-04-06 10:12:26-2011-04-06 10:53:56 </rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_a_2">
+    <rdfs:label>gpp_CR800_sensor0_2011-04-06 10:12:26-2011-04-06 10:53:56 Dataset for sensor:"sensor0" at site: "gpp" for timeperiod between "2011-04-06 10:12:26" and "2011-04-06 10:53:56" data Temperature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7d2ecc834a434a82a28e489541a263d5">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N709e0091eea447818f21c689c4dc3486">
+      <owl:Restriction rdf:nodeID="Nb4e0df77c0184bda94268ca72673e928">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N28ef771138914fffa6ac81b0ce7dfddf">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>calendar date and time of each temperature measurement record</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1">
-    <rdfs:label>gpp_CR800_sensor0_2011-04-06 10:12:26-2011-04-06 10:53:56</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Dataset for sensor:"sensor0" at site: "gpp" for timeperiod between "2011-04-06 10:12:26" and "2011-04-06 10:53:56"</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N60c84faf0a6e4472adf3a07a1356f109">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>gpp_CR800_sensor0_2011-04-06 10:12:26-2011-04-06 10:53:56 Dataset for sensor:"sensor0" at site: "gpp" for timeperiod between "2011-04-06 10:12:26" and "2011-04-06 10:53:56" timestamps calendar date and time of each temperature measurement record</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc3b2b87fd6bd4b54b831e2d9db4f9b19">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_c_2">
-    <rdfs:comment>calendar date and time of each temperature measurement record</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>data Temperature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1_c_1">
+    <rdfs:label>timestamps calendar date and time of each temperature measurement record</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/doc.130213188416243.1#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>gpp_CR800_sensor0_2011-04-06 10:12:26-2011-04-06 10:53:56 Dataset for sensor:"sensor0" at site: "gpp" for timeperiod between "2011-04-06 10:12:26" and "2011-04-06 10:53:56"</rdfs:label>
   </owl:Class>
 </rdf:RDF>

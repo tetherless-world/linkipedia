@@ -4,101 +4,316 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_16">
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. c_conc carbon concentration (mg/g) litter nutrient concentration; To reduce the number of samples analyzed for total carbon, nitrogen and phosphorus, ground samples were pooled by species, water depth and collection date prior to chemical analysis. When possible, five litter bag samples were combined to make 1 sample for nutrient analysis. Water depths were stratified into 30-cm intervals: i.e. 0 cm = unflooded, 1- 30 cm = shallow, 31-60 cm = medium,  60-90 cm = deep sites, and &gt;90cm.
+
+Nutrient controls for each species were grouped by species and depth zone, known as 'field control' litter bags (these were litter bags deployed into field and retrieved immediately, in order to estimate loss due to handling). An additional nutrient control was also run for each species on the 'oven/dry weight control' litter bags (these were the litter bags used to estimate the fresh to dry weight ratio for each species). In the data file, only the pooled control nutrient values have been included for each species x water depth (i.e. depth zone) combination; therefore, the litter bag weights of each individual field control or over/dry weight control litter bag combined to make the sample for nutrient analysis, as well as their respective ground numbers, actual water depth of deployment, etc. have not been included.
+
+To determine percent nutrient remaining e.g. percent nitrogen remaining = ((final_odw*n_conc)/(orig_odw*'control nitrogen concentration'))*100, where orig_odw is the corrected fresh weight to estimate initial oven dry weight, and 'control nitrogen concentration' is that recorded from the control litter bags, for a particular species in a particular depth zone (i.e. for Scholochloa (020201), at a dry site (water depth=0cm), control nitrogen concentration = 1.72)</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd1f194df236f404ebe67e6719f640b46">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N2c87c71f2d0642c98515cac4cff74bd8">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_16"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9eee783884c34a2ca156bb0a0be679b9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N475abd39a81b4519a7a1fa003476a2e4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. cell_num cell number cells were numbered 1 to 10 from west to east in the diked study area.
+0=control litter bag for nutrient analysis</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na4cb5aeb5e484fe19e5829a9ba9e399e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N868fd7cf3dc54333a4521c38654b5604">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_1">
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. species species species of litter contained in litter bag</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Naff8a86abb8144c2b6bc82778bf573bb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc3a58e8298364b8aa7afe82a965e9d4b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_9">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf0402aa21e44480885dc384692ccb79e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Na001e9e880e14c378bcf8807dac1d1cd">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_11"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. day_out day litter bag retrieved five collection dates: 1-June-1988 to 3-June-1988, 25-July-1988, 22-September-1988, 6-June-1989 to 7-June-1989, and 9-Aug-1989 to 11-Aug-1989</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf53bb69daf694f61b1299f16c6d566df">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N053e8365988c4db592adef6c5bcb91de">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_17">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne19ae17f79af4f748f351d3b5fc009a0">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6c3702717dbc491bbbdea916916e9095">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_17"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_4">
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7c69f753c7924b9f8c6ea416e45a04d7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_4"/>
+      <owl:Restriction rdf:nodeID="Na955442bb405440088725b7cdcaf948c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. lb_site litter bag site litter bag sites represented the natural depth range for each species as observed during the 1987 growing season. Sites established in 1985 were used if they met this criteria; otherwise, new sites were established where previous sites had sparse or absent vegetation.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf557de52dfc84bac8745432c241eff9a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N5bcdc84454ac4087b14ad6c669587ba7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_7">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N65e26f8419854b5bbebd04f45d1dcdb1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_7"/>
+      <owl:Restriction rdf:nodeID="N436dd94ee712463f8719890f6aca22c8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N548aa48c595a4bf581cfd4c14c10c98d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nbfe94d09eabf4b3d99dee7985e59db5d">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. lb_num litter bag number number assigned to litter bag, in order to keep track of sample</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4c3b827cb0854fc2a212b9ff7a94dba3">
+      <owl:Restriction rdf:nodeID="N1bc427789f0a4f9a93d5a5a88dce01b1">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. final_odw litter dry weight at collection (oven dry weight; g) samples were dried to a constant weight at 80 degrees C.
+note: One litter bag from each site was immediately returned following deployment, to the laboratory to determine mass loss due to handling. The corrected final_odw (corrfinal_odw) due to handling is site and depth specific, where:
+If species=020201 and zone=1 then corrfinal_odw = final_odw-0.72
+If species=020201 and zone=2 then corrfinal_odw = final_odw-0.41
+If species=020201 and zone=3 then corrfinal_odw = final_odw-0.41
+If species=020201 and zone=4 then corrfinal_odw = final_odw-0.51
+If species=020101 and zone=1 then corrfinal_odw = final_odw+0.01
+If species=020101 and zone=2 then corrfinal_odw = final_odw-1.22
+If species=020101 and zone=3 then corrfinal_odw = final_odw-1.27
+If species=020101 and zone=4 then corrfinal_odw = final_odw-2.08
+If species=010103 and zone=1 then corrfinal_odw = final_odw+0.77
+If species=010103 and zone=2 then corrfinal_odw = final_odw+0.53
+If species=010103 and zone=3 then corrfinal_odw = final_odw+0.23
+If species=010103 and zone=4 then corrfinal_odw = final_odw+1.33
+If species=030100 and zone=2 then corrfinal_odw = final_odw-0.24
+If species=030100 and zone=3 then corrfinal_odw = final_odw-0.04
+If species=030100 and zone=4 then corrfinal_odw = final_odw-0.1
+where zone 1=0cm(dry), zone 2=1-30cm, zone 3=31-60, zone 4=&gt;61cm water depth
+The individual litter bags (i.e. field control litter bags) and their respective fresh_wt &amp; final_odw used to calculate these values have not been included in the datafile. Only the combined control nutrient value obtained has been included in the datafile (where h2o_depth is 0,30,60,90 or 91cm, and cell_num=0).</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncf409537ebee415c902580b37274dd68">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N691d86aeeb9d4a8f885a62a08b3efaca">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_10"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc2657703fa744f7f9fe1f971648df6af">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N13880c1fa8fb4ad791d9596578fde16d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_6"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. day_in day litter bag deployed litter bags were deployed on one of three dates: 30-May-1988, 31-May-1988 and 1-June-1988;</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_13">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. year_out year litter bag retrieved five collection dates: 1-June-1988 to 3-June-1988, 25-July-1988, 22-September-1988, 6-June-1989 to 7-June-1989, and 9-Aug-1989 to 11-Aug-1989</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N609df5f42f684192b8699480a6892457">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6022062f867a4667a3672fc0814f2ed2">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_13"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7fa6e63e61ae4dada6fb18259a6c90d0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. year_in year litter bag deployed litter bags were deployed on one of three dates: 30-May-1988, 31-May-1988 and 1-June-1988;</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncd27868953e14ba98b38e4f632c58d01">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_12">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N155a29c860d14dbc96fd9060c34f2d79">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_12"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8df395e6fbdf4d5093b9dafe343694f9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. month_out month litter bag retrieved five collection dates: 1-June-1988 to 3-June-1988, 25-July-1988, 22-September-1988, 6-June-1989 to 7-June-1989, and 9-Aug-1989 to 11-Aug-1989</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_17">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. n_conc nitrogen concentration (mg/g) litter nutrient concentration; To reduce the number of samples analyzed for total carbon, nitrogen and phosphorus, ground samples were pooled by species, water depth and collection date prior to chemical analysis. When possible, five litter bag samples were combined to make 1 sample for nutrient analysis. Water depths were stratified into 30-cm intervals: i.e. 0 cm = unflooded, 1- 30 cm = shallow, 31-60 cm = medium,  60-90 cm = deep sites, and &gt;90cm.
+
+Nutrient controls for each species were grouped by species and depth zone, known as 'field control' litter bags (these were litter bags deployed into field and retrieved immediately, in order to estimate loss due to handling). An additional nutrient control was also run for each species on the 'oven/dry weight control' litter bags (these were the litter bags used to estimate the fresh to dry weight ratio for each species). In the data file, only the pooled control nutrient values have been included for each species x water depth (i.e. depth zone) combination; therefore, the litter bag weights of each individual field control or over/dry weight control litter bag combined to make the sample for nutrient analysis, as well as their respective ground numbers, actual water depth of deployment, etc. have not been included.
+
+To determine percent nutrient remaining e.g. percent nitrogen remaining = ((final_odw*n_conc)/(orig_odw*'control nitrogen concentration'))*100, where orig_odw is the corrected fresh weight to estimate initial oven dry weight, and 'control nitrogen concentration' is that recorded from the control litter bags, for a particular species in a particular depth zone (i.e. for Scholochloa (020201), at a dry site (water depth=0cm), control nitrogen concentration = 1.72)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9d7a94e9546f4a99a25b24ff0a70a59c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N990a358a7c824432a0ab912ce63ee76d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_17"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_15">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nae4934346df74ba4b2bc916a4b4330eb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. p_conc phosphorus concentration (mg/g) litter nutrient concentration; To reduce the number of samples analyzed for total carbon, nitrogen and phosphorus, ground samples were pooled by species, water depth and collection date prior to chemical analysis. When possible, five litter bag samples were combined to make 1 sample for nutrient analysis. Water depths were stratified into 30-cm intervals: i.e. 0 cm = unflooded, 1- 30 cm = shallow, 31-60 cm = medium,  60-90 cm = deep sites, and &gt;90cm.
+
+Nutrient controls for each species were grouped by species and depth zone, known as 'field control' litter bags (these were litter bags deployed into field and retrieved immediately, in order to estimate loss due to handling). An additional nutrient control was also run for each species on the 'oven/dry weight control' litter bags (these were the litter bags used to estimate the fresh to dry weight ratio for each species). In the data file, only the pooled control nutrient values have been included for each species x water depth (i.e. depth zone) combination; therefore, the litter bag weights of each individual field control or over/dry weight control litter bag combined to make the sample for nutrient analysis, as well as their respective ground numbers, actual water depth of deployment, etc. have not been included.
+
+To determine percent nutrient remaining e.g. percent nitrogen remaining = ((final_odw*n_conc)/(orig_odw*'control nitrogen concentration'))*100, where orig_odw is the corrected fresh weight to estimate initial oven dry weight, and 'control nitrogen concentration' is that recorded from the control litter bags, for a particular species in a particular depth zone (i.e. for Scholochloa (020201), at a dry site (water depth=0cm), control nitrogen concentration = 1.72)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N168d80910349422fad0b4e8bdc78660a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_15"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_7">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N07205b3e019c4e56b4fd84ff249af0da">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. month_in month litter bag deployed litter bags were deployed on one of three dates: 30-May-1988, 31-May-1988 and 1-June-1988;</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nad1d29777184459a9419c31269ef3eaf">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4eef1f1eef784f279149977161104bef">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. fresh_wt fresh litter bag weight (g) Samples were dried to a constant weight (approx. 48 hours) at room temperature (20 degrees C), and approximately 10g was placed in a litter bag.
+note:in order to compare with final_odw (i.e. oven dry weight versus fresh weight), a subsample of material was oven dried at 80 degrees celcius and used to estimate the initial oven-dry weight of each bag by applying a fresh to oven weight conversion factor:
+if species = 010103 then corrected weight (orig_odw) = fresh_wt*0.412
+if species = 020101 then corrected weight (orig_odw) = fresh_wt*0.618
+if species = 020201 then corrected weight (orig_odw) = fresh_wt*0.507
+if species = 030100 then corrected weight (orig_odw) = fresh_wt*0.549
+The individual litter bags (i.e. oven/dry weight control litter bags) and their respective fresh_wt &amp; final_odw used to calculate these values have not been included in the datafile. Only the combined control nutrient value obtained has been included in the datafile (where h2o_depth is blank, and cell_num=0).</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc8f94852f0084b02a72f5514c5a21dfe">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_14">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb885b6dbad8c46a3bd5918a06f5c649a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. grnd_num ground number corresponds to subsample number ground for nutrient analysis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N459cf136c7a144ebb05ce9c0b13069be">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_14"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_2">
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB. h2o_depth water depth (cm) water depth recorded at the litter bag site at retrieval
+note: for field control litter bags, water depth represents the zone for which that litter bag was a control for, and was not the true water depth: i.e. for zone 1 (0cm), water depth = 0; for zone 2(0-30cm), water depth = 30cm; for zone 3 (30-60cm), water depth = 60cm; for zone 4 (60-90cm), water depth = 90cm; for zone 5(&gt;90cm), water depth = 91cm
+for oven/dry weight control litter bags, water depth is blank</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nee17728997dc4322b7835feacc85e232">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N16b4cf71877a4d59a0e78ca138084966">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6">
     <rdfs:label>Marsh Ecology Research Program (MERP): Root decomposition litter bag study data (1988-1989)</rdfs:label>
@@ -128,270 +343,115 @@ Neckles, H.A. and C. Neill. 1994. Hydrologic control of litter decomposition in 
 Nelson, J.W., J.A. Kadlec and H.R. Murkin. 1990. Seasonal comparisons of weight loss for two types of Typha glauca Godr. leaf litter. Aquatic Botany 37: 299-314.
 Nelson, J.W., J.A. Kadlec and H.R. Murkin. 1990. Responses by macroinvertebrates to cattail litter quality and timing of litter submergence in a northern prairie marsh. wetlands 10: 47-60.</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_13">
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N85fb0d807bff49e1a8ceac568a12db58">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_13"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1a2adf390c4c40fbacbde87bde96d312">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbe85ad8e522145c19768565f9dc77d8f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbecdc393c0874f06ac3699d6fc61b20e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_15"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_12">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N26a70a1f0ded44d39582dbc90aab8d22">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N45150104c9164949931bcaf24e9d89bf">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_12"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_16">
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb27ab02f7e96488795b506ce232b9012">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_16"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne8804ace70d54b9fa68e4b5c407a57c8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_6">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5c28b89324bd4c97bca500630c8c9bb5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5fdf7da30f85484f8ef140253cbf7b41">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N062bd3d32dc34fb5a5a6520c89b9c53f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5aaab3b02de34b5e93e4f6f20a6fefde">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_14">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N895e4ab78b8b4cf3b20baf8acdc4a9f9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_14"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N51ce94cb47434be9a97b76169c97afac">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8691d88319364889854d0e9311c2f83b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N341d5ee5bc6a4d6ab0b616d77a4f55a0">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_11">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N36f560b639544f9bb7a00d76047b5c91">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncd507ef4f5404df18d04317efbf6224e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_11"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_8">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N36b95ea8f31b4f7285a4a7f5c1841f52">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3759411f527a4bc4a9746f34a9670758">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) species</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na0fe9b17fed24b16b1af40082f088def">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N12b3b7754ea7456f97f30406a131abc4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_6">
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_1">
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_13">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989) This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_7">
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_9">
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_10">
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_12">
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_11">
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>MERP Root decomposition litter bag study data (1988-1989)</rdfs:label>
-    <rdfs:comment>This data package contains data from the root decomposition litter bag study (1988-1989). Litter bag studies were a series of short-term studies, conducted as part of the decomposition study of MERP (1980-1989). Additional litter bag studies can be found in separate data packages on the KNB.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>species</rdfs:label>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_14">
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_17">
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_2">
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_16">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
-    <rdfs:label>species</rdfs:label>
+    <rdfs:label>month_in month litter bag deployed litter bags were deployed on one of three dates: 30-May-1988, 31-May-1988 and 1-June-1988;</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_15">
-    <rdfs:label>species</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>species of litter contained in litter bag</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>p_conc phosphorus concentration (mg/g) litter nutrient concentration; To reduce the number of samples analyzed for total carbon, nitrogen and phosphorus, ground samples were pooled by species, water depth and collection date prior to chemical analysis. When possible, five litter bag samples were combined to make 1 sample for nutrient analysis. Water depths were stratified into 30-cm intervals: i.e. 0 cm = unflooded, 1- 30 cm = shallow, 31-60 cm = medium,  60-90 cm = deep sites, and &gt;90cm.
+
+Nutrient controls for each species were grouped by species and depth zone, known as 'field control' litter bags (these were litter bags deployed into field and retrieved immediately, in order to estimate loss due to handling). An additional nutrient control was also run for each species on the 'oven/dry weight control' litter bags (these were the litter bags used to estimate the fresh to dry weight ratio for each species). In the data file, only the pooled control nutrient values have been included for each species x water depth (i.e. depth zone) combination; therefore, the litter bag weights of each individual field control or over/dry weight control litter bag combined to make the sample for nutrient analysis, as well as their respective ground numbers, actual water depth of deployment, etc. have not been included.
+
+To determine percent nutrient remaining e.g. percent nitrogen remaining = ((final_odw*n_conc)/(orig_odw*'control nitrogen concentration'))*100, where orig_odw is the corrected fresh weight to estimate initial oven dry weight, and 'control nitrogen concentration' is that recorded from the control litter bags, for a particular species in a particular depth zone (i.e. for Scholochloa (020201), at a dry site (water depth=0cm), control nitrogen concentration = 1.72)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_17">
+    <rdfs:label>n_conc nitrogen concentration (mg/g) litter nutrient concentration; To reduce the number of samples analyzed for total carbon, nitrogen and phosphorus, ground samples were pooled by species, water depth and collection date prior to chemical analysis. When possible, five litter bag samples were combined to make 1 sample for nutrient analysis. Water depths were stratified into 30-cm intervals: i.e. 0 cm = unflooded, 1- 30 cm = shallow, 31-60 cm = medium,  60-90 cm = deep sites, and &gt;90cm.
+
+Nutrient controls for each species were grouped by species and depth zone, known as 'field control' litter bags (these were litter bags deployed into field and retrieved immediately, in order to estimate loss due to handling). An additional nutrient control was also run for each species on the 'oven/dry weight control' litter bags (these were the litter bags used to estimate the fresh to dry weight ratio for each species). In the data file, only the pooled control nutrient values have been included for each species x water depth (i.e. depth zone) combination; therefore, the litter bag weights of each individual field control or over/dry weight control litter bag combined to make the sample for nutrient analysis, as well as their respective ground numbers, actual water depth of deployment, etc. have not been included.
+
+To determine percent nutrient remaining e.g. percent nitrogen remaining = ((final_odw*n_conc)/(orig_odw*'control nitrogen concentration'))*100, where orig_odw is the corrected fresh weight to estimate initial oven dry weight, and 'control nitrogen concentration' is that recorded from the control litter bags, for a particular species in a particular depth zone (i.e. for Scholochloa (020201), at a dry site (water depth=0cm), control nitrogen concentration = 1.72)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_6">
+    <rdfs:label>day_in day litter bag deployed litter bags were deployed on one of three dates: 30-May-1988, 31-May-1988 and 1-June-1988;</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>fresh_wt fresh litter bag weight (g) Samples were dried to a constant weight (approx. 48 hours) at room temperature (20 degrees C), and approximately 10g was placed in a litter bag.
+note:in order to compare with final_odw (i.e. oven dry weight versus fresh weight), a subsample of material was oven dried at 80 degrees celcius and used to estimate the initial oven-dry weight of each bag by applying a fresh to oven weight conversion factor:
+if species = 010103 then corrected weight (orig_odw) = fresh_wt*0.412
+if species = 020101 then corrected weight (orig_odw) = fresh_wt*0.618
+if species = 020201 then corrected weight (orig_odw) = fresh_wt*0.507
+if species = 030100 then corrected weight (orig_odw) = fresh_wt*0.549
+The individual litter bags (i.e. oven/dry weight control litter bags) and their respective fresh_wt &amp; final_odw used to calculate these values have not been included in the datafile. Only the combined control nutrient value obtained has been included in the datafile (where h2o_depth is blank, and cell_num=0).</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_4">
+    <rdfs:label>lb_site litter bag site litter bag sites represented the natural depth range for each species as observed during the 1987 growing season. Sites established in 1985 were used if they met this criteria; otherwise, new sites were established where previous sites had sparse or absent vegetation.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_13">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>year_out year litter bag retrieved five collection dates: 1-June-1988 to 3-June-1988, 25-July-1988, 22-September-1988, 6-June-1989 to 7-June-1989, and 9-Aug-1989 to 11-Aug-1989</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>species species species of litter contained in litter bag</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>cell_num cell number cells were numbered 1 to 10 from west to east in the diked study area.
+0=control litter bag for nutrient analysis</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_12">
+    <rdfs:label>month_out month litter bag retrieved five collection dates: 1-June-1988 to 3-June-1988, 25-July-1988, 22-September-1988, 6-June-1989 to 7-June-1989, and 9-Aug-1989 to 11-Aug-1989</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_5">
+    <rdfs:label>lb_num litter bag number number assigned to litter bag, in order to keep track of sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>final_odw litter dry weight at collection (oven dry weight; g) samples were dried to a constant weight at 80 degrees C.
+note: One litter bag from each site was immediately returned following deployment, to the laboratory to determine mass loss due to handling. The corrected final_odw (corrfinal_odw) due to handling is site and depth specific, where:
+If species=020201 and zone=1 then corrfinal_odw = final_odw-0.72
+If species=020201 and zone=2 then corrfinal_odw = final_odw-0.41
+If species=020201 and zone=3 then corrfinal_odw = final_odw-0.41
+If species=020201 and zone=4 then corrfinal_odw = final_odw-0.51
+If species=020101 and zone=1 then corrfinal_odw = final_odw+0.01
+If species=020101 and zone=2 then corrfinal_odw = final_odw-1.22
+If species=020101 and zone=3 then corrfinal_odw = final_odw-1.27
+If species=020101 and zone=4 then corrfinal_odw = final_odw-2.08
+If species=010103 and zone=1 then corrfinal_odw = final_odw+0.77
+If species=010103 and zone=2 then corrfinal_odw = final_odw+0.53
+If species=010103 and zone=3 then corrfinal_odw = final_odw+0.23
+If species=010103 and zone=4 then corrfinal_odw = final_odw+1.33
+If species=030100 and zone=2 then corrfinal_odw = final_odw-0.24
+If species=030100 and zone=3 then corrfinal_odw = final_odw-0.04
+If species=030100 and zone=4 then corrfinal_odw = final_odw-0.1
+where zone 1=0cm(dry), zone 2=1-30cm, zone 3=31-60, zone 4=&gt;61cm water depth
+The individual litter bags (i.e. field control litter bags) and their respective fresh_wt &amp; final_odw used to calculate these values have not been included in the datafile. Only the combined control nutrient value obtained has been included in the datafile (where h2o_depth is 0,30,60,90 or 91cm, and cell_num=0).</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_16">
+    <rdfs:label>c_conc carbon concentration (mg/g) litter nutrient concentration; To reduce the number of samples analyzed for total carbon, nitrogen and phosphorus, ground samples were pooled by species, water depth and collection date prior to chemical analysis. When possible, five litter bag samples were combined to make 1 sample for nutrient analysis. Water depths were stratified into 30-cm intervals: i.e. 0 cm = unflooded, 1- 30 cm = shallow, 31-60 cm = medium,  60-90 cm = deep sites, and &gt;90cm.
+
+Nutrient controls for each species were grouped by species and depth zone, known as 'field control' litter bags (these were litter bags deployed into field and retrieved immediately, in order to estimate loss due to handling). An additional nutrient control was also run for each species on the 'oven/dry weight control' litter bags (these were the litter bags used to estimate the fresh to dry weight ratio for each species). In the data file, only the pooled control nutrient values have been included for each species x water depth (i.e. depth zone) combination; therefore, the litter bag weights of each individual field control or over/dry weight control litter bag combined to make the sample for nutrient analysis, as well as their respective ground numbers, actual water depth of deployment, etc. have not been included.
+
+To determine percent nutrient remaining e.g. percent nitrogen remaining = ((final_odw*n_conc)/(orig_odw*'control nitrogen concentration'))*100, where orig_odw is the corrected fresh weight to estimate initial oven dry weight, and 'control nitrogen concentration' is that recorded from the control litter bags, for a particular species in a particular depth zone (i.e. for Scholochloa (020201), at a dry site (water depth=0cm), control nitrogen concentration = 1.72)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_11">
+    <rdfs:label>day_out day litter bag retrieved five collection dates: 1-June-1988 to 3-June-1988, 25-July-1988, 22-September-1988, 6-June-1989 to 7-June-1989, and 9-Aug-1989 to 11-Aug-1989</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>year_in year litter bag deployed litter bags were deployed on one of three dates: 30-May-1988, 31-May-1988 and 1-June-1988;</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_14">
+    <rdfs:label>grnd_num ground number corresponds to subsample number ground for nutrient analysis</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/duc_merp.88.6#d_1_c_2">
+    <rdfs:label>h2o_depth water depth (cm) water depth recorded at the litter bag site at retrieval
+note: for field control litter bags, water depth represents the zone for which that litter bag was a control for, and was not the true water depth: i.e. for zone 1 (0cm), water depth = 0; for zone 2(0-30cm), water depth = 30cm; for zone 3 (30-60cm), water depth = 60cm; for zone 4 (60-90cm), water depth = 90cm; for zone 5(&gt;90cm), water depth = 91cm
+for oven/dry weight control litter bags, water depth is blank</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

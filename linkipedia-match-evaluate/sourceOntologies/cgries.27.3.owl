@@ -5,161 +5,161 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_1">
+    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv Water temperature data compiled Date Date on which the temperature measurement was
+						taken</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N70de7e2494814a19b863ee0bd371f99f">
+      <owl:Restriction rdf:nodeID="N6ba0fb528477416aba12fc0d02a863ad">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N63d85ae11bd14e2898768ada2c7bcab7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_4">
+    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv Water temperature data compiled Potential_Temperture Temperature data corrected for adiabatic
+						expansion</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2b0eb9e6addb408a98216e089d1c3f1e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb8ef319c46004886bd5acb0bb18b1744">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_1"/>
+      <owl:Restriction rdf:nodeID="N7c7faee9aed44991a8c975414b37eb7b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_5">
+    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv Water temperature data compiled Latitude Latitudinal position within the lake</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne5485f7b9a9d424ea3c5f3f5290dd691">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N30cb017f8fb04c36b049e6e05a8d1d1b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_2">
+    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv Water temperature data compiled Depth Water depth below the surface of the lake where the temperature
+						measurement was taken</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne3e42afac8be4710aa18635eabc95791">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N22b41b2cd07f48a1af946bb5b8fbd0be">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7aa50a7e59444fc1ab3e4cb49e477076">
+      <owl:Restriction rdf:nodeID="N821414619373411d8b3e19c1fff76477">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3b491733b6684d7e8d0cb703db6c7a46">
+      <owl:Restriction rdf:nodeID="Nf929521a50ae4988ae041c13bb591ad5">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv Water temperature data compiled Temperature The reported and measured temperature value</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_6">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd1cfc1e90d7d4164ae55826dda388fc6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_4"/>
+      <owl:Restriction rdf:nodeID="N47fd7491528745adb1c36b3023abf5ef">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N68b265f4593e4c0e97462427b703f0ed">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ne0d80329baa84ce897264f2cac377532">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv Water temperature data compiled Longitude Longitudinal position within the lake</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_2">
-    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv </rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_7">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5a3d250d4f9f46339a7a20a796244166">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N56aaef6189a44d018b909916f9c6c037">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv Water temperature data compiled Source The source for the temperature measurements. If previously
+						unpublished, the source states Previously Unpublished.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc70efb6d0fc7496db0242b3a7a9cb7cb">
+      <owl:Restriction rdf:nodeID="N505124506b23472e9e67bec9bb394190">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3">
-    <rdfs:label>Century-Long Temperature Record from Lake Tanganyika</rdfs:label>
     <rdfs:comment>Lake Tanganyika has one of the longest temperature records of any lake on Earth.
 				Temperature data are spatially and temporally discontinuous but offer an incredible resource
 				for understanding climate impacts on this great tropical lake.</rdfs:comment>
+    <rdfs:label>Century-Long Temperature Record from Lake Tanganyika</rdfs:label>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_7">
-    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N386d32369a8c4210a769f56e7e6ed7a3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N634a7207fa1c46b0b236d314844e3797">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_7"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf8cdba02ee4b4da2b1b2ef11cbf98fc7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N79f3cf43311d4955998e9c2c8469e39f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_a_6">
-    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N32295884c1214b81b5a6d5b0a9840d5f">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne7836a32bc2d4fce9e548a9bb0de48f2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_5">
-    <rdfs:comment>Date on which the temperature measurement was
-						taken</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date on which the temperature measurement was
-						taken</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_2">
-    <rdfs:comment>Date on which the temperature measurement was
-						taken</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date on which the temperature measurement was
-						taken</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_1">
-    <rdfs:comment>Date on which the temperature measurement was
-						taken</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_4">
-    <rdfs:comment>Date on which the temperature measurement was
-						taken</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Latitude Latitudinal position within the lake</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1">
-    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv</rdfs:label>
-    <rdfs:comment>Water temperature data compiled</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>DATASET_Tanganyika Temperature_v1.csv Water temperature data compiled</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_4">
+    <rdfs:label>Potential_Temperture Temperature data corrected for adiabatic
+						expansion</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Longitude Longitudinal position within the lake</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_7">
-    <rdfs:comment>Date on which the temperature measurement was
-						taken</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Source The source for the temperature measurements. If previously
+						unpublished, the source states Previously Unpublished.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Temperature The reported and measured temperature value</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Depth Water depth below the surface of the lake where the temperature
+						measurement was taken</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cgries.27.3#d_1_c_1">
+    <rdfs:label>Date Date on which the temperature measurement was
+						taken</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

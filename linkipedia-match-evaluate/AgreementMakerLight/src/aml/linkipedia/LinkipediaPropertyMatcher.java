@@ -6,6 +6,7 @@ import java.util.Set;
 
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 
+import aml.AML;
 import aml.match.Alignment;
 import aml.match.Mapping;
 import aml.match.PropertyMatcher;
@@ -14,7 +15,7 @@ import aml.settings.EntityType;
 
 public class LinkipediaPropertyMatcher {
     
-	public static Ontology2Match source,target;
+	//public static Ontology2Match source,target;
 	public static Alignment propMaps,personMaps, myMaps;
 	public static double sim;
 	
@@ -22,11 +23,11 @@ public class LinkipediaPropertyMatcher {
 		PropertyMatcher pm = new PropertyMatcher(true);
 		propMaps = new Alignment();//sabita added this
 		personMaps = new Alignment();
-		source = new Ontology2Match(sourcePath);
-		target = new Ontology2Match(targetPath);
+		//source = new Ontology2Match(sourcePath);
+		//target = new Ontology2Match(targetPath);
 		
-		Set<Integer> sourceKeys = source.getDataProperties();
-		Set<Integer> targetKeys = target.getDataProperties();
+		Set<Integer> sourceKeys = AML.source.getDataProperties();
+		Set<Integer> targetKeys = AML.target.getDataProperties();
 		for(Integer i : sourceKeys)
 		{
 			for(Integer j : targetKeys)
@@ -37,8 +38,8 @@ public class LinkipediaPropertyMatcher {
 			}
 		}
 		//Map object properties
-		sourceKeys = source.getObjectProperties();
-		targetKeys = target.getObjectProperties();
+		sourceKeys = AML.source.getObjectProperties();
+		targetKeys = AML.target.getObjectProperties();
 		for(Integer i : sourceKeys)
 		{
 			for(Integer j : targetKeys)
