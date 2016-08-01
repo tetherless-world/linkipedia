@@ -4,274 +4,260 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8">
-    <rdfs:comment>本研究以含種子長徑大於0.8 cm之流蘇(Chionanthus retusus Lindl. &amp; Paxt.) 綠色及紫色果實做為參試材料，探討在不完全無菌操作下，不同果實成熟度、種子處理及培養基組成對種子整齊發芽之影響，以及在完全無菌操作下之裸胚培養的最適條件。在不完全無菌操作下，除綠果種子污染率較紫果種子為低外，二者於發根及胚芽發生率(上胚軸生長率)之表現並無差異。去殼(內果皮)後刻傷種子胚乳，並添加4 mg.L-1激勃素(gibberellic acid；GA3)，可以部分打破休眠限制，在培養後20天時獲得11.7%之發芽率。以裸胚處理並添加2 mg.L-1 GA3，可以有效突破種子休眠限制，在培養20天時獲得83.3%之發根率及60%的發芽率。在完全無菌的培養條件下，將裸胚培養於含WPM (Woody Plant Medium)為鹽類，添加2 mg.L-1 GA3的洋菜培養基中，可以完全突破種子休眠限制，在培養7天時胚根可以長至1.5 cm，在14天時可獲得平均根長度為4.2 cm，芽長度為1.3 cm的幼苗，在30天時可以獲得100%的成苗率。</rdfs:comment>
-    <rdfs:label>果實成熟度、種子刻傷處理與培養基組成對流蘇種子整齊萌芽之影響</rdfs:label>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_a_4">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2f7feec16502405f8a5fd0c7748306fa">
+      <owl:Restriction rdf:nodeID="N01a1c527e1214f8a9cbe797c4ea0ccf4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ChionanthusT1.csv Table 1. The effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. 處理 處理 處理</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N82d66473cddb4a9ebe3df884f0be2fc9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N05aea88af4da49678394b5b08147cc15">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ChionanthusT1.csv 處理</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8be8e1a5fb9d497f9d1063acaa475a47">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv 處理</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N782f2d8d04e74562bc9c819156e308f7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N13b46076ca6e49258c82a7c16e7210c1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N561ed2485bc34b8d9e55d8331baa6f3f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ChionanthusT2.csv 處理</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_a_3">
-    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv 處理</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5983668dec164be98027bd7e5f421e2e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N771b0edc240d46358ba9b6d2e56fa7e9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv 處理</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N53907975168442769f4be1cf3dbd320e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4e1de15ad2b141f59ba68b7ef7112fb5">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ChionanthusT2.csv 處理</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na0b495fb7f3a46b6b3f64f9279ca0f3b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nade2011624d14cb3bf7104fa17a5e3c7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N798930334dd748ea9bcd3b54491130b2">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ChionanthusT1.csv 處理</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6f44e5b45d664862a4732882a869c850">
+      <owl:Restriction rdf:nodeID="N60d293906f0c4ed388a2936042bff8bb">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N98a8f1f82a7f4b14ab6c424b70a944f1">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ChionanthusT1.csv Table 1. The effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. 發根率(%) 發根率 發根率</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ChionanthusT2.csv Single factor analysis of the effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. 發芽率(％) 發芽率 發芽率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd34ff38bd62148ab8d4f692d624a34e8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nfc37b11be6614e219dbb122a05387eff">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ChionanthusT2.csv 處理</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndc70ade6c25d4e4294e2792cc1f2859f">
+      <owl:Restriction rdf:nodeID="N52c8cc69348a404db2498629e20890c2">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8">
+    <rdfs:label>果實成熟度、種子刻傷處理與培養基組成對流蘇種子整齊萌芽之影響</rdfs:label>
+    <rdfs:comment>本研究以含種子長徑大於0.8 cm之流蘇(Chionanthus retusus Lindl. &amp; Paxt.) 綠色及紫色果實做為參試材料，探討在不完全無菌操作下，不同果實成熟度、種子處理及培養基組成對種子整齊發芽之影響，以及在完全無菌操作下之裸胚培養的最適條件。在不完全無菌操作下，除綠果種子污染率較紫果種子為低外，二者於發根及胚芽發生率(上胚軸生長率)之表現並無差異。去殼(內果皮)後刻傷種子胚乳，並添加4 mg.L-1激勃素(gibberellic acid；GA3)，可以部分打破休眠限制，在培養後20天時獲得11.7%之發芽率。以裸胚處理並添加2 mg.L-1 GA3，可以有效突破種子休眠限制，在培養20天時獲得83.3%之發根率及60%的發芽率。在完全無菌的培養條件下，將裸胚培養於含WPM (Woody Plant Medium)為鹽類，添加2 mg.L-1 GA3的洋菜培養基中，可以完全突破種子休眠限制，在培養7天時胚根可以長至1.5 cm，在14天時可獲得平均根長度為4.2 cm，芽長度為1.3 cm的幼苗，在30天時可以獲得100%的成苗率。</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N52a0a9885d514273ac343b6033fada3b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv 發芽率(％) 發芽率 發芽率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0c3ef37fba2944a1bc4591ebe0b76694">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_3"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7c80c4ded6864acfa4be7e7563348844">
+      <owl:Restriction rdf:nodeID="Ne3869cc1313c4e5d9e7b955e7840e4bd">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ChionanthusT1.csv Table 1. The effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. 發芽率(%) 發芽率 發芽率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N392f6b50428c48d59e2604d758870075">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ChionanthusT1.csv 處理</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne7cb88f2bbdc49599d0977c9694a75b4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb5d066d223de4734adc9308c1f78b5f8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ChionanthusT1.csv 處理</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9460963eb7f54cd9bf3a99791fead11f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv 處理 處理 處理</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfb631225da9a4886bfe708f42448c74c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ndb0c121d438148b0b1b7c79c5124271c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N93d2af50eda34c92b611d7e2cac41397">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv 處理</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_a_4">
+    <rdfs:label>ChionanthusT1.csv Table 1. The effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. 污染率(％) 污染率 污染率</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1778e909bff648d0a4335e8d2eb1e61b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_1"/>
+      <owl:Restriction rdf:nodeID="Ne4d4bbcbc9434879a714136ec40a2e42">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nde9b3e16a1604e9198dceeaaee04f105">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N36ff171a96a745db959df7c82dc9d608">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv 發根率(％) 發根率 發根率</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3dd07e7841ed47d4bc2ca4778af224c9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nff6acc0127e14913b480bc00ec04b564">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf79b0631182f4533822cb2fe131be84d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ChionanthusT2.csv Single factor analysis of the effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. 處理 處理 處理</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2e534c17991f4a60b75e270726a1b873">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ChionanthusT2.csv Single factor analysis of the effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. 發根率(％) 發根率 發根率</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2f6372ac0f2c454fa727c51473d4f608">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_a_4">
+    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv 污染率(％) 污染率 污染率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6bcaf6ec48b1452797e4d90ef8d723a5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N77d31f7314c04df787b01c219ee56a7c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0879a2dd428f4f029feb8eeef3fbb0be">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N6d0420257f6f456b99c90f65e500c866">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>ChionanthusT2.csv Single factor analysis of the effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. 污染率(％) 污染率 污染率</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N63364f7750384c1b884ed2cae743657a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N2a39d909b9bf4fd1b8d0da1f095558a0">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ChionanthusT2.csv 處理</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_2">
-    <rdfs:label>處理</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>處理</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_3">
-    <rdfs:comment>處理</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>處理</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_3">
-    <rdfs:label>處理</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>處理</rdfs:comment>
+    <rdfs:label>發芽率(％) 發芽率 發芽率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_1">
-    <rdfs:comment>處理</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>處理</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_2">
+    <rdfs:label>發根率(％) 發根率 發根率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_4">
-    <rdfs:comment>處理</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>處理</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>處理</rdfs:label>
-    <rdfs:comment>處理</rdfs:comment>
+    <rdfs:label>污染率(％) 污染率 污染率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_4">
-    <rdfs:comment>處理</rdfs:comment>
-    <rdfs:label>處理</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>污染率(％) 污染率 污染率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_4">
-    <rdfs:label>處理</rdfs:label>
-    <rdfs:comment>處理</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Single factor analysis of the effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt.</rdfs:comment>
-    <rdfs:label>ChionanthusT2.csv</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2">
-    <rdfs:comment>Table 1. The effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>ChionanthusT1.csv</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>處理 處理 處理</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>處理</rdfs:comment>
-    <rdfs:label>處理</rdfs:label>
+    <rdfs:label>發根率(％) 發根率 發根率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_1">
-    <rdfs:label>處理</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>處理</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>處理 處理 處理</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>發芽率(％) 發芽率 發芽率</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_3">
+    <rdfs:label>ChionanthusT2.csv Single factor analysis of the effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_2">
-    <rdfs:label>處理</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>處理</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>發根率(%) 發根率 發根率</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_1">
-    <rdfs:comment>處理</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>處理</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>處理 處理 處理</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>污染率(％) 污染率 污染率</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>ChionanthusT1.csv Table 1. The effect of fruit maturity and seed treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_2_c_3">
+    <rdfs:label>發芽率(%) 發芽率 發芽率</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ching.66.8#d_1">
+    <rdfs:label>Table 3. The effect of fruit maturity and GA3 treatment on the germination of Chionanthus retusus Lindl. &amp; Paxt. .csv</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
 </rdf:RDF>

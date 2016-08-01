@@ -4,454 +4,432 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_20">
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1">
+    <rdfs:comment>This data set is part of a study of how wading birds, primarily Great and Snowy Egrets are using different estuarine habitats at Plum Island Sound. It contains the results of count surveys of wading birds in the salt marshes of the Plum Island Estuary and parts of adjacent Essex Bay. Surveys were carried out from May to October in 2012 and 2013. One additional sampling occurred in July 2014. Bird counts took place from 37 observation points around the bay and documented species, estimated distance from observer, habitat of each individual bird counted and its behavior (feeding, resting, etc.).</rdfs:comment>
+    <rdfs:label>Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_16">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbcd4fe0ea0b94496ac3899480beee428">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N1701aea7f33b44c0a5215f9c7162d95c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbdee945bd0e04338b726677636d2b1e9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_16"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Common_Name Common_Name AOU (American Ornithologists' Union) common name of bird</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_19">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Habitat Habitat The habitat birds occupied</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N97c28ed44d024a56a15308dc308155ef">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na941e9b412104be4b50c3affaec0001b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_19"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_20">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Behavior Behavior Behavior (feeding, resting, preening)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf7e7b5e0ccd643a09acdb4a086f1afb7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_20"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N65a96217120e4096bf562f5ed4adb163">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_13">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N204ad8769d304c1b896cbf807a1f28b1">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_13"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N51f87a6bf5a74ad7bdd416d67ecb97ff">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_12">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N80dbabbaefe24851b06a553cde5a095b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ndef0dea8e55244f2a2553c5fff02321f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8778bfef5df2464088090aa9efa4a68e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_12"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_14">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb21172baf33d4708b56a9260c25fc833">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_14"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N39b6ab772c414277b24563b05f589df8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3762722ebb7d4056a71dead3b698f226">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na7e1f9e9e2324db68813aaa8b98d7dbf">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_19">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3c0551638cc344589753cdf8b63b852d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncb300b055e5645e7ab87cad03b44dd20">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_19"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_18">
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na13e22c218314d9c8e786259a747964b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_18"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne0450832dc51484aa47fe108d865f946">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_16">
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N67241f82bdd8406d82a4936682fd800d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4ba62873f6ef4bf1bf048d0c7ae02f78">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_16"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd19578e1faf44009a40f7cb2a2a5a383">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7a9e274baecb4bce8916927dd32a6713">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_15"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_21">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N14640fb9be7c493e932bda9b23d9b7c3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_21"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbe77b7ce5404425b862d51912ec8979b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_1">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Date Date Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc5fb64f1072a4c9fb10b50ba08c2472d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nbe9a7fda2ef64cc9bb5b9a6ce4931475">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5cce8c537e634c248e8b5ef0cfee63c6">
+      <owl:Restriction rdf:nodeID="Ndeb103e943cd4a11be8bc73a2e501878">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_17">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndfbaa3bc92554e3ab45216d0bf46577f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8c79529e5d804f588c59f4ed69a4b205">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_17"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbc0083b5e8af41539fd8c536546312a8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N08cdac55cab942659fd586f631b6a67b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0d41e7648ad544c7a0b340a6adcf5636">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2b217416341c4290b8e4a8b5e80688d8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Neea134cace88429da7a8c4f5520f2b88">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N991e44e9710b4070aa7c84aef2928455">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_11">
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay TimeStart TimeStart time of day count started</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7b6067fcd12846879ffdfd805a7d6a16">
+      <owl:Restriction rdf:nodeID="N24a7444a5fbf40479a6d7de7b6689143">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_11"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N70560fab37a84aefa0c541f5c32a7e5c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N15eb66811f0544648a5409834fadfdd9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_15">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Species Species Species name of bird</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4da63eed9f174c60847c579bd89fb425">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_15"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N36c14f72f9ac47489745be4b33ac219e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_6">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd7376ae66673409db26eef81c0b338c5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8a0f22efbbc3429eb552413708538999">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Observer2 Observer2 Name of additional observer</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Latitude Latitude Latitude of station</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc48c47bbca0d49608d8096431c0b3599">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nf97519e1a465449da42797956653de82">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8dd2f4502ab1400abce7c3d2be60b14f">
+      <owl:Restriction rdf:nodeID="Nb7dd7964525b47529269b6f2c8e58699">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf4aab0e281534885ae7257a21c3674d5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf425ef17f57f45d9a0996fbb03687f14">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Year Year Year of observation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne8997103f5ed4069acbffc6a5ddad67d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Station Station Name of the observation point</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc0551ad9f8d543999623c6a9cd8c0cfe">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_8"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_21">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Comments Comments Comments about data</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N91ac448a6deb42e398ed4f31243e66fd">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_21"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd45205d6cfed434aa98bca8456959281">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_13">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N599d41591d6f4a29b9b873cafbb2795c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay AlphaCode AlphaCode AOU (American Ornithologists' Union) four letter code for that species, http://birdpop.org/AlphaCodes.htm</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0c1fb63621f442dea10fb89eb145b55f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_13"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_10">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne36807f92098418392bcd568721819c8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N18be4f85341b408fb7113ce6f510d113">
+      <owl:Restriction rdf:nodeID="N66ad104de563472c886e2f9f30c12676">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_10"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1">
-    <rdfs:label>Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay</rdfs:label>
-    <rdfs:comment>This data set is part of a study of how wading birds, primarily Great and Snowy Egrets are using different estuarine habitats at Plum Island Sound. It contains the results of count surveys of wading birds in the salt marshes of the Plum Island Estuary and parts of adjacent Essex Bay. Surveys were carried out from May to October in 2012 and 2013. One additional sampling occurred in July 2014. Bird counts took place from 37 observation points around the bay and documented species, estimated distance from observer, habitat of each individual bird counted and its behavior (feeding, resting, etc.).</rdfs:comment>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf915cab532f0477c87ff82841aa5a599">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne72eca435c2c4fbfb1b69edf36ba6d22">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd1e3484d716349848cdb5daaca3c835c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6f5e91ab9cac4e40af1623ffea37cdbd">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_8">
-    <rdfs:label>HTL-MAR-WadingBirds.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7f0ee9ddffb34d90b306c1fe44a7865c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_8"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2733db8053104d19ad52f69beb06da83">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nc7ff2c6a38f843a8a81f6a6b7962f6d7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Longitude Longitude Longitude of station</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_14">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc916fae1375645cc80b018035f48eeb5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb8a8fcf613be40709becc2052a36ad5c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_14"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Genus Genus Genus name of bird</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1">
-    <rdfs:label>HTL-MAR-WadingBirds.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_3">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay WeekNum WeekNum Week of the year</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N31da663af26e446789e9f1454b80b6da">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3cefe1e2d3804632955ad0b2771688bb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_17">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay NumBirds NumBirds The number of individual birds</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6f3435b6790046cf9bb3bc9b7a1a0486">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc5ae5c5ef6194c6a8d4020c51190e8f7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_17"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_13">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_5">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Observer1 Observer1 Name of the observer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4222c200766e4e21b6d336aa9d1d8a00">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6f530986a4c3408a919b0053748e3150">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_18">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Distance Distance Estimated distance of birds from observer in meters</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6a9e18ea3f3648c287e3a6895bce3f10">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1492721e7d864405bad1749ac8129b49">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_18"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_17">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_4">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncc632d40aa3245ec8d1eb75709f2da4b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Area Area General region of sample station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd3cd42e2ba3a49a4bc19cb9c571a526b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_21">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Naa52d4740397415582a73653b6ea2c5a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_12"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay TimeEnd TimeEnd time of day count ended</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5c75f24082934fceabbe684b1f2b974e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_4">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_9">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_16">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_1">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_19">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_12">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_7">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_20">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_6">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_a_7">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay Observer3 Observer3 Name of additional observer</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7aa42e81148844609c4e8dd8ce38f2ff">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc007145cc57d4b9ca11e573fa24c3a63">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_3">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_2">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
+    <rdfs:label>WeekNum WeekNum Week of the year</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_11">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>TimeStart TimeStart time of day count started</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_8">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_21">
+    <rdfs:label>Comments Comments Comments about data</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_16">
+    <rdfs:label>Common_Name Common_Name AOU (American Ornithologists' Union) common name of bird</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_14">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Genus Genus Genus name of bird</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_10">
+    <rdfs:label>Longitude Longitude Longitude of station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_8">
+    <rdfs:label>Station Station Name of the observation point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>TimeEnd TimeEnd time of day count ended</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_5">
+    <rdfs:label>Observer1 Observer1 Name of the observer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_15">
+    <rdfs:label>Species Species Species name of bird</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Latitude Latitude Latitude of station</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_20">
+    <rdfs:label>Behavior Behavior Behavior (feeding, resting, preening)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_13">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>AlphaCode AlphaCode AOU (American Ornithologists' Union) four letter code for that species, http://birdpop.org/AlphaCodes.htm</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Area Area General region of sample station</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Observer3 Observer3 Name of additional observer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_17">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>NumBirds NumBirds The number of individual birds</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_6">
+    <rdfs:label>Observer2 Observer2 Name of additional observer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_18">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Distance Distance Estimated distance of birds from observer in meters</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1">
+    <rdfs:label>HTL-MAR-WadingBirds.csv Surveys of salt marsh wading birds and shorebirds at Plum Island Sound and portions of Essex Bay</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_1">
+    <rdfs:label>Date Date Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_2">
+    <rdfs:label>Year Year Year of observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/349/1#d_1_c_19">
+    <rdfs:label>Habitat Habitat The habitat birds occupied</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

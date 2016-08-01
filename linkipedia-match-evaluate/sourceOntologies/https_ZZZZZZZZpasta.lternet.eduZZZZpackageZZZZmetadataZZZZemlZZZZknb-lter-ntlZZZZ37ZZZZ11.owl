@@ -4,202 +4,192 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11">
-    <rdfs:label>North Temperate Lakes LTER: Zooplankton - Trout Lake Area 1982 - current</rdfs:label>
-    <rdfs:comment>Zooplankton samples are collected from the seven primary northern lakes (Allequash, Big Muskellunge, Crystal, Sparkling, and Trout lakes and bog lakes 27-02 [Crystal Bog], and 12-15 [Trout Bog]) at two to nine depths using a 2 m long Schindler Patalas trap (53um mesh) and with vertical tows (1 m above the bottom of the lake to the surface) using a Wisconsin net (80um mesh). Zooplankton samples are preserved in buffered formalin (up until the year 2000) or 80% ethanol (2001 onwards) and archived. Data are summed over sex and stage and integrated volumetrically over the water column to provide a lake-wide estimate of organisms per liter for each species. A minimum of 5 samples per lake-year are identified and counted. Sampling Frequency: fortnightly during ice-free season - every 6 weeks during ice-covered season Number of sites: 7</rdfs:comment>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_2">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_7">
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area density number per liter number per liter summed over sex and stage and volumetrically integrated over the water column</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3d689d41aee74bfcbbd1c6d472c4c7e3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_2"/>
+      <owl:Restriction rdf:nodeID="N13738f2f82a04d25948ed85090f8cea0">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N822f48fb4a9246f0977ff6fe40dbdc74">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N90a42ac7dec44c2392a1d0ccb053fc97">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2e41b911d57240d695ed8458e9251358">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9785bea86bdd4991aa69c37b40f69039">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8ce489e7adcd4bac96c379ccabc58cb7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nded2dc07bb7741a5942e08ba2f4665ec">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_6">
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area species_name species name species name</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N401f92c1ad93440e80c6fb7925d6b569">
+      <owl:Restriction rdf:nodeID="N97597ed5f0c941ad9e4e56926998749e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na5e0d5cf54b44e67935a8ce79a8691b0">
+      <owl:Restriction rdf:nodeID="N57cd736020084ccfa767035452301756">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_1">
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N78eb9597e17a4836970cb2cf41cac239">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3b6ec99e0580482ebc026c124cf72076">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_8">
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N110ab3193de641ca9e663047391dff94">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N49d05f31d53b4a05879e4f1721d37465">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne38d58f391af4766aaf1c455d6b6d349">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na8396b3cbdf9488d8570f76047c6d5d2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_7"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_3">
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N338441eedce7466c819de10960d085fe">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfaf37e10a08e40e197f1e3b7082ed19b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_9">
-    <rdfs:label>zoop_allnl_summary_snap lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area avg_length average length of measured average length of measured individuals</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7b5b60091b9d40729d2e8957dfab764f">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N554834daa0f84ea789d2db8e56f4243e">
+      <owl:Restriction rdf:nodeID="N0faf5f3533a14a29be3de28d95895df2">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N80477f569dba45ddafef085d8e756774">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_9">
-    <rdfs:label>lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_3">
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area sample_date sample date sample date</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N08890df9252f4baab108b475bc81d171">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd9f321d7b9704bbdbfb8bdfa764281f7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Naa4cbcd592c8487283452d1a6f6a75ad">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area year4 year year</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nced400455360426babab5372e0a91d4f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_5">
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area species_code numeric species code numeric species code</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6b7eeab3dec54fb99becff77311bc875">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf2213e300337499f949d032a450acf08">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area individuals_measured number of individuals measured number of individuals measured</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd2feeebfd96d444e8811256bdadcb4cf">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0ce64e629474489d86bf8204e3f84810">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area lakeid lake name abbreviation lake name abbreviation</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1b5a25a25737465ebdadec8e5c0fa0a1">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N16c33b8a222f4e069fa55a4b97ca219c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_a_4">
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area station station number station number</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne1a5011dd8ba4e6f92a67e93c95a75ab">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbedf2dda4d88420c939ae559ab0a32ea">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11">
+    <rdfs:label>North Temperate Lakes LTER: Zooplankton - Trout Lake Area 1982 - current</rdfs:label>
+    <rdfs:comment>Zooplankton samples are collected from the seven primary northern lakes (Allequash, Big Muskellunge, Crystal, Sparkling, and Trout lakes and bog lakes 27-02 [Crystal Bog], and 12-15 [Trout Bog]) at two to nine depths using a 2 m long Schindler Patalas trap (53um mesh) and with vertical tows (1 m above the bottom of the lake to the surface) using a Wisconsin net (80um mesh). Zooplankton samples are preserved in buffered formalin (up until the year 2000) or 80% ethanol (2001 onwards) and archived. Data are summed over sex and stage and integrated volumetrically over the water column to provide a lake-wide estimate of organisms per liter for each species. A minimum of 5 samples per lake-year are identified and counted. Sampling Frequency: fortnightly during ice-free season - every 6 weeks during ice-covered season Number of sites: 7</rdfs:comment>
+  </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_6">
-    <rdfs:label>lake name abbreviation</rdfs:label>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>lake name abbreviation</rdfs:label>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_5">
-    <rdfs:label>lake name abbreviation</rdfs:label>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
-    <rdfs:label>lake name abbreviation</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_1">
-    <rdfs:label>lake name abbreviation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1">
-    <rdfs:label>zoop_allnl_summary_snap</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>North Temperate Lakes LTER: Zooplankton - Trout Lake Area</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>lake name abbreviation</rdfs:label>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>species_name species name species name</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>lake name abbreviation</rdfs:label>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
+    <rdfs:label>individuals_measured number of individuals measured number of individuals measured</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_5">
+    <rdfs:label>species_code numeric species code numeric species code</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>station station number station number</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>zoop_allnl_summary_snap North Temperate Lakes LTER: Zooplankton - Trout Lake Area</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_9">
+    <rdfs:label>avg_length average length of measured average length of measured individuals</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sample_date sample date sample date</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>lake name abbreviation</rdfs:label>
-    <rdfs:comment>lake name abbreviation</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>year4 year year</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_7">
+    <rdfs:label>density number per liter number per liter summed over sex and stage and volumetrically integrated over the water column</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-ntl/37/11#d_1_c_1">
+    <rdfs:label>lakeid lake name abbreviation lake name abbreviation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

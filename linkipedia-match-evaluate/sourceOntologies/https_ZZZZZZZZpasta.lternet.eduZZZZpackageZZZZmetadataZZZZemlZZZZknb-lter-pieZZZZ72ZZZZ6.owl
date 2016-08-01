@@ -4,349 +4,332 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_16">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_10">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0516e437ab0f40ccb22850a39183ec04">
+      <owl:Restriction rdf:nodeID="N2510d5888dd344a49262e31473f28c19">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_10"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA T Max Temp T Max Temp time of maximum temperature (hhmm)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N40e24f1a07094b2585f0863734396590">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2c7319ae50214abb977a1759144a641f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_16"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_12">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_15">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N62d14200acda40c4a513c77e82931df4">
+      <owl:Restriction rdf:nodeID="N3fc730d4827c42de883ce68e97b19f32">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nad015be813cd4018bbd13da962078f91">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_12"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nd5c43de6902d43c48ae36d8c06f8714e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_15"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Ave ATM Ave ATM average atmospheric pressure (mB)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_8">
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA T Min Temp T Min Temp time of minimum temperature (hhmm)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N22ba3dba4e894fef94e3aa8356e0a839">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N63afb80b35fb4b61af1bf5746bc56b4c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Pyranometer Pyranometer total solar radiation (kW m-2)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N137a42c413e0423b89a8abfab5e20461">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6e4cb102af8d4ab5aca22b34bbaa5594">
+      <owl:Restriction rdf:nodeID="Nafb8c1d1f84a4be992e0dee0b6fd51c8">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbcdddb8812f84931bc49344289822739">
+      <owl:Restriction rdf:nodeID="N49e310d43b884b9bac3c01ef211f013d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N399563c301a14b1094e84a47ee925960">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_7"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_1">
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf493da62f7d44c5aacdeb6124e48355d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na589834b44294ff7a56c307caa292876">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndb463406674a4571bf949e92ea846273">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5418e6097b184f11aaf497a5712ab9df">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_14">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9fee893249904eb7a99be3bcee3a9725">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na9612bdf6c9c4fd989107fb75defecad">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_14"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0f1a958eeddd4d69921127fe3f087798">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N79840b139c464e54afe29524ff3f382f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_13">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7ac33edef5a44af9b28d260867cc93d7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N411e9ed5b4ea4c8e843594ed56661efb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_13"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2293258d3e4a47bf8184e758078f3258">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc143b1e1cc104af3a8ceaaa6cec137bc">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_11">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N89ff44d26687491484bf6f8a0f9a5a52">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_11"/>
+      <owl:Restriction rdf:nodeID="Nf588a8f6a6c74defa8e86c66d8d61af9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Ave RH Ave RH average relative humidity (%)</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6c855fc0c9614839a5816cb8939b7d37">
+      <owl:Restriction rdf:nodeID="Nfb6f8b0bdb064aae85f3c904dd1a10a4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_11"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_7">
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Min Temp Min Temp minimum temperature (celsius)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N66bc95a209dd4a76b28fe4865939367b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N260cb8fc3956413994938052b53c29a9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_5">
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA PAR PAR total quantum radiation (M m-2)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N73413d64adb245f9bd9a7db2b91571a2">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf9285bcce21d42bfaf1d2732afce3e9b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc3d4e44c22d54cd2b18969ddb1e81d1e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Date Date date and time (dd-mon-yyyy)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncb48305e0cf24517aba35fdac6b647ab">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_6">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N971636ec6c864852afafc3c391aef9a9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_6"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc193e61010264123802aeea9471b8fdc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Ave Temp Ave Temp average temperature (celsius)</rdfs:label>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6">
+    <rdfs:comment>Meteorological data daily averages and daily fluxes for stations located at Governor's Academy and MBL Marshview Farm, Newbury, MA. Data includes air temeprature, precipitation, relative humidity, solar radiation, PAR, wind and air pressure measurements. Years 2000 to 2007 the station was located at Governor's Academy, Newbury, MA and was moved July 30, 2007 to the MBL Marshview Farm field station property where it is currently located.</rdfs:comment>
+    <rdfs:label>Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_9">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0674446a29e7464e963bfeccf13af511">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9ba72dc62044409790256dae7e5564c9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Max Temp Max Temp maximum temperature (celsius)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_16">
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Comments Comments comments about data</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf220b674c27a4de9a42cb7ff32d482aa">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N05e0ea67b233426ba9b2270cfb7c1091">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_16"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_14">
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Ave Wind Ave Wind average wind speed (m sec-1)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6acad2273a644693ba237bcc0289ff6e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_14"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9c2073c9d9dd4b6384dc5e95b571d074">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_13">
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA T Max Wind T Max Wind time of maximum wind (hhmm)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nde01981f7cd948a2b8f1b08efbe477a0">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_13"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6714b204fba64f4d85b31c5b2dfdfe20">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbc01c5ba874743a7affb198e12e60868">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Station Station Station name abbreviated, GDA for Governors Academy, MFM for Marshview Farm</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N07d2d048772f415cbc1bbde6db95bf30">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_3">
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Precip Precip total precipitation (mm)</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7aa6c20f35e44cdba53942d266bb8962">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Na6c10ea162e049aca06e7c77d49e01be">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N18c5e219a13a49fa8709946f48c62fa6">
+      <owl:Restriction rdf:nodeID="N1686d3a3de214bdbb2f7bbc04209a620">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_10">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_12">
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA Max Wind Max Wind maximum wind speed (m sec-1)</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N56cafcc98f0b4774b0b2dbbcb0b32dac">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_10"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbd979d859bd54fb9816819ea0daf6376">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_15">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0af8786dc37d488ab3272af999c27665">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N4c815f0a950a415f8090e62fee50d75e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne32b141a24df4f1492a912b29c4c4b17">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_15"/>
+      <owl:Restriction rdf:nodeID="Ncc47345b9430400881c9f0d38a9096f7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_12"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_8">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8745909291df4aca8767cf8ba500dc10">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_8"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N15f8a589b6d44346953f50024c1dbbe9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-  </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6">
-    <rdfs:label>Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA</rdfs:label>
-    <rdfs:comment>Meteorological data daily averages and daily fluxes for stations located at Governor's Academy and MBL Marshview Farm, Newbury, MA. Data includes air temeprature, precipitation, relative humidity, solar radiation, PAR, wind and air pressure measurements. Years 2000 to 2007 the station was located at Governor's Academy, Newbury, MA and was moved July 30, 2007 to the MBL Marshview Farm field station property where it is currently located.</rdfs:comment>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6b095f7f43744074a229517705d1b482">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N17369af758104fb9b2bd4d35bb534a47">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>MON-PR-MetDay.csv Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_8">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_15">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_9">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_7">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1">
-    <rdfs:label>MON-PR-MetDay.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_4">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_10">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_6">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_14">
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_5">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_2">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_13">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_16">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Comments Comments comments about data</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_5">
+    <rdfs:label>PAR PAR total quantum radiation (M m-2)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Max Temp Max Temp maximum temperature (celsius)</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_11">
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ave RH Ave RH average relative humidity (%)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_3">
+    <rdfs:label>Precip Precip total precipitation (mm)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_14">
+    <rdfs:label>Ave Wind Ave Wind average wind speed (m sec-1)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>T Max Temp T Max Temp time of maximum temperature (hhmm)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>MON-PR-MetDay.csv Daily meteorological data (2000-2012) from PIE LTER weather stations located in Byfield/Newbury, MA</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Station Station Station name abbreviated, GDA for Governors Academy, MFM for Marshview Farm</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_15">
+    <rdfs:label>Ave ATM Ave ATM average atmospheric pressure (mB)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>T Min Temp T Min Temp time of minimum temperature (hhmm)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ave Temp Ave Temp average temperature (celsius)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_13">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>T Max Wind T Max Wind time of maximum wind (hhmm)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Pyranometer Pyranometer total solar radiation (kW m-2)</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_12">
-    <rdfs:label>Date</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>date and time (dd-mon-yyyy)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Max Wind Max Wind maximum wind speed (m sec-1)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date Date date and time (dd-mon-yyyy)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-pie/72/6#d_1_c_7">
+    <rdfs:label>Min Temp Min Temp minimum temperature (celsius)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

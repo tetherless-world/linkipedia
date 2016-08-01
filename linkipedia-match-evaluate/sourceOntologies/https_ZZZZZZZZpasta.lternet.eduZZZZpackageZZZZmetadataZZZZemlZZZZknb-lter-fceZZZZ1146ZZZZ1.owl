@@ -4,19 +4,115 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_3">
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd3d9819bff314a57a46270c884a5f78d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nf3fa9825058248b985afd968693418d4">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) FileNum ID Number File ID Number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2bfcdd8aa28b4fab9acf16784e6025da">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_5">
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) Rnet radiation Net Radiation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N175b1cd8fd0d495ca35d91d5bb8905e8">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N73b272b82ac4483f9f401d14549d5dba">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_8">
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) Par_Diffuse PAR Diffuse Photosynthetically Active Radiation</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb308de573c72426096ffc0b11b7c7a5f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2663dd80f7ed4e1291a025c97c667990">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_2">
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) Year date Collection Year</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N290946c70eaf4c73be5df793c5ce7ebf">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N07660c899c6a4e68b99cb7deefc4c1bd">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N91b4454dc21b49aa8a2a1c4304536b8d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_7">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N67713bb649334006a2853c65e7012889">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc8c4a12ce6a1467ea915458639068e84">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) PAR_Total PAR Total Photosynthetically Active Radiation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_9">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5b9e5a3056a540948f05bcf7e02cbdf6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) IRTemp temperature Infra-red Canopy Temperature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbe6085abdedd42618d102b3f617d2646">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_3">
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) DayofYear date Day of Year</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3295e65b509f4182915eb848e4bc4e30">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na0a26797cf1846479aa83ec091712af1">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -24,182 +120,76 @@
     <rdfs:label>Radiation measurements at Key Largo Ranger Station, South Florida (FCE) for July 2001</rdfs:label>
     <rdfs:comment>Basic radiation data, including Infra-red canopy temperatures, collected as 1 minute averages from a 5 m tower at Key Largo Ranger Station, South Florida, near Everglades National Park.</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nae008261b5bc42a7a5c3ec1b4fb46480">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc6af4445bacb4469814f67ff9f4a293b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_7">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N75233c9591044e73aed6b4382ef0687d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_7"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N26f2ee5080eb4af9b45a84943d9a4984">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
-  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_4">
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) hr/min time Collection Time</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6182fc3ddd214007b731bad8f60b2eb8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf96d40a6fd3445109b045f6692ea5f89">
+      <owl:Restriction rdf:nodeID="N3b26926a75394be7a9530253d8eb0df9">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N694f4a5d1cfa4294a0aa0865f9f71995">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE) Rsolar radiation Solar Radiation</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N91aba587499b4312a1c5e876dd4362b1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N56d4375bfcba44bfa3fcd74bea807f10">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N7f7901d64ac94dd6a73af08ab08006d1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_6"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nce1247389522427d90e77c0e1fc2f4f8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf684c3dc3e074d16a60cb6f33f98faeb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nca0622e0a13c41288f6297ef677e5a31">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3623bda427e049a28c780845f73f6812">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N71dad6608a174c248c61552009d2c2ff">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_8">
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf6b7e59f57884fb58d981da6bcbf2612">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_8"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfb8b47c66c904adebc71e60d43c4e05e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_a_9">
-    <rdfs:label>ST_PP_Barr_001 ID Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nae4d9746d0174421832f95d280a4edfe">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N403e9316169845b889a692518a87f1bb">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_4">
-    <rdfs:comment>File ID Number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID Number</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>ST_PP_Barr_001</rdfs:label>
-    <rdfs:comment>Radiation measurements at Key Largo Ranger Station, South Florida (FCE)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID Number</rdfs:label>
-    <rdfs:comment>File ID Number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_1">
-    <rdfs:comment>File ID Number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID Number</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_7">
-    <rdfs:comment>File ID Number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID Number</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_6">
-    <rdfs:label>ID Number</rdfs:label>
-    <rdfs:comment>File ID Number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_8">
-    <rdfs:label>ID Number</rdfs:label>
-    <rdfs:comment>File ID Number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_3">
-    <rdfs:comment>File ID Number</rdfs:comment>
-    <rdfs:label>ID Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_5">
-    <rdfs:comment>File ID Number</rdfs:comment>
-    <rdfs:label>ID Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_9">
-    <rdfs:label>ID Number</rdfs:label>
-    <rdfs:comment>File ID Number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>IRTemp temperature Infra-red Canopy Temperature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>PAR_Total PAR Total Photosynthetically Active Radiation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>hr/min time Collection Time</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Par_Diffuse PAR Diffuse Photosynthetically Active Radiation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Rnet radiation Net Radiation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Rsolar radiation Solar Radiation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_2">
+    <rdfs:label>Year date Collection Year</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>DayofYear date Day of Year</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>ST_PP_Barr_001 Radiation measurements at Key Largo Ranger Station, South Florida (FCE)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1146/1#d_1_c_1">
+    <rdfs:label>FileNum ID Number File ID Number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

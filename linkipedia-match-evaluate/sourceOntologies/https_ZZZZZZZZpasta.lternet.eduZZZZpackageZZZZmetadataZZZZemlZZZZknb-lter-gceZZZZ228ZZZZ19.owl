@@ -4,413 +4,412 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_1">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_4">
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Site GCE-LTER sampling site number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfb2d88cee8074c34b6545a30f1477950">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N3fbc1cd0f9b64342a90698edc9b57b8c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N72c094fc6f2e4ceb98aac9e17640b655">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_15">
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Mollusc_Count Number of individuals collected in the specified quadrat</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4341ee9e483f4803a17489baa756b678">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_15"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbc23b7d26aeb44e6b28b50cd4f53621b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_9">
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Location_Notes Notes on location assignments and geographic accuracy</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2e41afa2a0234e6ca0d5f1490d9b0e23">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4c7bb78fedf3476b9b0ba469dc01105f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_20">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nde95de4efdf94def80cc6360ff7d244b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N41865b9e23d5459fa2852133bd725d5e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_1"/>
+      <owl:Restriction rdf:nodeID="Na67b8cd20c57466895202bc819ade660">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_20"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
+    <rdfs:label><![CDATA[INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Flag_Mollusc_Density QA/QC flags for Calculated number of individuals per meter squared (flagging criteria, where "x" is Mollusc_Density: x<0="I", x>928="Q")]]></rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_16">
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb19ace88074848648c227862dfb621d3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf6736a5bfb494349891ad647c6b30aee">
+      <owl:Restriction rdf:nodeID="Nf523b28f0ccf4976892ba7a2e12b5b26">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_16"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
+    <rdfs:label><![CDATA[INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Flag_Mollusc_Count QA/QC flags for Number of individuals collected in the specified quadrat (flagging criteria, where "x" is Mollusc_Count: x<0="I", x>170="Q")]]></rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8f1fa732a2754314ac580184566d64b2">
+      <owl:Restriction rdf:nodeID="N0ec502417a5b4567a020057383c788a2">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne6add619c39a44c7872673620e1e2bda">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_15"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5336d2da7dc349f9bf121b78d8dc8b5c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N99f375cb18f74e938b9fc7b293a30c75">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_5">
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb5b06761b3094fac804b38b422630d44">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf0d6c75cc0884a119a91d7a2cc86583d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_13">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbe968782efcb4e92a427bb5d1942fe24">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4a5bf35aee1742c6940af38ddfa1ff9b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_13"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_7">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N520c4881c3284f8d887965d4426ab586">
+      <owl:Restriction rdf:nodeID="N1e8f82416196492d852accd863d3c905">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Location Geographic location code in the GCE Metadata Database for the sampling plot</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N40b31563e5ef48ec8b91a144c04e9aa1">
+      <owl:Restriction rdf:nodeID="N73ae34047689428090fd8bc4eae5968a">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_9">
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0731427f5d9c4948bcefa47ba6909ec8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7ea18bd4eadb4a5cb8e98efc846abadc">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_9"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_14">
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd9920fa0504d46f482aba0e5d52ee5d6">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N101f464983cb4437818cfd18e98f29f2">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_14"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2285283ca1ac434e8d06e0e5cd3907f7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc044b557771a4a3aa9c2052ea914a75f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbb182b0e65e8406a8367791a94b6545d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5def9261fe054da09911c922c623b76a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_8">
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf95ea59213254b0f83b1b5303b6653f6">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3b7014d1d33b443c95d80e1365c97f88">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_12">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N552e09cd77cf45caac6e23b3320755a5">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N559e4753ae434179a572971f80d1101c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_12"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_10">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6988ec0eabb54226a0ce3301e5f6d942">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7c4446ba8b09426bbf3822c0a5dc4ef3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_10"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfaf3f0ecf3a641fdac858cf60ff49655">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nb812e7e3b4d24d0193eb90537cf2d211">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Month Calendar month of observation</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne55df695d2f548c0a7684ec6de58e15c">
+      <owl:Restriction rdf:nodeID="N61ebab0cea734ed6aa7289e7710fc33f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_18">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_5">
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Zone Marsh zone code (1=Creekbank, 2=Mid-marsh)</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N311b5b21b5a843c89dfd84e60516120e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_18"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na3653d34a5a64478af16401fe38836f7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ne614459f8288414caa67e78a662d4aa5">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_17">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1caa774dcfe042e3bbff803a95a1163a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N6066eccaa1db47c6a7919f688cc6bd39">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd190fad0f09a4918807618d3f6b180f9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_17"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_20">
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb636fcbdb50945fe9d7c75a4f98b9f6c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_20"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nefa4b43dafff437ca305655bbcdd2346">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_19">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc01e24963bf9427fa8f4f77807059330">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf166b9d693134cd981b4ec2efdd9e0c7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_19"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19">
     <rdfs:label>Mollusc population abundance monitoring: Spring 2002 mid-marsh and creekbank infaunal and epifaunal mollusc abundance based on collections from GCE marsh, monitoring sites 1-10</rdfs:label>
     <rdfs:comment>This data set is the Spring 2002 estimate of infaunal and epifaunal mollusc abundance at the GCE-LTER marsh sites used for population monitoring. Species abundance was determined by hand-collecting all the infaunal and epifaunal molluscs from within quadrats of known area in mid-marsh and creekbank zones (n = 4 quadrats per zone) at all sites. The molluscs were returned to the lab, fixed in formalin, transferred to and preserved in ethanol, counted and measured (size data is reported separately). The counts were converted to number per square meter. Gastropod species are listed first, followed by bivalve species. Size distribution data for these collections may be found in the GCE-LTER data set INV-GCEM-0412a2.</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_11">
-    <rdfs:label>INV-GCEM-0412a1 </rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6bc87a1ae13b43e89b1542c5e120bfcd">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N2499557868d84052989d567674d49e39">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9d709cb5c5a8498494b129127493b350">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Flag_Location QA/QC flags for Geographic location code in the GCE Metadata Database for the sampling plot (flagging criteria, where "x" is Location: manual)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_18">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label><![CDATA[INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Flag_Quadrat_Area QA/QC flags for Number of square meters in the quadrat sampled (flagging criteria, where "x" is Quadrat_Area: x<0="I", x<0.0625="Q", x>0.5="Q")]]></rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5330b6506eac4bb2bed5af4f12bf554d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N69163f16719547f8b7a18139edf6a52b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_18"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_6">
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Plot GCE-LTER permanent plot number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne1ce94c87ea04a3388cd66768afc8e25">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6514870ffd4e4addb667f60ae0a1716a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_17">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd1d904059b924027bedf4e1792d12414">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_17"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nce0c0932a0254ef297ec675d61640ad0">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Quadrat_Area Number of square meters in the quadrat sampled</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3a1f1d7f16e84261b87e7da941dd009a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Year Calendar year of observation</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd381b87391d643e48a92a3597ebc0465">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Latitude Geographic latitude in decimal degrees</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb14dbb38ca7f4db79618c3bb8642a3e8">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc71873ae0f544e3a973fef48d39bbd52">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_12"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N50f3ae3cda88436da00f086b4e3a72a5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0db83764a29743c78dee6682273d8e29">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Day Calendar day of observation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_13">
+    <rdfs:label><![CDATA[INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Flag_Latitude QA/QC flags for Geographic latitude in decimal degrees (flagging criteria, where "x" is Latitude: x<-90="I", x>90="I", manual)]]></rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nda69f9b693da459296a3f6d452a38636">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_13"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3dc5e60db9c448ada94b01e90fcf533b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_11">
+    <rdfs:label><![CDATA[INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Flag_Longitude QA/QC flags for Geographic longitude in decimal degrees (flagging criteria, where "x" is Longitude: x<-180="I", x>180="I", manual)]]></rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd88f3810218b4c749ea582dfd2624e77">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5670c5b877ea4e3296ec1b022187063f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_11"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_19">
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Mollusc_Density Calculated number of individuals per meter squared</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf399023f9b2749f79e7d149264c118e6">
+      <owl:Restriction rdf:nodeID="N813979bafe3f430c90062c22c2833b12">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7ebe8f9b063e47899c9cfd2557491cff">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_19"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_14">
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Species Latinized name of the mollusc species collected</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7659ac19b2bc4671ac77f67b569e0864">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_14"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N909854603d894b759db977154089b705">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>INV-GCEM-0412a1</rdfs:label>
-    <rdfs:comment>Main data table for data set INV-GCEM-0412a1</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_20">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_19">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_10">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_a_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne78e7d13f4564e8785173ac23307796e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1 Longitude Geographic longitude in decimal degrees</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na48f52cc00bd42109282daff019ef982">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_6">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Plot GCE-LTER permanent plot number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_7">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_11">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Flag_Location QA/QC flags for Geographic location code in the GCE Metadata Database for the sampling plot (flagging criteria, where "x" is Location: manual)</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Site GCE-LTER sampling site number</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_1">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Location Geographic location code in the GCE Metadata Database for the sampling plot</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_16">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_17">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_18">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_13">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_20">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label><![CDATA[Flag_Mollusc_Density QA/QC flags for Calculated number of individuals per meter squared (flagging criteria, where "x" is Mollusc_Density: x<0="I", x>928="Q")]]></rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_9">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Location_Notes Notes on location assignments and geographic accuracy</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_2">
+    <rdfs:label>Month Calendar month of observation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_19">
+    <rdfs:label>Mollusc_Density Calculated number of individuals per meter squared</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1">
+    <rdfs:label>INV-GCEM-0412a1 Main data table for data set INV-GCEM-0412a1</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Year Calendar year of observation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_13">
+    <rdfs:label><![CDATA[Flag_Latitude QA/QC flags for Geographic latitude in decimal degrees (flagging criteria, where "x" is Latitude: x<-90="I", x>90="I", manual)]]></rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_18">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label><![CDATA[Flag_Quadrat_Area QA/QC flags for Number of square meters in the quadrat sampled (flagging criteria, where "x" is Quadrat_Area: x<0="I", x<0.0625="Q", x>0.5="Q")]]></rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_14">
-    <rdfs:comment>Calendar year of observation</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Species Latinized name of the mollusc species collected</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_17">
+    <rdfs:label>Quadrat_Area Number of square meters in the quadrat sampled</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Longitude Geographic longitude in decimal degrees</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_15">
+    <rdfs:label>Mollusc_Count Number of individuals collected in the specified quadrat</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Day Calendar day of observation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label><![CDATA[Flag_Longitude QA/QC flags for Geographic longitude in decimal degrees (flagging criteria, where "x" is Longitude: x<-180="I", x>180="I", manual)]]></rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_12">
+    <rdfs:label>Latitude Geographic latitude in decimal degrees</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_5">
+    <rdfs:label>Zone Marsh zone code (1=Creekbank, 2=Mid-marsh)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/228/19#d_1_c_16">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label><![CDATA[Flag_Mollusc_Count QA/QC flags for Number of individuals collected in the specified quadrat (flagging criteria, where "x" is Mollusc_Count: x<0="I", x>170="Q")]]></rdfs:label>
   </owl:Class>
 </rdf:RDF>

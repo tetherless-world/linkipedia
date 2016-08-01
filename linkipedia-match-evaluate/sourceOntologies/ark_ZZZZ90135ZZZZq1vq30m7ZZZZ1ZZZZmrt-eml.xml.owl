@@ -9,27 +9,26 @@
   </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1vq30m7/1/mrt-eml.xml#d_1_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N42926d87f71a4a0b9d9165d5f166802f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nbf8573c405004d51abca5e71a89f54f9">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1vq30m7/1/mrt-eml.xml#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>No spreadsheet name given No description of spreadsheet given No text column title given The column contains text. No other description provided by user.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1527ee0849b244ffbd9a211d9edce4f6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nbba45caf818348e79d51ea8c77c5c87e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1vq30m7/1/mrt-eml.xml#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>No spreadsheet name given </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1vq30m7/1/mrt-eml.xml#d_1_c_1">
-    <rdfs:comment>The column contains text. No other description provided by user.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>No text column title given The column contains text. No other description provided by user.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1vq30m7/1/mrt-eml.xml#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>No spreadsheet name given</rdfs:label>
-    <rdfs:comment>No description of spreadsheet given</rdfs:comment>
+    <rdfs:label>No spreadsheet name given No description of spreadsheet given</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
 </rdf:RDF>

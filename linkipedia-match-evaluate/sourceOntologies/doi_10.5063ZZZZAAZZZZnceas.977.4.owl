@@ -4,793 +4,756 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_a_3">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N774a6118ad774e7397bc40820a1385a9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2"/>
+      <owl:Restriction rdf:nodeID="Nb63f9559b96141e2928225d77e74e5dc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>References.csv References</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N58e725ab12ea4ace866f42af84845778">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_3"/>
+      <owl:Restriction rdf:nodeID="N4bcc571f46ab42b8a9fc8f8a9f6299f7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Symbiodinium data.csv Methodology Methodology Method used to genotype Symbiodinium.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_21">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N823814828cb6404f9d87bbacdbc97fbe">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_21"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6d64cbaeeef84df1a9dc0291803a82d7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Country Country name The country or major political unit from which the specimen was collected. Full country names are currently in use.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndb784ae53ebf40cea4f34cc85d453188">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N8828d3b7244e4a29a64d431f657a4ef3">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8f8ae1449c634b049f04f75251185ef9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_7"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Symbiodinium data.csv Species Species Taxonomic species name for Symbiodinium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_13">
+    <rdfs:label>Symbiodinium data.csv Host_Order Order name of host taxa</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb3b60e43335e45dfb7e559e4ccbee873">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N383a129f46614ba78105053f9c055d5b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6d5bb6120e94470b90667b55ecb1f3ab">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_13"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_5">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5153948bba464feea61473fc5d69d336">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd161158fda504e4794d195cdc09938aa">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Redundancy Redundancy ITS2 subclade sequences with 100% nucleotide similarity that have been allocated different names</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_16">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc9617a264bc14d1998107f9e717614a5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Host_Species Species of host Species name of host taxa</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N08979730ab454e40815a29a7bc8f0694">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_16"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_14">
+    <rdfs:label>Symbiodinium data.csv Host_Family Family of host Family name of host taxa</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na9071d0ec4cf4b4cb538d01c470325df">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_14"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncc47aa92f2c94a4795a7e7ea8af5520d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd8084000fe5d46ac8b07c76b4ce3c9cf">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc0b5c3419f7d49a9ae1bb84f651a4dd0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Potential_Pseudogene_Ref Potential pseudogenes Potential pseudogenes are ITS2 sequences with secondary structure disrupting mutations. If "YES" with Ref, then the record is a potential pseudogene. If "NO" with Ref, then the record is not a pseudogene. N_A for records with no information pertaining to pseudogene potential.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncbbfe113cb134034ba12cfb659e22724">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Type Symbiodinium type based on ITS2 sequence type</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1698918d3a2348ddab83a6b422ce59f7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_a_2">
+    <rdfs:label>References.csv Reference Full citation Full citation of published work that includes the Symbiodinium gene sequence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6aedb7c7460b44958640a5dfaff7bb8a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3d11e36346cf4547922379b140b5a4f8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_33">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N438d2acb1ad74c1f984cd9eeaf22f75c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_33"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf57aef59abda4703847dd3374da8aacb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Symbiodinium data.csv Reference Citation Full citation of published work that includes the Symbiodinium gene sequence</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_32">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N94e5d776a5c94d7aa2347c56db8db43f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_32"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Neef268abd6944de5b7fd14d4b9525f0a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Ref Reference Abbreviated citation of published work that includes the Symbiodinium gene sequence.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N75dec73b25af4060a524b1ab252e04e6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Genbank Genback accession number Genbank accession number for Symbiodinium gene sequence.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9c97334fa9f44e3886cec24c685db551">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_27">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ned210d125dc24312a95ece595c308f21">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_27"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3d826c1e864c4ecaa67a0f5cb18c6a30">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Coordinate_Precision Coordinate precision An estimate of how tightly the locality was specified in the Latitude and Longitude fields; expressed as a distance, in meters, that corresponds to a radius around the latitude-longitude coordinates. Use NULL where precision is unknown, cannot be estimated, or is not applicable.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_26">
+    <rdfs:label>Symbiodinium data.csv Longitude The longitude of the location from which the Symbiodinium specimen was collected. This value should be expressed in decimal degrees (East &amp; North = +; West &amp; South = -). GPS-derived data must use the WGS 84 geodetic reference system.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N81c140f0586842048f67e5f9b611d48d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_26"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N75ca67982c5f4f92ab622c018449885a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_22">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_a_1">
+    <rdfs:label>References.csv Ref References Abbreviated citation of published work that includes the Symbiodinium gene sequence.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2d86d30371854879820fa9300674ae5b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_22"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N1fd2c580c8314982b5bc863b32ee850c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne8e5d23c2b6c46a5855b360128dab442">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ne6b1dcb937a04fe496b44ca93a31e860">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_24">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N522f05c0bef047a59369082c871d5d72">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_24"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Locale Locale The locality description (place name, collecting location, and/or field site name) from which the Symbiodinium specimen was collected.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N700021877e9a4701a6dcd7e544ca21ce">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_34">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N11916105be1148c59d4ea55fca8c7916">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nc76e609599ec46ada8ce18ab07c4b6c1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N88619f8a03574aee9c93d7eb1d91167a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_34"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5a524c49edf44d21aad7e59c5de07300">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_26">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb2d67539c3314f36a7d1933c5666b7a1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndd3e9c65ef2243519e0ca2c9bfa83602">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_26"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_27">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N534ac0ce3e65400d931060eeaf5b59fc">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb8fe139c2a4b4ac18f24e5052d278742">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_27"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_30">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7c894dd63cbf4550bfcd8df703724ef8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_30"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na83679681ade4c9c97e175582fd522cb">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbf8deba6a6fc471b8aa198f9f9e23eb4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2649d07f0c584740b53248e52b139ddc">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>References.csv References</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_13">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N94df9c87797742b883dab3228a8c3c32">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_13"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3371556a3ccc4dea937c9b20357d8cb0">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2d6e28823ef142ae9c0729622f24e4c6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nee2de132a661423da6aa2913953228a5">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_32">
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2d9938a1f06f4524814182da14a316ca">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_32"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8a279a4477fd4ad6a0cec4bb0e49e022">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3aacaddf53b8407b9e5b61c6cad45df1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_8"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N900791ca2aae44e89d779f94bb09b863">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_14">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8e86f5db97ac42e0a3eedc9c5c88832e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4adf890833154e9580465907bd183645">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_14"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_24">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N93a5a156247e4d5fa2505cd00b67ee5c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N730e284db5704f8ca68e77f7ab9466a8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_24"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_31">
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N73bac8fa82564e42af5c786300fb41d2">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_31"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4290e6ffec704631bdbf7be16c0f39ec">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_17">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nffc9fbabcc98473eb212aa68b51f1cbe">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1889f720a38645c9a4096f25bd8cc334">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_17"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>References.csv References</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc03097d94a5948e39bd67469d8943dbb">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4cabe89c2b4746348c6ac415ffd1aa8f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncbd4d319591b4875b6e508435be20141">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3d224793acc54b1e957e5c068655e1d8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_10"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_33">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N312a72deb3194b57ab8ac9f567e9eddd">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N83d508b5c88749169333e83ba7ce48b6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_33"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_3">
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Necb025e1b6744e7eb2dda19cafc4fc61">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N19ddecbeb90542a7bfc92085cfa5aa07">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N62a662c182cd4b4cb32d7225e624b93c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N96399df01ebd426db3a1c2c4be13f821">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_23">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne1a5742001634f8eb61986c8b6131b13">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne680163ed8114304bfbb5aab562557a7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_23"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_9">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd6201d0cf9e2430098ca3a2803eda4cd">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_9"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N40428dea9c0e4f439ebb236e7bf94e4e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb2bd1d215025404e910ed6796185ddfe">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na82f7a0db4784870a82eb611c6174229">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_11">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4ba9ba39a9ae48389b4100fd6e7b83d6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_11"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N799b538101b949179981491bedf16f18">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_2">
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N599acdbdf4b144609ffd17e639aedf80">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4887a4e6a5ba4b339a5182a36b284b0d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_19">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne80b0ca12c7d41bfbe8e3e97b7a33374">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5ff04f3bb5e445248d24121e79ec4304">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_19"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_20">
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne1712817d2d24381aae0b4d341a10921">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf1c78a9179374c278f11998751704314">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_20"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_28">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd59f55a470d1447594fca45faeb63a15">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N69d79f69377548eb970255d433a89765">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_28"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_25">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne654d3bb2b364e4b8246a7c630dd2eed">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2ad88f2a17504c28bb424a26985be2b7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_25"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N62203102937242c2939931bd920b706f">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_15"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0ddcef621bc04505b64c87b040ca87ce">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_16">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncfc4aaee6d5348848796b52cc04076e7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N689705a84f014156ae4bb35f22939876">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_16"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_29">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N43312006b56645978a7675fa19da7be5">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_29"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N71a2e9fd8f304713928bc7798aabf06e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_18">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4ad3f19edd054bb783cdf32342ae821e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_18"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8d55c3a15958493096f5c3dace326fb1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_21">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc67fc3b1b94c47eda38c44c8c263110e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_21"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6000fc95dd1348d1825ec43627f40a5c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd867a54ffc1545449a8ebdf0f7fadd56">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N175f7daa4ebb4b018ed9ccd512d1e0af">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Symbiodinium data.csv Ref_link Hyperlink of published work webpage that includes the Symbiodinium gene sequence.</rdfs:label>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4">
     <rdfs:label>GeoSymbio: Symbiodinium-host symbioses</rdfs:label>
     <rdfs:comment>A global Symbiodinium data set using genetic, taxonomic, collection event, and reference information of DNA sequences of the Internal Transcribed Spacer-2 (ITS2) region of the nuclear ribosomal array. This data corresponds to the supplemental information from Franklin EC, Stat M, Pochon X, Putnam H, Gates RD. 2011. GeoSymbio: a hybrid, cloud-based web application of global geospatial bioinformatics and ecoinformatics for Symbiodinium-host symbioses. Molecular Ecology Resources. DOI: 10.1111/j.1755-0998.2011.03081.x</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_12">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_4">
+    <rdfs:label>Symbiodinium data.csv Isolate Isolate Name allocated to specimen or sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1b2d8f246b2c490294f086b60bb3f6d9">
+      <owl:Restriction rdf:nodeID="N261f02ca5ebc4a10b3916c7a1891c4b4">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8849a82d82874ff093dc3700628aa49d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_12"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Ncca200583a754772a8b7d3fc0086ffb7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Symbiodinium data.csv Clade</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_8">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_25">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N664e0c23dded402baf4eeb48ddd90822">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_25"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc9a6d87cc7ce4373b348ac9b24c709f3">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Latitude The latitude of the location from which the Symbiodinium specimen was collected. This value should be expressed in decimal degrees (East &amp; North = +; West &amp; South = -). GPS-derived data must use the WGS 84 geodetic reference system.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_29">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_19">
+    <rdfs:label>Symbiodinium data.csv Environment Environment Environment where Symbiodinium was collected.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb0eab791379c43d19d20bfe13da49355">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N73e516d29e7949b082a1afcfe0b31f3a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_19"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_26">
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_22">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4f76bf62c7d84906a2458397b1fbd97b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_22"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6a2301aca0d0488392f932d0aab2dd0f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv StateRegion State/Region The state, province, region or island group (i.e. next political region smaller than Country) from which the Symbiodinium specimen was collected.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_25">
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_23">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N193373d0a9ed447981cb1f86d198e12c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N275525531c74442594b960bb8e3a8ca5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_23"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv SubRegion Subregion The island, county, area (or shire, or next political region smaller than StateRegion) from which the Symbiodinium specimen was collected.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_15">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_11">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2d62f0ac023345f7ad1ed7b238216831">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne00d3cff2b064a7dbac12677bdf61753">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_11"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Host_Phylum Phylum of host Phylum name of host taxa</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_34">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_10">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N60353b8ecec14a499b55187ea00703b2">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N81527673c11d43729de743d1dec7ba71">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Symbiodinium data.csv Genbank_link Hyperlink of Genbank accession number webpage for Symbiodinium gene sequence.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_6">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_31">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N258220bee1594a34aaed3bd05955deec">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_31"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv End_Year_Collect For samples that were taken over time this gives the end year of the collecting event. The full year should be expressed (e.g. 1996 must be expressed as "1996" not "96"). Must always be a four digit integer. If specimen was collected in a single calendar year then enter the same value in this field as in Start_Year_Collect.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6117aea28f664feeaaf1664543fb1bb9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_16">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_29">
+    <rdfs:label>Symbiodinium data.csv Max_Depth The maximum distance in meters below the surface of the water at which the collection/record was made; all material collected was at most this deep. Positive below the surface, negative above (e.g. collecting above sea level in tidal areas).</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N88ad76878f6a4c1e8e349194f4fbb11c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_29"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne0a1fca9bee84055aeeb7483f1a262ab">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_24">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_30">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N663fe06ba2c245ea9420da67e52e914d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne70c99541ff84ce58942b8dcd3df4e93">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_30"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Start_Year_Collect For samples that were taken over time this gives the start year of the collecting event. The full year should be expressed (e.g. 1996 must be expressed as "1996" not "96"). Must always be a four digit integer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_21">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_20">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd960042414494fe4a2a6cd4ae820fda5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8b445f8125504fdebe537bff84b6c5fc">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_20"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Ocean Ocean The ocean or sea from which Symbiodinium was collected. Ocean names follow the NASA Global Change Master Directory list of Bodies of Water.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_19">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na6f1ca3d58f1402e96142f37b44950bd">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_12"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na17931f9b8804f91bb9575d0dd45a8d7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Host_Class Class of host Class name of host taxa</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_2">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_1">
+    <rdfs:label>Symbiodinium data.csv Clade Clade Symbiodinium clade</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0a1a3e72f8c04bee91934a2be7c4a0db">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N510190bce9bc4362a54ee0599fbec483">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_22">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_17">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0ef866129c1447fe89fed2848c92d119">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Symbiodinium data.csv Host_Sci_Name Scientific name of host Scientific name (genus and species) of host taxa</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nac22379000354c1a9e5507e54eaf240e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_17"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_11">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_28">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N07774d617c0b4324955e2572ca4c6cb4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_28"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6cb5a92dfbf5469eac82365437577f44">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv Min_Depth Minimum depth The minimum distance in meters below the surface of the water at which the collection/record was made; all material collected was at least this deep. Positive below the surface, negative above (e.g. collecting above sea level in tidal areas).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_3">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_18">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd87d15ad95794a90bb3d65bfa2925661">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5a22147ec7ce4e8ba0de0c8737c3e57e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_18"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Symbiodinium data.csv AphiaID Unique numeric identifier for host taxa from the World Register of Marine Species at http://www.marinespecies.org.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_30">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_3">
+    <rdfs:label>Symbiodinium data.csv Gene Gene Gene used to identify Symbiodinium</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9e8422d58aee4b07a31b12afacd244e4">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N73c0a0521ff14aff941493e385d57189">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_5">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_a_15">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9cc1bb8ea68845e98997b923951dd4aa">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_15"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Symbiodinium data.csv Host_Genus Genus of host Genus name of host taxa</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8c53c49216054072b92fde40e19f3314">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_12">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_10">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_27">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_17">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_13">
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_4">
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_a_3">
+    <rdfs:label>References.csv Ref_link Reference link Hyperlink of published work webpage that includes the Symbiodinium gene sequence.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N66a8b7a631bd4e10b117ff69a7cc68e8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N983565ac562a41769e457d73156bdc0c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
     <rdfs:label>References.csv</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>Symbiodinium data.csv</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_14">
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_28">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_1">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_32">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_23">
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_7">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_1">
-    <rdfs:label>References</rdfs:label>
-    <rdfs:comment>Abbreviated citation of published work that includes the Symbiodinium gene sequence.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_9">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_3">
-    <rdfs:label>References</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Abbreviated citation of published work that includes the Symbiodinium gene sequence.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_18">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_26">
+    <rdfs:label>Longitude The longitude of the location from which the Symbiodinium specimen was collected. This value should be expressed in decimal degrees (East &amp; North = +; West &amp; South = -). GPS-derived data must use the WGS 84 geodetic reference system.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_33">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Reference Citation Full citation of published work that includes the Symbiodinium gene sequence</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_20">
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_28">
+    <rdfs:label>Min_Depth Minimum depth The minimum distance in meters below the surface of the water at which the collection/record was made; all material collected was at least this deep. Positive below the surface, negative above (e.g. collecting above sea level in tidal areas).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_17">
+    <rdfs:label>Host_Sci_Name Scientific name of host Scientific name (genus and species) of host taxa</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_14">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Host_Family Family of host Family name of host taxa</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Methodology Methodology Method used to genotype Symbiodinium.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Host_Phylum Phylum of host Phylum name of host taxa</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Genbank Genback accession number Genbank accession number for Symbiodinium gene sequence.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Gene Gene Gene used to identify Symbiodinium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_22">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>StateRegion State/Region The state, province, region or island group (i.e. next political region smaller than Country) from which the Symbiodinium specimen was collected.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_18">
+    <rdfs:label>AphiaID Unique numeric identifier for host taxa from the World Register of Marine Species at http://www.marinespecies.org.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_21">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Country Country name The country or major political unit from which the specimen was collected. Full country names are currently in use.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_25">
+    <rdfs:label>Latitude The latitude of the location from which the Symbiodinium specimen was collected. This value should be expressed in decimal degrees (East &amp; North = +; West &amp; South = -). GPS-derived data must use the WGS 84 geodetic reference system.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_30">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Start_Year_Collect For samples that were taken over time this gives the start year of the collecting event. The full year should be expressed (e.g. 1996 must be expressed as "1996" not "96"). Must always be a four digit integer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_5">
+    <rdfs:label>Redundancy Redundancy ITS2 subclade sequences with 100% nucleotide similarity that have been allocated different names</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Symbiodinium data.csv</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_6">
+    <rdfs:label>Potential_Pseudogene_Ref Potential pseudogenes Potential pseudogenes are ITS2 sequences with secondary structure disrupting mutations. If "YES" with Ref, then the record is a potential pseudogene. If "NO" with Ref, then the record is not a pseudogene. N_A for records with no information pertaining to pseudogene potential.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_2">
+    <rdfs:label>Type Symbiodinium type based on ITS2 sequence type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Host_Class Class of host Class name of host taxa</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_16">
+    <rdfs:label>Host_Species Species of host Species name of host taxa</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_24">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Locale Locale The locality description (place name, collecting location, and/or field site name) from which the Symbiodinium specimen was collected.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_13">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Host_Order Order name of host taxa</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Clade Clade Symbiodinium clade</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_31">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Clade</rdfs:label>
-    <rdfs:comment>Symbiodinium clade</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>End_Year_Collect For samples that were taken over time this gives the end year of the collecting event. The full year should be expressed (e.g. 1996 must be expressed as "1996" not "96"). Must always be a four digit integer. If specimen was collected in a single calendar year then enter the same value in this field as in Start_Year_Collect.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_4">
+    <rdfs:label>Isolate Isolate Name allocated to specimen or sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_32">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ref Reference Abbreviated citation of published work that includes the Symbiodinium gene sequence.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Species Species Taxonomic species name for Symbiodinium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_19">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Environment Environment Environment where Symbiodinium was collected.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_29">
+    <rdfs:label>Max_Depth The maximum distance in meters below the surface of the water at which the collection/record was made; all material collected was at most this deep. Positive below the surface, negative above (e.g. collecting above sea level in tidal areas).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_34">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ref_link Hyperlink of published work webpage that includes the Symbiodinium gene sequence.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_15">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Host_Genus Genus of host Genus name of host taxa</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_20">
+    <rdfs:label>Ocean Ocean The ocean or sea from which Symbiodinium was collected. Ocean names follow the NASA Global Change Master Directory list of Bodies of Water.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Genbank_link Hyperlink of Genbank accession number webpage for Symbiodinium gene sequence.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_23">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>SubRegion Subregion The island, county, area (or shire, or next political region smaller than StateRegion) from which the Symbiodinium specimen was collected.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ref References Abbreviated citation of published work that includes the Symbiodinium gene sequence.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_1_c_27">
+    <rdfs:label>Coordinate_Precision Coordinate precision An estimate of how tightly the locality was specified in the Latitude and Longitude fields; expressed as a distance, in meters, that corresponds to a radius around the latitude-longitude coordinates. Use NULL where precision is unknown, cannot be estimated, or is not applicable.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ref_link Reference link Hyperlink of published work webpage that includes the Symbiodinium gene sequence.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.977.4#d_2_c_2">
-    <rdfs:label>References</rdfs:label>
-    <rdfs:comment>Abbreviated citation of published work that includes the Symbiodinium gene sequence.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Reference Full citation Full citation of published work that includes the Symbiodinium gene sequence</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

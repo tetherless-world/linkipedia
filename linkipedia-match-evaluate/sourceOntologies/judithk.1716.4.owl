@@ -4,316 +4,316 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_5">
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4">
+    <rdfs:comment>This datapackage contains groundatwater levels from boreholes in the Basalts</rdfs:comment>
+    <rdfs:label>Supersites_Groundwater levels Basalts</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_7">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndac29c0c6de04b5eb2747064f72c58fa">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N241be6ac7b784e89915da33221480d7a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7c9ea73a464745ea86374450dce50569">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt SBAS3_BR_10 masl actual water level metres above mean sea level</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5d89e1b98e0f4e6d998126121c9eadda">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1cf60550eecb46c1ae75c708917ace7b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Basaltboreholes.txt Easting Easting</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_4">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0782767da82049cb95acbd6c146dbf36">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na12cac7af1504aa2841fd2b8ecfcf084">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Basaltboreholes.txt Northing Northing</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd7c9872a51304b258656b8f26d1c7e7b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt Date Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc2139158f2794e9fbf68f23a1e87793a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_5">
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt SBAS3_BC_10 actual water level below ground surface</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N55e444d20de64da58d14eb0f6ad714a4">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N127710c565fd4b56bec6bfc34fe99329">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N85f0a805edc846e5ab24725b3cb67a12">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Basaltboreholes.txt </rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N392442c9c4904207aaad1e620352f1b4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N6549f0388880473cab2a8655390806b8">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Basaltboreholes.txt Altitude (m) Altitude (m)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N79b1e7f02af143899ec92638eb7e98b7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N00303209a3a8426088d471512c7b8b39">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd2c7f48a6cdb4b66acdd1af1de400dc6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt SBAS3_BC_80 actual water level below ground surface</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_3">
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt SBAS3_BR_10 readings (mm) actual water level below ground surface</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncea0aa0ea5ed4027a19cd7ba69357f6d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3d88991fd5a841d7b12b573b0096f303">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfddee2787e2541bfa760722863d0afd1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>Basaltboreholes.txt Site_Name Borehole name</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5511da032eaf4d4cae41492aaeec7207">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N314c3a0dd1024535b69ea49fc2bc368e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6d46a13e79c3446d87217072d36fbda2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_2"/>
+      <owl:Restriction rdf:nodeID="N309f345f4bea480e8a21c9d6e2d6ca89">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_2">
-    <rdfs:label>Basaltboreholes.txt </rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbbd8fa9a3dfd486ba3fb43ee62b5f228">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nfa7c2d8233e74f159c8984ae6311d3c9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Basaltboreholes.txt Site_Description Site_Description</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N28d2afa6c54644e1965f5dc69311ce2e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N20ca64c9faec417ebd4f52bde886c031">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8afda766ccbf460886a1a920fdd7485b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt SBAS3_BC_10 masl actual water level metres above mean sea level</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nce6bd98c6cb6457ea5ee7cdc45fab8c5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_6">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6d3f7ab3fc8643a887967d347a2929cc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt SBAS3_BR_80 masl actual water level metres above mean sea level 185.3-[SBAS3_BR_80]</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6ce63b7c29fa46c7b3fc31e685df39f6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_2">
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt SBAS3_BR_80 readings (mm). actual water level below ground surface</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc6cd014720be4256ba0dff4c3803224b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf9fbfca842da49638a7b47a5b8dbc6f4">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne81d5518b5bb47f2a0ab276f09084340">
+      <owl:Restriction rdf:nodeID="Ne104c3252f9a433fb96a408e74609a12">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf5992b44a841425da4bb400e4334cf01">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Basaltboreholes.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N44a7b2b9b93d4f2cb98bb6a3d87c3ae2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3df049b8fafe48ab89e28343eca56de6">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na6dc6c0bb80b4c0ea2efb0906d7225f1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_7">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc723031a30344feba450fbe424cf2862">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_7"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nec38116fcc7f4f8d869de15f749b1da5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nda7b5b3bd3434a439b66885b5c8b0e1e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4245cd89bcb644d8963621281ce03730">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0a3ae2fdbc6c48fca13f7cdb22cc9ad0">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Basaltboreholes.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5cd87487be3a40f6bc82de5a85054845">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5025a4ba37224973848a540d99c8f682">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N555c7104574e42049be311b6a0944c4c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbb5d20123a774a7ab73a61ca441fb07f">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Basaltboreholes.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N41587c6bfff448f1aacfc1491171282f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4">
-    <rdfs:label>Supersites_Groundwater levels Basalts</rdfs:label>
-    <rdfs:comment>This datapackage contains groundatwater levels from boreholes in the Basalts</rdfs:comment>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_9">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N49f04d9ced6e45f1bee463e13077fde8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N39cc7c2f7bd94d67b854f65f010f5ba5">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Basaltboreholes.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Naf86aa67cacb497a99d93a50d4cf194f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nee2bd9aa7b9a4f96be943f6afb4aab33">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:label>Basaltboreholes.txt Metadata Metadata</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6e49a2e99c184a2eadc9937f00132247">
+      <owl:Restriction rdf:nodeID="N4349612a6b614a60b97b376a8b73e330">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt SBAS3_BC_80 masl actual water level metres above mean sea level</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N52a90363059f4af9b4be44be39b357d2">
+      <owl:Restriction rdf:nodeID="Nc53bfeac56f446c9ac5c0b2e630bd62d">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_a_3">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd28d4353eab947ad963c90300e1c83ee">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N513a43cc982d4df4a4a1118bc7a11295">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_1">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_5">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_6">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_4">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>SBAS3_BC_10 actual water level below ground surface</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>SBAS_Boreholes_Manual Readings.txt</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_2">
-    <rdfs:comment>Borehole name</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Borehole name</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Borehole name</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Borehole name</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>SBAS3_BR_10 readings (mm) actual water level below ground surface</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_5">
-    <rdfs:comment>Borehole name</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Altitude (m) Altitude (m)</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>Basaltboreholes.txt</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>SBAS3_BR_10 masl actual water level metres above mean sea level</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>SBAS3_BC_80 masl actual water level metres above mean sea level</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_6">
-    <rdfs:comment>Borehole name</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Metadata Metadata</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_6">
+    <rdfs:label>SBAS3_BR_80 masl actual water level metres above mean sea level 185.3-[SBAS3_BR_80]</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1">
+    <rdfs:label>SBAS_Boreholes_Manual Readings.txt</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Northing Northing</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>SBAS3_BC_80 actual water level below ground surface</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>SBAS3_BR_80 readings (mm). actual water level below ground surface</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_9">
+    <rdfs:label>SBAS3_BC_10 masl actual water level metres above mean sea level</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date Date</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Easting Easting</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Site_Description Site_Description</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2_c_1">
+    <rdfs:label>Site_Name Borehole name</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/judithk.1716.4#d_2">
+    <rdfs:label>Basaltboreholes.txt</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
 </rdf:RDF>

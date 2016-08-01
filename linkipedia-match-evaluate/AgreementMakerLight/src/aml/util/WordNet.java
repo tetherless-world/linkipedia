@@ -35,9 +35,9 @@ public class WordNet
 	//The WordNet Interface
 	private WordNetDatabase wordNet;
 	//The path to the WordNet database
-	private final String PATH = "\\store\\knowledge\\wordnet";
+	//private final String PATH = "\\store\\knowledge\\wordnet";
 	//private final String PATH ="C:/Program Files (x86)/WordNet/2.1/dict/";
-	//private final String PATH ="C:\\Users\\prakash\\Desktop\\sabitaInternship\\AgreementMakerLight\\store\\knowledge\\wordnet";
+	private final String PATH ="C:\\Users\\prakash\\Desktop\\sabitaInternship\\AgreementMakerLight\\store\\knowledge\\wordnet";
 	
 //Constructors
 

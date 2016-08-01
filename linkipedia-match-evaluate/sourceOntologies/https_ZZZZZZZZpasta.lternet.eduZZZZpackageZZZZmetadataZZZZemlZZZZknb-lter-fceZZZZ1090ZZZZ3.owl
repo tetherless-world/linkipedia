@@ -5,138 +5,131 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>LT_SS_Rubio_002 sitename</rdfs:label>
+    <rdfs:label>LT_SS_Rubio_002 Soil Physical Data from the Taylor Slough, Everglades National Park Plot plot Sawgrass above ground non-destructive biomass plot number</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N07b5b565e0414385b42dc70d67e99ac2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_2"/>
+      <owl:Restriction rdf:nodeID="N4433494ae64b46e88a4d75e3547d9bff">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2720aa227c57444a8a95f97224a501ab">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nb8cdbe945e084f2e9988a9d4839212eb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_6">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N32e77e3baed84be1bf6ae83564a62f1b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>LT_SS_Rubio_002 Soil Physical Data from the Taylor Slough, Everglades National Park Temperature temperature Soil Temperature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1a28277a804a49469f8a7d0350b0e452">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>LT_SS_Rubio_002 Soil Physical Data from the Taylor Slough, Everglades National Park Eh Eh Redox Potential</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N538c77941d044434bfc42c65a0e45d52">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N50f069a5f94d41d6abc655f2fe8cb067">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_5"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_3">
+    <rdfs:label>LT_SS_Rubio_002 Soil Physical Data from the Taylor Slough, Everglades National Park Date date Collection date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5e99a1358bcb45b4988de288fbe89738">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7748020da9b24492b1b6dfbc3cb5b48a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3">
-    <rdfs:label>Soil Physical Data from the Taylor Slough, within Everglades National Park (FCE), from September 1999 to November 2006</rdfs:label>
-    <rdfs:comment>Soil pH, Eh and temperature readings are taken at TS/Ph1b,TS/Ph2,TS/Ph3 and TS/Ph6b. These measurements are taken only when the marsh is wet. Measurements are taken using an Orion model 250A meter, and the probes attached to the meter are the Orion Thermo pH probe and the Orion Eh probe. All readings are recorded in field notebooks, and then transferred into Microsoft Excel. The Eh reading is taken when the Eh probe is attached to the meter and the word "Ready" appears on the meter screen. The pH and temperature reading are taken when the pH probe is attached to the meter and the word "Ready" appears on the meter screen.</rdfs:comment>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7536ab58b5584e6891be2bde8dda1645">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N2de28141afa740379a960a63c526a970">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>LT_SS_Rubio_002 sitename</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>LT_SS_Rubio_002 Soil Physical Data from the Taylor Slough, Everglades National Park SITENAME sitename Name of LTER site</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4db1aed76f3e4a9b954a3fe5a51dc9a7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_5"/>
+      <owl:Restriction rdf:nodeID="Ne1657bda4f064ac98dc5c0ca507056f5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1acbe0a961f74c15943b09e8907bba8e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Necbc71ee73ef400f90514d3086a322d8">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>LT_SS_Rubio_002 sitename</rdfs:label>
+    <rdfs:label>LT_SS_Rubio_002 Soil Physical Data from the Taylor Slough, Everglades National Park pH pH Soil pH</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4d98924ddf864354984bc68855167805">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nb6ba19144503496e808537be2c7219b8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>LT_SS_Rubio_002 sitename</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1c922acc41fb4e45b15c5be834e6f108">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2f66d4903d8a4de6a4868d96538b3081">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_1">
-    <rdfs:label>LT_SS_Rubio_002 sitename</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na931da9f9c9148ddb569d0701c97537a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd9a6599d381249a187f919a23c5a29b5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_a_6">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfdfe169789fa4b34a39bd2864093b0b2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>LT_SS_Rubio_002 sitename</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Naedaa54d285b4e728e75f3ef75da768e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1">
-    <rdfs:comment>Soil Physical Data from the Taylor Slough, Everglades National Park</rdfs:comment>
-    <rdfs:label>LT_SS_Rubio_002</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-    <rdfs:label>sitename</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_3">
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_1">
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3">
+    <rdfs:label>Soil Physical Data from the Taylor Slough, within Everglades National Park (FCE), from September 1999 to November 2006</rdfs:label>
+    <rdfs:comment>Soil pH, Eh and temperature readings are taken at TS/Ph1b,TS/Ph2,TS/Ph3 and TS/Ph6b. These measurements are taken only when the marsh is wet. Measurements are taken using an Orion model 250A meter, and the probes attached to the meter are the Orion Thermo pH probe and the Orion Eh probe. All readings are recorded in field notebooks, and then transferred into Microsoft Excel. The Eh reading is taken when the Eh probe is attached to the meter and the word "Ready" appears on the meter screen. The pH and temperature reading are taken when the pH probe is attached to the meter and the word "Ready" appears on the meter screen.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_4">
+    <rdfs:label>pH pH Soil pH</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-    <rdfs:label>sitename</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Plot plot Sawgrass above ground non-destructive biomass plot number</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1">
+    <rdfs:label>LT_SS_Rubio_002 Soil Physical Data from the Taylor Slough, Everglades National Park</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Temperature temperature Soil Temperature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date date Collection date</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_1">
+    <rdfs:label>SITENAME sitename Name of LTER site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_5">
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1090/3#d_1_c_4">
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Eh Eh Redox Potential</rdfs:label>
   </owl:Class>
 </rdf:RDF>

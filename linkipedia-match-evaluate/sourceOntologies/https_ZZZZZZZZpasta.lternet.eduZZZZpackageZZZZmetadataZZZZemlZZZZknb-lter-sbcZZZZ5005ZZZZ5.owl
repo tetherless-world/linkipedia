@@ -4,76 +4,72 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3a324b99042b492fab6cd72f4e02c4a0">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N59c16d7c0795426ba71f4c2fe7f709bf">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Precipitation SBCoFC Dos Pueblos 226, all years SBCo PWD Precipitation data from Dos Pueblos Ranch (station = DosPueblos226) from 2000-10-01 to 2008-09-30. precipitation_mm Precipitation Precipitation amount during the interval</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1fb07a03cb5d48b9989e0749fd48a3f2">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Precipitation SBCoFC Dos Pueblos 226, all years SBCo PWD Precipitation data from Dos Pueblos Ranch (station = DosPueblos226) from 2000-10-01 to 2008-09-30. timestamp_local Date and Time, local local time of observation, no correction for daylight saving time</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N59d22a64c4a94138aee9fa9b02727905">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5">
     <rdfs:label>SBC LTER: Land: Hydrology: Santa Barbara County Flood Control District - Precipitation at Dos Pueblos Ranch (DosPueblos226)</rdfs:label>
     <rdfs:comment>Precipitation was collected by the Santa Barbara County Flood Control District at Dos Pueblos Ranch in the Santa Barbara coastal area (site ID: DosPueblos226). Data are reported at 5 minute intervals. For more information, see http://www.countyofsb.org/pwd/.</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_a_3">
-    <rdfs:label>Precipitation SBCoFC Dos Pueblos 226, all years Date and Time, local</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N425272b6aff140c8bcb5ed8aef3a4f57">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0e4306121d3f4058a526d595adb2c6a4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Naeb17f0acad14c4082bcd6bca7ea28ce">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N242c2a0ae912469398c671d65b502741">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Precipitation SBCoFC Dos Pueblos 226, all years Date and Time, local</rdfs:label>
-  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_a_2">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N679aa7d131d549d08ffe117378f9b449">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nad96a6262f514ffaa3324f741db97278">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Precipitation SBCoFC Dos Pueblos 226, all years SBCo PWD Precipitation data from Dos Pueblos Ranch (station = DosPueblos226) from 2000-10-01 to 2008-09-30. timestamp_UTC Date and Time, UTC time of observation, Universal Time Coordinate</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc234201a979c44b986399a4beefadf1e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Precipitation SBCoFC Dos Pueblos 226, all years Date and Time, local</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb004673b1f354b7c886a52e5d1925283">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1">
-    <rdfs:label>Precipitation SBCoFC Dos Pueblos 226, all years</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>SBCo PWD Precipitation data from Dos Pueblos Ranch (station = DosPueblos226) from 2000-10-01 to 2008-09-30.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date and Time, local</rdfs:label>
-    <rdfs:comment>local time of observation, no correction for daylight saving time</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>precipitation_mm Precipitation Precipitation amount during the interval</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Precipitation SBCoFC Dos Pueblos 226, all years SBCo PWD Precipitation data from Dos Pueblos Ranch (station = DosPueblos226) from 2000-10-01 to 2008-09-30.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_1">
-    <rdfs:comment>local time of observation, no correction for daylight saving time</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date and Time, local</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>timestamp_local Date and Time, local local time of observation, no correction for daylight saving time</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5005/5#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Date and Time, local</rdfs:label>
-    <rdfs:comment>local time of observation, no correction for daylight saving time</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>timestamp_UTC Date and Time, UTC time of observation, Universal Time Coordinate</rdfs:label>
   </owl:Class>
 </rdf:RDF>

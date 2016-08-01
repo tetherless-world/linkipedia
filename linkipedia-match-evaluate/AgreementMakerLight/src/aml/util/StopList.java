@@ -31,7 +31,7 @@ public class StopList
 	
 //Attributes
 	
-	private static final String FILE = "store/StopList.txt";
+	private static final String FILE = "C:\\Users\\prakash\\Desktop\\sabitaInternship\\7_12_2016\\AgreementMakerLight\\store\\StopList.txt";
 	
 //Constructors
 	
@@ -44,7 +44,7 @@ public class StopList
 		HashSet<String> stopWords = new HashSet<String>();
 		try
 		{
-			BufferedReader inStream = new BufferedReader(new FileReader(AML.getInstance().getPath() + FILE));
+			BufferedReader inStream = new BufferedReader(new FileReader(FILE));
 			String line;
 			while((line = inStream.readLine()) != null)
 				stopWords.add(line);

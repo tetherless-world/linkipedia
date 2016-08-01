@@ -4,139 +4,132 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N302870cbdcb74cddb687d414821c0c05">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8a58e5ce8dfc43018f62e3406da0d142">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>LT_PP_Iwaniec_002 Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park, South Florida NPP_STD standard deviation Periphyton net primary productivity standard deviation</rdfs:label>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3">
+    <rdfs:comment>Periphyton metabolism is being measured at TS/Ph1b, TS/Ph2, TS/Ph3, TS/Ph4, and TS/Ph5 every 6-8 weeks during the wet season.  We quantify metabolic rates of periphyton assemblages using standard oxygen change techniques in 300mL light and dark BOD bottles in triplicate.  Using YSI dissolved oxygen probes and meters, we measure dissolved oxygen change as the difference of initial and final oxygen concentrations during a two hour incubation period.  We calculate net primary productivity and respiration rates in units of oxygen and carbon, then normalize to the organic content (ash free dry weight) of the incubated periphyton.</rdfs:comment>
+    <rdfs:label>Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park (FCE), South Florida from December 1998 to December 2004</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3b15c2490c9541cb8c9e236601509d35">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf7a6cfc1827b402cadb3c99e04687c68">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>LT_PP_Iwaniec_002 Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park, South Florida RESP_STD standard deviation Periphyton respiration rate standard deviation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N37867966ea164e939d35171e9640def9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nec6cea079bb34bb4a8003db9fc166690">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>LT_PP_Iwaniec_002 Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park, South Florida SITENAME sitename Name of LTER site</rdfs:label>
+  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_5">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na899ccfe9462428287018720856655ee">
+      <owl:Restriction rdf:nodeID="Nae873a3ce65140379d2367db2e4c3972">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>LT_PP_Iwaniec_002 Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park, South Florida RESP respiration rate Periphyton respiration rate</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7cae1f355ebd4640b7c70e057dbfbe0c">
+      <owl:Restriction rdf:nodeID="Nfdd1709b5c9e43bdbe2b0fbc46455eb6">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>LT_PP_Iwaniec_002 sitename</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>LT_PP_Iwaniec_002 Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park, South Florida NPP net primary productivity Net primary productivity</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N89ce10827697495bb18dc6af22affb0c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N927c8e9fad98456392412f38cf522c3c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0a8972049bea4594827905f859bfa026">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>LT_PP_Iwaniec_002 sitename</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N969dd783e15349a59aaf0f534f7b70b5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ned73ff44de854c53818695352ed02812">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>LT_PP_Iwaniec_002 sitename</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9ae065c7566b4d49910895932498c0f2">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_2">
+    <rdfs:label>LT_PP_Iwaniec_002 Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park, South Florida Date date Collection date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N58d44cc34aa4448da597a5cd0e6bd57b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na461210715394f35aa6f96110bf23134">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Na601fd556eb74a6e8af2a075cb9f65d1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>LT_PP_Iwaniec_002 sitename</rdfs:label>
-  </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3">
-    <rdfs:label>Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park (FCE), South Florida from December 1998 to December 2004</rdfs:label>
-    <rdfs:comment>Periphyton metabolism is being measured at TS/Ph1b, TS/Ph2, TS/Ph3, TS/Ph4, and TS/Ph5 every 6-8 weeks during the wet season.  We quantify metabolic rates of periphyton assemblages using standard oxygen change techniques in 300mL light and dark BOD bottles in triplicate.  Using YSI dissolved oxygen probes and meters, we measure dissolved oxygen change as the difference of initial and final oxygen concentrations during a two hour incubation period.  We calculate net primary productivity and respiration rates in units of oxygen and carbon, then normalize to the organic content (ash free dry weight) of the incubated periphyton.</rdfs:comment>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4c7dfc58c2f74188a6d5e79101f4e62a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6ce2e6c7106b46ed96f68bf4421973d2">
+      <owl:Restriction rdf:nodeID="N933c6d67ce274f14a6b045775dce2cf1">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>LT_PP_Iwaniec_002 sitename</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_a_6">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5cb5292f43954cf59af5b59a0ce04833">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>LT_PP_Iwaniec_002 sitename</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7a9669b0d9b34145ac49e59f6370da32">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_5">
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_2">
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date date Collection date</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_1">
+    <rdfs:label>SITENAME sitename Name of LTER site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
-    <rdfs:label>sitename</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>NPP_STD standard deviation Periphyton net primary productivity standard deviation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_6">
+    <rdfs:label>RESP_STD standard deviation Periphyton respiration rate standard deviation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1">
-    <rdfs:label>LT_PP_Iwaniec_002</rdfs:label>
-    <rdfs:comment>Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park, South Florida</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+    <rdfs:label>LT_PP_Iwaniec_002 Periphyton Net Primary Productivity and Respiration Rates from the Taylor Slough, just outside Everglades National Park, South Florida</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>sitename</rdfs:label>
-    <rdfs:comment>Name of LTER site</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>NPP net primary productivity Net primary productivity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1087/3#d_1_c_5">
+    <rdfs:label>RESP respiration rate Periphyton respiration rate</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

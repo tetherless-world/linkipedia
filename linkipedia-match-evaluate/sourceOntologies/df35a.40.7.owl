@@ -4,37 +4,37 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_a_1">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N639695c7812f40d5b6c1a59ad9258f2f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_c_1"/>
+      <owl:Restriction rdf:nodeID="Nffe89af66ea745bba50fd54a2c953e0f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>discharge.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>discharge.csv Daily mean discharge data discharge Daily mean discharge</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N57b3d3108e1b4faf83127dcf9992e615">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N9004df016a194b7b9b44afd248758137">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_a_2">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>discharge.csv Daily mean discharge data date Date</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb915689e8d124908a8e341e85bb47157">
+      <owl:Restriction rdf:nodeID="Ne70b3926deb74a72b7133ff81c574b59">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Neafa4e2ae1664fe990f6cd58fb303431">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>discharge.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd7e058c231d84f03ba8ec96e366245e6">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7">
     <rdfs:label>Securing flow data for a lower Kenai Peninsula salmon stream, Alaska: 2003</rdfs:label>
@@ -43,16 +43,15 @@
 Data corresponds to USGS site # 15241600, called NINILCHIK R AT NINILCHIK AK. This data can also be found on the USGS website at http://waterdata.usgs.gov/</rdfs:comment>
   </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>discharge.csv</rdfs:label>
-    <rdfs:comment>Daily mean discharge data</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_c_1">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>discharge.csv Daily mean discharge data</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_c_2">
-    <rdfs:comment>Date</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>discharge Daily mean discharge</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35a.40.7#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>date Date</rdfs:label>
   </owl:Class>
 </rdf:RDF>

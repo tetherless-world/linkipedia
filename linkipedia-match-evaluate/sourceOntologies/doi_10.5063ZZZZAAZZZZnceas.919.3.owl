@@ -4,378 +4,376 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbce8cbccba81451daa655d408fc3864c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb56436ff350844d8ae616cdbb1c2c280">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_2">
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5d8f6b2b7ed440f684d8d8c2cc312557">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N25615b5e53424e28805c057271871e46">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_3">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc480d3ce3aa640f691f8f38ea47206f9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nda748116862e4301ba40cff8d418c6fc">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_7">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9af225cef3b14bc08417c0dc33aacda1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd700da8955cd48e6a52cb9e6c4580e72">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3">
-    <rdfs:comment>This is a compiled database of the allometry and nutritional stoichiometry (N and P) of detritivorous arthropods. This data is used and described in more detail in, 'Detritivory: stoichiometry of a neglected tropic level'.</rdfs:comment>
-    <rdfs:label>Detritivory: stoichiometry of a neglected trophic level data</rdfs:label>
-  </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_1">
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Ordinal_Grouping Ordinal Grouping</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncc0d281359394735b6636c7901fe334b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N273bf704ee9d46f791ec5fb25d1a9102">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Ndc6225ac864f4771a3c921d55217c5a3">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_4">
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N858b9aae6c4541eb8d39a41533f08822">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N567af3d204464414b9a3807de38f9c9d">
+      <owl:Restriction rdf:nodeID="N1e034b4c82f2416198970a35b14217a8">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_6">
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc457df22f1fa4e42ad403beacc96e71a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbdde4870d995471e85869d5059aee761">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_8">
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nff921f9fd9c34995a7860f577d4b6771">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbac5d183fc594f01be33fd1759b550fe">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_9">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N738cc9cd722f4bacb473ef1356faf8fb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9e2dc0e7d714451b8dae09fa6c517fcc">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_9"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncaaf63a016f34a4f8c52c69e0564386e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd8ac83d70a04492eb3b695c684e42587">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb0d3ba9bac6346a8a1320793f644b3eb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncdadc2e927b74643866ccd0181d96ca3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_8"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3c59fa32f9d745519a7bba5be4f9aa5e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N381b9abd5348492193d329e949c78bc4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6f286f208d104d0fb02a8ec20e2efed3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ndc61cebf2f774044b1f75e118c47e878">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Percent_N Percent Nitrogen</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd1a3c4075395489ebfdfeaa4c6b57029">
+      <owl:Restriction rdf:nodeID="Na0c9a25c1cbc4094b34c753157dbbd81">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_4">
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Species Species</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbc21601caf2949a8bfcc714c3d82db66">
+      <owl:Restriction rdf:nodeID="Nf415a020fc1c4f7e815f704907d1a6bb">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N77d9a114956343a3bebdc10cc933b55e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Ne42f2756b990488fbcdee957d15bf970">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_5">
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_6">
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Coarse_Trophic_Level Coarse Trophic Level</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2177faa25c6f4d63bda2b0840906cedd">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N5ca9d2328f23477bb4a37b928b408475">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N61615448cf2448c885f2bd82a094fc14">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_6"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_8">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N24a3dfca52084b249ce55155fef87dc9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N06654b90ddd5472397d97e2b01a626c7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_5"/>
+      <owl:Restriction rdf:nodeID="N1eefd88818c84095b1ea53b9259e9a12">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Body_Mass Body Mass (mg)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_6">
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Coarse_Trophic_Level Coarse Trophic Level</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N72624bacdb9447e390ed3c0bbc173433">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_6"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3b1d43e8885a4348bc0a0fb667aa7a11">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_5">
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Habitat Habitat (Larval,  Aquatic, Terrestrial)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd785121e6bcb4e93a1b6817d5d7c5e83">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N351360f898d143c19e4af1d932cf07f7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_9">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N934891a0004542499b1ec97d05a1ba6a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Stoichiometry_Reference Stoichiometry Reference</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd1b7d0fc2a2a45ae8942c42b6131620e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nceb2eef61a794f8688cf0a1db89ec8ee">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Genus Species Genus</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9a7630c0f8224f65a525c9eb9afaafbc">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1a2f393aa8334db4867e367229aaa7f6">
+      <owl:Restriction rdf:nodeID="Ne19de41291ad4d0fa57a41876726c5d9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2402a76431544d1b9014b46d250da326">
+      <owl:Restriction rdf:nodeID="N82e220d4941a41bcb879061fbc943451">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Genus Species Genus</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Habitat Habitat (larval, Aquatic, Terrestrial)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N89332ced09674e19926f2dc07751ca1d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf3d67a0cb5c04caa9127218923ab85f6">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_2">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbe8902de8bed4fedabea150cb7f3aff6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_9"/>
+      <owl:Restriction rdf:nodeID="N253f51bf14644013a0b3c18226f294e6">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv </rdfs:label>
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Family Species Family</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc8268895842a4aada0ad468e4e5cd72d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N2bf34a0265384ddaac68562e020bbc74">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N427620134a5b45e2934ecac3fa565408">
+      <owl:Restriction rdf:nodeID="N832055beeb5e4df29ce5d13a596da8b5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Species Species</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nda3f4b7689db42948d5000bca91b40f0">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Family Species Family</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0d7a85f233b44f40ae6858ff37f699ff">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3c08fe8d101f448fa846a214ce2a05f7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_6"/>
+      <owl:Restriction rdf:nodeID="Nf5ee4452d6364f3bbb3d00c44877a8e8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv </rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_8">
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Body_Length Body Length (mm)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0c06797e6c1f4daa85d22a1de19bbbd0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9d796170c72041c8ba8e69760ec718e9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3">
+    <rdfs:label>Detritivory: stoichiometry of a neglected trophic level data</rdfs:label>
+    <rdfs:comment>This is a compiled database of the allometry and nutritional stoichiometry (N and P) of detritivorous arthropods. This data is used and described in more detail in, 'Detritivory: stoichiometry of a neglected tropic level'.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_9">
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Stoichiometry_Reference Stoichiometry Reference</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1abb7743ff324d9686c54c5334b1a0ac">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2b4bb10c4ca249d1b1b42116e82a6632">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_a_1">
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups Ordinal_Grouping Ordinal Grouping</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N91d139fb3db74d38afa50e4a1b84cdf9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N14ccb572ceb1403c8255847daad47252">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_a_7">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na1e9da78f6b04e5392779b5851d8dbf5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbbf3cabdd5c848668ef631d37630a015">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages Percent_ Phosphorus %  Phosphorus</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2">
-    <rdfs:label>DetritivorePaper.NCEAS_Species.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Detritivore Paper Species Averages</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_6">
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_2">
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
+    <rdfs:label>DetritivorePaper.NCEAS_Species.csv Detritivore Paper Species Averages</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_7">
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_6">
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1">
-    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Detritivore Paper Trophic Groups</rdfs:comment>
+    <rdfs:label>Percent_N Percent Nitrogen</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Family Species Family</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Family Species Family</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1">
+    <rdfs:label>DetritivorePaper.NCEAS_TrophicGroups.csv Detritivore Paper Trophic Groups</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Coarse_Trophic_Level Coarse Trophic Level</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_3">
+    <rdfs:label>Genus Species Genus</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ordinal_Grouping Ordinal Grouping</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Percent_ Phosphorus %  Phosphorus</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_8">
+    <rdfs:label>Body_Mass Body Mass (mg)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Species Species</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ordinal_Grouping Ordinal Grouping</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Body_Length Body Length (mm)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_5">
+    <rdfs:label>Habitat Habitat (Larval,  Aquatic, Terrestrial)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_6">
+    <rdfs:label>Coarse_Trophic_Level Coarse Trophic Level</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_1_c_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Stoichiometry_Reference Stoichiometry Reference</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Ordinal Grouping</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Species Species</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Habitat Habitat (larval, Aquatic, Terrestrial)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Stoichiometry_Reference Stoichiometry Reference</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.919.3#d_2_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Genus Species Genus</rdfs:label>
   </owl:Class>
 </rdf:RDF>

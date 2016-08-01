@@ -4,101 +4,58 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_6">
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. at% of CO2 in headspace after (min) at% of CO2 in headspace after (min) At% is 100 * fraction of the heavy isotope divided by the sum of all isotopes in a sample
+seven columns for readings taken 0, 10, 20, 40, 60, 120 and 240 after start</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1ca4d80d48c54c12b7bde43752652131">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N155efc22b9a245f2b08573d682080c3c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. umol 13CO2 after (min) umol 13CO2 after (min) micromol of 13C labled CO2 after x minutes
+seven columns for readings taken 0, 10, 20, 40, 60, 120 and 240 after start</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6aae472597f449c0833313c9695a8d61">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nfbd4be24cf7347748614bbae171819a3">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb03560b6136b43328ecb533de975f92c">
+      <owl:Restriction rdf:nodeID="Ne9c55cb312a04e15a9426bc47b5e91cc">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbadd5d6cede2419a8fd2f591f7b388cc">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf27c84bfe85e43c08972a474278ea45d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_9">
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_10">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5cc7b6a17a0245b38111afa88ac9721b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nf48cac4b3d6a412c976a238df96691a0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_10"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4e0d729e88774b39ba9c124eb43abb7e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N76a70fc363614943a0d01d1f0da1b406">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na214d8b9e4ce4dc5ba7607daeb5cbe2a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ndc183a66038349789f43d412adfdf317">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0e96343dc2dd409c8db0d76ae6d0b742">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N367ac043940e4d1fb4e94dc8df45ce54">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7cda2ec27563453cb2a51cb67f565f9c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_7"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na7530213b2944744aa0ac062c32c3833">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. R2 R2 r-squared of the regression of Âµmol 13CO2 against time (120 min)</rdfs:label>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3">
     <rdfs:comment>In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
@@ -106,145 +63,199 @@ Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate
 This is 1 of 4 related datasets for this study.</rdfs:comment>
     <rdfs:label>Position-specific metabolic tracer probing of soil metabolic networks (1 of 4) - Substrate</rdfs:label>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_3">
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_5">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6ef4784938bc458ca7ec5e8f89193088">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndf00730e3db548e3ac81651d441fc516">
+      <owl:Restriction rdf:nodeID="N28e8d37a2ea24f0cbcbfcae786ae4623">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N59696dfaf0564bfaa4d1ac2ecbf97b91">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. d13C of CO2 in headspace after (min) d13C of CO2 in headspace after (min) â¢	The stable isotopic compositions of low-mass (light) elements such as oxygen, hydrogen, carbon, nitrogen, and sulfur are normally reported as "delta" (ï¤) values in parts per thousand (denoted as â°) enrichments or depletions relative to a standard of known composition. The symbol â° is spelled out in several different ways: permil, per mil, per mill, or per mille. The term "per mill" is the ISO term, but is not yet widely used. ï¤ values are calculated by: 
+	(in â°) = (Rsample/Rstandard - 1)1000
+where "R" is the ratio of the heavy to light isotope in the sample or standard. For the elements sulfur, carbon, nitrogen, and oxygen, the average terrestrial abundance ratio of the heavy to the light isotope ranges from 1:22 (sulfur) to 1:500 (oxygen); the ratio 2H:1H is 1:6410. A positive ï¤ value means that the sample contains more of the heavy isotope than the standard; a negative ï¤ value means that the sample contains less of the heavy isotope than the standard. A ï¤15N value of +30â° means that there are 30 parts-per-thousand or 3% more 15N in the sample relative to the standard. 
+seven columns for readings after 0, 10, 20, 40, 60 120 and 240 minutes after start</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_11">
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. pyruvate - C1 /C23 ratio pyruvate - C1 /C23 ratio ratio of slopes of carbon 1 labled 13C against carbon  2,3 labled  13C pyruvate</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7d636a5eb69b4f38af789680d8697e6f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5e6d2ca20c1541b285f63ac8af3b07ff">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N9c2d3e1fac3944528c2eaccec865ecd1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_11"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_10">
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ned584e07d2e64276813e7c9d905b726c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_10"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8db9f980f856456ca26d29cd16759aa7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_6">
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne331a2cc466f4b02b0df614ec68f6e5a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8b78f8301e924d1f9ce77ca2206f1e61">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N28fc6a1a55b8427394d14bc5caaf90f2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N4dba0da0c3174a03a792119872348b28">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_4">
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. Pyruvate addition - position labeled Pyruvate addition - position labeled Whether pyruvate was added and if so where the 13C labaling was applied to the pyruvate</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N466db3de389c4949802e64b44d988081">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nd2a8dad194d9486fadd922c1fb334414">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>metabolic probing (1 of 4) - substrate Soil Origin</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6d5bd08f3ebf4283857453f632d7c64f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1">
-    <rdfs:label>metabolic probing (1 of 4) - substrate</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
-Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities.</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_1">
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. Soil Origin Soil Origin C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N597098cd270542709126fb6f0fd6438a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb7eccf56a86a4e608dede05e4bb42063">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_9">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3d79ae27f9c2462ba22babde7fac6b72">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb570488afc3449989102fe956d31d945">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. slope (over 120 min) slope (over 120 min) slope of regression of Âµmol 13CO2 against time (120 min)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd919cb69bc974a948c4fa46451e1cdd2">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. Treatment - Substrate Addition Treatment - Substrate Addition Whether glucose, succinate or nothing (control) was added as a substreate treatment</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfef31a06601449ff90ed03c5c01f227a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf866063e76f34aa49ffd583929eb9997">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. replicate replicate replicate number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N92d80b64462542eeaeb1a9ec5982d47d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_a_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities. atom percent excess after (min) atom percent excess after (min) atom percent excess after (min)
+seven columns for readings taken 0, 10, 20, 40, 60, 120 and 240 after start</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N664ae0bc524e49c99ec2f684b860e982">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ndcd51a47f946403ea47933d3546356c2">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_9">
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>slope (over 120 min) slope (over 120 min) slope of regression of Âµmol 13CO2 against time (120 min)</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_10">
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Treatment - Substrate Addition Treatment - Substrate Addition Whether glucose, succinate or nothing (control) was added as a substreate treatment</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_5">
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_11">
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_7">
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Soil Origin</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_8">
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Soil Origin</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Pyruvate addition - position labeled Pyruvate addition - position labeled Whether pyruvate was added and if so where the 13C labaling was applied to the pyruvate</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Soil Origin</rdfs:label>
-    <rdfs:comment>C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Soil Origin Soil Origin C. Hart Merriam Elevation Gradient site source of soil in the experiment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>at% of CO2 in headspace after (min) at% of CO2 in headspace after (min) At% is 100 * fraction of the heavy isotope divided by the sum of all isotopes in a sample
+seven columns for readings taken 0, 10, 20, 40, 60, 120 and 240 after start</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>pyruvate - C1 /C23 ratio pyruvate - C1 /C23 ratio ratio of slopes of carbon 1 labled 13C against carbon  2,3 labled  13C pyruvate</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1">
+    <rdfs:label>metabolic probing (1 of 4) - substrate In order to study controls on metabolic processes in soils, we determined the dynamics of 13CO2 production from two position-specific 13C-labeled pyruvate isotopologues in the presence and absence of glucose, succinate, pine, and legume leaf litter, and under anaerobic conditions. We observed that the C from the carboxyl group (C1) of pyruvate was lost as CO2 much faster than its other C atoms (C2,3). Addition of glucose, pine and legume leaf litter reduced the ratio between 13CO2 production from 1-13C pyruvate and 2,3-13C pyruvate (C1/C2,3 ratio), whereas anaerobic conditions increased this ratio. We interpret a low C1/C2,3 ratio as an indication of increased Krebs cycle activity in response to carbon inputs, while a higher ratio implies a reduced Krebs cycle activity in response to anaerobic conditions. Succinate, a gluconeogenic substrate, reduced 13CO2 production from pyruvate to near zero, likely reflecting increased carbohydrate biosynthesis from
+Krebs cycle intermediates. The difference in 13CO2 production rate from pyruvate isotopologues disappeared 4-5 days after pyruvate addition, indicating that C positions were scrambled by ongoing soil microbial transformations. This work demonstrates that metabolic tracers such as pyruvate can be used to determine qualitative aspects of C flux patterns through metabolic pathways of soil microbial communities.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>d13C of CO2 in headspace after (min) d13C of CO2 in headspace after (min) â¢	The stable isotopic compositions of low-mass (light) elements such as oxygen, hydrogen, carbon, nitrogen, and sulfur are normally reported as "delta" (ï¤) values in parts per thousand (denoted as â°) enrichments or depletions relative to a standard of known composition. The symbol â° is spelled out in several different ways: permil, per mil, per mill, or per mille. The term "per mill" is the ISO term, but is not yet widely used. ï¤ values are calculated by: 
+	(in â°) = (Rsample/Rstandard - 1)1000
+where "R" is the ratio of the heavy to light isotope in the sample or standard. For the elements sulfur, carbon, nitrogen, and oxygen, the average terrestrial abundance ratio of the heavy to the light isotope ranges from 1:22 (sulfur) to 1:500 (oxygen); the ratio 2H:1H is 1:6410. A positive ï¤ value means that the sample contains more of the heavy isotope than the standard; a negative ï¤ value means that the sample contains less of the heavy isotope than the standard. A ï¤15N value of +30â° means that there are 30 parts-per-thousand or 3% more 15N in the sample relative to the standard. 
+seven columns for readings after 0, 10, 20, 40, 60 120 and 240 minutes after start</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>replicate replicate replicate number</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>umol 13CO2 after (min) umol 13CO2 after (min) micromol of 13C labled CO2 after x minutes
+seven columns for readings taken 0, 10, 20, 40, 60, 120 and 240 after start</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>R2 R2 r-squared of the regression of Âµmol 13CO2 against time (120 min)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/paullheinrich.18.3#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>atom percent excess after (min) atom percent excess after (min) atom percent excess after (min)
+seven columns for readings taken 0, 10, 20, 40, 60, 120 and 240 after start</rdfs:label>
   </owl:Class>
 </rdf:RDF>

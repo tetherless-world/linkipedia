@@ -4,469 +4,444 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24">
-    <rdfs:label>Trapping locations, animal body mass, and breeding conditions of Neotoma fuscipes on Sedgwick Reserve</rdfs:label>
-    <rdfs:comment>The dataset associated with this metadata was collected over a 3 year period at the Sedgwick Ranch Reserve in Santa Barbara County, CA. Neotoma fuscipes, or the dusky-footed woodrat, were trapped and ear-tagged at various sites, and various data were recorded about each animal. Data on the condition and locations of the dens and surrounding habitat were also collected.</rdfs:comment>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Body mass data ID</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_a_3">
+    <rdfs:label>Dens data The coordinate locations of dens, and the dates and IDs of N. fuscipes captured Y coordinate Y coordinate Y coordinate of den location</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9ff7c9a4caa640bda1209652c63a34c7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb6533b9526dc40f1a89dae99ad215365">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Trapping data Den</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb897a222ba194127ae1d5b23a4042a0b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2f69e1c4ef7c4f7ea4e4d9e72174d89d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfd4871b3cfef4025914ced03237dd0d2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Individuals data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9602ada365ca4f208a1ef67501dd10dd">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne419a9e80b41412ba439680a365b6bcc">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Individuals data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nee302c7a6ba34ff8ad73d76212410ed7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Individuals data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf052f3fbc7f741fca30ecea46ab2af49">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5a3773cb1c5447418e42a90a2b074ff8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0603e3b7751d4e4788a6bd622367aeda">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd94a678c0fa748f58bab99123b7b2873">
+      <owl:Restriction rdf:nodeID="N00f27d59c6314dab841b99465e30a934">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Dens data Den</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_a_4">
-    <rdfs:label>Body mass data ID</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb9dc6d0d58de430d8d453832f82cf370">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N26e4371fa80e4ba99d07537378b49c31">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_a_2">
+    <rdfs:label>Body mass data Body masses of N. fuscipes individuals on various dates, along with information on thiersex and age class Sex Sex Gender of the individual animal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6df2627a500840ecb321b78e79e171ad">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc4673e6c212f431792160877184f5694">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_a_2">
+    <rdfs:label>Trapping data Data on the location of traps, number of traps, dates of trapping efforts, and individual animals caught in traps. Date range and number of traps set The date range of the trapping period, and the number of traps set near the dens</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N51f31c470efa49cb84d1ca41887d61ca">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N586811ed467143c6a75011adcefaa805">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nda04b90430244ccd936f79b804a1f2e0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ned25369de0c64a61a5d4cec8100dbfa4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Sex Sex Gender of the individual animal</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Location Loc Location of subsequent capture of individual animal</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na3ff719b9e8c4a5b85743db329878a3c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N819f2da77ce34ba197d1e56ca4b877b0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24">
+    <rdfs:comment>The dataset associated with this metadata was collected over a 3 year period at the Sedgwick Ranch Reserve in Santa Barbara County, CA. Neotoma fuscipes, or the dusky-footed woodrat, were trapped and ear-tagged at various sites, and various data were recorded about each animal. Data on the condition and locations of the dens and surrounding habitat were also collected.</rdfs:comment>
+    <rdfs:label>Trapping locations, animal body mass, and breeding conditions of Neotoma fuscipes on Sedgwick Reserve</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_a_4">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb72262af429b4665a764e89e6a293c5f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0f907f4cb77f445dbb218cd381b7a16a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N83b88047d971440294c3681d4ed99d6a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Body mass data Body masses of N. fuscipes individuals on various dates, along with information on thiersex and age class Dates and weights of animals Body masses of individuals at various dates of capture and weighing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Age Age Approximate age class of the individual animal</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb42e4da5510c41b4bbd72913fd0849d7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na56636191b954b4f97cf8186c7994428">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ndee20b6622cf4d04a631a72152811d01">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Trapping data Data on the location of traps, number of traps, dates of trapping efforts, and individual animals caught in traps. Animal(s) captured Captures The ID number(s) of N. fuscipes individual(s) captured in the trap(s).</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N52eeab3ba9ec4c9c97c3daedd988fd8b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Location Loc Location of the individual at the time of first capture</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N659397c669f34ba2863dd34e903941e9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nebc1f88ac2c04e5898188c3dc218c367">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_a_1">
+    <rdfs:label>Body mass data Body masses of N. fuscipes individuals on various dates, along with information on thiersex and age class ID number ID Individual animal's identification number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N44b7f74ed72e4c91bb449b48771552b7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4aeaee95f64e464aab30f3c3ec013bd4">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_7">
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Weight Wt (g) Weight of individual at time of first capture</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N24911e257ff44d0ab9f0437978322e61">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N840c4eb6ca404fe59b19f2e31203c9cb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_a_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N281bdee3c6cb448eba794b79650ec110">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N08214137b11a4e7fbe30d308ded8ae24">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Dens data The coordinate locations of dens, and the dates and IDs of N. fuscipes captured Date and animal ID Date The date and the ID of the animal captured on that date</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Identification number ID Individual animal's identification number</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8aaf571550914bc39e1b5910afd1d242">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N841156ca6ca84ace9ad6d12579b033e3">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd864435fe40a4bdaa2bfa7d77eb603f8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Dens data The coordinate locations of dens, and the dates and IDs of N. fuscipes captured X coordinate X coordinate X coordinate of den location</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9fddb3884b5e47c6ba5102efaa9aa70c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_a_1">
+    <rdfs:label>Trapping data Data on the location of traps, number of traps, dates of trapping efforts, and individual animals caught in traps. Den number Den The den number where the traps were set</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N00e55c4830be44eaaa6f75eb5e643873">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4f92150b555748b0be40689215f83580">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Ear tag number EarTag Ear tag number</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N332fd9f509774d559ad8840c86200ca1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0e678a12bfb14b508c96062475732ed7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N63faf65dc0cc4277a5a9eaade5fdc34a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Body mass data Body masses of N. fuscipes individuals on various dates, along with information on thiersex and age class Age Age Age class of the individual</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N537d66882dd0418dbe85bef678e93e09">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_10">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb31cbc4f06364f1ebcda99fa7d057b66">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N2989694f6a9b4e47933487f68f6558ec">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Individuals data ID</rdfs:label>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Weight Wt Weight of individual animal at time of subsequent capture</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1305877a8dd2438c85c2cf472036f93d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N2fab2325bf674efdaad1502c1ddbc994">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_9">
-    <rdfs:label>Individuals data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N998a459852f24ea193decf052d8b1d6c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_9"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N86461865a1e84a6fa2223c0dd70177e5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_2">
-    <rdfs:label>Individuals data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nad55ba7892bb4f03add6d3d4fea70c69">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7bd3229e82ce4b059b3f527f566e1757">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_a_3">
-    <rdfs:label>Dens data Den</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_5">
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. First capture 1st Capt Date of first capture of the individual</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4b9bf007df2c4ae08c8fee36c32891ff">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_3"/>
+      <owl:Restriction rdf:nodeID="N0874f5f866634b24a60aa9586ba5bee5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf62cabd83787485c83c494be26839fb8">
+      <owl:Restriction rdf:nodeID="N644d4f669e8a4e1db05a9e9d805c1bd8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_a_1">
+    <rdfs:label>Dens data The coordinate locations of dens, and the dates and IDs of N. fuscipes captured Den number Den The den number where the traps were set</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nace4b8dfa7214a66ba2740fab2de5650">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N33e036d50c2d4e578766e21f3c3c0ae5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Body mass data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndc6437fe2a3e4f7ea4cb67861d8e3d2d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3eaecd07bf8b46f087e3450abcb4166b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Trapping data Den</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N04a079e25455419d88f7a5a1bbf0fd7d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N45cda3080d194aadaaae1df8418f0f50">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Individuals data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na926fec845e94caaaf6d4ee80dc1fab9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc6f5fdd639b3486299461c29c278dd00">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2eac33c1bb0246a4a89344e99e2a0ed2">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Trapping data Den</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N80c4313dc0064de78fa7a5fd72c78802">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N25eca5a8ef3545359f88712e9c984698">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Individuals data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc2c5f4c464224e8eaacaf002bae20c44">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_a_2">
-    <rdfs:label>Body mass data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc062cd4fa559487fa6a239e9b4e43dc7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf078afca398e48db9f3f6cbd5147c9e1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Dens data Den</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3d79110effc44206be2f6001c17a49c8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N720ca6cf9cc84e34ac915ad627b56b83">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1b930a2e467543bd91c2672dfd6120d5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Dens data Den</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nde261520e9ad470787f25c182e656cf9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_6">
-    <rdfs:label>Individuals data ID</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9d5b168a07254aa0977e823eb2889cde">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N94fa6c2e3a924a3d9359042290e904fb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_a_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Individuals data ID</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve. Date Date Date of subsequent capture of the individual animal</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N769f5c26754943f38e5e1c4989022c64">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfd0adb9cc20f449588571f9a93cd8f3b">
+      <owl:Restriction rdf:nodeID="N45deba072fbf4cefbd17099fbd5ca923">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID</rdfs:label>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3">
-    <rdfs:label>Dens data</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>The coordinate locations of dens, and the dates and IDs of N. fuscipes captured</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_2">
-    <rdfs:comment>The den number where the traps were set</rdfs:comment>
-    <rdfs:label>Den</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID</rdfs:label>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:label>ID</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>The den number where the traps were set</rdfs:comment>
-    <rdfs:label>Den</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_1">
-    <rdfs:label>Den</rdfs:label>
-    <rdfs:comment>The den number where the traps were set</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID</rdfs:label>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:label>ID</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2">
-    <rdfs:label>Trapping data</rdfs:label>
-    <rdfs:comment>Data on the location of traps, number of traps, dates of trapping efforts, and individual animals caught in traps.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>Individuals data</rdfs:label>
-    <rdfs:comment>Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Den</rdfs:label>
-    <rdfs:comment>The den number where the traps were set</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID</rdfs:label>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_3">
-    <rdfs:label>Den</rdfs:label>
-    <rdfs:comment>The den number where the traps were set</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N05ead49e905c4adf99230cc81c4276d9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_8">
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date Date Date of subsequent capture of the individual animal</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_2">
-    <rdfs:label>Den</rdfs:label>
-    <rdfs:comment>The den number where the traps were set</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:label>ID</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:label>ID</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:label>ID</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:label>ID</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_1">
-    <rdfs:label>ID</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Body masses of N. fuscipes individuals on various dates, along with information on thiersex and age class</rdfs:comment>
-    <rdfs:label>Body mass data</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_6">
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>ID</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_2">
+    <rdfs:label>X coordinate X coordinate X coordinate of den location</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Individual animal's identification number</rdfs:comment>
-    <rdfs:label>ID</rdfs:label>
+    <rdfs:label>Weight Wt (g) Weight of individual at time of first capture</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_1">
+    <rdfs:label>Identification number ID Individual animal's identification number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_3">
+    <rdfs:label>Animal(s) captured Captures The ID number(s) of N. fuscipes individual(s) captured in the trap(s).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_3">
+    <rdfs:label>Sex Sex Gender of the individual animal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Dens data The coordinate locations of dens, and the dates and IDs of N. fuscipes captured</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Individuals data Data on the approximate age class, sex, weight, location and date of capture for individual Neotoma fuscipes on Sedgwick Reserve.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Location Loc Location of the individual at the time of first capture</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_10">
+    <rdfs:label>Weight Wt Weight of individual animal at time of subsequent capture</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4">
+    <rdfs:label>Body mass data Body masses of N. fuscipes individuals on various dates, along with information on thiersex and age class</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date range and number of traps set The date range of the trapping period, and the number of traps set near the dens</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Ear tag number EarTag Ear tag number</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_1">
+    <rdfs:label>Den number Den The den number where the traps were set</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_4">
-    <rdfs:comment>The den number where the traps were set</rdfs:comment>
-    <rdfs:label>Den</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date and animal ID Date The date and the ID of the animal captured on that date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>ID number ID Individual animal's identification number</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_3_c_3">
+    <rdfs:label>Y coordinate Y coordinate Y coordinate of den location</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Age Age Age class of the individual</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_4">
+    <rdfs:label>Dates and weights of animals Body masses of individuals at various dates of capture and weighing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_4_c_2">
+    <rdfs:label>Sex Sex Gender of the individual animal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2_c_1">
+    <rdfs:label>Den number Den The den number where the traps were set</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_9">
+    <rdfs:label>Location Loc Location of subsequent capture of individual animal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Trapping data Data on the location of traps, number of traps, dates of trapping efforts, and individual animals caught in traps.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_4">
+    <rdfs:label>Age Age Approximate age class of the individual animal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.104.24#d_1_c_5">
+    <rdfs:label>First capture 1st Capt Date of first capture of the individual</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

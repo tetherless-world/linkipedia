@@ -4,629 +4,598 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_1">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N903cce8533824c50b77163889a03f82a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nb014735262824fb2b8695ef6d7af7814">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. station Station Name Official station name.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1ad3e4d60a0349c9863f8863ed3b2aff">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8f5de8c2f6514344994ee666a041b22d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_9">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_11">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na5006baa455643e0b9140c0cae1b49d6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_9"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3bb04a9f54a448e4bddecd55c678d998">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N667fd97571064eecbf7ecdd01e50dc60">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number par Photosynthetically Available Radiation Water column Photosynthetically avilable radiation (uE/m2/s)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd217e2eed4f845c3ae4061819724e270">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_11"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_5">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_16">
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number doc Dissolved Oxygen Content Water column dissolved oxygen content reported in volts</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N429b0c61e35f495182f12bb947af8906">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_5"/>
+      <owl:Restriction rdf:nodeID="N1bd73a03519f41f0b091f209518bc7f7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_16"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncac8c623112f423bbc0fb656f0b294c7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N6adb9947d7fe4a8297aef3f098508311">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0af5eee7607d4e46bb35355b1f3d10c7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nff4912ba406a4c3882e1eac1e94f22f7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_3">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number pressure Presure Water column pressure measured by the CTD, (decibar).</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf94da0c004d04bd194635c743b3cb1ef">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndb31be4ac78344c5b4b12e0543c40aaf">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N40bfd14f63e24a6cba6e4bc3be589e77">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na7e6dc7968434ef48bd5c091f1823312">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbe045ed8abe84b789a68080adf7602ec">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_1">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N19e755a1731f43dfa1c771caed5e6325">
+      <owl:Restriction rdf:nodeID="N7cf2bb4474e3473ca6208a4a140ebe06">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N766984d66fa847c28af3edd6a672c862">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_4">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2404bb78ad7b471f92ed4f2e9ffc13a0">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9a9b40cdf8524b2e9c14356b7b23ef60">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N289a18318bab4d5b826d138b82f154c8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nafaf8ef906fb46b7add34b8f4715bd47">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N37b4c0350c58413c93b381f6c09d1a90">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncaec4159f68545cca4e8b5568be37794">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_12"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_10">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na6fec5a80ece452eaae770448afde031">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8738d91c12574e48b2ed2cb40c52046f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_10"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_6">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6f08ebec75d84b67aeeca5a050d53ff4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7fff996ae5bc4a1c97a9a75d99fde84a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4a3bfd64255f466ebe10490fb1efeecd">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N95f831ea6aea45c5b3f89e87d5a41162">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_16">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbd0e1be0ad0e455a80bce54d2e7af340">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4cadec68dbbb45c9bce5091a26dd3068">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_16"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_8">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N15707c5559da4d17bf8aff35cd0beed3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ndb842e392667406eb03205d9ed70774a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. sonicDepth Depth Depth of the ocean at site where cast was taken.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N37b0d0da9f6e49c2b4c9fce6a0f28ed4">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N4c48e58326bf40ca94279be19c2e41bb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_11">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_14">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7d3334cf31104d7a8fb977de5082c0b1">
+      <owl:Restriction rdf:nodeID="N9b7a7213b4344f13bb5e2868dc06cca2">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_14"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1a188f7b57374c0d9211b3afecfe8382">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6c0c4b5681a64b3b921809c9520bb773">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_11"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number parV Photosynthetically Available Radiation Water column photosynthetically available radiation, reported in Volts.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_8">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number deltaD Dynamic Height Water column dynamic height referenced to the surface (m).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0ac5ee33e9e540fbb931dfa7acd84dc6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N82e24e64e7bc4a20adf5d1fcd1695ba4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N34e86b903c7b4528befeaaf2fbd5a84d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4208c1bf33334e37b80327b9fc1ed10a">
+      <owl:Restriction rdf:nodeID="N79805f2fa6bc4db1b3991989cc949409">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_6">
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. lat Latitude Latitude in decimal degrees</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc6f8931375154c58898d1fc78f6cd2bd">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1742b8d5082641c2bd8398ffc2f94d9c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Ncfcfae5b334243ad990e5593e5d7a1c1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_6"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_17">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_9">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne14a73c079fe4cf781fc47f417db39be">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_17"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1f9e0cc17cd742cb9578b065a37c37ef">
+      <owl:Restriction rdf:nodeID="N4fc40034004b4ccfbe5382d5df6884ef">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number transmiss Light Transmission Light transmission (volts)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N07a43740dde049a8b43c467d7f182182">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7">
-    <rdfs:comment>This project is a component of the integrated Long-term Monitoring of Marine Conditions and Injured Resources and Services submitted by McCammon et. al. The ocean undergoes year-to-year variability in the physical environment, superimposed on longerterm cycles, and potential long-term trends. These variations influence ocean chemistry, and propagate through the lower trophic levels, ultimately influencing fish, seabirds and marine mammals. Over the past 50 years the Northern Pacific appears to have undergone at least one clear regime shift, while the last 12 years have seen multi-years shifts of major atmospheric indices, leaving uncertainty about what regime the coastal Gulf of Alaska is currently in. Regime shifts are often expressed as fundamental shifts in ecosystem structure and function, such as the 1976 regime shift that resulted in a change from a shrimp dominated fisheries to one dominated by pollock, salmon and halibut. Long-term observations are also critical to describe the current state, and natural variability inherent in an ecosystem at risk of significant anthropogenic impact. Given the potential for such profound impacts, this dataset continues a multidisciplinary observation program which began in 1997 along the Seward Line and in PWS and will continue to assess the current state of the Northern Gulf of Alaska, during 2012-2017. Such observations form critical indices of ecosystems status that help us understand some key aspects of the stability or change in upper ecosystems components for both the short and longerterm. By analogy, the weather has been for more than a hundred years, yet regular observations are still needed to know what is happening and what can be expected in the near future. 
-
-This data was collected by Dr. Tom Weingartner of the Institute of Marine Science, University of Alaska Fairbanks for the Gulf of Alaska LTOP (Long Term Observation Project) funded by various funders. The area of coverage is the Gulf of Alaska during 1997-2010.</rdfs:comment>
-    <rdfs:label>Long-Term Observation Program (LTOP) Seward Line CTD data, Gulf of Alaska (1997-2010)</rdfs:label>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_15">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_10">
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. maxPressure Maximum Pressure Maximum pressure recorded.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0db9c8c78c644f4aaff57a872cf2cb14">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+      <owl:Restriction rdf:nodeID="N940b5311556c4605895ed6f43b9d3b1e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_10"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na8098eb78c404b7d8bb569e827d1f533">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_15"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne3e978bc571742df8d06266aa9158239">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne57a9b6955a943c3a4fd555315a2bbcb">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_11">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6d7e04f039dd4df8ae6557c64c400987">
+      <owl:Restriction rdf:nodeID="Ndf33110712af4d858ebe30e60c7001dc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N429be89356aa4a3ba4e6fef9fc3e767a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_11"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_13">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_1">
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number cruiseID Cruise Identifier Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbc564b214ddd4971ba8b94c5156ef76b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N1522c24b26454a0aa5edb0efcf49ab82">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N37583dba7b5d4acb9928e47bf4c67748">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_13"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_9">
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na3590c65d3b84ebaba698318c8c24506">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N89803a14d326494ba832197ca64906fb">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N31dc61e6c57141598491c8e93e8eefc1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_12">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd503efd69bbb4cc6b0ef94d985b313d4">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd2c383df4e844118878df3c348c5844d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Ne80084dba72f4ad5a3aff45ce174d1cc">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_12"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_14">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number altimeter Height above the bottom Height above the bottom sample was taken (meters).</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfa20648846d3451896a7f1afce9936d9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_14"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfd8afcde0e5c4a88988e2b148f854c73">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N622d66ebf0d543f287f12b9b58cb6d47">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_7">
-    <rdfs:label>ltopCtdData.csv Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N074c950a3b624115b95ae7d1fc5ecd4a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N7e57687ce84149a0b24d493c1cceb947">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number sigmaT Density of Seawater Water column density (kg/m3)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5d1f8cb31b704e10b0859c939a53032a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9447a9228eed4733a8fca16fadfca964">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. cruiseID Cruise Identifier Based on research vessel (vesselID,season, year). Cruise ID and consecutive station number are used to reference cast details on attached physical data table (ltopCtdData.csv).</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N15e5f296de89425e8aa6286a5f3ace54">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_7">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N329522f9ef76477aad048faa16fa26d9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. lon Longitude Longitude in decimal degrees</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6854695064284478a307ca687592505c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. minPressure Minimum Pressure Minimum pressure.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N71473e75d02745848bfa42cfaeb54165">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N34def582f0a0427dac2e82509d01b4a5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_4">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3236ce902a8a480f9d88ac1b3ce30c06">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number dataFlag Data Qulifier Indicates if data has been manipulated by data processing after the manufacturer-prescribed algorithms are implemented. Following the automated processing, each cast is plotted and visually inspected for spikes and other signs of problems, such as spurious density inversions. Erroneous or otherwise suspect data is linearly interpolated over and flagged in the Data Quality column. The Data Quality column is assigned the following values and refer to the T &amp;amp; S data only.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf2c9669e839f489eac7a36d3c2de6b2a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. funder Funder Funding was primarily source from given agency for the given samlpling period.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N583e2055eb064b7b9fd0849b8c0a51bd">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_12"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5c9acd50017e4d07bd982d55c6259974">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfef4a8cd54924b349a22d0db0a8bdf03">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. consecStationNum Consecutive Station Number Cruise ID and consecutive station number are used to reference cast details on attached physical data table (ltopCtdData.csv).</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7819bee81f8a4ebc8979f3c69db5f31b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N34f67bafa4e64a0989fb407cddab1ee4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N097897f6e57947ba9a5c2221daead44a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number consecStationNum Consecutive Station Number Unique number within cruise associated with CTD cast. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_17">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nee2f4bf3481a4ce981622d9175fb5157">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_17"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number ac3Fluor Fluorescence Water column fluorescence measured by the CTD.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N71883e14f0294799ad85b86cdf062b71">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_11">
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. instrumentation CTD profiler Seabird CTD Profilers information can be found at http://seabird.com/products/profilers.htm</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N034586a654bd4d61870be2dfa3b5db79">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_11"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4b1dbbdc59db4e73bbd485dda41db3eb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_13">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5757e460ee0d402faf09b801b1c2ad95">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N15a56e7a6223421cb9e91501937b2200">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_13"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number fluorV Fluorescence Water column fluorescence measured by the CTD, reported in volts</rdfs:label>
+  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7">
+    <rdfs:label>Long-Term Observation Program (LTOP) Seward Line CTD data, Gulf of Alaska (1997-2010)</rdfs:label>
+    <rdfs:comment>This project is a component of the integrated Long-term Monitoring of Marine Conditions and Injured Resources and Services submitted by McCammon et. al. The ocean undergoes year-to-year variability in the physical environment, superimposed on longerterm cycles, and potential long-term trends. These variations influence ocean chemistry, and propagate through the lower trophic levels, ultimately influencing fish, seabirds and marine mammals. Over the past 50 years the Northern Pacific appears to have undergone at least one clear regime shift, while the last 12 years have seen multi-years shifts of major atmospheric indices, leaving uncertainty about what regime the coastal Gulf of Alaska is currently in. Regime shifts are often expressed as fundamental shifts in ecosystem structure and function, such as the 1976 regime shift that resulted in a change from a shrimp dominated fisheries to one dominated by pollock, salmon and halibut. Long-term observations are also critical to describe the current state, and natural variability inherent in an ecosystem at risk of significant anthropogenic impact. Given the potential for such profound impacts, this dataset continues a multidisciplinary observation program which began in 1997 along the Seward Line and in PWS and will continue to assess the current state of the Northern Gulf of Alaska, during 2012-2017. Such observations form critical indices of ecosystems status that help us understand some key aspects of the stability or change in upper ecosystems components for both the short and longerterm. By analogy, the weather has been for more than a hundred years, yet regular observations are still needed to know what is happening and what can be expected in the near future. 
+
+This data was collected by Dr. Tom Weingartner of the Institute of Marine Science, University of Alaska Fairbanks for the Gulf of Alaska LTOP (Long Term Observation Project) funded by various funders. The area of coverage is the Gulf of Alaska during 1997-2010.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N081b8c30d5bd4f109995a34d56a7b56e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N036330ae866447faa4088764abddc8c2">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number fluor Fluorescence Water column fluorescence (ug/L)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_6">
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number salinity Salinity Water column salinity, reported in PSU (Practical Salinity Units).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N645a9084eac048828e7604b5bef72553">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N193799b951e943e59b8d2b0a8a921105">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_7"/>
+      <owl:Restriction rdf:nodeID="N0bea4e230b3d44ad8cb47005c43e1021">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_15">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N037863350eae4a5c969de6aee587ad7e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_15"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number altimeterV Height above the bottom Height above the bottom sample was taken, reported in volts.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0ea7b2324aa74a6a8dc96aeb85a15e21">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_1">
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. ship Research Vessel Research vessel used for given sampling cruise.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N97fb60787e3f4c07a50264a274af3c15">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3e45023837ec4161ad3eda14b222042d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number temp Temperature Water column temperature, (degrees Celsius).</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N80e323f6862540b8882eded9af9ad1af">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N18aa6dcf59b94caa8edeaa0c43d4ca0b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_3">
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5ad26aed0f51429288a04c23c6c3ddac">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N5768c9e68f8249e4851e0c8f4d10f2bc">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number. dateTime Date &amp; Time Date and time in GMT.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N87cb71f381ac485d898916f5b59c3ffd">
+      <owl:Restriction rdf:nodeID="N3484e2e412ec4d6da39a033ec17e35fb">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_a_10">
-    <rdfs:label>ltopCtdSamples.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6e818f0e493647ffa4e7c9fda07a80a9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N62bb9f31022646229f9b65b2701c6026">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_10"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_4">
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_9">
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_10">
-    <rdfs:label>Cruise Identifier</rdfs:label>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_11">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_17">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_7">
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_14">
-    <rdfs:label>Cruise Identifier</rdfs:label>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_13">
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_3">
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_11">
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1">
-    <rdfs:comment>Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number</rdfs:comment>
-    <rdfs:label>ltopCtdData.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_16">
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Cruise Identifier</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>fluorV Fluorescence Water column fluorescence measured by the CTD, reported in volts</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_2">
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2">
-    <rdfs:label>ltopCtdSamples.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Information on each cast, referenced to physical data by cruise ID and consecutive station number.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_9">
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:label>Cruise Identifier</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>cruiseID Cruise Identifier Based on research vessel (vesselID,season, year). Cruise ID and consecutive station number are used to reference cast details on attached physical data table (ltopCtdData.csv).</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_8">
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Cruise Identifier</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>deltaD Dynamic Height Water column dynamic height referenced to the surface (m).</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>minPressure Minimum Pressure Minimum pressure.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>funder Funder Funding was primarily source from given agency for the given samlpling period.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_14">
+    <rdfs:label>parV Photosynthetically Available Radiation Water column photosynthetically available radiation, reported in Volts.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1">
+    <rdfs:label>ltopCtdData.csv Physical data from LTOP CTD sampling cruises, indexed by cruiseID and station number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_3">
+    <rdfs:label>dateTime Date &amp; Time Date and time in GMT.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:label>Cruise Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise.</rdfs:comment>
+    <rdfs:label>altimeterV Height above the bottom Height above the bottom sample was taken, reported in volts.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_5">
-    <rdfs:comment>Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Cruise Identifier</rdfs:label>
+    <rdfs:label>temp Temperature Water column temperature, (degrees Celsius).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>instrumentation CTD profiler Seabird CTD Profilers information can be found at http://seabird.com/products/profilers.htm</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>lon Longitude Longitude in decimal degrees</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_4">
+    <rdfs:label>station Station Name Official station name.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>dataFlag Data Qulifier Indicates if data has been manipulated by data processing after the manufacturer-prescribed algorithms are implemented. Following the automated processing, each cast is plotted and visually inspected for spikes and other signs of problems, such as spurious density inversions. Erroneous or otherwise suspect data is linearly interpolated over and flagged in the Data Quality column. The Data Quality column is assigned the following values and refer to the T &amp;amp; S data only.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_1">
+    <rdfs:label>cruiseID Cruise Identifier Cruise ID designated by ship. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_16">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>doc Dissolved Oxygen Content Water column dissolved oxygen content reported in volts</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>maxPressure Maximum Pressure Maximum pressure recorded.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sigmaT Density of Seawater Water column density (kg/m3)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_6">
+    <rdfs:label>salinity Salinity Water column salinity, reported in PSU (Practical Salinity Units).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_12">
+    <rdfs:label>altimeter Height above the bottom Height above the bottom sample was taken (meters).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sonicDepth Depth Depth of the ocean at site where cast was taken.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_1">
+    <rdfs:label>ship Research Vessel Research vessel used for given sampling cruise.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>consecStationNum Consecutive Station Number Unique number within cruise associated with CTD cast. Cruise ID and consecutive station number are used to reference cast details on attached table (ltopCtdSamples.csv)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_9">
+    <rdfs:label>transmiss Light Transmission Light transmission (volts)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>lat Latitude Latitude in decimal degrees</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>pressure Presure Water column pressure measured by the CTD, (decibar).</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_17">
+    <rdfs:label>ac3Fluor Fluorescence Water column fluorescence measured by the CTD.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>par Photosynthetically Available Radiation Water column Photosynthetically avilable radiation (uE/m2/s)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>ltopCtdSamples.csv Information on each cast, referenced to physical data by cruise ID and consecutive station number.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_1_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>fluor Fluorescence Water column fluorescence (ug/L)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.28.7#d_2_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>consecStationNum Consecutive Station Number Cruise ID and consecutive station number are used to reference cast details on attached physical data table (ltopCtdData.csv).</rdfs:label>
   </owl:Class>
 </rdf:RDF>

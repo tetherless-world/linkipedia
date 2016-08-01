@@ -4,76 +4,72 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6">
+    <rdfs:label>SBC LTER: Land: Hydrology: Santa Barbara County Flood Control District - Precipitation at Santa Barbara Co. FCD Eng. Bldg. (SBEngBldg234), ongoing since  2000-10-01</rdfs:label>
+    <rdfs:comment>Precipitation was collected by the Santa Barbara County Flood Control District at Santa Barbara Co. FCD Eng. Bldg. in the Santa Barbara coastal area (site ID: SBEngBldg234). Data are reported hourly, and times reflect the end of the each 1-hour interval. Data coverage is 2000-10-01 to 2014-10-01For more information, see http://www.countyofsb.org/pwd/.</rdfs:comment>
+  </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_a_3">
-    <rdfs:label>Precipitation SBCoFC SB Eng Bldg 234, all years Date and Time, UTC</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7433e25116a140a6a1ad8c0471288a01">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N4f2e34f907a94469b8a1715eeb8c25a7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Precipitation SBCoFC SB Eng Bldg 234, all years SBCo PWD Precipitation data from Santa Barbara Co. FCD Eng. Bldg. (station = SBEngBldg234) from 2000-10-01 to 2014-10-01. precipitation_mm Precipitation Precipitation amount during the interval</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1b126f7c96da48ccbe6d71dca5b2f0bc">
+      <owl:Restriction rdf:nodeID="N2567cce8a00945aba17eb6c68dafd682">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9ba3faa9e26d48539dac5d970af7a375">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Precipitation SBCoFC SB Eng Bldg 234, all years SBCo PWD Precipitation data from Santa Barbara Co. FCD Eng. Bldg. (station = SBEngBldg234) from 2000-10-01 to 2014-10-01. timestamp_local Date and Time, local local time of observation, with offset to UTC, either -08 or -07, for PST or PDT</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9364f8be8e4640e2b27203c958a00291">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_a_1">
-    <rdfs:label>Precipitation SBCoFC SB Eng Bldg 234, all years Date and Time, UTC</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na68b1a7640474426960e468e4c1f977c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N2598f7f14bd244ec80983aa3e670f484">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na81deffa9ae045f6a238417683352375">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N72d3dc4589674ea082e316db26711f93">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6">
-    <rdfs:comment>Precipitation was collected by the Santa Barbara County Flood Control District at Santa Barbara Co. FCD Eng. Bldg. in the Santa Barbara coastal area (site ID: SBEngBldg234). Data are reported hourly, and times reflect the end of the each 1-hour interval. Data coverage is 2000-10-01 to 2014-10-01For more information, see http://www.countyofsb.org/pwd/.</rdfs:comment>
-    <rdfs:label>SBC LTER: Land: Hydrology: Santa Barbara County Flood Control District - Precipitation at Santa Barbara Co. FCD Eng. Bldg. (SBEngBldg234), ongoing since  2000-10-01</rdfs:label>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4496b53843774da8aa78686dec16561a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5ead0a49a2f2488991db7afae77582dd">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Precipitation SBCoFC SB Eng Bldg 234, all years Date and Time, UTC</rdfs:label>
+    <rdfs:label>Precipitation SBCoFC SB Eng Bldg 234, all years SBCo PWD Precipitation data from Santa Barbara Co. FCD Eng. Bldg. (station = SBEngBldg234) from 2000-10-01 to 2014-10-01. timestamp_UTC Date and Time, UTC time of observation, Universal Time Coordinate</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_c_1">
-    <rdfs:label>Date and Time, UTC</rdfs:label>
-    <rdfs:comment>time of observation, Universal Time Coordinate</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>timestamp_UTC Date and Time, UTC time of observation, Universal Time Coordinate</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>SBCo PWD Precipitation data from Santa Barbara Co. FCD Eng. Bldg. (station = SBEngBldg234) from 2000-10-01 to 2014-10-01.</rdfs:comment>
-    <rdfs:label>Precipitation SBCoFC SB Eng Bldg 234, all years</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Precipitation SBCoFC SB Eng Bldg 234, all years SBCo PWD Precipitation data from Santa Barbara Co. FCD Eng. Bldg. (station = SBEngBldg234) from 2000-10-01 to 2014-10-01.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_c_2">
-    <rdfs:label>Date and Time, UTC</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>time of observation, Universal Time Coordinate</rdfs:comment>
+    <rdfs:label>timestamp_local Date and Time, local local time of observation, with offset to UTC, either -08 or -07, for PST or PDT</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-sbc/5013/6#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>time of observation, Universal Time Coordinate</rdfs:comment>
-    <rdfs:label>Date and Time, UTC</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>precipitation_mm Precipitation Precipitation amount during the interval</rdfs:label>
   </owl:Class>
 </rdf:RDF>

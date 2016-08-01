@@ -4,73 +4,72 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N25773eed489345dba95ea713b15b559b">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N22c25281f03d4ec39ce360385f1bec48">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>t_ext.txt </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_a_3">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nff2cc3816e58471780ffbc9d31d83162">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>t_ext.txt </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9ed0d4e423f7492490fae9f8751eac1e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>t_ext.txt Temperatura Externa hora hora da mediçào</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N52f6af4cc5914ac98df35c9bd71135e1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N0931a6888c654780b5fdca19436fca56">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7affb86185d544419e24bf40c429f653">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Na9a3900c66ac4f7eb75127a260b9b9b0">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>t_ext.txt </rdfs:label>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3">
     <rdfs:label>(***Dados de exemplo - nao utilizar . Example data - don't use***) Stingless Bees Experiment - Experimento com abelhas sem ferrão Thermoregulation Research/ Pesquisa em Termoregulação Parte do Projeto ViNCES do programa TiDIA-Kyatera da FAPESP</rdfs:label>
     <rdfs:comment>Dados obtidos no Laboratorio da Abelhas-Instituto de Biociencias-USP em uma colonia de Melipona quadrifasciata anthidioides monitorada, parte do projeto ViNCES do programa TiDIA-Kyatera da FAPESP. Pesquisa ficiticia sobre termoregulação</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>data da medição .</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>t_ext.txt Temperatura Externa data data da medição .</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf9783344f71541b6bccd1082b62568e6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N84ecd9fb93a84a2db4b45502043f4872">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Temperatura Externa</rdfs:comment>
-    <rdfs:label>t_ext.txt</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N67a7d1e091a146db9b40d69ae3d1322e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfac39e991fd648a98a1c2f2fa807fe4c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>t_ext.txt Temperatura Externa temperatura temperatura externa</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_2">
-    <rdfs:comment>data da medição .</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>hora hora da mediçào</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>temperatura temperatura externa</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1_c_1">
-    <rdfs:comment>data da medição .</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>data data da medição .</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/msucci.23.3#d_1">
+    <rdfs:label>t_ext.txt Temperatura Externa</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
 </rdf:RDF>

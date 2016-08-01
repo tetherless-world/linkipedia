@@ -4,72 +4,71 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml">
-    <rdfs:label>Wind May 2013</rdfs:label>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_a_1">
+    <rdfs:label>wind_data_may_2013 - wind_data_may_2013 Wind date Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf42fdb338a984871a43c161bb8b57ba1">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N8c5551954dc14b68961851f1d55b4950">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>wind_data_may_2013 - wind_data_may_2013 </rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc389cf0f050949fe94a4a50053c2f575">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N585267153f7a4de0853e59ae61dd1822">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5dac7e9877eb4677b8beb95b73966811">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>wind_data_may_2013 - wind_data_may_2013 </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0defc47ad34e4727b9d8d7c6debea811">
+      <owl:Restriction rdf:nodeID="N1c25b00533164716b9d682860a817aff">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_a_1">
-    <rdfs:label>wind_data_may_2013 - wind_data_may_2013 </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>wind_data_may_2013 - wind_data_may_2013 Wind Dm Wind direction</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0131e008d2f94bddabaf6a12b5ac166c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N04201445feac4212838fb9f8dcaea704">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_a_2">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfb773ff1420a418d890dcf623fb4bbb1">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N5fa94fe3b70f4a59b582a5ce882c2ef7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>wind_data_may_2013 - wind_data_may_2013 Wind Sm Wind speed</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf59a62eb86a542449aaa7ca77b90be6e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1">
-    <rdfs:label>wind_data_may_2013 - wind_data_may_2013</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Wind</rdfs:comment>
-  </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml">
+    <rdfs:label>Wind May 2013</rdfs:label>
+  </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date</rdfs:comment>
+    <rdfs:label>Dm Wind direction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Date</rdfs:comment>
+    <rdfs:label>Sm Wind speed</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>wind_data_may_2013 - wind_data_may_2013 Wind</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1rn35tc/1/mrt-eml.xml#d_1_c_1">
+    <rdfs:label>date Date</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

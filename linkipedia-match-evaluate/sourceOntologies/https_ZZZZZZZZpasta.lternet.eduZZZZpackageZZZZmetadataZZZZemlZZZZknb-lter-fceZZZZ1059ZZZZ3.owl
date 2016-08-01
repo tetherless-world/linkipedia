@@ -4,97 +4,92 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4f9bd73662a54e3084eeed8ffdd1c5dc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Monthly Mean Sea Level Data at Key West Florida, water level station (NOAA/NOS CO_OPS ID 8724580). Year Year Year measurement was collected</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8ad30bb9b34a4dbea220398668f556f8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3">
-    <rdfs:label>NOAA Monthly Mean Sea Level Summary Data for the Key West, Florida, Water Level Station (FCE) (NOAA/NOS Co-OPS ID 8724580) from 01-Jan-1913 to Present</rdfs:label>
     <rdfs:comment>Monthly Mean Sea Level Summary Data for the Key West, Florida, Water Level Station (NOAA/NOS CO-OPS ID 8724580). Data is in meters relative to the STND-Key West Station Datum.</rdfs:comment>
+    <rdfs:label>NOAA Monthly Mean Sea Level Summary Data for the Key West, Florida, Water Level Station (FCE) (NOAA/NOS Co-OPS ID 8724580) from 01-Jan-1913 to Present</rdfs:label>
   </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N354de7f1ccf74612a9abecdadf2274bc">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N319d4b7921434804bb37f4ec23382832">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Water Level Station ID</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Monthly Mean Sea Level Data at Key West Florida, water level station (NOAA/NOS CO_OPS ID 8724580). Month Month Month measurement was collected</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nadad4047c7ff4db689903add77466595">
+      <owl:Restriction rdf:nodeID="N264f5e2795c44a898118c93e64e922c0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3f973aa9b6c74456a85898a6dbdb1e5e">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Monthly Mean Sea Level Data at Key West Florida, water level station (NOAA/NOS CO_OPS ID 8724580). Station_ID NOAA Water Level Station ID NOAA Water Level Station ID</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N68d34f332fa44de79a3940d5cbdbcded">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_a_4">
+    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Monthly Mean Sea Level Data at Key West Florida, water level station (NOAA/NOS CO_OPS ID 8724580). Mean Sea Level Mean Monthly Sea Level Mean Monthly Sea Level</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N73a3c3fecc26497d97de3cb1af6e2388">
+      <owl:Restriction rdf:nodeID="Na696b6056147492bba783fac7341f96a">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Water Level Station ID</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N43b510cfdca2419785d108c66dad7688">
+      <owl:Restriction rdf:nodeID="N6fcd4836f81844c18b61e1cd2033a7fb">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne4d24952b0ab45fcb717e3d6ce2fae00">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbfef523d8d5242418ab5a721fb45b6c7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Water Level Station ID</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0258f44af1a04a829af2842d0faf3f34">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Water Level Station ID</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N17a63c8dfc4b4c20a9a83ceebbe96f88">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1">
-    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>NOAA Monthly Mean Sea Level Data at Key West Florida, water level station (NOAA/NOS CO_OPS ID 8724580).</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_1">
-    <rdfs:label>NOAA Water Level Station ID</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>NOAA Water Level Station ID</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Station_ID NOAA Water Level Station ID NOAA Water Level Station ID</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_2">
-    <rdfs:comment>NOAA Water Level Station ID</rdfs:comment>
-    <rdfs:label>NOAA Water Level Station ID</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Year Year Year measurement was collected</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>FCE_KeyWestStation_MeanSeaLevels NOAA Monthly Mean Sea Level Data at Key West Florida, water level station (NOAA/NOS CO_OPS ID 8724580).</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_4">
-    <rdfs:comment>NOAA Water Level Station ID</rdfs:comment>
-    <rdfs:label>NOAA Water Level Station ID</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Mean Sea Level Mean Monthly Sea Level Mean Monthly Sea Level</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1059/3#d_1_c_3">
-    <rdfs:label>NOAA Water Level Station ID</rdfs:label>
-    <rdfs:comment>NOAA Water Level Station ID</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Month Month Month measurement was collected</rdfs:label>
   </owl:Class>
 </rdf:RDF>

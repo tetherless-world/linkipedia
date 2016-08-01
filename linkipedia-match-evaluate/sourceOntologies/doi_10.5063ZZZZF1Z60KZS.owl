@@ -4,163 +4,51 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N31927e3fd79f423c9dff2aba3402888d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_2"/>
+      <owl:Restriction rdf:nodeID="N229c656fb92e4fd7982c8d0698f2b049">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed matrix Matrix Type sampled</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N66c41d73c9fb4967899c49cc409cc401">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2"/>
+      <owl:Restriction rdf:nodeID="N865e6f56c75340728df8225220ba1dce">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Analyte</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndd86d3a68ccd422996940dab0abca4cc">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N59490cfac99848b1825d6e83e8a97485">
+      <owl:Restriction rdf:nodeID="Ne8a6bdb841d9417495ccfec9970fe5bc">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Analyte</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_3">
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
+    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Hydrocarbon concentrations, sample idetifiers refer to supplemental table identifiers chemical Analyte Hydrocarbon analyte concentrations recorded in nanograms: ng/g for tissues and sediments and ng/L for water samples</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N49b1ce23843140b1895ea98251db2cbd">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf73d25d34948414bb97e11f0620a4ec8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_a_4">
-    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Analyte</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8fe5e671738f49ea96d83a4c41051f0b">
+      <owl:Restriction rdf:nodeID="Nc0b67e0029e844d087f782cab6fb6fc7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndd1c610aeed549f38443f89083a4d18d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed index entry number</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbade9292a6d64b6490a4e163e61c5be6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_7"/>
+      <owl:Restriction rdf:nodeID="N562cdd94a73c4406a1c9f790d49d85d9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1f66f93f0c7341bc959a6d80225a400c">
+      <owl:Restriction rdf:nodeID="N31c759d382334e5b98a88de920f7cbbf">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nebca213eba10442591665591ff017966">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbd80efac8a8e4a21aabfc6944e218b32">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_9"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0ef7f5fe6db04eb3838c84248c8c9d25">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>hcCodeDef.csv analyte values</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne86b0b3bc9054c40a38d50555ca79574">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_8">
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N52fc70d18e244b2f867b81fcde86d861">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0c032b8233a740c2a66a5725f75fbe9a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_8"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndea101d1043f42f8b7d6605cb6e74555">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd2e28e72651845cd843d7a2137d23940">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Analyte</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbe03e906a3704000b169aa3194da2d80">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf4521b2a38db4f1aad0538ed1b548321">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -175,258 +63,348 @@ REFERENCES:
 ***Larsen, M.L. and L.G. Holland 2004. Standard operating procedure for the determination of particle grain size in marine sediments analyzed at the Auke Bay Laboratory. Auke Bay Laboratory, Alaska Fisheries.</rdfs:comment>
     <rdfs:label>PWSRCAC Long-Term Environmental Monitoring Program, 1993-2009</rdfs:label>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_10">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N246e808c3a0a44cb9a2cac830f8992c6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N6ba392be19a0415586d2909100672367">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed wetWt Wet Weight Wet weight of the sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6ee4b01ec62144bbb41779c3d14f2356">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_1"/>
+      <owl:Restriction rdf:nodeID="Ne7b91d682a5e41cb8ed563ea5aa4bda6">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_10"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_4">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_a_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6c05ce79274a40ed8c46db8019759995">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+      <owl:Restriction rdf:nodeID="Nf2112e26ffed402e83744d1e2247e65f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na13e555c843945a0a559310cc430b076">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Na3747e71b0c94e8ca9461979a1b2f6fb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Hydrocarbon concentrations, sample idetifiers refer to supplemental table identifiers concentration ng/g concentration of hydrocarbon, ng/g for tissue and sediment samples and ng/L for water samples (rinses)</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_a_2">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed catalog Organizational refrence, Auk Bay Labs.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na44bd1e51953429cbf531127773b3bcf">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>hcCodeDef.csv analyte values</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne2f7bbaecd344311a4a57f4d0c1d6b05">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N86c9e3054c0641ff9251408325c455b3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nffe33b4317ba4637b85eba7b836bbc8a">
+      <owl:Restriction rdf:nodeID="N1294035fedb743a8be3242c736a3c5e1">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N222b7ed871c7429e8c83851382622bce">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb7a5b44207e34d5188a042fb60746d0f">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_12"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N0a5ec04dbe8d4853b140172472cda9c3">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_a_1">
+    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Hydrocarbon concentrations, sample idetifiers refer to supplemental table identifiers sampleID Sample ID corresponds to sample IDs in accompanyng table with sample with sample details (ltemSampleData.csv)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf2574722620341a180c76df53aa28847">
+      <owl:Restriction rdf:nodeID="Nfa4ee1e0b1c447aea7e6db2fbd4f9a75">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Analyte</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N85491900c45c452c9a82d3c0093f5a93">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N178a7477a22d4eb6a5367ebfc86aa34d">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_6">
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_a_5">
+    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Hydrocarbon concentrations, sample idetifiers refer to supplemental table identifiers dataQualifier Data qualifier Notes and qualification of samples and analytes</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb60580bccc7c4caf8a54c3700629f565">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+      <owl:Restriction rdf:nodeID="N0ff9d73d2c7c4989b83f6a2e7dd05b42">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncc62a1d5a6fe43028a8b1c15c762e111">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nf086b58296e34c50a15813f795d1a71a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_a_2">
+    <rdfs:label>hcCodeDef.csv Definitions for analyte values in LTEM data table definition analyte definitions Definitions for 'chemical' column in pwsrcacLTEM data table</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb45e72f05242492ea2ea57e721777ed8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_10"/>
+      <owl:Restriction rdf:nodeID="N120b1053ec15482497fc40d2c79e9e73">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N643ceb2cd8774b2f9cb0afe6927127ce">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N759d744c03cf45a990e5fe0fd262ed64">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N105f69b379b14ded8a4e96cfafc58e60">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3292804b8ee1495e98e0a27dfebf6ee0">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Hydrocarbon concentrations, sample idetifiers refer to supplemental table identifiers chemGrp Chemical structure or analysis group</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_3">
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed labID Lab ID label used by specific lab, may coincide with SampleID</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N26982da9b37f46e69b67dcab86e14bd2">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne59ad65a7c974cc89f3a1a04f051711b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_7">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncebbccfc2daa45f4b119fefee1f36531">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8e113491b5b642259b9f6f77baf304ed">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed sampleID Sample ID Identifier for each sample collected and analyzed.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N29e01c7d2c3c44959d17747fc9df6541">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_12"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0fb2512ed25a4b41b06773896f7fe1d5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed useability Useability If sample was used in report, labled 'ok'</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_8">
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed sampDate Collection Date Date sample was collected</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf4eda30f0a0b446eaa0eadf6ee23cd3a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9a0bde7072cd4aa38d1024052de08bda">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_11">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ltemSampleData.csv Station of analysis and matrix type</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne731a8ca094848f68e92eb53e7c17840">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nbfc29a6866c14fe6bd228f2646826ad2">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_11"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed hcUnits analyte units Hydrocarbons in sediment and tissue samples are recorded in ng/g, water samples are in ng/L</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N42bace232a94470fb0a8c99d82a5ced3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N6826eacd0a0c4e8286c4fb9201e5c335">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed stationMatrix Station of analysis and matrix type Collection location along with abreviation for matrix type (biologic or sediment)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0e4ddc93ebce4742bfe5f5aa8c3ae576">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd26790bde8914a85abe3eb93a870746d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2">
-    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Hydrocarbon concentrations, sample idetifiers refer to supplemental table identifiers</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Naf7fe90cb2294bdb98284cc4abe5492c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>hcCodeDef.csv Definitions for analyte values in LTEM data table value analyte values values for defninitions in next column, define 'chemical' column in pwscacLTEM data table</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4590d6a63fe24c3e9b4c842cb89dd621">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Data for each sample collected and assessed</rdfs:comment>
-    <rdfs:label>ltemSampleData.csv</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_5">
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed lab Lab where analysis was done</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb8b591c76ca842f2a618991f59e91ad9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbcf0f8314d3647bc889541e51ff7fe95">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_1">
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>entry number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_11">
-    <rdfs:comment>entry number</rdfs:comment>
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_c_2">
-    <rdfs:comment>values for defninitions in next column, define 'chemical' column in pwscacLTEM data table</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>analyte values</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_a_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed dryWt Dry Weight Dry weight of the sample (g)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N136fec5ba41e4b029044c2e91a916ed6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N656b8640d7de40a1897815fde4dbadbc">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_3">
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_5">
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_4">
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_4">
-    <rdfs:label>Analyte</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Sample ID corresponds to sample IDs in accompanyng table with sample with sample details (ltemSampleData.csv)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Analyte</rdfs:label>
-    <rdfs:comment>Sample ID corresponds to sample IDs in accompanyng table with sample with sample details (ltemSampleData.csv)</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>analyte values</rdfs:label>
-    <rdfs:comment>values for defninitions in next column, define 'chemical' column in pwscacLTEM data table</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>labID Lab ID label used by specific lab, may coincide with SampleID</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Analyte</rdfs:label>
-    <rdfs:comment>Sample ID corresponds to sample IDs in accompanyng table with sample with sample details (ltemSampleData.csv)</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sampleID Sample ID corresponds to sample IDs in accompanyng table with sample with sample details (ltemSampleData.csv)</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Sample ID corresponds to sample IDs in accompanyng table with sample with sample details (ltemSampleData.csv)</rdfs:comment>
-    <rdfs:label>Analyte</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>lab Lab where analysis was done</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>dataQualifier Data qualifier Notes and qualification of samples and analytes</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_8">
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>matrix Matrix Type sampled</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:comment>entry number</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_12">
+    <rdfs:label>useability Useability If sample was used in report, labled 'ok'</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2">
+    <rdfs:label>pwsrcacLongTermEnvtlMonitorData.csv Hydrocarbon concentrations, sample idetifiers refer to supplemental table identifiers</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>ltemSampleData.csv Data for each sample collected and assessed</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>concentration ng/g concentration of hydrocarbon, ng/g for tissue and sediment samples and ng/L for water samples (rinses)</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Analyte</rdfs:label>
-    <rdfs:comment>Sample ID corresponds to sample IDs in accompanyng table with sample with sample details (ltemSampleData.csv)</rdfs:comment>
+    <rdfs:label>chemGrp Chemical structure or analysis group</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Definitions for analyte values in LTEM data table</rdfs:comment>
-    <rdfs:label>hcCodeDef.csv</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_6">
+    <rdfs:label>catalog Organizational refrence, Auk Bay Labs.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_2_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>chemical Analyte Hydrocarbon analyte concentrations recorded in nanograms: ng/g for tissues and sediments and ng/L for water samples</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_c_1">
+    <rdfs:label>value analyte values values for defninitions in next column, define 'chemical' column in pwscacLTEM data table</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>index entry number</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_9">
-    <rdfs:label>Station of analysis and matrix type</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>entry number</rdfs:comment>
+    <rdfs:label>dryWt Dry Weight Dry weight of the sample (g)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>definition analyte definitions Definitions for 'chemical' column in pwsrcacLTEM data table</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>wetWt Wet Weight Wet weight of the sample</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_11">
+    <rdfs:label>hcUnits analyte units Hydrocarbons in sediment and tissue samples are recorded in ng/g, water samples are in ng/L</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>stationMatrix Station of analysis and matrix type Collection location along with abreviation for matrix type (biologic or sediment)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sampleID Sample ID Identifier for each sample collected and analyzed.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_1_c_8">
+    <rdfs:label>sampDate Collection Date Date sample was collected</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/F1Z60KZS#d_3">
+    <rdfs:label>hcCodeDef.csv Definitions for analyte values in LTEM data table</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
 </rdf:RDF>

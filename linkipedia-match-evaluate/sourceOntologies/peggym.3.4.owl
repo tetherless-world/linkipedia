@@ -4,192 +4,191 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4">
-    <rdfs:label>Species data for Mountain Zebra National Park</rdfs:label>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_7">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_2">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N608db40874804593a669c49a8342e18f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_7"/>
+      <owl:Restriction rdf:nodeID="Ne2826b6c57df4726bc5b7bda08d923a1">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy Year Year number</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N663a9aed09f9466cb0bb508ff09d58b9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Na935178ce9764a4f928d97108dfd52a4">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N29b5f1a829de4baf9bb0a45ba3c12385">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy BW Blue wildebeest</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ndd2bda195c1248a1b97adf68f37cb65b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_1">
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy Season Season in which counts were conducted</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1576d9cc992d41c4aa6c6c9b0c0da6d1">
+      <owl:Restriction rdf:nodeID="N937607622ac24f92831d2b7afc9b87bb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1fc7cf25ae5843938a5dd2019abe3d69">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3bca2f5e41fa4ba495798ca8911d9847">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_6">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb4e7b1aac5fd45e3858ce6b0a6a80d54">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2a101e4257c54d789e0df6aed9a5e030">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_3">
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nee1d9acbdb034f96b7f63975b2d197e2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0adfc4914d8a4b12a7816987fc3f2c07">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7d159786b8f24e65b149d246ec419cf3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N50e9046c2a824998b71ff6b8119ecac2">
+      <owl:Restriction rdf:nodeID="N4d921024d10e45f2999d1289b7a6d5cf">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_2">
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy DATE Date when counts occured</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N43d56bc31b9f4e8e992b6f492922155f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N2695658dc0c946569617a52cc4645684">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6e763525cb7d4cb7accf44e34c73b33f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_9">
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1683b14b9cd94426974bb4bbb84f7e2e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb74010dd0bf9411495975c491c218be4">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_8">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nef08217003f54e61a4a41e94709a5e89">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N31edbe43ea524e7e80e5041673af1145">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_5">
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy MZ Number of mountain zebra counted</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5619f69f728d4a1a96066b659c08f7ff">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Na79e4a6801e44a6aa36be8e8ef9ce2d4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1eae9ec1dbe64dcb8e1c5e1b7745cc3a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nbbd57881425348d891c91fa5c8714ffe">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy Count number Number of a particulat species that was counted</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N89ca448b199d4ed6800de6fdafaf9461">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf19f3c540a21455fb449f4718ded7c07">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_9">
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy HB Hartebeest</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1f224a1e7d5b48e784d3b2caa2687e17">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nae6cde0257d44f1f9321d1b802cb0260">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_6">
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy SP Springbuck</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2600716a087b495e9916800d552e4b1e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9e327f5e73b0418695a92f859056f8ca">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_1">
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>copy</rdfs:comment>
-    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_8">
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4">
+    <rdfs:label>Species data for Mountain Zebra National Park</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_a_8">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N91587be67fc643c188bc0e5341490380">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy BB Buffalo</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N45b8c3867aaf418b90f614b33a5eef4f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_2">
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Year Year number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_1">
+    <rdfs:label>Season Season in which counts were conducted</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1">
+    <rdfs:label>Copy of MZNP RPG DPG OUD TOTALS COUNTED 2.txt copy</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Count number Number of a particulat species that was counted</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_9">
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>MZ Number of mountain zebra counted</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_8">
+    <rdfs:label>BB Buffalo</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_7">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>BW Blue wildebeest</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Season in which counts were conducted</rdfs:comment>
+    <rdfs:label>DATE Date when counts occured</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>SP Springbuck</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/peggym.3.4#d_1_c_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>HB Hartebeest</rdfs:label>
   </owl:Class>
 </rdf:RDF>

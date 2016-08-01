@@ -5,18 +5,82 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_4">
-    <rdfs:label>表1 研究樣區基本資表 no</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N22c9e5db83024db4a41f4c9aa10bef68">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nd93b6fb766814c529bce36f6746e01d8">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>表1 研究樣區基本資表 表1 研究樣區基本資表 angle angle 坡度</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N57290795b12a4a12b20c6b7a5b6d768b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_1">
+    <rdfs:label>表1 研究樣區基本資表 表1 研究樣區基本資表 no no 樣區編號</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd0bfb40f8d644653a4f8ba69685df5d5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2a1404cb96814e908b0c387487c96bda">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na9a00bdf9d0a481689d840689da367a9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Ne6c95cd9118648b782b0bec3e0d10b57">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>表1 研究樣區基本資表 表1 研究樣區基本資表 direction direction 坡向</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6f6a3be75609469bac1008140fee8934">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>表1 研究樣區基本資表 表1 研究樣區基本資表 coordinates coordinates 座標</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N44ccf8338e6f4c408f0cbcb21f5f7f1d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N082466a2179340f585176d3eee4ca640">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_5">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8ba2afa5498544e7bdef6502c6d52fcc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_5"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>表1 研究樣區基本資表 表1 研究樣區基本資表 hight hight 海拔高</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3e9dd801d8a94dae8034a4d22c022a25">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -25,98 +89,28 @@
     <rdfs:comment>瑞太地區，包括嘉義縣梅山鄉之瑞里、瑞峰及太和三村，屬阿里山國家風景特定區經營管理範圍內。本研究總計設立20個樣區80個小區，共記錄維管束植物162科548屬944種，其中蕨類植物26科60屬130種，裸子植物5科11屬15種，雙子葉植物110科379屬653種，單子葉植物21科98屬146種，其中17種為稀有種。
 依群團分析結果，可區分為4型，即Ⅰ.中晚期杉木人工林型：分(Ⅰ)中期杉木人工林亞型，(Ⅱ)晚期杉木人工林亞型；Ⅱ. 柳杉人工林型；Ⅲ. 楠櫧次生林型：含(Ⅰ)山黃麻－食茱萸亞型，(Ⅱ)台灣山香圓－山桔亞型，(Ⅲ)大葉楠－山棕亞型，(Ⅳ)牛樟－江某亞型；Ⅳ. 台灣杉人工林型。其中楠櫧次生林型之物種最豐富，為天然植群之代表型。蕨類商數達3.99，證實本區的氣候濕潤。此外，經物種歧異度分析結果顯示出，各林型之種豐富度指數差異極大，介於0.408~3.372，Simpson歧異度指數介於0.8414~0.9975，其中以次生林較高，而台灣杉造林地最低。</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_2">
-    <rdfs:label>表1 研究樣區基本資表 no</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1c78ebecc28f4e7a9386f3d8829c8db5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5b10c454980a480f9859b2d896eb4363">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_1">
-    <rdfs:label>表1 研究樣區基本資表 no</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7579edfa9aa3445dbd4d43302975ce87">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb5cdd89b3d4a4f6ea93cb4c57b41f64b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_3">
-    <rdfs:label>表1 研究樣區基本資表 no</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc752ae78ce094bfab54dd15707366e06">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N169a58ffe5f244278493819b398d36cc">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_a_5">
-    <rdfs:label>表1 研究樣區基本資表 no</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2c6cef5da56a4c408ca6655279a77eea">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2622d0cc8d0748ce995616d8e96545da">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>表1 研究樣區基本資表</rdfs:comment>
-    <rdfs:label>表1 研究樣區基本資表</rdfs:label>
-  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_4">
-    <rdfs:label>no</rdfs:label>
-    <rdfs:comment>樣區編號</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_2">
-    <rdfs:label>no</rdfs:label>
-    <rdfs:comment>樣區編號</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_5">
-    <rdfs:label>no</rdfs:label>
-    <rdfs:comment>樣區編號</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>angle angle 坡度</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_3">
-    <rdfs:label>no</rdfs:label>
-    <rdfs:comment>樣區編號</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>direction direction 坡向</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>hight hight 海拔高</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>表1 研究樣區基本資表 表1 研究樣區基本資表</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_1">
-    <rdfs:comment>樣區編號</rdfs:comment>
-    <rdfs:label>no</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>no no 樣區編號</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/dengsl.12.7#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>coordinates coordinates 座標</rdfs:label>
   </owl:Class>
 </rdf:RDF>

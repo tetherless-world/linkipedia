@@ -51,8 +51,8 @@ public class MyLinkipediaMatcher
 		
 		HashSet<String> sourceName=mm.getSource();
 		
-		
-		String targetPath="C:\\Users\\prakash\\Desktop\\sabitaInternship\\AgreementMakerLight\\src\\aml\\mergedOntologies.owl";
+		//String sourcePath="C:\\Users\\prakash\\Desktop\\sabitaInternship\\owlFiles\\source\\https_ZZZZZZZZpasta.lternet.eduZZZZpackageZZZZmetadataZZZZemlZZZZknb-lter-gceZZZZ322ZZZZ24.owl";
+		String targetPath="C:\\Users\\prakash\\Desktop\\sabitaInternship\\merged.owl";
 		int i=1;
 		
 		for(String sourcePath:sourceName)// for each ontology in the source  get the matches
@@ -85,23 +85,29 @@ public class MyLinkipediaMatcher
 				}
 				//aml.matchAuto();
 				
-				//To run pre-processing and Edit Distance Matchers
-				strMaps = strM.myMatcher(sourcePath,targetPath);
-				System.out.println("finished string matcher!!!!!!!!!!");
+				System.out.println("aaa");
+				
+				
 				/*
 				 * in this part, we are trying to identify the class ids that are subclasses of measurement type. 
 				 *
 				 */
+				
+				RelationshipMap rmm=aml.getRelationshipMap();
+				//To run pre-processing and Edit Distance Matchers
+				strMaps = strM.myMatcher(sourcePath,targetPath,rmm);
+				System.out.println("finished string matcher!!!!!!!!!!");
+				
 				System.out.println("*********");
 				
-				Set<Integer> targetKeys = CallStringMatcher.target.getClasses();
-				RelationshipMap rmm=aml.getRelationshipMap();
+				Set<Integer> targetKeys = AML.target.getClasses();
+				//RelationshipMap rmm=aml.getRelationshipMap();
 				HashSet<Integer> sourceSubClasses=mm.getSuperClassForSource(rmm);//these are the id of the classes from source that are subclass of measurement type
 				if(i==1)
 				{
 				 targetSubClasses=mm.getSuperClassForTarget(rmm);//classes from the target that are subclass of measurement type--doing it once since the target is always same
 				}
-				 
+				
 						
 				//To run MultiWord Matcher
 				MultiWordMatcher mwm = new MultiWordMatcher();
@@ -110,7 +116,7 @@ public class MyLinkipediaMatcher
 				//To run LWC
 				lwcMaps = LWCForLinkipedia.combine(strMaps, mwmMaps, 0.75,sourceSubClasses);
 				//System.out.println("finished  LWC 1");
-				//To run TF-IDF and Cosine Similarity
+			//To run TF-IDF and Cosine Similarity
 				tfMaps = tf.tfIdfMainParse(sourcePath,targetPath);
 				System.out.println("finished  tf-idf");
 				//To run LWC
@@ -148,14 +154,14 @@ public class MyLinkipediaMatcher
 							{
 								matchingClass=m.getTargetURI();
 								matchScore=m.getSimilarity();
-								highestScoringClass.put(m.getSourceURI(),m.getSourceURI()+"@@"+CallStringMatcher.source.getName(m.getSourceId())+"@@"+matchingClass+"@@"+CallStringMatcher.target.getName(m.getTargetId())+"@@"+matchScore);
+								highestScoringClass.put(m.getSourceURI(),m.getSourceURI()+"@@"+AML.source.getName(m.getSourceId())+"@@"+matchingClass+"@@"+AML.target.getName(m.getTargetId())+"@@"+matchScore);
 								//System.out.println("**********"+m.getSourceURI()+"@@"+CallStringMatcher.source.getName(m.getSourceId())+"@@"+matchingClass+"@@"+CallStringMatcher.target.getName(m.getTargetId())+"@@"+matchScore);
 							}
 							
 							
 						}
 						else {
-							highestScoringClass.put(m.getSourceURI(),m.getSourceURI()+"@@"+CallStringMatcher.source.getName(m.getSourceId())+"@@"+m.getTargetURI()+"@@"+CallStringMatcher.target.getName(m.getTargetId())+"@@"+m.getSimilarity());
+							highestScoringClass.put(m.getSourceURI(),m.getSourceURI()+"@@"+AML.source.getName(m.getSourceId())+"@@"+m.getTargetURI()+"@@"+AML.target.getName(m.getTargetId())+"@@"+m.getSimilarity());
 						}
 						
 						
@@ -188,7 +194,7 @@ public class MyLinkipediaMatcher
 		String newline="\n";
 		System.out.println("***********writing down!!");
 		try {
-			 BufferedWriter buf=new BufferedWriter(new FileWriter("C:\\Users\\prakash\\Desktop\\sabitaInternship\\owlFiles\\sab7_11_2016.csv",true));
+			 BufferedWriter buf=new BufferedWriter(new FileWriter("C:\\Users\\prakash\\Desktop\\sabitaInternship\\owlFiles\\sab7_20_2016_last.csv",true));
 			for(String k:packageId_and_class.keySet())
 			{
 				
@@ -229,7 +235,7 @@ public class MyLinkipediaMatcher
 	}
  	public HashSet<String> getSource()
 	{
-		File sourcefolder = new File("C:\\Users\\prakash\\Desktop\\sabitaInternship\\owlFiles\\sourceCompleted");//path to the folder that has the source files
+		File sourcefolder = new File("C:\\Users\\prakash\\Desktop\\sabitaInternship\\source");//path to the folder that has the source files
 		File[] listOfFilesSource = sourcefolder.listFiles();
 
 				
@@ -249,7 +255,7 @@ public class MyLinkipediaMatcher
 	public  HashSet<Integer> getSuperClassForSource(RelationshipMap rmm)
 	{
 		HashSet<Integer> sourceSubClasses=new HashSet<>();
-		Set<Integer> sourceKeys = CallStringMatcher.source.getClasses();
+		Set<Integer> sourceKeys = AML.source.getClasses();
 		if(CallStringMatcher.id_of_measurement_type_source==-1) //there is no measurement_type class being mentioned in the ontology..so no chances of finding subclass
 			return sourceSubClasses;
 		for(Integer k:sourceKeys)
@@ -268,7 +274,7 @@ public class MyLinkipediaMatcher
 	public HashSet<Integer> getSuperClassForTarget(RelationshipMap rmm)
 	{
 		HashSet<Integer> targetSubClasses=new HashSet<>();
-		Set<Integer> targetKeys = CallStringMatcher.target.getClasses();
+		Set<Integer> targetKeys = AML.target.getClasses();
 		if(CallStringMatcher.id_of_measurement_type_target==-1) //there is no measurement_type class being mentioned in the ontology..so no chances of finding subclass
 			return targetSubClasses;
 		for(Integer k:targetKeys)

@@ -4,38 +4,6 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nac888c49571c48aa8269b00d4e9bf9ae">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7cec0bb638d34901a2763c793ed79f55">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N32abf60f1caa4c6d93deb38669403a68">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N404f9df289c3447eb1bae94bb2e595f6">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11">
     <rdfs:label>Long-Term Observation Program (LTOP) Seward Line CHLOROPHYLL A data, Gulf of Alaska (1997-2010)</rdfs:label>
     <rdfs:comment>This project is a component of the integrated Long-term Monitoring of Marine Conditions and Injured Resources and Services submitted by McCammon et. al. The ocean undergoes year-to-year variability in the physical environment, superimposed on longerterm cycles, and potential long-term trends. These variations influence ocean chemistry, and propagate through the lower trophic levels, ultimately influencing fish, seabirds and marine mammals. Over the past 50 years the Northern Pacific appears to have undergone at least one clear regime shift, while the last 12 years have seen multi-years shifts of major atmospheric indices, leaving uncertainty about what regime the coastal Gulf of Alaska is currently in. Regime shifts are often expressed as fundamental shifts in ecosystem structure and function, such as the 1976 regime shift that resulted in a change from a shrimp dominated fisheries to one dominated by pollock, salmon and halibut. Long-term observations are also critical to describe the current state, and natural variability inherent in an ecosystem at risk of significant anthropogenic impact. The resulting information is necessary to assess ongoing climate impacts on the ecosystem and attendant fisheries and for developing and validating numerical ecosystem models to aid in prediction of potential impacts of long-term climate change.This chlorophyll data set is part of a multidisciplinary time-series along the Gulf of Alaska's Seward Line supported by North Pacific Research Board during the years after 2004. It is a continuation of the GLOBEC monitoring program which ran from 1997 through 2004. 
@@ -44,421 +12,430 @@ This data was collected by Dr. Terry Whitledge of the Institute of Marine Scienc
   </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc1e9136724f742a79829205411d29d98">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N5aec5fe7dda44458918b2a6fe31322cb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_3"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc3c93dda43114350bdf42872b4de4df7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N0dbe6b5ee83b4776a34f3bd70c698b01">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 dateTime Date &amp; Time (GMT) Date and time in GMT.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_12">
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N365997b735304beab91d4c623573f6fb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+      <owl:Restriction rdf:nodeID="N29eeda64b8cd412397a7e30dac803062">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8305c532c28d494caba5f507b0013521">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_12"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_9">
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd136c6138ac5436ca0c3ead2462741e5">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8ea2ebdd887b4648a76c8379dae586b3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N08adc58720014716aa6fba7fe73bb1a2">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. ship Research Vessel Research vessel used for given sampling cruise</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_4">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N92ced9d34a6a472aa5ca09542d662d1f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N75e6ecfc97f94f59925f9003ae1d4623">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 stationID Station Identifier Official station name.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_7">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na10f1445a6f6482db71f0af0c132c7c9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N0e007e7367cb4cdf8670c672731783ae">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 lon Longitude Longitude in decimal degrees.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7eb08116f27c4a72a8720f3ca32cd697">
+      <owl:Restriction rdf:nodeID="Nb3c60b0ed0234fdf9bfbfc10fd38010e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_2">
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5ce7a335c15642b58f2f4738d56a4d83">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf06ae67e119b4a2392841c7609de0254">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4cc6f19cb50b4df1bd52f1aa7cd68cf8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_8"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbba9a452ce1d4f9f9b4bfb15e80140f7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_8">
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7bcd8871fbf2464ba07036b02809090b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nde29cfdc79b94f1ca5b2da5254a2f64d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_8"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6954c248d68841ab8cf77584a5b6cf41">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb9e93781d3c54930aac21c3848aa0b2c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_11">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7f7ff58a25e241faa613e12024b0421a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_11"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3ef5497456d942a2b7f3d72723f20690">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_1">
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N21a21ea3373d43fc9a9f2cca5ec1b127">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbace6509358c4a9894337219889eb955">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_9">
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne099d4e6bd6443769af15abc13b028bf">
+      <owl:Restriction rdf:nodeID="N8469078863954a4990a139f92d258ba2">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8528029fe344478abef24b08d883b7c8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N2c676e63a3384b1e8a124e17388b63bb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 depth Sample Depth Water column depth where sample was taken (m).</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_5">
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_8">
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. pressure Pressure Pressure of watercolumn where sample was taken.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb7b6f7d1814e47829cfba57cbeaf50e1">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9888b2945c144dbc9897de101974d38c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8da8de5232564a99b3aca7bc71f7e0bb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na8a49d7d3b454777ab2f98e7900247c1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_10"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4046253ab71941fe9300a64c43a12730">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N803f62f3c38c40ff98947bc3ae74c2e9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_3">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Neae2cbaefbc143719b40d05e50675df2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N339a9e144ac247f7ba8ba14d45061909">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nef717aba423f41ab8094b0356c13b763">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_3"/>
+      <owl:Restriction rdf:nodeID="Nc52edeae6b5542b2b552204249a563bf">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_11">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8203b46e2ae142feb747346d467ec06a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N45dca5cc637046dcbd12643e0e5a2687">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_11"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 phaeophytin Phaeophytin Concentration The concentration of phaeophytin (ug/l) in the sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne43ebe38b1844be1b6da9b69f67ffda6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. lon Longitude Longitude in decimal degrees</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N00b07c2a5b9145258c6ee655451fca14">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_6"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_7">
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. sonicDepth Depth Total depth of the ocean at site where cast was taken.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N762eb38b2632438c84e38fa84553fec8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne303c232d0c84544853e089385c25845">
+      <owl:Restriction rdf:nodeID="N99911524100d4e4a9199e120cf8fc0c5">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb93a51797b12423d9baef9318bf2f3d3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd57d051410724aa5b3fe0f124d5d1835">
+      <owl:Restriction rdf:nodeID="Nb36fde166e4b4be895b027cac8f2302d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_1">
-    <rdfs:label>fluorChlaData.csv Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na6d19651852d4450b02ac829c44373a9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N412e4733efe94eb3b1203927d4ff31ce">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nff69fc8709c24829bacd0395bc007160">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Na54e2d9c4bb245c5abd0a7a4f7c4823f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. stationID Station Identifier Official Station name.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_4">
-    <rdfs:label>cpChlaData.csv Research Vessel</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_5">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8f2c68eab27e474ca35eacf4849c413e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ncdbced708687493fa7f7d06b120e6aee">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5d57e2223eb640f7ac99aafd2f65ab6e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_5"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. lat Latitude Latitude in decimal degrees.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N447ab017ef5a4c06b07687b1dbfd4648">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N70dc5271e53a4d1ca44aff358c9dbee0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 cruiseID cruise Identifier Cruise identifier based on research vessel (vesselID,season, year).</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_10">
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 chloropyllA Chlorophyll A The concentration of chlorophyll a (ug/l) in the sample.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nce1388440ec04e638fbe3e95fd7520cf">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_4"/>
+      <owl:Restriction rdf:nodeID="Ne6d1838487eb4fdf8f0ffc1d58a54e7a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N73504cf79f404443b16a9705fe6a6ec7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_5">
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 consecStationNum Consecutive Station Number Station number depends on sampling order of cruise.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4b213879d8d94c2482d0f6879a65548e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N92c753f331cb447b9c303e000a8fd180">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_5"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_8">
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 sonicDepth Depth Total depth of the ocean at site where cast was taken.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ndb070c57c0b44705a867b998c8290aca">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7a873a4aaaf44247a1a11e21ed5322df">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_6">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbda9696844624a5f9a6b750805ed7530">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8b7ce52ba1304f81889389dcf55f9fc6">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 lat Latitude Latitude in decimal degrees.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4f6cd5a32eaf4423a351d281d344c512">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N08c190fbd76649d6b83e9f2ec734d79f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. fluor Fluorescence Water column fluorescence (ug/L).</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0e61e94d537d4106b5a8b9c184fb9367">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. dateTime Date &amp; Time (GMT) Date and time in GMT</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4b361faca8a045df8fbd293e16bad413">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_12">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ned1ea37b20e248f09423f1a74b74c590">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_12"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 totalChl Total Chlorophyll The concentration of total chlorophyll (ug/l) in the sample.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7706e17bb39d4558a8506aa2220c5d04">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6121d6e246c944f5a78c86ccd85b01f7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009 ship Research Vessel Research vessel used for given sampling cruise</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfd139300f80c46ca964e3e6fe86094b5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncc3f5aab27eb46c6a78206143d64d304">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details. cruiseID Cruise Identifier Cruise identifier based on research vessel (vesselID,season, year).</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc009ba465b47496f8bca877e14e18c8e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_3">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>dateTime Date &amp; Time (GMT) Date and time in GMT</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_7">
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_8">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>stationID Station Identifier Official Station name.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_7">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_2">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_9">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_11">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_3">
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_6">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_1">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_10">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_9">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>cruiseID cruise Identifier Cruise identifier based on research vessel (vesselID,season, year).</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_6">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>lon Longitude Longitude in decimal degrees</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>cruiseID Cruise Identifier Cruise identifier based on research vessel (vesselID,season, year).</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>consecStationNum Consecutive Station Number Station number depends on sampling order of cruise.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_5">
+    <rdfs:label>lat Latitude Latitude in decimal degrees.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>totalChl Total Chlorophyll The concentration of total chlorophyll (ug/l) in the sample.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_7">
+    <rdfs:label>sonicDepth Depth Total depth of the ocean at site where cast was taken.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_8">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sonicDepth Depth Total depth of the ocean at site where cast was taken.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>fluorChlaData.csv</rdfs:label>
-    <rdfs:comment>Isolated fluorescence data from CTD casts, with sample details.</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_7">
+    <rdfs:label>lon Longitude Longitude in decimal degrees.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009</rdfs:comment>
-    <rdfs:label>cpChlaData.csv</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>stationID Station Identifier Official station name.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_11">
+    <rdfs:label>phaeophytin Phaeophytin Concentration The concentration of phaeophytin (ug/l) in the sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_1">
-    <rdfs:comment>Research vessel used for given sampling cruise</rdfs:comment>
-    <rdfs:label>Research Vessel</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>ship Research Vessel Research vessel used for given sampling cruise</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>dateTime Date &amp; Time (GMT) Date and time in GMT.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_6">
+    <rdfs:label>lat Latitude Latitude in decimal degrees.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_9">
+    <rdfs:label>depth Sample Depth Water column depth where sample was taken (m).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>pressure Pressure Pressure of watercolumn where sample was taken.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>fluorChlaData.csv Isolated fluorescence data from CTD casts, with sample details.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_1">
+    <rdfs:label>ship Research Vessel Research vessel used for given sampling cruise</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2">
+    <rdfs:label>cpChlaData.csv Chlorophyll A &amp; Phaeophytin data from Seward Line sampling 2005-2009</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_1_c_9">
+    <rdfs:label>fluor Fluorescence Water column fluorescence (ug/L).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.39.11#d_2_c_10">
+    <rdfs:label>chloropyllA Chlorophyll A The concentration of chlorophyll a (ug/l) in the sample.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

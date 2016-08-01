@@ -4,24 +4,119 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_9">
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_6">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N16207703e2f64f7dbc27374125d0e9de">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N59d39579596043db88fd469ed0752bbb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 Herb # herbaceous hits out of 100 possible</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N53a8cfcf9f6f4216ac5bed4ea97d35a0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_6"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_5">
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 Shrub # shrub hits out of 100 possible</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1c27e7bba25040d68fdcdcd0e213bd26">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1a45c8d629d242eab45d891a0b62bed1">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N918856ee7f084511bb8f0e157038e14d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_5"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_2">
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 Year The year of the reinventory</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N17a651a788d147fdbbd123652b0ec83e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd4a4711d17e44dc4ad571737861045dc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_9">
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 pShrub proportion of shrub= shrub hits /total hits</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N294a991ce0f34054b9d04626be0e3e48">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N469cecf9013f4ec7a46e880d2ee42ae6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_1">
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 Parcel Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N75753954893644b4901fea639f816ba0">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfbbc8b800888497d9a24fccc951d8bcd">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_10">
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 pGrass proportion of grass= grass hits /total hits</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N30c007d466544576a000185183bf0eef">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N16ee45ae1ab4435d8ef5c487dca87a0d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2a31c76f646e4ac3b7b956a82210a74e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 Transect The id of the transect. Transects conducted for each parcel-year varied as a function of area of the parcel. In 2013, between 14 and 36 transects were conducted in each of 111 parcels.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf75b47de35f6426fb2fbd0c1cd753581">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1">
-    <rdfs:label>Vegetation Line Point Intercept Data, Owens Valley, CA USA 1984-2013</rdfs:label>
     <rdfs:comment>Each year, the Inyo County Water Department monitors vegetation conditions on the floor of the Owens Valley.  The primary goal of this monitoring, according to the technical appendix to the Long-Term Water Agreement (Green Book) are to detect any “significant decreases and changes in Owens Valley vegetation from conditions documented in 1984 to 1987”.  Vegetation live cover and species composition documented during the 1984-87 mapping effort were adopted as the baseline for comparison with each annual reinventory according to the Agreement.  The reference measurements collected within individual areas mapped with similar vegetation (parcels) are referred to as baseline.
 
 The Green Book details certain decreases and changes in vegetation community types that must be avoided under the Agreement.  Baseline vegetation communities in which evapotranspiration exceeds precipitation were classified as groundwater-dependent communities and are referred to as Types B, C, and D.  These phreatophytic communities are dependent on shallow groundwater to maintain plant populations, as precipitation alone is inadequate to meet the water demand of evaporation and transpiration (Sorensen et al. 1991, Steinwand et al. 2006).  For these parcels, according to the Green Book, “the goal is to manage groundwater pumping and surface water management practices so as to avoid causing significant decreases in live vegetation cover” and to prevent a significant amount of vegetation from changing to a “vegetation type that precedes it alphabetically (for example, Type D changing to either C, B, or A vegetation).”  The goal is to manage the effect of pumping on the depth to groundwater to maintain baseline plant communities.
@@ -31,214 +126,118 @@ To determine whether significant decreases and/or changes in vegetation have occ
 A large proportion of groundwater-dependent parcels were mapped during baseline as Type C alkali meadows (61%), and the Agreement seeks to prevent these meadows from changing to shrub-dominated communities (Type B), a state change that is associated with increased depth to groundwater.  Alkali meadows are of special concern because small increases in depth to groundwater can decouple the groundwater from the root zone of grass species (Naumberg et al. 1996, Elmore et al. 2006).  Alkali meadow comprises 0.1% of the vegetation community types in California and 80% of alkali meadow communities are located within the Owens Valley (Davis et al. 1998).  Local management of this community type will determine the likelihood these ecosystems persist in a changing environment.  
 
 Vegetation change across the Owens Valley was evaluated at both the valley scale and for each of 111 individual parcels sampled in 2013.  First, at the valley-wide scale we evaluated plant community cover and composition in parcels affected by groundwater pumping and for parcels that were relatively unaffected by groundwater pumping during the period of maximum pumping rate (1987-1993).  Second, we assessed whether transpiring vegetative cover differed over time for locations influenced by pumping compared to locations not influenced by groundwater pumping.  Third, we quantitatively assessed the divergence of these groups of parcels from the baseline cover values recorded from 1984 to 1987.  Fourth, we assessed whether vegetation composition in wellfield or control groups had changed from baseline values.  Lastly, since determination of significant impacts attributed to water management by LADWP is made on a case by case basis at the individual parcel scale, we (a) quantified the magnitude of change in perennial vegetation cover over the twenty-three year reinventory period, (b) assessed whether the relative proportion of woody vegetation (hereafter shrub), gramminoid vegetation (hereafter grass) and non-gramminoid herbaceous vegetation (hereafter herb) has changed compared to baseline and (c), quantified the temporal trends of vegetation composition for each parcel and evaluated what environmental factors explained the observed patterns in vegetation change.</rdfs:comment>
+    <rdfs:label>Vegetation Line Point Intercept Data, Owens Valley, CA USA 1984-2013</rdfs:label>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_11">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfc77ad0db98b44bd93923aaa90bcbc01">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_11"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N06302a0633d5492eb271a3d59bfc2df8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_8">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na41c046354504cd6903ab1bc288d0ab5">
+      <owl:Restriction rdf:nodeID="N9b8a9507f70f4460aed2e5a190efd561">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Transects.csv </rdfs:label>
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 Herb_Shrub sub-shrub and other hits out of 100 possible that didn't fit into shrub or grass. Note a very small proportion of total hits falls into this category.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N33678599a03d4505a502a7f6bd29507c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N7f74f87932ab45b5b76dae3e0366bca4">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_11">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N24df5c3a50b04d57b8e380609f180a79">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 pHerb proportion of herb= herb hits /total hits</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne5431fba5bb14496816ef2bb854a9133">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_11"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_4">
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 Cover Perennial cover, # hits out of 100 possible. Here annuals have been excluded because the interest was in depth to water and vegetation cover. Annuals are predomiantly precipitation dependent.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N175a7173a3a34c0e85d5f77948c162c6">
+      <owl:Restriction rdf:nodeID="N8ec4c62a946247018c523493805a61c5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9adfb74536c640aebc6b298706f80b7c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Transects.csv </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_5">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N19cfe111cf6c4b649f3c11e1ce61b023">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbc6a47c87e4c40aab01d06f4603848a7">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na561ac7f0fdb48748d5e457aedacf0a3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5e4aeede711b4d65b0b42b9d9a02b52a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N5aefdeb3d2594dc789e87c480dbf1891">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_1">
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6bbab17984c04832921b87593cd8dcdf">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1f186ed28bbc47258a8ead0eb89781d0">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N97ec46a81b58492288b598006163727a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7d983784efa64218b25c7db93d0d8cc9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_10">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N366d647a014d480eb2f83493f584664d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_10"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Neea63b50b5af4fe6ab37cde06ef6e067">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_7">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbd00002aec4246988a0da53ebb60c0d1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N19e1eee3fd424ef9a4d9bc9f97ea11b8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N91a1d17f4f5b4c088434c69372479e05">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_7"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na05433d1f7d74944ac7bac44a0d56e4a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_a_6">
-    <rdfs:label>Transects.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb6a22634af394862ad9616e69bc63eeb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na44c0bfa0b0a42dcb912c82dc56fa286">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:label>Transects.csv Line point transect data 1985-2013 Grass Grass hits out of 100 possible</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Line point transect data 1985-2013</rdfs:comment>
-    <rdfs:label>Transects.csv</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_3">
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_4">
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_9">
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
+    <rdfs:label>Shrub # shrub hits out of 100 possible</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_2">
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_1">
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_6">
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Grass Grass hits out of 100 possible</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_8">
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Herb_Shrub sub-shrub and other hits out of 100 possible that didn't fit into shrub or grass. Note a very small proportion of total hits falls into this category.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Year The year of the reinventory</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Transect The id of the transect. Transects conducted for each parcel-year varied as a function of area of the parcel. In 2013, between 14 and 36 transects were conducted in each of 111 parcels.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Parcel Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_9">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>pShrub proportion of shrub= shrub hits /total hits</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Herb # herbaceous hits out of 100 possible</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Transects.csv Line point transect data 1985-2013</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Cover Perennial cover, # hits out of 100 possible. Here annuals have been excluded because the interest was in depth to water and vegetation cover. Annuals are predomiantly precipitation dependent.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_10">
+    <rdfs:label>pGrass proportion of grass= grass hits /total hits</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/IC.13.1#d_1_c_11">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Parcel refers to the 'vegetation parcel' used for baseline (1985-1987) vegetation mapping. Parcels were delineated by aerial photographs and interpretation or looked to be homogenous vegetation mapping units.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>pHerb proportion of herb= herb hits /total hits</rdfs:label>
   </owl:Class>
 </rdf:RDF>

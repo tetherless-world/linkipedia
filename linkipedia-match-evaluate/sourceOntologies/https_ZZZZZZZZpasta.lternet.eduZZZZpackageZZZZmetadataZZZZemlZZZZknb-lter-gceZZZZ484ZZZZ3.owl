@@ -5,112 +5,111 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbcf483d5c6044d81ac87427ab25c823b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne969610dc97248a9b45767ac955638bd">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nadb316a66e2a4cd9a654316f0e8f60e9">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>INV-GCES-0912 </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>INV-GCES-0912 Main data table for data set INV-GCES-0912 Snails_Consumed Based on middens. Initial density of 300 live Littoraria.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7d0f7b510c414c45aad70239840a035e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na078a0100a5b49ba8e261ad3531a753a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N4a400778aeb44a3faf0cb63309347928">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>INV-GCES-0912 </rdfs:label>
   </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3">
+    <rdfs:label>Rates of consumption of marsh periwinkles (Littoraria irrorata) by mud crabs (Eurytium limosum and Panopeus obesus) between August and December in a Georgia salt marsh</rdfs:label>
+    <rdfs:comment>Predatory mud crabs (Panopeus obesus and Eurytium limosum) are two of the main resident infaunal predators in southeastern US salt marshes.The relative importance of the two species in the trophic control of marsh periwinkles (snails; Littoraria irrorata) is likley to change across seasons. We therefore manipulated the these predator species (Panopeus obesus and Eurytium limosum) in experimental cages in the field (at Dean Creek, Sapelo Island, GA) and assessed monthly predation rates over four months, between 15th August to 15th December. We included 3 treatments, consisting of two treatments containing each species alone, and one containing both species together; all treatments had the same density. Specifically, 1) 4 x Panopeus individuals; 2) 4 x Eurytium individuals; 3) 2 x Panopeus individuals + 2 Eurytium individuals. Only adult crabs (33-40mm carapace diameter) were used. We maintained the treatments over 4 months (15th Aug - 15th Dec 2009), replacing any missing crabs every two weeks and counting the number of snails killed by predators each month.</rdfs:comment>
+  </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>INV-GCES-0912 Main data table for data set INV-GCES-0912 Treatment Crab composition (Panopeus/Eurytium = only specified species; 'combination' = both species)</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf0d634d5276f4e758f31840900c8f674">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N2cb541e1b8c24f2faa6330c81d729272">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>INV-GCES-0912 </rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfafa1208ff2b4155b4abe19beeccbe0d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N9c6ec4aaa07f4e4fb42eba32e5dadf21">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_a_4">
+    <rdfs:label>INV-GCES-0912 Main data table for data set INV-GCES-0912 Months_Elapsed Month after beginning of experiment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd7687b6f7987442b8a7ff98fb7014e8b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8f48ca3a1c94400a9ebc2851d8ed78d8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ned554930e7034217b5a03152d9c15759">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N774194abb8bc49b0814b941906f115d8">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Na78de2eeb5654607a572e2489657034c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>INV-GCES-0912 </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_a_4">
-    <rdfs:label>INV-GCES-0912 </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>INV-GCES-0912 Main data table for data set INV-GCES-0912 Sampling_Date Actual date on which the plots were sampled</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7625dec65f4c4ca397760439b5d2f656">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nc0fd798724b441be8c5f33afca5133d7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_a_1">
+    <rdfs:label>INV-GCES-0912 Main data table for data set INV-GCES-0912 Plot Unique idetifyer for each experimental plot</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf0b6a7e4d92a4cf99ee5564c4d1638e5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3615ee881402487981678c8762cd24cf">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N792cbb9e5c594f07b33b3bb6764f940b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3">
-    <rdfs:comment>Predatory mud crabs (Panopeus obesus and Eurytium limosum) are two of the main resident infaunal predators in southeastern US salt marshes.The relative importance of the two species in the trophic control of marsh periwinkles (snails; Littoraria irrorata) is likley to change across seasons. We therefore manipulated the these predator species (Panopeus obesus and Eurytium limosum) in experimental cages in the field (at Dean Creek, Sapelo Island, GA) and assessed monthly predation rates over four months, between 15th August to 15th December. We included 3 treatments, consisting of two treatments containing each species alone, and one containing both species together; all treatments had the same density. Specifically, 1) 4 x Panopeus individuals; 2) 4 x Eurytium individuals; 3) 2 x Panopeus individuals + 2 Eurytium individuals. Only adult crabs (33-40mm carapace diameter) were used. We maintained the treatments over 4 months (15th Aug - 15th Dec 2009), replacing any missing crabs every two weeks and counting the number of snails killed by predators each month.</rdfs:comment>
-    <rdfs:label>Rates of consumption of marsh periwinkles (Littoraria irrorata) by mud crabs (Eurytium limosum and Panopeus obesus) between August and December in a Georgia salt marsh</rdfs:label>
-  </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_4">
-    <rdfs:comment>Unique idetifyer for each experimental plot</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_5">
-    <rdfs:comment>Unique idetifyer for each experimental plot</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>INV-GCES-0912</rdfs:label>
-    <rdfs:comment>Main data table for data set INV-GCES-0912</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Unique idetifyer for each experimental plot</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_2">
-    <rdfs:comment>Unique idetifyer for each experimental plot</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Unique idetifyer for each experimental plot</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Plot Unique idetifyer for each experimental plot</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_3">
+    <rdfs:label>Snails_Consumed Based on middens. Initial density of 300 live Littoraria.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1">
+    <rdfs:label>INV-GCES-0912 Main data table for data set INV-GCES-0912</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Treatment Crab composition (Panopeus/Eurytium = only specified species; 'combination' = both species)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Sampling_Date Actual date on which the plots were sampled</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/https://pasta.lternet.edu/package/metadata/eml/knb-lter-gce/484/3#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Months_Elapsed Month after beginning of experiment</rdfs:label>
   </owl:Class>
 </rdf:RDF>

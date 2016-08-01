@@ -4,149 +4,133 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_2">
-    <rdfs:label>sampleSites.csv Site Number Identifier</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N52aa6e7a68c0439a8bb257a9b72c349a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N26e01148ad8849efa0490755199d3570">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>sampleSites.csv Site names, descriptions and locations latitude Latitude Latutude of site in degrees, decimal degrees</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N17fc8493c3174c8890164913208d2017">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_2"/>
+      <owl:Restriction rdf:nodeID="N1f50aa730917451380230de8d33ac58a">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_1">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5b8f7f37f37343daaf224c50f69125f0">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_1"/>
+      <owl:Restriction rdf:nodeID="N5b0e23d2352e4668ab349f226a95a09d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N13b13c3cc78c4397ae12c84bafebcc19">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ndee0710c6e4546d29872ae82999472aa">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>eelgrasDensity199095.csv Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data date Date Sampled YYYY-MM-DD</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_3">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_1">
+    <rdfs:label>sampleSites.csv Site names, descriptions and locations siteNum Site Number Identifier Site number refers sites to other data tables</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb2068297b16b4425bc0178df1e4ec79d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nebf03daed5dd46f39c3993b7a9c4c652">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N23d069b8780e4559b02d6cacd79c87ed">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N8741550be3594f1985e2693cb242bd64">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_4">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3450fec037644a72abf9dea6b50f4aff">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>eelgrasDensity199095.csv Site Number</rdfs:label>
+    <rdfs:label>eelgrasDensity199095.csv Eelgrass density data 1990, 1991, 1993, 1995 quadNum Quadrat Number Quadrat replicate number (1-4)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N7d7da86af3a84e5fbe0788d716b64b4c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrasDensity199095.csv Eelgrass density data 1990, 1991, 1993, 1995 date Date Sampled YYYY-MM-DD</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2e85c7f293014796aeba1680ae3d2ea7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8db80a131c3b4a1cbcbd176ac308236b">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_14">
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data nSeeds Number of Seeds Number of seeds per 0.1 sq.m</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N29e128f61b2341e4938d28c09805b141">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N861d52c0e2be4a719ace81251db4a9c5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N8725b9de34da4a99a9349d8716c7e111">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_14"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N743c371e285c468fa38d00f07a34ed3d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N896b1c9a2f7242768f009ef71950b661">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>sampleSites.csv Site Number Identifier</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Naca6dd96ebfe459fae1e40c1540ebd44">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb1d9fb4500da4e62bd2d1fa296050fa5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_13">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N44a9f02534bf4675b6578a70843f657c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbef472883163490caf756fb0d25f710a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_13"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_6">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N59a7966ff5654568a8a31dc4c4990350">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Ncf5cbbc7be8c44998fdc49a6a68c9781">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7e26a6d0acf046508c02e6eeb0635334">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_a_2">
-    <rdfs:label>flwrPerTrans9195.csv Site Number</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N34ebeda5761f40c79c553e46eb4105e3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3"/>
+      <owl:Restriction rdf:nodeID="Na91d9ddfb56145ba92b1af37271f52ec">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data nBlNFln Number of Blades on Non-Flowering Shoots Number of blades on non-flowering shoots per 0.25 sq. m</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd313b9d806c14a0cae2c4c1f1d82b468">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_2"/>
+      <owl:Restriction rdf:nodeID="N0fc10854478249118b7a870f29123a08">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_11"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_5">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5f94525914404569ba7685944b682f36">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrasDensity199095.csv Eelgrass density data 1990, 1991, 1993, 1995 nShoots Number of Shoots Number of Shoots per 0.25 sq. m</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4d0dc7e2715548fc956a99047178e37d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7">
     <rdfs:label>Eelgrass Density and Flower Data at Oiled and Control Sites, Prince William Sound, Alaska (1990,1991,1993,1995)</rdfs:label>
@@ -154,510 +138,492 @@
 
 Dean, T.A. M.S. Stekoll, S.C. Jewett, R.O. Smith, J.E. Hose.  1998.  Eelgrass (Zostera marina L.) in Prince William Sound, Alaska: Effects of the Exxon Valdez oil spill. Mar Pollut Bull 36:201-210</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_1">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_7">
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data wetWt Wet Weight Blotted wet weight in grams</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7f513944ba744266b96dc48809570c09">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N8038b7365b92481c8d5bb552d4c50a66">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9966ce4fced047758f729c1996890685">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_6">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne8163e33b5664479b3e1442f8f4e1798">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_6"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data quadDist Quadrat Distance Horizontal distance quadrat was located along the transect (m)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb770425277f04f2f969c34f45c1a114e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nface58613f3245b1b9141bda1e70c13c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N318d553491954a92b0213df09665da44">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data transRep Transect Replicate Number Number of 1 to 3 replicate transects randomly placed within each site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N517eeb9a9ff747a89c69e70d20e4486b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N88d07561db134959ab0559af95cb8ac6">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>sampleSites.csv Site Number Identifier</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc3cb634871e3437cbdcfafef5b04f7a3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>sampleSites.csv Site names, descriptions and locations site Site Name Site Name</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_a_3">
-    <rdfs:label>flwrPerTrans9195.csv Site Number</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_5">
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data quadNum Quadrat Number Quadrat Replicate Number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3ef61b05c29844e7a66e116c1d2c57cc">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N5e85ad3c5e5f484bbbf7923a0ea1951e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N50541fb55b69493c94e309af7a23da55">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N9bc917ec14764592868ad382e9bdc9ba">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_a_1">
+    <rdfs:label>flwrPerTrans9195.csv Numer of Flowers per transect 1991, 1993, 1995 siteNum Site Number Site Number</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N81015b93481642f7b619b493a131661f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>flwrPerTrans9195.csv Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2cc6d6efbb984eed812fb60b7ef300f1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nea42e610fe434b57ac7cd610981ae99f">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_6">
-    <rdfs:label>sampleSites.csv Site Number Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na1c66d60ebfa4538801236609845ceff">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2c035e8dcab34439a1d67936b0d9f3e6">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_10">
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndd34e78403f74f099db27089b649753f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd92c58552e4e427c8c301df2f84c0f8a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_10"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_a_4">
-    <rdfs:label>flwrPerTrans9195.csv Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf69f92819ff64af689fc336494d75048">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5891e96b6b2e4256b6956ab229439564">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N9231425b655e4926830e2b586947ebbe">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N411eaa526ffd4a509be1041da72b600f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N39005b63e823482aa8ea50272f0f98e6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ndfef77b9277e42feb7d45b515124ce69">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9fd824412bf842848892c028a2a70c2a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7f74a3ef494843af88119d8c0388fbcb">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0deca2df2b8d4315af049a5d7c9eafff">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_15">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8bc3578711de4d148af1fd9e46aad5d9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5a1e027c98ae433f8a9c835eeb5d1425">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_15"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_5">
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5a8203a1cb0a47f8b0c887ee569730ff">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N60d3762dbc30444c9653749cfc5ba1cd">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2c61ff66231d431d9560686c0dbef22e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_7"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd4f3b33ba13342778247acdbd56c0527">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_4">
-    <rdfs:label>sampleSites.csv Site Number Identifier</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc61420aa665d496394f40107d8585201">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N21560e4c117b4260b1a7c6e49250e1f1">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_12">
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data nLooseBl Number of Loose Blades Number of loose blades not attached to an identifiable shoot per 0.25 sq. m</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N58b33a4c365b423f92eadad15a2037f5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N639d16a5b2ea45e090e4b1836cdc6eb3">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1ed76075aec347e087f706199a12c5a6">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_12"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb3ccaaa5a5644a34a3b7c0d3686350ad">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_4">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N69aca1b4dcd94e6da71df15a1993fe7a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>eelgrasDensity199095.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3cd6d13f5313412fa6b9ed3ca5c63a10">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2ca118c774ce46dcbb82dc674f11b845">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd9aa78554cc7405baecd16bc4084427d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>eelgrasDensity199095.csv Site Number</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne5d51a34364a4e4aa541b8771b95d916">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>sampleSites.csv Site Number Identifier</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nca9237b94a634ed2bdbae6a8ff8f916f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_9">
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd4f6211740944750bb28278744d7f579">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N86e0316e22314e57a03290e72eb699da">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data nFlw Number of Flowering Shoots Number of flowering shoots per 0.25 sq.m</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2b571e26711d4be5913ebed7fcca14cd">
+      <owl:Restriction rdf:nodeID="N45766c835d4a4dc48b9314e594bca1eb">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9db1921e60c94b1bbdf131e0ae4ff649">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N8f37c961606b4d38ad627c4d49ba30a6">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_5">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data depth Depth Depth in ft. MLLW</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb6c2d12942a8412388cd047b9846165e">
+      <owl:Restriction rdf:nodeID="Nb4035e63310b49d2a5032ab5e4902e88">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf25c9b95d507484096357f567d4197e3">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_6">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2c6260224c2047a997d4ca3460222e03">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>sampleSites.csv Site names, descriptions and locations longitude Longitude Longitude of site in degrees, decimal degrees</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6b179ff83f9a499890bbf39048336b0f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_3">
+    <rdfs:label>eelgrasDensity199095.csv Eelgrass density data 1990, 1991, 1993, 1995 transRep Transect Replicate Number Number of 1 to 3 replicate transects randomly placed within each site</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N25757cee570649ccb30b752ac8a11ddc">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc8abaed8c1314525a5ee9a709f2e52ac">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Ncae33c19748b4f60ab8a29b1a78d4e7f">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_3"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>eelgrasDensity199095.csv Site Number</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_11">
-    <rdfs:label>eelgrassData1990.csv Site Number</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_a_1">
+    <rdfs:label>eelgrasDensity199095.csv Eelgrass density data 1990, 1991, 1993, 1995 siteNum Site Number Site number refers to sites listed in sites table</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N57cd4350bf6d4657980ea259e0ff2f9a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N5476409362fd46efa1598ffa625dea70">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne28657e42f6141309e33afa7d5a87969">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_9">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf84a52f8bdea4b759ddd7a0de1683295">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc9f6420b48e341c3bcd5b2f57d42e3bd">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data nNonFlw Number of Non-Flowering Shoots Number of non-flowering shoots per 0.25 sq.m</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3c8797c74c764885b68be97caa46f240">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_11"/>
+      <owl:Restriction rdf:nodeID="Nec3dbfd8e1a54e2e8cd544baabe52e10">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data siteNum Site Number Site number</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na8dc32e448f941e1990623363afd4e1d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_3">
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site Number</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_a_4">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb635a0927c1b444a8bb797cbe224ac67">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf5c1e5bde0e548898fa86cebc610d289">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>flwrPerTrans9195.csv Numer of Flowers per transect 1991, 1993, 1995 nFlw Number of Flowers Number of flowers per 30 sq. m</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4">
-    <rdfs:comment>Site names, descriptions and locations</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>sampleSites.csv</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_15">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N598a2264256149f3b2c31f1397319061">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data sampler Sampler Initials Initials of individual who took samples/data</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N352748f6729146ea91c70af8df12afaa">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_15"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_13">
-    <rdfs:comment>Site number</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ndb9aa868d9854144b3fac00bc1565ef6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>sampleSites.csv Site names, descriptions and locations treatment Oil Treatment Defines if the site was oiled in the EVOS or remained clean and used as a control</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N22dfaea7559941909edeb4cbb9b44bc7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_10">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfe75864d8a8847688bab998a626d6911">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N249381c2728c41859da39e661fcbf219">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>flwrPerTrans9195.csv Numer of Flowers per transect 1991, 1993, 1995 date Date Sampled YYYY-MM-DD</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_2">
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number refers to sites listed in sites table</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na823141f8abe462d81249a1b040c81ea">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3dd7f751724d4477892f5fc5c50127f7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>flwrPerTrans9195.csv Numer of Flowers per transect 1991, 1993, 1995 transRep Transect Replicate Number Number of 1 to 3 replicate transects randomly placed within each site</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>eelgrasDensity199095.csv</rdfs:label>
-    <rdfs:comment>Eelgrass density data 1990, 1991, 1993, 1995</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data nBlFlw Number of Blades on Flowering Shoots Number of blades on flowering shoots per 0.25 sq. m</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd1a1b456129c4136adf2923cca994601">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb41ffd3430bd49598cd36a99fb3a34a4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number refers to sites listed in sites table</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_a_13">
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data nSeedPods Number of Seed Pods Number of seed podes per 0.25 sq. m</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N6137ef93cfae4d9088a69d5a344479ce">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_13"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ncbfc2fa95b9f470ab598240b3c742191">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_14">
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number refers sites to other data tables</rdfs:comment>
-    <rdfs:label>Site Number Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_3">
-    <rdfs:label>Site Number Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number refers sites to other data tables</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_1">
-    <rdfs:comment>Site Number</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number refers sites to other data tables</rdfs:comment>
-    <rdfs:label>Site Number Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_8">
-    <rdfs:comment>Site number</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number refers to sites listed in sites table</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number refers to sites listed in sites table</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_12">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1">
-    <rdfs:comment>Eelgrass weight, flower &amp; seed data</rdfs:comment>
-    <rdfs:label>eelgrassData1990.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_a_4">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1968621f67b945419bc2d911ef669b05">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf8ffaa1abc564755849bffba887b3301">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>sampleSites.csv Site names, descriptions and locations habitat Algal Habitat Macro alga/plant that defines the habitat at the given site as well as other habitat differentiators</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3">
-    <rdfs:label>flwrPerTrans9195.csv</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Numer of Flowers per transect 1991, 1993, 1995</rdfs:comment>
+    <rdfs:label>flwrPerTrans9195.csv Numer of Flowers per transect 1991, 1993, 1995</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_3">
-    <rdfs:comment>Site number</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_9">
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_4">
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_5">
-    <rdfs:comment>Site number refers to sites listed in sites table</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_2">
-    <rdfs:comment>Site number</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_2">
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site Number</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_4">
-    <rdfs:label>Site Number Identifier</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Site number refers sites to other data tables</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_2">
-    <rdfs:comment>Site number refers sites to other data tables</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_5">
-    <rdfs:comment>Site number</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_6">
-    <rdfs:comment>Site number refers sites to other data tables</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number Identifier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_11">
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_3">
+    <rdfs:label>transRep Transect Replicate Number Number of 1 to 3 replicate transects randomly placed within each site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_4">
-    <rdfs:comment>Site Number</rdfs:comment>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>nFlw Number of Flowers Number of flowers per 30 sq. m</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>eelgrasDensity199095.csv Eelgrass density data 1990, 1991, 1993, 1995</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_4">
+    <rdfs:label>habitat Algal Habitat Macro alga/plant that defines the habitat at the given site as well as other habitat differentiators</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>longitude Longitude Longitude of site in degrees, decimal degrees</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Site Number</rdfs:label>
-    <rdfs:comment>Site number</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>wetWt Wet Weight Blotted wet weight in grams</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_4">
+    <rdfs:label>date Date Sampled YYYY-MM-DD</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>siteNum Site Number Site Number</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_14">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>nSeeds Number of Seeds Number of seeds per 0.1 sq.m</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_13">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>nSeedPods Number of Seed Pods Number of seed podes per 0.25 sq. m</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_8">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>nFlw Number of Flowering Shoots Number of flowering shoots per 0.25 sq.m</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>nBlNFln Number of Blades on Non-Flowering Shoots Number of blades on non-flowering shoots per 0.25 sq. m</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>site Site Name Site Name</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>depth Depth Depth in ft. MLLW</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_15">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sampler Sampler Initials Initials of individual who took samples/data</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>transRep Transect Replicate Number Number of 1 to 3 replicate transects randomly placed within each site</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>latitude Latitude Latutude of site in degrees, decimal degrees</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_3_c_2">
+    <rdfs:label>date Date Sampled YYYY-MM-DD</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>siteNum Site Number Identifier Site number refers sites to other data tables</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>quadDist Quadrat Distance Horizontal distance quadrat was located along the transect (m)</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_1">
+    <rdfs:label>siteNum Site Number Site number</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>quadNum Quadrat Number Quadrat Replicate Number</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>nLooseBl Number of Loose Blades Number of loose blades not attached to an identifiable shoot per 0.25 sq. m</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4_c_3">
+    <rdfs:label>treatment Oil Treatment Defines if the site was oiled in the EVOS or remained clean and used as a control</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1">
+    <rdfs:label>eelgrassData1990.csv Eelgrass weight, flower &amp; seed data</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>siteNum Site Number Site number refers to sites listed in sites table</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>transRep Transect Replicate Number Number of 1 to 3 replicate transects randomly placed within each site</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_4">
+    <rdfs:label>quadNum Quadrat Number Quadrat replicate number (1-4)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_5">
+    <rdfs:label>nShoots Number of Shoots Number of Shoots per 0.25 sq. m</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_2_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>date Date Sampled YYYY-MM-DD</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_9">
+    <rdfs:label>nNonFlw Number of Non-Flowering Shoots Number of non-flowering shoots per 0.25 sq.m</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_4">
+    <rdfs:label>sampleSites.csv Site names, descriptions and locations</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35b.146.7#d_1_c_10">
+    <rdfs:label>nBlFlw Number of Blades on Flowering Shoots Number of blades on flowering shoots per 0.25 sq. m</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

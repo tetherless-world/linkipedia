@@ -4,132 +4,132 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_5">
-    <rdfs:label>六龜濕地蛙類聲景錄音檔 </rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_6">
+    <rdfs:label>六龜濕地蛙類聲景錄音檔 point_id 觀測點編號</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nff1f6fa914dd4a6f8e30f0fbcd765a3c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N2b6b79bbcd2442ee8a482f403b061817">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_6"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4fe09a68708e46148cd7bd708a8d3720">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Nc441c9be99d3439e880eb86168dbfe64">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_1">
+    <rdfs:label>六龜濕地蛙類聲景錄音檔 record_time 錄音起始時間</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2862f9f012194600bd3209a88cb3524e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1aa5d48c648e49a0a451b6aeaa450edd">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nac93461276724ab8b9a65868eed37b43">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>六龜濕地蛙類聲景錄音檔 record_device_id 錄音設備代號</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N861fc8ef51284831b0a6d921c94ffc9d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_2">
+    <rdfs:label>六龜濕地蛙類聲景錄音檔 sound_id 檔案序號</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N2dba9bf0b01846cb8a475d69c310699e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N7a73582b2d0d455cbc98e1098a94dacd">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd36d8c97f0104749ab176d5957edb369">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N3c93041729e34ad7828e9b0e391304e4">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>六龜濕地蛙類聲景錄音檔 </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc6b070ecc89d4eceb4e4953b18cd6899">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>六龜濕地蛙類聲景錄音檔 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N319fa6f30cd74c9a9570f71321eadc0e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_6">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>六龜濕地蛙類聲景錄音檔 sound_path 聲音檔案連結網址</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfdf61982985246b7b4b8b608da5128fc">
+      <owl:Restriction rdf:nodeID="N83f42a9ef5ca4a9f835b7fc75021c645">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncb09a6be2247428e8a6ee2765076a97a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_6"/>
+      <owl:Restriction rdf:nodeID="N14c1e8d5c8964afba9a9670f7c74e772">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>六龜濕地蛙類聲景錄音檔 </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5f4efbccba25428da8f90263dd6d5948">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>六龜濕地蛙類聲景錄音檔 spectrum_path 頻譜圖檔連結網址</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N831e521d0ecc4c778df634d11bb707c7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1">
     <rdfs:label>六龜濕地蛙類聲景錄音檔</rdfs:label>
     <rdfs:comment>本資料集所描述的是智慧生態計畫－生態及生物多樣性資訊基礎建設與應用計畫於六龜多多鳥生態教育園區的濕地設置的固定式錄音設備，目的在於長期監測蛙類聲景變化。本觀測點為全天候24小時待命，每15分鐘錄音2分鐘。所有的錄音資料，均可於生態感測資料展示平台（http://iesn.tfri.gov.tw）上查閱，並以開放資料形式提供生態感測開放資料平台(http://iesn.tfri.gov.tw/forestDW/OpenData)作為資料來源之一。</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_3">
-    <rdfs:label>六龜濕地蛙類聲景錄音檔 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf940f046b8064342aa9a672ce6bfc0fd">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8c50860563bc43098769b6f6edae521e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf5dfb91de02c4e29a6c0e1bd1d281712">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_4"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>六龜濕地蛙類聲景錄音檔 </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4761860a1fb2434eac5f40ce46688825">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_5">
+    <rdfs:label>record_device_id 錄音設備代號</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>錄音起始時間</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sound_id 檔案序號</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>錄音起始時間</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>record_time 錄音起始時間</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1">
     <rdfs:label>六龜濕地蛙類聲景錄音檔</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_6">
-    <rdfs:comment>錄音起始時間</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>錄音起始時間</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>spectrum_path 頻譜圖檔連結網址</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_4">
-    <rdfs:comment>錄音起始時間</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sound_path 聲音檔案連結網址</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_5">
-    <rdfs:comment>錄音起始時間</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/iesn.17.1#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>point_id 觀測點編號</rdfs:label>
   </owl:Class>
 </rdf:RDF>

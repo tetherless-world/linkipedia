@@ -5,31 +5,30 @@
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>No spreadsheet name given No description of spreadsheet given No text column title given The column contains text. No other description provided by user.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Naa3319263c694a49b33358dfac87bec7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml#d_1"/>
+      <owl:Restriction rdf:nodeID="Nb5b5036f4c434531a95102a3c27dde21">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml#d_1_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>No spreadsheet name given </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N57e615957b66498f9aa6325eae73e5be">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N7e24508ee6ec421c97ced64505a632ef">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml">
     <rdfs:label>Press, Temperature and Humidity April 2013</rdfs:label>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml#d_1">
-    <rdfs:label>No spreadsheet name given</rdfs:label>
-    <rdfs:comment>No description of spreadsheet given</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml#d_1_c_1">
-    <rdfs:comment>The column contains text. No other description provided by user.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>No text column title given The column contains text. No other description provided by user.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/ark:/90135/q1707zdt/2/mrt-eml.xml#d_1">
+    <rdfs:label>No spreadsheet name given No description of spreadsheet given</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
 </rdf:RDF>

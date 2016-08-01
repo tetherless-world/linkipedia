@@ -4,72 +4,72 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_a_3">
-    <rdfs:label>Pinus data </rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_a_1">
+    <rdfs:label>Pinus data DBH Diameter of breast height</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N59b8894055064b99a37f0bda610e0617">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nc2f8f86d100c440882568c9fa316eb66">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0f9b6c94b8ae4434ae0384343fd6258d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N22bedccacf4c42249a56c60cbaa8ce4e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc38a6fb34d4842a185c195768ebd4b25">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Pinus data Height tree height</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc31f360cc4424318859f3341041fb5c4">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne5ba89445700484d87d4a3a70a3a63be">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Pinus data CBH Height of Crown base</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N620ae614838f41a8a639a2db169de47e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_3"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3">
     <rdfs:label>台灣二葉松地上部生物量及碳貯存之估算</rdfs:label>
     <rdfs:comment>The study was research on estimation of the aboveground biomass and carbon storage of 34 year old Taiwan red pine ( Pinus taiwanensis ) plantation in Lishan area located in central Taiwan. According to the DBH distribution of stand, allometric equation established by stem analysis data of sample trees, and the value of convert coefficient built by the least squares method. Furthermore, elemental analyzer was used to analyze carbon content of the sample taken from trees harvested. The results show that estimated aboveground biomass were 178.33±22.13tonha-1 by DBH-biomass-volume equations and related convert coefficients, and 81.1% was in stem. Current aboveground biomass production were 1.9±0.3tonha-1yr-1 by volume increment formula. In terms of carbon concentration, there are different among different tissues. The mean values rank as：bark（49.4±1.3﹪）≒live branch（49.0±0.3﹪）≒leaf（48.5±0.5﹪）＞dead branch（47.9±0.7﹪）＞stem（45.9±0.7﹪）,and carbon concentration of living tree is 46.9±0.1％. Meanwhile, carbon storage in aboveground of trees estimated were 81.6±9.9tonha-1 , and current carbon sequestration were 0.9±0.3 tonha-1yr-1, that means 3.3±1.0 co2 tonha-1yr-1 were sequestrated into the aboveground parts of Taiwan red pine plantation .</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N30846eb5fffd4c5390fdc3cd15681431">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Pinus data </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc99a1b208e2949698d036fbeb671686e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5c58dacccb23414c9ee1e1b7ad5448f2">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Pinus data </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9a80469eacfb45dc89ae67622f82fa95">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1">
-    <rdfs:label>Pinus data</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_2">
-    <rdfs:comment>Diameter of breast height</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_3">
+    <rdfs:label>CBH Height of Crown base</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_1">
-    <rdfs:comment>Diameter of breast height</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>DBH Diameter of breast height</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_3">
-    <rdfs:comment>Diameter of breast height</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Pinus data</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/cchsin.8.3#d_1_c_2">
+    <rdfs:label>Height tree height</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
 </rdf:RDF>

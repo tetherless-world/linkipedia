@@ -4,112 +4,112 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt </rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na8d249ec02f54a9c828a81d044fcbd48">
+      <owl:Restriction rdf:nodeID="Nd0d2559fbd2447769b29d5e566e34f2b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne0890317f2064c9088657031e5691db3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="Ndd18a784cf7d43ebb0d3debd86fd3ef3">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt date calendar date of each temperature measurement record</rdfs:label>
   </owl:Class>
-  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5">
-    <rdfs:comment>This metadata record describes moored seawater temperature data collected at East Anacapa Island, California, USA, by PISCO.  Measurements were collected using StowAway Tidbit Temperature Loggers (Onset Computer Corp. TBIC32+4+27) beginning 2006-12-20.  The instrument depth was 014 meters, in an overall water depth of 015 meters (both relative to Mean Sea Level, MSL).  The sampling interval was -14.3 minutes.</rdfs:comment>
-    <rdfs:label>PISCO: Physical Oceanography: moored temperature data: East Anacapa Island, California, USA (ANS)</rdfs:label>
-  </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N67de320da83b44589fbd7616d453a29c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb73e93eebded4dec9f6f95f67204f75e">
+      <owl:Restriction rdf:nodeID="N0e9319efb7834a5abb8dae49ada81e9a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1f08f7316ee84bd69b886d70c0ae4172">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt yearday Time of each temperature measurement record, expressed as decimal days since 12 a.m. Jan. 1 of the year measurement was made.  For example, 12 noon GMT on Jan. 2 is represented by yearday 1.5, NOT yearday 2.5.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_a_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nce62bf3d7ead4c9998fa0d4b6c9b587d">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt temp_c seawater temperature</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N79432c321f9d43e09b6e09da7d7c8ba0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt time Greenwich Mean Time of each temperature measurement record</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N579f6db9b54645dd8ace0d37f1f822df">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N60e938fb2f79432cb3cf78ca4f71aba8">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne029e038227b4cb9ac078de4811384eb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N5f9f90599152443b95ef319eca0d111b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
+  <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5">
+    <rdfs:label>PISCO: Physical Oceanography: moored temperature data: East Anacapa Island, California, USA (ANS)</rdfs:label>
+    <rdfs:comment>This metadata record describes moored seawater temperature data collected at East Anacapa Island, California, USA, by PISCO.  Measurements were collected using StowAway Tidbit Temperature Loggers (Onset Computer Corp. TBIC32+4+27) beginning 2006-12-20.  The instrument depth was 014 meters, in an overall water depth of 015 meters (both relative to Mean Sea Level, MSL).  The sampling interval was -14.3 minutes.</rdfs:comment>
+  </owl:Ontology>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_a_5">
-    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt </rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8d1963637e5e4d7388eef41b3ebb912a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N259e0c816869432ebfb7d390a85c8b23">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf984023c9ab64c88b1db533c5b59dc08">
+      <owl:Restriction rdf:nodeID="Nb4afbc9c748b490692db21ee7a9a4e86">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_a_1">
-    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N31ae23ed496b4f3d9c0e9ace5a32ecbd">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N876f03907009439ab79766da41c55fc9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt flag data flag used to qualify data as bad, questionable, etc.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>calendar date of each temperature measurement record</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>calendar date of each temperature measurement record</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>calendar date of each temperature measurement record</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>date calendar date of each temperature measurement record</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
     <rdfs:label>ANSXXX_015MTBD014R00_20061220.40.2.txt</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_5">
-    <rdfs:comment>calendar date of each temperature measurement record</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>yearday Time of each temperature measurement record, expressed as decimal days since 12 a.m. Jan. 1 of the year measurement was made.  For example, 12 noon GMT on Jan. 2 is represented by yearday 1.5, NOT yearday 2.5.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>time Greenwich Mean Time of each temperature measurement record</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>calendar date of each temperature measurement record</rdfs:comment>
+    <rdfs:label>temp_c seawater temperature</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.6085/AA/ANSXXX_015MTBD014R00_20061220.50.5#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>flag data flag used to qualify data as bad, questionable, etc.</rdfs:label>
   </owl:Class>
 </rdf:RDF>

@@ -4,401 +4,386 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>taxonIDNumber.csv </rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_4">
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton lat Position, date and time information of the sample is taken from ship’s log information and refers to the midpoint of the 18.5 km sample. Constant speed between log entries is assumed (and in practice this is quite accurate on the scale that the CPR is deployed over since commercial ships tend to run at constant speed between ports).</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfb3f1468dc764ad5a150d7fab2b81ab2">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_c_2"/>
+      <owl:Restriction rdf:nodeID="N1f43e69c3546446283294ec2622d053f">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N731d6855b5c54c7890714598e91cca4c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_a_1">
-    <rdfs:label>tableOfAcceptedValues_p.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfb2ccfd3a3554167a5b2b19ea64260d1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0a3a0fde6f4d4a3b876506f3477256fa">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9441e084e1434fe0906d84cacbf1c057">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>taxonIDNumber.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N928d28fff6834f928205643e4dde6c2a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>tableOfAcceptedValues_z.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5487a94b7cfd486893559ca5a6924383">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N684f8d7818b541c99fd20f0271728385">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_a_2">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N70f7642d29c74d15ac74ecd7dd01541f">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N67148a5aed3a4f3db784164399c51cd8">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>tableOfAcceptedValues_p.csv </rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_8">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na72058aeaec64e04869d4d67a70f69dd">
+      <owl:Restriction rdf:nodeID="Ne89ea9ac094f416da95cc611abd68bae">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6d9dc4e2625f4634a5d0f4d4bcce97e7">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_8"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_1">
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf4b78c9860c644ee897a581c9e129ed9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N6d8516123a7f4f5db086aeb7a6926c49">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton sample Unique ID assigned to collected sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N50d117d47305403587b70c4cfacbcb58">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1c43e6239dde40ffb48290ebf6fd3ffb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_5"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N515af6b37eb447bda60a2bb669241c0d">
+      <owl:Restriction rdf:nodeID="N9dc8c8e6741743bd89ce2800a454a68e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton long Position, date and time information of the sample is taken from ship’s log information and refers to the midpoint of the 18.5 km sample. Constant speed between log entries is assumed (and in practice this is quite accurate on the scale that the CPR is deployed over since commercial ships tend to run at constant speed between ports).</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_a_2">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N540cf133862e4f42ad15820c8772de57">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>taxonIDNumber.csv Downloaded from SAHFOS, taxonomy ID codes and definitions Taxon_Name Code definition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N8118fffe0d2147ce832574ed04ee8505">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_a_2">
+    <rdfs:label>tableOfAcceptedValues_z.csv Zooplankton Table of Accepted Values which can be used to convert the category data into abundances per sample. Traverse Accepted value Estimated abundance per sample using traverse counting method</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nceae982de17d4d4d8c708361004620dc">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc253d15b387545d7b25b3f1c0f264b93">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_a_2">
+    <rdfs:label>tableOfAcceptedValues_p.csv Phytoplankton Table of Accepted Values which can be used to convert the category data into abundances per sample. Phytoplankton Accepted Value Estimated abundance per sample</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Na4d5e84fb4cc45c89aca893ca166e222">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N525606e592164849b19358ef9e95f9ed">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_3">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4d025747c7a84e8d809f52f4c0bc08c1">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton date Position, date and time information of the sample is taken from ship’s log information and refers to the midpoint of the 18.5 km sample. Constant speed between log entries is assumed (and in practice this is quite accurate on the scale that the CPR is deployed over since commercial ships tend to run at constant speed between ports).</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N30eb398b36b1481fa3313dc0af7252d0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_a_1">
+    <rdfs:label>tableOfAcceptedValues_z.csv Zooplankton Table of Accepted Values which can be used to convert the category data into abundances per sample. Zooplankton Traverse/Eyecount category Category number as given in speciesCount column</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne7419191596d49058a741a99097376cb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf6598f99756f4ba2932eb64127cbed57">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton taxonIDNumber CPR identification number assigned to taxonomic entities (http://www.sahfos.ac.uk/data_specieslist.htm)</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd6fba190800847469851d5b58bae9804">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nce201e254762452e923fdc7a5f89a29b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_6"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_11">
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N24c4ad3b263a478db55a35d86f6ab0af">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N0d63fb9c7ef04b10a9283e1a6b24f0de">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na7678248873348a38e7230bacb446d7e">
+      <owl:Restriction rdf:nodeID="Naa4fa4bd1be04293b733734a1b81f86a">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_11"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton speciesCountCategory The zooplankton abundances are given in categories for eyecount and traverse methods e.g. eyecount category 4 contains between 4 and 11 individuals. Colour= 0, 1, 2, 3 (relates to green colour of the mesh) and phytoplankton= 1-10 (number of fields of view divided by two and expressed as an integer). Sometimes an organism is too rare to be counted in its correct analysis stage but is seen in a subsequent analysis stage. It is recorded as "present" to show that it was there, but not abundant enough to be counted. For full definitions see the Table fo Accepted Values for phytoplankton (_p) and zooplankton (_z).</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_a_1">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_2">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N257917df973247688a51a3af02e51f28">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N75245f6117df462fbf4a04cd68763246">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton d_n D (day) is defined as the time between local sunrise and sunset, while N (night) is defined as the time between local sunset and sunrise. The time of the midpoint of the sample is used to designate the sample as day or night. Its important because the CPR sample is at a fixed depth, but some zooplankton migrate upwards at night, therefore some taxa are only sampled at night. For some statistics you will need to know the proportion of day versus night samples in a particular region and time frame.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0cefec4d5ce8427fa87245b5fa531cf4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_10">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N51b17407373b478981c231ecadeb85a9">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb3af81736cdd4b68b4c75cfc7ca707e6">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nd80bca751b22443d84a27fda069d2b34">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>tableOfAcceptedValues_z.csv </rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton OLDSpeciesName Species name or specimen type identified in sample, from historic data</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_8">
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton planktonType Indicates phyoplankton or zooplankton being analyzed in the sample</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N55da2452441b45aaa0425d1d7e84538c">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_8"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfa663f63d06e45d19c700f54f617bf60">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12">
+    <rdfs:label>Continuous plankton recorder zooplankton and phytoplankton data, North Pacific Ocean: 1997, 2000-2009, 2012</rdfs:label>
     <rdfs:comment>The data were collected to describe the plankton populations of the North Pacific and to monitor their distribution and abundance over multiple years. The data include abundances of phytoplankton and zooplankton taxa retained by the Continuous Plankton Recorder which collected plankton samples as it was towed behind a merchant ship on a great circle transect from Vancouver, Canada to Japan. Several transects were occupied during 1997, and 2000-2009. 2009 data are also from a transect from Juan de Fuca Strait to Cook Inlet. The samples each represent 18.5km of tow and have been processed according to routine CPR protocols as directed by the Sir Alister Hardy Foundation for Ocean Science (SAHFOS) which operates and maintains the CPR survey. The midpoint of each sample is allocated a position and time based on information on deployment and recovery times from the ship's log.
 
 1997 and 2000 - 2007 data were provided from archives of the Exxon Valdex Oil Spill Trustee Council. 2008 - 2009 data were provided by the North Pacific Research Board. 2012 data was provided by the PI Sonia Batten.</rdfs:comment>
-    <rdfs:label>Continuous plankton recorder zooplankton and phytoplankton data, North Pacific Ocean: 1997, 2000-2009, 2012</rdfs:label>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_6">
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfadb2f9a095e4eee9210a1052ebd8640">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_6"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N32cee1feea7a44b58667082be454496a">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5badfc71ab724ece99df776331682a53">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N06e75823452b4daeb45ea8b9722424c6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_5"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_9">
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton NEWSpeciesName Revised taxonomic name The current revised taxonomic name. Allows samples taken before the name change to be matched with data from after the name change. Otherwise it might appear in a time series that an organism disappeared, and another one appeared, when in fact they are the same.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N75d70e525b0845eeb228451d6164e9a4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N40f575e4a112448992c313d11094441c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_9"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3559f38586f845d0880b69a71d5bdc26">
+      <owl:Restriction rdf:nodeID="N3514028d68574a7b912e3a5127ec5f6e">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb74fe8ac2d77424994c93ff734025f7b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfee57cb09ebc49d89e37744634305959">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_10">
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf98a946cd6fe46b4ba2f1f2d80db3930">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_10"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3b4f2ead81af48ba9533159d21626b90">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd46585148a164869a011da7189d2fd30">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na740c6431943400e99de8578cb5f4ec9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf9d20e36561b493aaa2f569b59fca439">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>tableOfAcceptedValues_z.csv </rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N4c2b658221364ae393006d12305d4feb">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N37b244393def4391a612c8d9728c61ee">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nc684b82dd2ea4fd4b760bcd8716dffda">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>tableOfAcceptedValues_z.csv Zooplankton Table of Accepted Values which can be used to convert the category data into abundances per sample. Eyecount Accepted value Estimated abundance per sample using eyecount method</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf8dfa2790f8d4b3084fb84b553b4601a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>taxonIDNumber.csv Downloaded from SAHFOS, taxonomy ID codes and definitions Taxon_ID series of numbers indicating unique ID</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9e6d92d3b2ef46fbbbe6f2590dfc5379">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_4">
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_7">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N37de3ff06e7b42ef90ddce2437916d1d">
+      <owl:Restriction rdf:nodeID="Nc4371f22dca14e4fb095d7c5486c6743">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton analysisStage Microscopic processing stage. Zooplankton counts are recorded for all species and specimen types in each sample. CPR sample analysis is reported for two zooplankton stages: "eyecount" and "traverse". "Eyecount"= zooplankton larger than 2mm; whole sample is checked by eye for presence of species, which are then removed from the sample to be identified under the microscope. "Traverse"= zooplankton smaller than 2mm; sub sample under lower magnification; traverse of the sample is made by microscope, and all individuals are counted.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3c67bb5800fe4725bb6cdc42048a7ade">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_a_1">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Naf3e3f572c254b67b48b4edd7ce2e21d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_4"/>
+      <owl:Restriction rdf:nodeID="N7a0d493d23064bda97ac0af059809b5d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_a_3">
-    <rdfs:label>timeSeries.txt Revised taxonomic name</rdfs:label>
+    <rdfs:label>tableOfAcceptedValues_p.csv Phytoplankton Table of Accepted Values which can be used to convert the category data into abundances per sample. Phytoplankton Category Category number as given in speciesCount column</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N11afc036ed124b43a14f71f34929439d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N34afa9960a784f2ba6b6d03a9443dfe5">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N91d0e4c2bfd74842bf92842651f179f3">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_c_2">
-    <rdfs:comment>series of numbers indicating unique ID</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_5">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1">
-    <rdfs:label>timeSeries.txt</rdfs:label>
-    <rdfs:comment>Counts of zooplankton and phytoplankton</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>Phytoplankton Table of Accepted Values which can be used to convert the category data into abundances per sample.</rdfs:comment>
-    <rdfs:label>tableOfAcceptedValues_p.csv</rdfs:label>
+    <rdfs:label>tableOfAcceptedValues_p.csv Phytoplankton Table of Accepted Values which can be used to convert the category data into abundances per sample.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1">
+    <rdfs:label>timeSeries.txt Counts of zooplankton and phytoplankton</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_8">
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_2">
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>tableOfAcceptedValues_z.csv</rdfs:label>
-    <rdfs:comment>Zooplankton Table of Accepted Values which can be used to convert the category data into abundances per sample.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_11">
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_6">
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>planktonType Indicates phyoplankton or zooplankton being analyzed in the sample</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_10">
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>OLDSpeciesName Species name or specimen type identified in sample, from historic data</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>date Position, date and time information of the sample is taken from ship’s log information and refers to the midpoint of the 18.5 km sample. Constant speed between log entries is assumed (and in practice this is quite accurate on the scale that the CPR is deployed over since commercial ships tend to run at constant speed between ports).</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>long Position, date and time information of the sample is taken from ship’s log information and refers to the midpoint of the 18.5 km sample. Constant speed between log entries is assumed (and in practice this is quite accurate on the scale that the CPR is deployed over since commercial ships tend to run at constant speed between ports).</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_c_1">
-    <rdfs:comment>Category number as given in speciesCount column</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
+    <rdfs:label>Phytoplankton Category Category number as given in speciesCount column</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>series of numbers indicating unique ID</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Taxon_ID series of numbers indicating unique ID</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2">
-    <rdfs:label>taxonIDNumber.csv</rdfs:label>
-    <rdfs:comment>Downloaded from SAHFOS, taxonomy ID codes and definitions</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>sample Unique ID assigned to collected sample</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2_c_2">
+    <rdfs:label>Taxon_Name Code definition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>d_n D (day) is defined as the time between local sunrise and sunset, while N (night) is defined as the time between local sunset and sunrise. The time of the midpoint of the sample is used to designate the sample as day or night. Its important because the CPR sample is at a fixed depth, but some zooplankton migrate upwards at night, therefore some taxa are only sampled at night. For some statistics you will need to know the proportion of day versus night samples in a particular region and time frame.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>taxonIDNumber CPR identification number assigned to taxonomic entities (http://www.sahfos.ac.uk/data_specieslist.htm)</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Category number as given in speciesCount column</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Eyecount Accepted value Estimated abundance per sample using eyecount method</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_2">
-    <rdfs:comment>Category number as given in speciesCount column</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>tableOfAcceptedValues_z.csv Zooplankton Table of Accepted Values which can be used to convert the category data into abundances per sample.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>taxonIDNumber.csv Downloaded from SAHFOS, taxonomy ID codes and definitions</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>lat Position, date and time information of the sample is taken from ship’s log information and refers to the midpoint of the 18.5 km sample. Constant speed between log entries is assumed (and in practice this is quite accurate on the scale that the CPR is deployed over since commercial ships tend to run at constant speed between ports).</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_9">
+    <rdfs:label>NEWSpeciesName Revised taxonomic name The current revised taxonomic name. Allows samples taken before the name change to be matched with data from after the name change. Otherwise it might appear in a time series that an organism disappeared, and another one appeared, when in fact they are the same.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_3_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Category number as given in speciesCount column</rdfs:comment>
+    <rdfs:label>Phytoplankton Accepted Value Estimated abundance per sample</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_2">
+    <rdfs:label>Traverse Accepted value Estimated abundance per sample using traverse counting method</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_7">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Revised taxonomic name</rdfs:label>
-    <rdfs:comment>Unique ID assigned to collected sample</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>analysisStage Microscopic processing stage. Zooplankton counts are recorded for all species and specimen types in each sample. CPR sample analysis is reported for two zooplankton stages: "eyecount" and "traverse". "Eyecount"= zooplankton larger than 2mm; whole sample is checked by eye for presence of species, which are then removed from the sample to be identified under the microscope. "Traverse"= zooplankton smaller than 2mm; sub sample under lower magnification; traverse of the sample is made by microscope, and all individuals are counted.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_1_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>speciesCountCategory The zooplankton abundances are given in categories for eyecount and traverse methods e.g. eyecount category 4 contains between 4 and 11 individuals. Colour= 0, 1, 2, 3 (relates to green colour of the mesh) and phytoplankton= 1-10 (number of fields of view divided by two and expressed as an integer). Sometimes an organism is too rare to be counted in its correct analysis stage but is seen in a subsequent analysis stage. It is recorded as "present" to show that it was there, but not abundant enough to be counted. For full definitions see the Table fo Accepted Values for phytoplankton (_p) and zooplankton (_z).</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/df35d.195.12#d_4_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>Category number as given in speciesCount column</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Zooplankton Traverse/Eyecount category Category number as given in speciesCount column</rdfs:label>
   </owl:Class>
 </rdf:RDF>

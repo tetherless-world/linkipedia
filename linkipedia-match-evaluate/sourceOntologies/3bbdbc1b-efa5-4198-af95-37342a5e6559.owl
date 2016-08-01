@@ -4,131 +4,356 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_2">
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7c2cb2fd996e4bfa8f5a102f055b2d47">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N1045d283063e4568b24a4bff1d3ea2a0">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
+    <rdfs:label>Mainstem GPS locations MORPHO.xls These are the GPS coordinates of the RCC study sites Nearby feature Geographic reference point for each study site. This provides a nearby reference point for each study reach.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb188b0102c6e46588a25cf4035add905">
+      <owl:Restriction rdf:nodeID="Nd17875d2fe7a449e8789188054480c99">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_13">
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Species Taxomic species designation This is the species name of the particular organism</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2fee02cccbc3466d88d6b81ac879bd0a">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3d86fd782b9f4543a51487ce43c13a8e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_13"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_16">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nfbe08f40890d4b91bdd6b73e7bacfd6b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_16"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N5f1a15a0ec574cfca3b7132486f03f34">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. # in Size Fraction &lt;1mm and ≥100µm (# per sample) # in the smaller size fraction This is the total number of individuals of a particular taxonomic group that was found in the smaller size fraction of that sample.  In 1977, this was defined as &lt;500micrometer and ≥100micrometer.  This size fraction was not collected during 1976.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N09105cecec3440868a0ad3e3c274adfb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N711e13bffbca404199acc6128dc0f371">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Mainstem GPS locations MORPHO.xls These are the GPS coordinates of the RCC study sites Lat Dec Latitude of Study Site These are the latitude measurements for the study site.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_9">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N93479e7e79e349ec9ac1c801c120a089">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ndc705106cfb74a52af6d2463e4b8e397">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_9"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Habitat Habitat type where the sample was taken. This is the habitat type where a specific sample was taken.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N587a8d6740c54d3ca8a75ccd520c45b8">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne0c5d8e8b56b42f18fae428a736efffb">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Breakdown of how samples were processed and size fractionated This is a table that summarizes how and which samples were size fractionated each year Sample Date The date a sample was taken This is the date that sample was collected</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_a_3">
+    <rdfs:label>Mainstem GPS locations MORPHO.xls These are the GPS coordinates of the RCC study sites Long Dec Longitude of the study site Longitude of the study site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N74ef78df99ca4860bbea8856a724d7b5">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_3"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne0bc89df294a4e41a8d092dfe40ce4ac">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_17">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N1c2c8ff46bd54636a10ffdfe8a670a98">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9da10ed0a40c49a9bbb22f5d249bb6f7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_17"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Area sampled (cm^2) The sample area This is the area of the benthos that was sampled for a given sample.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_8">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9ef334a8bc2d4873901839da849babaa">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Sampler type This is the type of sample instrument used This is the type of instrument used to collect the sample.  In 1976, a modified kicknet was used.  In 1977, a dome sampler was used.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N59f8bf6ec8914911899c28417fe554f3">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_7">
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Sample Type This the sample type of the specific sample Two types of samples were identified.  Invert samples are the ones that were used for the invertebrate assemblage calculations.  The detrital depletion are replicate samples at the dome sampling sites, which were not used in the invertebrate calculations.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N3df9122ade354843854ca01ab02c60b4">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Ne0de038963a640f5a8f9721dbc124daf">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_7"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N092e18fe183b4fd9b1d101054e6478d6">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_12"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Genus Taxonomic genus This is the genus that an individual was classified as</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N571fa58ae364420fab84b5801e133afd">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_11">
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Family Taxonomic family This is the taxonomic family that an individual was classified as</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N10a734efd3cf41979ed79010960ff4c8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_11"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N955a59efd9684d03b75df87fe4f5c7a2">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_a_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N92b69672584e4e429e18447ce2be8407">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nb4c7439cf4b3499cbec4d28ccbec595a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Mainstem GPS locations MORPHO.xls These are the GPS coordinates of the RCC study sites Station Study Site Location Names These are the actual study site locations.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N37df56173316455b841fabb200bc9bc7">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N07d72cf30529474d91420b75289dc9a2">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Breakdown of how samples were processed and size fractionated This is a table that summarizes how and which samples were size fractionated each year Site Study site name This is the RCC study site</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_10">
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Order Taxonomic order This is the taxonomic order that a particular individual belonged to</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nbc4fe3d24cb744ffabfc40bf7cabcadb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_10"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N393c3bf6cd4f472b9270a3ba57d7f27c">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_19">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N9346f54c14ce40309b82e43f3c28475e">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. ID notes Notes about the old taxonomic name for a particular organism Between the 1970s and the present, taxonomic names have changed.  The name reported here is the name originally reported in the RCC publications, which has been updated in the genus column.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N4f781ed9c146456a931e55cea25401ce">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_19"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_3">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N360100ca8c5144f3954c754412cd3aa0">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N077d7d8b254a42ff902371fe74e59dd0">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N407f339af0a541a690a4c219d421fbe4">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_3"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Month This is the month that a sample was collected. This is the particular month that a sample was collected.</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd89cc0288970491887fc2a93c10c2ca3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_5"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N93515b551be944c981d4454b917d94c3">
+      <owl:Restriction rdf:nodeID="N22e7f079e72b496dafa1e7a959b95f42">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_18">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N45b33899cf1649d9ab44cc38322f0612">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N949a22a7c23941bc87d7c1754e75fb33">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Habitat Notes Notes on the substrate and habitat of a particular sample This reports the dominant substrate or habitat that was present at a given sampling location.  Also, this indicates which invert sample that a detrital depletion sample was coupled with.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nf535467230dd426598ca17c5bd614016">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_18"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd5da4d399f5a4cbaa7b0caf7b78ce911">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_10">
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_15">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N45156a4acea84afebd3c7b65b1c1ed73">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_10"/>
+      <owl:Restriction rdf:nodeID="N6cb9dd7e462f41ffa3d2ad0d1742f1da">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_15"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. # in Size Fraction  ≥1mm or  ≥500um (# per sample) Abundance of individuals in the large size fraction This is the number of individuals per sample.  In 1976, this was defined as individuals  ≥ 1mm.  In 1977, this was defined as individuals  ≥ 500micrometers.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N7675befd54234cbb92dcdaafb9325a2f">
+      <owl:Restriction rdf:nodeID="N8d655527a4564e83a05a16869cea0a82">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_6">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N03488584822b429eaef438846cfc8e46">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2103fccef91846f796397e5b4d3918d6">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_6"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Sample ID This is the unique identifier for each sample. These are the sample identifications that were recorded off of the lab datasheets. Note that some sites and year do not exhibit consecutive sampling numbers.  When a detrital depletion sample was taken, the first number in the column is the dome sample number.  The second number is the detrital sample number. The samples with the 'a' designation are the samples used for invertebrate calculations.  The samples with the 'b' or 'c' designation are the detrital depletion samples that were not used in the invertebrate calculations.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_14">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Stage Development stage This is the development stage that an individual was classified as.
+adult, nymph, larvae, or pupae</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nabfda52816d04a1f868f7f4a3622029c">
+      <owl:Restriction rdf:nodeID="N042ed46a56ac4de4a54e8b9f137dc6c7">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Naaa924aca3474f4fae7780b70b47ef54">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N645b6bd775f74f45af40834e394fb1ac">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_14"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_a_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Breakdown of how samples were processed and size fractionated The date a sample was taken</rdfs:label>
+    <rdfs:label>Breakdown of how samples were processed and size fractionated This is a table that summarizes how and which samples were size fractionated each year Sample processing notes Notes on how and which samples were size fractionated This describes the sampling method used.  It also indicates which samples were size fractionated and picked.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N69c4cdb1fdf148f6b6f9000891bdd6b1">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N02184afccb9549c587bad4ed62f305a8">
+      <owl:Restriction rdf:nodeID="N84318e74e1664dda846b725aeb80db70">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_13">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb995e2b27a554cd49a3108981ba0b7a9">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd00000ad638246a2a200a3d1cf37cef6">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_13"/>
+      <owl:Restriction rdf:nodeID="Nfc482b8395614a158c24202c0fcd38b2">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_3"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -142,437 +367,185 @@ Minshall, G. W., R. C. Petersen, T. L. Bott, C. E. Cushing, K. W. Cummins, R. L.
 Minshall, G. W., R. C. Petersen, K. W. Cummins, T. L. Bott, J. R. Sedell, C. E. Cushing, and R. L. Vannote. 1983. Interbiome comparison of stream ecosystem dynamics. Ecological Monographs 53:1-25.</rdfs:comment>
     <rdfs:label>Salmon River RCC Benthic Invertebrate Data</rdfs:label>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_a_2">
-    <rdfs:label>Breakdown of how samples were processed and size fractionated The date a sample was taken</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_5">
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Date This is the date that a sample was collected. This is the specific date that a sample was collected.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3f84c352b6554bfab56e7329453687bb">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd1ac976ba69a4767bb696f293f87fdca">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_19">
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ncef322dd9d0049eea5b2cd37c6938ac3">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_19"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0bfea5a057074185a8cab4c93f5eb347">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_7">
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N86f4215810384b79b753dd9a4ad7fcc5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="N41fddc8822c74f52b765342392065a0b">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N769591dc9c6244708b08b372663dc796">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_7"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_a_4">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3d4cb9951a4d432fbdd8256c848f4de9">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Mainstem GPS locations MORPHO.xls Study Site Location Names</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N9b4b721238bf49278f67459965ca560c">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_6">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd31fdbc18cab45a1b33b8ef66d297e54">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_6"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8683770910d849babcc36d564ed1ed0a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_9">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nfd654f555dc14ce19b0d92d84acac518">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_9"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nae0fa793836d4f359b1e4b174be14424">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+      <owl:Restriction rdf:nodeID="Nf237e1e33899430aa4db907c85996dc9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_5"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Site Name of the study site This is the name of the study site.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb9044bd12c5c4170a4dea600c085eb08">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
+      <owl:Restriction rdf:nodeID="N2349e2997abc42dab5749568229f342a">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Nd2ed4a0101ae4b7dad0c5fa2cd2da1d8">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_1"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N34894b2c55874a9abdab54c283fbebfe">
+      <owl:Restriction rdf:nodeID="Nd99ea5e9195a406bb9635f4c48c93c1e">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_2"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Year This is the year that the sample was collected. This is the specific year that a sample was collected.</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N0842d8287bbb49f99154e85ce5a162e7">
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_a_1">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N3a439f1832aa418da909b061145278c1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Breakdown of how samples were processed and size fractionated The date a sample was taken</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N0eb5c4a7392e4d2e8b6bfb9de17bb471">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_11">
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc8a8d5f5ebd34abba70c9280e06dfe52">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N83175165de3e4b54abe51669116c1240">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_11"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_a_3">
-    <rdfs:label>Mainstem GPS locations MORPHO.xls Study Site Location Names</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N30d934a2e417449d883491971b27563c">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nbb749f4438c84357b0d7856a000ef99a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_3"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_15">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nd2892f8d6b094d4f9a285d414fa0876e">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N6ce7c888213a49849d3498ef10611613">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_15"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_12">
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N14de158b3c3243848ec0a97be3eb7a24">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_12"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N41df92b1483f4ee583046b3734821fa4">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_8">
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nc2020cb355a743db9962c3c8d5b8462e">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N8615c735482249cbabb2fd33048eba82">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_8"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_a_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb4c6ea54ae814e3a8043cc422141e333">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N98c0badb9b4247cfa34d47e72c00cbc5">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Mainstem GPS locations MORPHO.xls Study Site Location Names</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_17">
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N5a6fce24feb34d38bd0241687ad5c61d">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nec6e708ebee54059be78d9de4165c68d">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_17"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_4">
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Ne5470bfceded40699b7a3d0046f6a7af">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nb17316a2cbe9499fbc272b3e65d5aa45">
+      <owl:Restriction rdf:nodeID="N280e3617ae274c2d8230d1b6f8df4ba9">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_4"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_a_16">
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx Name of the study site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
     <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Na8998733743a41deb188b796658ca43a">
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_16"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N1d59a175b1974b85ac48da40501dddc1">
+      <owl:Restriction rdf:nodeID="N853448e241fd4129a7f182b3d377559d">
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
         <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2"/>
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_a_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:label>Mainstem GPS locations MORPHO.xls Study Site Location Names</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="Nf932c81f89c2403593bdfec56be0c5f4">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N23c1405bf52a411aabf10e55d5262af1">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_2"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1">
-    <rdfs:label>Mainstem GPS locations MORPHO.xls</rdfs:label>
-    <rdfs:comment>These are the GPS coordinates of the RCC study sites</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_5">
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Name of the study site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_16">
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_15">
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Name of the study site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx</rdfs:label>
-    <rdfs:comment>These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_6">
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_8">
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_7">
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_10">
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:label>Name of the study site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_2">
-    <rdfs:label>Study Site Location Names</rdfs:label>
-    <rdfs:comment>These are the actual study site locations.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_1">
-    <rdfs:label>The date a sample was taken</rdfs:label>
-    <rdfs:comment>This is the date that sample was collected</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_12">
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_4">
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_2">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the date that sample was collected</rdfs:comment>
-    <rdfs:label>The date a sample was taken</rdfs:label>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem. Day This is the day of the month that a sample was collected. This is the day of the month that a particular sample was collected.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_2">
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_4">
-    <rdfs:label>Study Site Location Names</rdfs:label>
-    <rdfs:comment>These are the actual study site locations.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:comment>This is a table that summarizes how and which samples were size fractionated each year</rdfs:comment>
-    <rdfs:label>Breakdown of how samples were processed and size fractionated</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_1">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_18">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_19">
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_11">
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_14">
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_13">
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Year This is the year that the sample was collected. This is the specific year that a sample was collected.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_9">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
-    <rdfs:label>Name of the study site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Habitat Habitat type where the sample was taken. This is the habitat type where a specific sample was taken.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_3">
-    <rdfs:label>The date a sample was taken</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the date that sample was collected</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Site Name of the study site This is the name of the study site.</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_17">
-    <rdfs:label>Name of the study site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>This is the name of the study site.</rdfs:comment>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_1">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Sample Date The date a sample was taken This is the date that sample was collected</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Nearby feature Geographic reference point for each study site. This provides a nearby reference point for each study reach.</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_3">
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
-    <rdfs:comment>These are the actual study site locations.</rdfs:comment>
-    <rdfs:label>Study Site Location Names</rdfs:label>
+    <rdfs:label>Long Dec Longitude of the study site Longitude of the study site</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_2">
+    <rdfs:label>Lat Dec Latitude of Study Site These are the latitude measurements for the study site.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1_c_1">
-    <rdfs:label>Study Site Location Names</rdfs:label>
-    <rdfs:comment>These are the actual study site locations.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Station Study Site Location Names These are the actual study site locations.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_18">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Habitat Notes Notes on the substrate and habitat of a particular sample This reports the dominant substrate or habitat that was present at a given sampling location.  Also, this indicates which invert sample that a detrital depletion sample was coupled with.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_12">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Genus Taxonomic genus This is the genus that an individual was classified as</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_14">
+    <rdfs:label>Stage Development stage This is the development stage that an individual was classified as.
+adult, nymph, larvae, or pupae</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3">
+    <rdfs:label>Breakdown of how samples were processed and size fractionated This is a table that summarizes how and which samples were size fractionated each year</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_13">
+    <rdfs:label>Species Taxomic species designation This is the species name of the particular organism</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_17">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Area sampled (cm^2) The sample area This is the area of the benthos that was sampled for a given sample.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_4">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Day This is the day of the month that a sample was collected. This is the day of the month that a particular sample was collected.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_10">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Order Taxonomic order This is the taxonomic order that a particular individual belonged to</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_16">
+    <rdfs:label># in Size Fraction &lt;1mm and ≥100µm (# per sample) # in the smaller size fraction This is the total number of individuals of a particular taxonomic group that was found in the smaller size fraction of that sample.  In 1977, this was defined as &lt;500micrometer and ≥100micrometer.  This size fraction was not collected during 1976.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Site Study site name This is the RCC study site</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_8">
+    <rdfs:label>Sampler type This is the type of sample instrument used This is the type of instrument used to collect the sample.  In 1976, a modified kicknet was used.  In 1977, a dome sampler was used.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_1">
+    <rdfs:label>Mainstem GPS locations MORPHO.xls These are the GPS coordinates of the RCC study sites</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
+    <rdfs:label>Salmon River RCC Invertebrate MORPHO.xlsx These are the benthic invertebrate samples that were collected during the original river continuum concept (RCC) project.  Samples were collected at 7 locations along the Salmon River mainstem.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Month This is the month that a sample was collected. This is the particular month that a sample was collected.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_3_c_3">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Sample processing notes Notes on how and which samples were size fractionated This describes the sampling method used.  It also indicates which samples were size fractionated and picked.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_6">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Sample ID This is the unique identifier for each sample. These are the sample identifications that were recorded off of the lab datasheets. Note that some sites and year do not exhibit consecutive sampling numbers.  When a detrital depletion sample was taken, the first number in the column is the dome sample number.  The second number is the detrital sample number. The samples with the 'a' designation are the samples used for invertebrate calculations.  The samples with the 'b' or 'c' designation are the detrital depletion samples that were not used in the invertebrate calculations.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_15">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label># in Size Fraction  ≥1mm or  ≥500um (# per sample) Abundance of individuals in the large size fraction This is the number of individuals per sample.  In 1976, this was defined as individuals  ≥ 1mm.  In 1977, this was defined as individuals  ≥ 500micrometers.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_11">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Family Taxonomic family This is the taxonomic family that an individual was classified as</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_19">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>ID notes Notes about the old taxonomic name for a particular organism Between the 1970s and the present, taxonomic names have changed.  The name reported here is the name originally reported in the RCC publications, which has been updated in the genus column.</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_7">
+    <rdfs:label>Sample Type This the sample type of the specific sample Two types of samples were identified.  Invert samples are the ones that were used for the invertebrate assemblage calculations.  The detrital depletion are replicate samples at the dome sampling sites, which were not used in the invertebrate calculations.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/3bbdbc1b-efa5-4198-af95-37342a5e6559#d_2_c_5">
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+    <rdfs:label>Date This is the date that a sample was collected. This is the specific date that a sample was collected.</rdfs:label>
   </owl:Class>
 </rdf:RDF>

@@ -6,7 +6,7 @@
 
 3. getSourceOntology contains  the names of source files obtained from manual_annotations.txt. The script is used to take in each package_id, give it as input to the eml2owl.py and save the resulting owl file. While saving the file, I have replaced "/" that occur in the file name with "ZZZZ" because it was giving errors. Hence to get the actual package_id, replace "ZZZZ"  with "/".
 
-4. sourceOntologies are the "source" for the matching algorithm. Y These were produced by the eml2owl.py (described in 3). You have to provide the path to this folder to the "source" variable.
+4. sourceOntologies are the "source" for the matching algorithm. These were produced by the eml2owl.py (described in 3). You have to provide the path to this folder to the "source" variable.
 
 5. Most of the paths that are given are absolute so you will have to change those accordingly.
 

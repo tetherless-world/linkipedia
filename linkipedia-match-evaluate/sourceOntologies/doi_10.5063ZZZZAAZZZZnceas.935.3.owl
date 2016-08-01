@@ -4,34 +4,32 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1_a_1">
-    <rdfs:label>ZIP Archive: Baileys Ecoregion Polygons and R grid sampling script Bailey's Ecoregion code</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N945de12b52ad499fb05dbcee201a906b">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresEntity"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#MeasurementType"/>
-    <rdfs:subClassOf>
-      <owl:Restriction rdf:nodeID="N25af5dfcf3f144a2a343cab7eea767de">
-        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#measuresCharacteristic"/>
-        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1_c_1"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
   <owl:Ontology rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3">
     <rdfs:label>USA Bailey's Ecoregions polygon map and R script for grid sampling</rdfs:label>
     <rdfs:comment>This package consists of a geo-spatial data file, specifically, an ESRI polygon shape file, containing approximately 1700 polygons depicting the Bailey's Eco Regions classification system. (Consult http://www.nationalatlas.gov/mld/ecoregp.html for a summary of this system). Also included is an R-language script that applies a regularly-spaced point grid on top of the polygon map, and produces a geospatial point file containing samples of the Bailey's region code at each point in the grid.</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1">
-    <rdfs:comment>This package is a compressed (ZIP) archive containing an ESRI polygon shape file representation of Bailey's Ecoregions, two sampled point grids, and an R script that samples the polygons at regular spatial intervals and generates an ESRI point shape file containing the sampled points.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Entity"/>
-    <rdfs:label>ZIP Archive: Baileys Ecoregion Polygons and R grid sampling script</rdfs:label>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1_a_1">
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="Naeafe921be16490e92a2b236a49b9afb">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresEntity"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label>ZIP Archive: Baileys Ecoregion Polygons and R grid sampling script This package is a compressed (ZIP) archive containing an ESRI polygon shape file representation of Bailey's Ecoregions, two sampled point grids, and an R script that samples the polygons at regular spatial intervals and generates an ESRI point shape file containing the sampled points. EcoCode Bailey's Ecoregion code Character string</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction rdf:nodeID="N2f743d92671c4b4083cc85ed6e24da15">
+        <owl:someValuesFrom rdf:resource="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1_c_1"/>
+        <owl:onProperty rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#measuresCharacteristic"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#MeasurementType"/>
   </owl:Class>
   <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1_c_1">
-    <rdfs:label>Bailey's Ecoregion code</rdfs:label>
-    <rdfs:comment>Character string</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#Characteristic"/>
+    <rdfs:label>EcoCode Bailey's Ecoregion code Character string</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Characteristic"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cn.dataone.org/cn/v2/object/doi:10.5063/AA/nceas.935.3#d_1">
+    <rdfs:label>ZIP Archive: Baileys Ecoregion Polygons and R grid sampling script This package is a compressed (ZIP) archive containing an ESRI polygon shape file representation of Bailey's Ecoregions, two sampled point grids, and an R script that samples the polygons at regular spatial intervals and generates an ESRI point shape file containing the sampled points.</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#Entity"/>
   </owl:Class>
 </rdf:RDF>
