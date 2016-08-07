@@ -473,7 +473,6 @@ public class EntitySearchResource {
 		
 		query = splitCamelCase(query);
 		List<String> sentences = getSentences(query);
-		sentences.removeAll(Arrays.asList("", null));
 
 
 		NounPhraseExtractor extractor = new NounPhraseExtractor();
@@ -486,21 +485,24 @@ public class EntitySearchResource {
 		searcher.setWeights(labelWeight, contentWeight, relationWeight, typeWeight, defaultWeight);
 
 		for (String sentence : sentences) {
-		    String result1 = sentence.replaceAll("[^\\dA-Za-z ]", " ").replaceAll("\\s+", " ");
-		//    System.out.println(result1);
+		   	String result1 = sentence.replaceAll("[^\\dA-Za-z ]", " ").replaceAll("\\s+", " ");
+			// System.out.println(result1);
 			if (context.length() == 0) {
 				context = result1;
 			}
-			List<String> contextList = tokenize(context,1);
+
+			//List<String> contextList = tokenize(context,1);
+
+			//use ner to extract entity mention
+
+			ArrayList<String> contextList = extractor.getNounPhrase(context);
+			System.out.println(contextList);
 			
-			//#1: check if this will help improve performance, remove if it does not help
-			//List<String> contextList = extractor.getNounPhrase(context);
-			
-			
-		//	List<String> terms = tokenize(result1, 5);
+		//	List<String> terms = tokenize(sentence, 5);
 		//	use getNounPhrase method from NounPhraseExtractor 
-			List<String> noun_phrases = extractor.getNounPhrase(result1);
-            System.out.println(noun_phrases);
+			ArrayList<String> noun_phrases = extractor.getNounPhrase(result1);
+        	   System.out.println(noun_phrases);
+
 			Set<String> done = new HashSet<String>();
 			
 			for (String term : noun_phrases){
@@ -508,7 +510,7 @@ public class EntitySearchResource {
 				
 				//escape term
 				if(term.equals(""))
-					continue;	
+				continue;
 				term = QueryParser.escape(term);
 				
 				if (term.length() < 2) continue;
@@ -516,27 +518,27 @@ public class EntitySearchResource {
 					continue;
 				}
 				done.add(term);
-				ArrayList<String> currentRelatedContext = new ArrayList<String>();
-				//currentRelatedContext.add(context);
-				for (String c : contextList){
-					
-					//remove if getNounPhrase on context(#1) is not helpful
-					//if(c.equals(""))
-					//	continue;
-					//c = QueryParser.escape(c);
-					
-					if (term == c) {
-						currentRelatedContext.add(c);
-					} else if (WeightedQuery.isRelated(linker.getSearcher(), term, c.trim())){
-						currentRelatedContext.add(c);
-					}
-				}
+
+
+				//Remove previous context pre-process
+				//	ArrayList<String> currentRelatedContext = new ArrayList<String>();
+				//  currentRelatedContext.add(context);
+				//  for (String c : contextList){
+				// if (term == c) {
+				//		currentRelatedContext.add(c);
+				//	} else if (WeightedQuery.isRelated(linker.getSearcher(), term, c.trim())){
+				//		currentRelatedContext.add(c);
+				//	}
+				//}
 				//need to be careful on this decision
 				//  	if(currentRelatedContext.size() == 0)
 				//  		continue;
-	  	
-				String[] contexts = currentRelatedContext.toArray(new String[currentRelatedContext.size()]);
-	  	
+	  			//System.out.println(currentRelatedContext);
+
+				String[] contexts = contextList.toArray(new String[0]);
+				System.out.println(Arrays.asList(contexts));
+
+
 				Entity entity = new Entity();
 				entity.entity_mention = term;
 				entity.annotations = new ArrayList<Result>();
