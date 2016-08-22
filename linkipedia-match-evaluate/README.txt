@@ -25,6 +25,8 @@ PART 1: Matching the ontologies using AgreementMakerLight
 
 4. Provide path to the csv file where you will save the results in "printTheContent" method
 
+5. Provide path to String LOG and String BK_PATH at AML.java file.
+
 Once this is done, all the matches found can be found in the csv file
 
 -----
