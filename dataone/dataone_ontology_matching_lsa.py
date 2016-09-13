@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-topHits = 100
+topHits = 1
 context_steps = 0
-maxDistance = 0.8
+maxDistance = 1
 useLSA = False
 minNgrams = 1
 maxNgrams = 1
-char_ngram_size = -1
 
 weighted_kmeans_clustering_passes = 0
 
@@ -18,8 +17,9 @@ from multiprocessing import Manager, Process, Pool, Queue, Event, JoinableQueue,
 from Queue import Empty
 import xml.etree.ElementTree as ET
 
+from sklearn.metrics.pairwise import cosine_similarity
+
 manual_annotation_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/test_corpus_F_dev/manual_annotations.tsv.txt'
-manual_annotation_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/manual_annotation/joined_annotations.csv'
 data_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/test_corpus_E_id_list.txt'
 dataset_service_url = 'https://cn.dataone.org/cn/v1/query/solr/?wt=json&fl=title,abstract,attributeName,attributeDescription&q=identifier:"%s"'
 service_url = 'http://localhost:8080/annotate/annotate/'
@@ -84,7 +84,6 @@ stemmer = PorterStemmer()
 from eml2owl import create_ontology as get_eml
 
 nt_file = '../dataone/dataone-index/NTriple/merged.nt'
-nt_file = 'dataone-index/NTriple/d1-ESCO-imported-2.nt'
 #nt_file = 'ecso-old-labels.nt'
 graph = ConjunctiveGraph()
 graph.load(nt_file, format="n3")
@@ -121,13 +120,7 @@ def ngrams(terms, min_n=minNgrams, max_n=maxNgrams):
             gram = terms[i:j]
             if len(gram) == j - i:
                 yield ' '.join(gram)
-                
-def char_ngrams(term, char_ngram_size=-1):
-    if char_ngram_size == -1:
-        return [term]
-    else:
-        return nltk.ngrams(term, char_ngram_size)
-    
+
 def compute_term_vector(resource):
     terms = collections.defaultdict(float)
     try:
@@ -143,14 +136,16 @@ def compute_term_vector(resource):
         weighting = weights['context']
         if p in weights:
             weighting = weights[p]
-        if isinstance(value, rdflib.resource.Resource) and isinstance(value.identifier, URIRef):
-            terms[(p, value.identifier)] += weighting
-        elif isinstance(value, Literal):
+        #if isinstance(value, rdflib.resource.Resource) and isinstance(value.identifier, URIRef):
+        #    terms[(p, value.identifier)] += weighting
+        if isinstance(value, Literal):
             value = unicode(value.value).replace('_'," ")
             for term in ngrams([t for t in WordPunctTokenizer().tokenize(value) if t not in stopwords]):
-                for char_ngram in char_ngrams(term.lower(), char_ngram_size):
-                    terms[('context',char_ngram)] = weights['context']
-                    terms[(p, char_ngram)] += weighting
+                if not useLSA:
+                    terms[('context',term.lower())] = weights['context']
+                    terms[term.lower()] += weighting
+                elif p == 'label':
+                    terms[term.lower()] += 1 #weighting
     tf = collections.defaultdict(float)
     term_counts = terms.values()
     if len(term_counts) > 0:
@@ -196,11 +191,11 @@ def vectorize_ontology(graph, idf = None, lsa = None):
 
     for node in classes:
         node.concept_vector = concept_vector(node, idf)
-        node.magnitude = vector_magnitude(node.concept_vector)
+        #node.magnitude = vector_magnitude(node.concept_vector)
     if useLSA:
         nodes, lsa = compute_lsa(classes, lsa)
-        for node in classes:
-            node.magnitude = vector_magnitude(node.lsa_vector)
+        #for node in classes:
+        #    node.magnitude = vector_magnitude(node.lsa_vector)
     return classes, idf, lsa
 
 def compute_lsa(nodes, model=None):
@@ -208,7 +203,7 @@ def compute_lsa(nodes, model=None):
     matrix = None
     if model is None:
         fit = True
-        model = TruncatedSVD(n_components=100)
+        model = TruncatedSVD(n_components=200)
         model.vectorizer = DictVectorizer(sparse=True)
         matrix = model.vectorizer.fit_transform([dict(node.concept_vector) for node in nodes])
         model.fit(matrix)
@@ -216,7 +211,7 @@ def compute_lsa(nodes, model=None):
         matrix = model.vectorizer.transform([dict(node.concept_vector) for node in nodes])
     result = model.transform(matrix)
     for i, node in enumerate(nodes):
-        node.lsa_vector = [x for x in enumerate(result[i])]
+        node.lsa_vector = result[i] #= [x for x in enumerate(result[i])]
     return nodes, model
         
 def compute_idf(nodes):
@@ -287,15 +282,18 @@ def pairwise_sparsedist(source_vectors, target_vectors, ident=None, metric=cosin
     if ident is None:
         ident = lambda x: x.identifier
     result = {}
-    for sv in source_vectors:
+    x = [node.lsa_vector for node in source_vectors]
+    y = [node.lsa_vector for node in target_vectors]
+    matrix = cosine_similarity(x,y)
+    for i, sv in enumerate(source_vectors):
         dists = {}
         result[ident(sv)] = dists
-        for tv in target_vectors:
-            distance = 0
+        for j, tv in enumerate(target_vectors):
+            distance = 1
             if ident(sv) == ident(tv):
                 distance = 0
             else:
-                distance = metric(sv, tv)
+                distance = 1 - matrix[i][j]#metric(sv, tv)
             dists[ident(tv)] = distance
     return result
 
@@ -307,16 +305,16 @@ targets = dict([(x.identifier, x) for x in target_class_subtree])
 
 def get_manual_annotations(nSize=-1):
     resp = requests.get(manual_annotation_url)
-    annotations = [x for x in csv.DictReader(StringIO(resp.text,newline=None), delimiter=",")]
+    annotations = [x for x in csv.DictReader(StringIO(resp.text,newline=None), delimiter="\t")]
     resp.close()
     result = collections.defaultdict(set)
     for annotation in annotations:
-        if len(annotation['class_uri'].strip()) == 0:
+        if len(annotation['class_id_int'].strip()) == 0:
             continue
         package = annotation['pkg_id']
         #if package != 'johnwu01.3.18':
         #    continue
-        uri = annotation['class_uri'].strip() #'http://purl.dataone.org/odo/ECSO_%08d'%int(annotation['class_id_int'].strip())
+        uri = 'http://purl.dataone.org/odo/ECSO_%08d'%int(annotation['class_id_int'].strip())
         result[package].add(URIRef(uri))
         if nSize > 0 and len(result) >= nSize:
             print 'Size of the manual annotations is %d' % nSize 
@@ -338,10 +336,11 @@ dataset_cache = {}
 
 def compute_dataset(dataset):
     if dataset not in dataset_cache:
-        g = get_eml(dataset)
-        g_classes, local_idf, lsa = vectorize_ontology(g, idf, lsa_model)
-        g.classes = g_classes
-        dataset_cache[dataset] = g
+        dataset_cache[dataset] = get_eml(dataset)
+    g = dataset_cache[dataset]
+        
+    g_classes, local_idf, lsa = vectorize_ontology(g, idf, lsa_model)
+    g.classes = g_classes
     return dataset_cache[dataset]
 
 def train_lsa(datasets):
@@ -447,17 +446,28 @@ def main():
         train_kmeans(manual_annotations.keys(), target_class_subtree)
         print "Complete."
 
+    print "Training LSA..."
+    lsa_model = train_lsa(manual_annotations)
+    global useLSA
+    useLSA = True
+    global idf, lsa_model, target_classes, targets, target_class_subtree
+    target_classes, idf, lsa_model = vectorize_ontology(graph, idf, lsa_model)
+    subtree = set(graph.transitive_subjects(RDFS.subClassOf, oboe.MeasurementType))
+    target_class_subtree = [x for x in target_classes if x.identifier in subtree and x.identifier != oboe.MeasurementType]
+    targets = dict([(x.identifier, x) for x in target_class_subtree])
+    print "Done."
+    
     for key in manual_annotations.keys():
         jobs.put(key)
 
     processed_count = Counter()
         
-    for i in xrange(NUMBER_OF_PROCESSES):
-        p = Process(target=work, args=(i, jobs, result, processed_count))
-        p.daemon = True
-        p.start()
+    #for i in xrange(NUMBER_OF_PROCESSES):
+    #    p = Process(target=work, args=(i, jobs, result, processed_count))
+    #    p.daemon = True
+    #    p.start()
 
-    #work(1, jobs, result, processed_count)
+    work(1, jobs, result, processed_count)
 
     automated_annotations = {}
     distances = {}

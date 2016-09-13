@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-topHits = 100
+topHits = 1
 context_steps = 0
-maxDistance = 0.8
+maxDistance = 1
 useLSA = False
 minNgrams = 1
 maxNgrams = 1
-char_ngram_size = -1
 
 weighted_kmeans_clustering_passes = 0
 
@@ -17,9 +16,10 @@ import os, re, sys
 from multiprocessing import Manager, Process, Pool, Queue, Event, JoinableQueue, cpu_count, Value, Lock
 from Queue import Empty
 import xml.etree.ElementTree as ET
+from sklearn.naive_bayes import MultinomialNB
+import numpy as np
 
 manual_annotation_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/test_corpus_F_dev/manual_annotations.tsv.txt'
-manual_annotation_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/manual_annotation/joined_annotations.csv'
 data_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/test_corpus_E_id_list.txt'
 dataset_service_url = 'https://cn.dataone.org/cn/v1/query/solr/?wt=json&fl=title,abstract,attributeName,attributeDescription&q=identifier:"%s"'
 service_url = 'http://localhost:8080/annotate/annotate/'
@@ -84,7 +84,6 @@ stemmer = PorterStemmer()
 from eml2owl import create_ontology as get_eml
 
 nt_file = '../dataone/dataone-index/NTriple/merged.nt'
-nt_file = 'dataone-index/NTriple/d1-ESCO-imported-2.nt'
 #nt_file = 'ecso-old-labels.nt'
 graph = ConjunctiveGraph()
 graph.load(nt_file, format="n3")
@@ -121,13 +120,7 @@ def ngrams(terms, min_n=minNgrams, max_n=maxNgrams):
             gram = terms[i:j]
             if len(gram) == j - i:
                 yield ' '.join(gram)
-                
-def char_ngrams(term, char_ngram_size=-1):
-    if char_ngram_size == -1:
-        return [term]
-    else:
-        return nltk.ngrams(term, char_ngram_size)
-    
+
 def compute_term_vector(resource):
     terms = collections.defaultdict(float)
     try:
@@ -148,9 +141,9 @@ def compute_term_vector(resource):
         elif isinstance(value, Literal):
             value = unicode(value.value).replace('_'," ")
             for term in ngrams([t for t in WordPunctTokenizer().tokenize(value) if t not in stopwords]):
-                for char_ngram in char_ngrams(term.lower(), char_ngram_size):
-                    terms[('context',char_ngram)] = weights['context']
-                    terms[(p, char_ngram)] += weighting
+                #terms[('context',term.lower())] = weights['context']
+                if p == 'label':
+                    terms[term.lower()] += weighting
     tf = collections.defaultdict(float)
     term_counts = terms.values()
     if len(term_counts) > 0:
@@ -286,16 +279,18 @@ def sparsedist(vectors, ident=None, metric=cosine_distance):
 def pairwise_sparsedist(source_vectors, target_vectors, ident=None, metric=cosine_distance):
     if ident is None:
         ident = lambda x: x.identifier
+    X = classifier.vectorizer.transform([dict(node.concept_vector) for node in source_vectors])
+    C = classifier.predict_proba(X)
     result = {}
-    for sv in source_vectors:
+    for i, sv in enumerate(source_vectors):
         dists = {}
         result[ident(sv)] = dists
-        for tv in target_vectors:
+        for j, tv in enumerate(target_vectors):
             distance = 0
             if ident(sv) == ident(tv):
                 distance = 0
             else:
-                distance = metric(sv, tv)
+                distance = 1 - C[i][j]# metric(sv, tv)
             dists[ident(tv)] = distance
     return result
 
@@ -304,19 +299,31 @@ subtree = set(graph.transitive_subjects(RDFS.subClassOf, oboe.MeasurementType))
 target_class_subtree = [x for x in target_classes if x.identifier in subtree and x.identifier != oboe.MeasurementType]
 targets = dict([(x.identifier, x) for x in target_class_subtree])
 
+def train_model(nodes):
+    vectorizer = DictVectorizer(sparse=True)
+    X = vectorizer.fit_transform([dict(node.concept_vector) for node in target_class_subtree])
+    y = np.array(range(len(target_class_subtree)))
+    model = MultinomialNB()
+    model.fit(X, y)
+    model.vectorizer = vectorizer
+    return model
+
+print "Training classifier..."
+classifier = train_model(target_class_subtree)
+print "Done."
 
 def get_manual_annotations(nSize=-1):
     resp = requests.get(manual_annotation_url)
-    annotations = [x for x in csv.DictReader(StringIO(resp.text,newline=None), delimiter=",")]
+    annotations = [x for x in csv.DictReader(StringIO(resp.text,newline=None), delimiter="\t")]
     resp.close()
     result = collections.defaultdict(set)
     for annotation in annotations:
-        if len(annotation['class_uri'].strip()) == 0:
+        if len(annotation['class_id_int'].strip()) == 0:
             continue
         package = annotation['pkg_id']
         #if package != 'johnwu01.3.18':
         #    continue
-        uri = annotation['class_uri'].strip() #'http://purl.dataone.org/odo/ECSO_%08d'%int(annotation['class_id_int'].strip())
+        uri = 'http://purl.dataone.org/odo/ECSO_%08d'%int(annotation['class_id_int'].strip())
         result[package].add(URIRef(uri))
         if nSize > 0 and len(result) >= nSize:
             print 'Size of the manual annotations is %d' % nSize 
@@ -343,19 +350,6 @@ def compute_dataset(dataset):
         g.classes = g_classes
         dataset_cache[dataset] = g
     return dataset_cache[dataset]
-
-def train_lsa(datasets):
-    nodes = []
-    nodes.extend(target_classes)
-    for i, dataset in enumerate(datasets):
-        g = compute_dataset(dataset)
-        nodes.extend(g.classes)
-        sys.stdout.write('\r')
-        sys.stdout.write(str(i+1))
-        sys.stdout.flush()
-
-    n, model = compute_lsa(nodes)
-    return model
 
 def train_kmeans(datasets, target_classses):
     vectors = dict([(c.identifier, c) for c in target_class_subtree])

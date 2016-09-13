@@ -15,7 +15,7 @@ import editdistance
 
 import sys
 
-service_url = 'http://localhost:8080/annotate/vlinking3/'
+service_url = 'http://localhost:8080/annotate/annotate/'
 
 oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.1/oboe-core.owl#')
 cmo = Namespace('http://purl.org/twc/ontologies/cmo.owl#')
@@ -38,7 +38,7 @@ def extract_mentions(text):
         for annotation in r['annotations']:
             urls[annotation['url']] += float(annotation['score'])
     urls = [(URIRef(url), score) for url, score 
-            in sorted(urls.items(), reverse=True, key=lambda x: x[1]) if len(url) > 0]
+            in sorted(urls.items(), reverse=True, key=lambda x: x[1])]
     return urls
 
 def chunks(l, n):
@@ -91,10 +91,10 @@ def get_labels(x):
 def getLabels(ontology_file, outputFile):
 # In[29]:
 
-#ontology_file = 'https://raw.githubusercontent.com/DataONEorg/sem-prov-ontologies/master/observation/d1-ECSO.owl'
+#ontology_file = 'https://github.com/DataONEorg/sem-prov-ontologies/blob/master/observation/d1-ECSO.owl'
 
     ontology = ConjunctiveGraph()
-    ontology.load(ontology_file,format='nt')
+    ontology.parse(open(ontology_file),format='nt')
 
     classes = [ontology.resource(c) for c in ontology[:RDF.type:OWL.Class]]
     classes = [c for c in classes 
@@ -128,20 +128,20 @@ def getLabels(ontology_file, outputFile):
                 defn = g.value(uri, RDFS.comment)
                 if defn is not None:
                     output.add((uri, skos.definition, defn))
-                for altLabel in labels:
+                for label in labels:
                     summary = summary.append(dict(uri=c, label=label, resource=uri,
                                                 dbpl=dbpl,
                                                 score=score, combined=score/(0.1+editdist),
                                                 editdist=editdist, definition=defn, 
-                                                altLabel=altLabel),
+                                                altLabel=label),
                                             ignore_index=True)
                 break
 
     f = open(outputFile+".nt", 'w')
-    f.write(output.serialize(format="nt"))
+    f.write(output.serialize(format="ntriples"))
     f.close()
     summary.sort('combined',ascending=False).to_csv(outputFile+".csv",encoding='utf-8')
 
 
 if __name__ == '__main__':
-    getLabels(*sys.argv[1:])
+    getLabels(sysv.args[1:])

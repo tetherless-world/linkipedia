@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-topHits = 100
+topHits = 3
 context_steps = 0
 maxDistance = 0.8
 useLSA = False
@@ -79,16 +79,6 @@ from nltk.corpus import wordnet as wn
 
 stemmer = PorterStemmer()
 
-#datasets = urllib2.urlopen(data_url).read().split("\n")[1:]
-
-from eml2owl import create_ontology as get_eml
-
-nt_file = '../dataone/dataone-index/NTriple/merged.nt'
-nt_file = 'dataone-index/NTriple/d1-ESCO-imported-2.nt'
-#nt_file = 'ecso-old-labels.nt'
-graph = ConjunctiveGraph()
-graph.load(nt_file, format="n3")
-
 stopwords = set([ ',', '.', ';', ':', '?', '!', '-' ])
 
 groupings = {
@@ -162,7 +152,7 @@ def compute_term_vector(resource):
 class Node:
     pass
 
-def vectorize_ontology(graph, idf = None, lsa = None):
+def vectorize_ontology(graph, idf = None):
     classes = []
     class_map = {}
     for c in list(graph.subjects(RDF.type, OWL.Class)) + list(graph.subjects(RDF.type, OWL.Restriction)):
@@ -197,28 +187,8 @@ def vectorize_ontology(graph, idf = None, lsa = None):
     for node in classes:
         node.concept_vector = concept_vector(node, idf)
         node.magnitude = vector_magnitude(node.concept_vector)
-    if useLSA:
-        nodes, lsa = compute_lsa(classes, lsa)
-        for node in classes:
-            node.magnitude = vector_magnitude(node.lsa_vector)
-    return classes, idf, lsa
+    return classes, idf
 
-def compute_lsa(nodes, model=None):
-    fit = False
-    matrix = None
-    if model is None:
-        fit = True
-        model = TruncatedSVD(n_components=100)
-        model.vectorizer = DictVectorizer(sparse=True)
-        matrix = model.vectorizer.fit_transform([dict(node.concept_vector) for node in nodes])
-        model.fit(matrix)
-    else:
-        matrix = model.vectorizer.transform([dict(node.concept_vector) for node in nodes])
-    result = model.transform(matrix)
-    for i, node in enumerate(nodes):
-        node.lsa_vector = [x for x in enumerate(result[i])]
-    return nodes, model
-        
 def compute_idf(nodes):
     counts = collections.defaultdict(float)
     for node in nodes:
@@ -235,10 +205,7 @@ def vector_magnitude(vector):
     return sum([x**2 for concept, x in vector]) ** 0.5
 
 def get_vector(x):
-    if useLSA:
-        return x.lsa_vector
-    else:
-        return x.concept_vector
+    return x.concept_vector
 
 def cosine_distance(a, b, key=get_vector):
     ''' See https://en.wikipedia.org/wiki/Cosine_similarity for definition and formula'''
@@ -299,98 +266,6 @@ def pairwise_sparsedist(source_vectors, target_vectors, ident=None, metric=cosin
             dists[ident(tv)] = distance
     return result
 
-target_classes, idf, lsa_model = vectorize_ontology(graph)
-subtree = set(graph.transitive_subjects(RDFS.subClassOf, oboe.MeasurementType))
-target_class_subtree = [x for x in target_classes if x.identifier in subtree and x.identifier != oboe.MeasurementType]
-targets = dict([(x.identifier, x) for x in target_class_subtree])
-
-
-def get_manual_annotations(nSize=-1):
-    resp = requests.get(manual_annotation_url)
-    annotations = [x for x in csv.DictReader(StringIO(resp.text,newline=None), delimiter=",")]
-    resp.close()
-    result = collections.defaultdict(set)
-    for annotation in annotations:
-        if len(annotation['class_uri'].strip()) == 0:
-            continue
-        package = annotation['pkg_id']
-        #if package != 'johnwu01.3.18':
-        #    continue
-        uri = annotation['class_uri'].strip() #'http://purl.dataone.org/odo/ECSO_%08d'%int(annotation['class_id_int'].strip())
-        result[package].add(URIRef(uri))
-        if nSize > 0 and len(result) >= nSize:
-            print 'Size of the manual annotations is %d' % nSize 
-            break
-    return result
-
-def get_ir_tuples(annotations):
-    result = set()
-    for dataset, classes in annotations.items():
-        for c in classes:
-            result.add((dataset, c))
-    return result
-
-NUMBER_OF_PROCESSES = 6
-
-processed = Event()
-
-dataset_cache = {}
-
-def compute_dataset(dataset):
-    if dataset not in dataset_cache:
-        g = get_eml(dataset)
-        g_classes, local_idf, lsa = vectorize_ontology(g, idf, lsa_model)
-        g.classes = g_classes
-        dataset_cache[dataset] = g
-    return dataset_cache[dataset]
-
-def train_lsa(datasets):
-    nodes = []
-    nodes.extend(target_classes)
-    for i, dataset in enumerate(datasets):
-        g = compute_dataset(dataset)
-        nodes.extend(g.classes)
-        sys.stdout.write('\r')
-        sys.stdout.write(str(i+1))
-        sys.stdout.flush()
-
-    n, model = compute_lsa(nodes)
-    return model
-
-def train_kmeans(datasets, target_classses):
-    vectors = dict([(c.identifier, c) for c in target_class_subtree])
-    for c in target_classes:
-        c.members = []
-    for i, dataset in enumerate(datasets):
-        source_graph = compute_dataset(dataset)
-        source_subtree = set(source_graph.transitive_subjects(RDFS.subClassOf, oboe.MeasurementType))
-        source_class_subtree = [x for x in source_graph.classes if x.identifier in source_subtree and x.identifier != oboe.MeasurementType]
-        sources = dict([(x.identifier, x) for x in source_class_subtree])
-
-        distances = pairwise_sparsedist(source_class_subtree, target_class_subtree)
-        for c, dist in distances.items():
-            for target, score in sorted(dist.items(), key=lambda x: x[1])[:topHits]:
-                if score < maxDistance:
-                    target_class = vectors[target]
-                    target_class.members.append((sources[c], score))
-        sys.stdout.write('\r')
-        sys.stdout.write(str(i+1))
-        sys.stdout.flush()
-    print "\nMerging..." 
-    for c in target_class_subtree:
-        if len(c.members) > 0:
-            new_vector = collections.defaultdict(float)
-            for source_class, dist in c.members:
-                for key, value in source_class.concept_vector:
-                    new_vector[key] += value * (1- dist)
-            for key in new_vector.keys():
-                new_vector[key] = new_vector[key] / len(c.members)
-            for key, value in c.concept_vector:
-                new_vector[key] += value
-            for key in new_vector.keys():
-                new_vector[key] = new_vector[key] / 2
-            c.concept_vector = sorted([(key, value) for key, value in new_vector.items()], key=lambda x: x[0])
-            c.magnitude = vector_magnitude(c.concept_vector)
             
 def work(id, jobs, result, processed_count):
     while True:
