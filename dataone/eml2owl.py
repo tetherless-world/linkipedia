@@ -10,7 +10,7 @@ import requests
 
 d1=Namespace('https://cn.dataone.org/cn/v2/object/')
 oboe = Namespace('http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#')
-
+urn = Namespace("urn:")
 
 def create_ontology(identifier):
     ontology_uri = d1[identifier]
@@ -59,6 +59,8 @@ def create_ontology(identifier):
                 characteristic.comment = Literal(datatable.find('.//attributeDefinition').text.strip())
 
             measurement_type = infixowl.Class(o_ns['_'.join(['d',entity_ident,'a',attribute_ident])],graph=g)
+            g.add((measurement_type.identifier, urn.entityId, Literal(entity_ident)))
+            g.add((measurement_type.identifier, urn.attributeId, Literal(attribute_ident)))
             measurement_type.label = Literal(g.value(entity.identifier,RDFS.label, default="") + " " + g.value(characteristic.identifier,RDFS.label, default=""))
             measurement_type.comment = Literal(g.value(entity.identifier,RDFS.comment, default="") + " " + g.value(characteristic.identifier,RDFS.comment, default=""))
             measurement_type.subClassOf = [

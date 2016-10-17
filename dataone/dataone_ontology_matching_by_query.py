@@ -3,7 +3,7 @@
 
 topHits = 3
 context_steps = 0
-maxDistance = 0.8
+maxDistance = 0.9
 useLSA = False
 minNgrams = 1
 maxNgrams = 1
@@ -17,9 +17,14 @@ import os, re, sys
 from multiprocessing import Manager, Process, Pool, Queue, Event, JoinableQueue, cpu_count, Value, Lock
 from Queue import Empty
 import xml.etree.ElementTree as ET
+from rdflib.extras.infixowl import Class
+import numpy as np
+
+query_file = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/queries/uc52_queries_all.csv'
+ground_truth_file = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/ground_truth/test_corpus_f_groundtruth_carbon_flux_queries.csv'
 
 manual_annotation_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/test_corpus_F_dev/manual_annotations.tsv.txt'
-manual_annotation_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/manual_annotation/joined_manual_annotations.csv'
+manual_annotation_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/manual_annotation/joined_annotations.csv'
 data_url = 'https://raw.githubusercontent.com/DataONEorg/semantic-query/master/lib/test_corpus_E_id_list.txt'
 dataset_service_url = 'https://cn.dataone.org/cn/v1/query/solr/?wt=json&fl=title,abstract,attributeName,attributeDescription&q=identifier:"%s"'
 service_url = 'http://localhost:8080/annotate/annotate/'
@@ -79,8 +84,6 @@ from nltk.corpus import wordnet as wn
 
 stemmer = PorterStemmer()
 
-#datasets = urllib2.urlopen(data_url).read().split("\n")[1:]
-
 from eml2owl import create_ontology as get_eml
 
 nt_file = '../dataone/dataone-index/NTriple/merged.nt'
@@ -88,6 +91,12 @@ nt_file = 'dataone-index/NTriple/d1-ESCO-imported-2.nt'
 #nt_file = 'ecso-old-labels.nt'
 graph = ConjunctiveGraph()
 graph.load(nt_file, format="n3")
+
+def expand_labels(graph):
+    for c, label in graph.query('select ?c ?label where { ?c rdfs:subClassOf+ [rdfs:label ?label] } '):
+        graph.add((c, skos.hiddenLabel, label))
+
+expand_labels(graph)
 
 stopwords = set([ ',', '.', ';', ':', '?', '!', '-' ])
 
@@ -97,6 +106,7 @@ groupings = {
     URIRef('http://www.w3.org/2000/01/rdf-schema#label'): "label",
     URIRef('http://www.w3.org/2004/02/skos/core#altLabel'): "label",
     URIRef('http://www.w3.org/2004/02/skos/core#prefLabel'): "label",
+    URIRef('http://www.w3.org/2004/02/skos/core#hiddenLabel'): "label",
     URIRef('http://tool.eal.org/urlName'): "label",
     URIRef('http://purl.org/dc/elements/1.1/title'): "label",
     URIRef('http://purl.org/dc/terms/title'): "label",
@@ -304,19 +314,42 @@ subtree = set(graph.transitive_subjects(RDFS.subClassOf, oboe.MeasurementType))
 target_class_subtree = [x for x in target_classes if x.identifier in subtree and x.identifier != oboe.MeasurementType]
 targets = dict([(x.identifier, x) for x in target_class_subtree])
 
+def get_queries():
+    resp = requests.get(query_file)
+    queries = dict([(x['Query_ID'], URIRef(x['Query_Frag'].split('"')[1]))
+                    for x in csv.DictReader(StringIO(resp.text,newline=None), delimiter=",")
+                    if x['SOLR_Index_Type'] == 'esor_cosine'])
+    return queries
 
+queries = get_queries()
+
+def get_ground_truth():
+    resp = requests.get(ground_truth_file)
+    datasets = []
+    queries = collections.defaultdict(set)
+    for dataset in csv.DictReader(StringIO(resp.text,newline=None), delimiter=","):
+        dataset_id = dataset['Dataset_ID']
+        datasets.append(dataset_id)
+        for i in range(1,11):
+            query_id = 'q%s'%i
+            if dataset[query_id] == '1':
+                queries[query_id].add(dataset_id)
+    return datasets, queries
+
+datasets, ground_truth = get_ground_truth()
+    
 def get_manual_annotations(nSize=-1):
     resp = requests.get(manual_annotation_url)
     annotations = [x for x in csv.DictReader(StringIO(resp.text,newline=None), delimiter=",")]
     resp.close()
     result = collections.defaultdict(set)
     for annotation in annotations:
-        if len(annotation['class_id_int'].strip()) == 0:
+        if len(annotation['class_uri'].strip()) == 0:
             continue
         package = annotation['pkg_id']
         #if package != 'johnwu01.3.18':
         #    continue
-        uri = 'http://purl.dataone.org/odo/ECSO_%08d'%int(annotation['class_id_int'].strip())
+        uri = annotation['class_uri'].strip() #'http://purl.dataone.org/odo/ECSO_%08d'%int(annotation['class_id_int'].strip())
         result[package].add(URIRef(uri))
         if nSize > 0 and len(result) >= nSize:
             print 'Size of the manual annotations is %d' % nSize 
@@ -412,11 +445,14 @@ def work(id, jobs, result, processed_count):
             distances = pairwise_sparsedist(source_class_subtree, target_class_subtree)
             #print distances
             for c, dist in distances.items():
-                for target, score in sorted(dist.items(), key=lambda x: x[1])[:topHits]:
+                hits = 0
+                for target, score in sorted(dist.items(), key=lambda x: x[1]):
                 #target, score = min(dist.items(), key=lambda x: x[1])
                 #print sources[c].concept_vector, targets[target].concept_vector
                     if score < maxDistance and (target not in r or r[target] < score):
                         r[target] = score
+                        hits += 1
+                        if hits >= topHits: break
             
             processed_count.increment()
             sys.stdout.write('\r')
@@ -435,18 +471,12 @@ def main():
 
 
     numToProcess = -1
-    scores = pd.DataFrame(columns=['fmeasure','precision','recall',
-                                   'numResult','maxDistance','topHits', 'hits', "contextSteps"])
-    manual_annotations = get_manual_annotations(numToProcess)
-    manual_tuples = get_ir_tuples(manual_annotations)
+    scores = pd.DataFrame(columns=['query','fmeasure','precision','recall',
+                                   'size','maxDistance','topHits',"contextSteps"])
 
-    print len(manual_annotations)
-    for i in range(weighted_kmeans_clustering_passes):
-        print "Training pass",i+1
-        train_kmeans(manual_annotations.keys(), target_class_subtree)
-        print "Complete."
+    print len(datasets)
 
-    for key in manual_annotations.keys():
+    for key in datasets:
         jobs.put(key)
 
     processed_count = Counter()
@@ -463,35 +493,31 @@ def main():
 
     jobs.join()
 
+    dataset_index = collections.defaultdict(set)
     while not result.empty():
         dataset, classes = result.get()
-        automated_annotations[dataset] = set(classes.keys())
-        distances[dataset] = classes
+        for c in classes.keys():
+            dataset_index[c].add(dataset)
+            owl_class = Class(c, graph=graph)
+            for parent in owl_class.parents:
+                dataset_index[parent.identifier].add(dataset)
         result.task_done()
 
-    automated_tuples = get_ir_tuples(automated_annotations)
-    hits = manual_tuples & automated_tuples
-    misses = manual_tuples - automated_tuples
-    precision = float(len(hits)) / len(automated_tuples)
-    recall = float(len(hits)) / len(manual_tuples)
-    fmeasure = 2 * (precision * recall) / (precision + recall)
-    # print '\t'.join([str(x) for x in [precision, recall, fmeasure,
-    #                              numResult, minScore, topHits]])
-    scores = scores.append(dict(precision=precision, recall=recall, fmeasure=fmeasure, hits=len(manual_tuples),topHits=topHits, maxDistance=maxDistance, contextSteps = context_steps),
+    for query, c in queries.items():
+        manual = ground_truth[query]
+        automated = dataset_index[c]
+        hits = manual & automated
+        misses = manual - automated
+        precision = np.nan if len(automated) == 0 else float(len(hits)) / len(automated)
+        recall = np.nan if len(manual) == 0 else float(len(hits)) / len(manual)
+        if precision != 0 or recall != 0:
+            fmeasure = 0 if np.isnan(precision) or np.isnan(recall) else 2 * (precision * recall) / (precision + recall)
+        else:
+            fmeasure = 0
+        scores = scores.append(dict(query=query, size=len(manual), precision=precision, recall=recall, fmeasure=fmeasure,topHits=topHits, maxDistance=maxDistance, contextSteps = context_steps),
                         ignore_index=True)
     print '\n'
     print scores
-    results_file = 'results.csv'
-    if len(sys.argv) > 1:
-        results_file = sys.argv[1]
-    hit_curves = csv.writer(open(results_file,'wb'),delimiter=",")
-    hit_curves.writerow(['dataset','class','distance','hit'])
-    
-    for dataset, c in automated_tuples:
-        distance = round(distances[dataset][c],3)
-        hit = 1 if (dataset,c) in manual_tuples else 0
-        hit_curves.writerow([dataset,c,distance,hit])
-
 
 if __name__ == '__main__':
     main()
