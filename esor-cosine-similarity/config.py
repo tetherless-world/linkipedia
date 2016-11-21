@@ -40,7 +40,7 @@ Config = dict(
     lod_prefix = LOD_PREFIX,
 
     top_hits = 3,
-    max_distance = 0.8,
+    max_distance = 0.9,
     target_ontology = '../dataone/dataone-index/NTriple/merged.nt'
 
 )

@@ -494,8 +494,11 @@ def main():
     jobs.join()
 
     dataset_index = collections.defaultdict(set)
+    annotated_datasets = set()
     while not result.empty():
         dataset, classes = result.get()
+        if len(classes) == 0:
+            annotated_datasets.add(dataset)
         for c in classes.keys():
             dataset_index[c].add(dataset)
             owl_class = Class(c, graph=graph)
@@ -503,6 +506,8 @@ def main():
                 dataset_index[parent.identifier].add(dataset)
         result.task_done()
 
+    print '\n'
+    
     for query, c in queries.items():
         manual = ground_truth[query]
         automated = dataset_index[c]
@@ -516,8 +521,10 @@ def main():
             fmeasure = 0
         scores = scores.append(dict(query=query, size=len(manual), precision=precision, recall=recall, fmeasure=fmeasure,topHits=topHits, maxDistance=maxDistance, contextSteps = context_steps),
                         ignore_index=True)
-    print '\n'
+        print "Hits for", query, c
+        print '\n'.join(sorted(hits))
     print scores
+    print "Annotated", len(annotated_datasets), "datasets."
 
 if __name__ == '__main__':
     main()
