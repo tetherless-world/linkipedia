@@ -56,3 +56,5 @@ class EMLReader():
             mt.update({'text' : text})
             result.append(mt)
         return result
+
+        

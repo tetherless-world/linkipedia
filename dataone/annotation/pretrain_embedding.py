@@ -27,7 +27,7 @@ class PreTrainEmbedding():
             result = self.model[word]
             return result
         except KeyError:
-            print 'Can not get embedding for ', word
+            #print 'Can not get embedding for ', word
             return None
     
     def get_glove_embedding(self, vectors_file='glove.6B.100d.txt'):
@@ -50,8 +50,8 @@ class PreTrainEmbedding():
             W[vocab[word], :] = v
         return vocab, W
     
-    def create_char_level_embeddings(self, sentence, max_doc_length_char):
-        sent_embed = np.zeros((max_doc_length_char, self.embedding_size))
+    def create_char_level_embeddings(self, sentence, max_doc_length):
+        sent_embed = np.zeros((max_doc_length, self.embedding_size))
         idx = 0
         for c in sentence:
             try:
@@ -60,19 +60,21 @@ class PreTrainEmbedding():
                 pass
                 continue
             idx = idx + 1
-            if idx == max_doc_length_char:
+            if idx == max_doc_length:
                 break
         return sent_embed
     
-    def create_word_level_embeddings(self, sentence, max_doc_length_char):
-        sent_embed = np.zeros((max_doc_length_char, self.embedding_size))
+    def create_word_level_embeddings(self, sentence, max_doc_length):
+        sent_embed = np.zeros((max_doc_length, self.embedding_size))
+        if sentence is None:
+            return sent_embed
         idx = 0
         for word in sentence.split():
             embedding = self.get_embedding(word)
             if embedding is not None:
                 sent_embed[idx, :] = embedding
             idx = idx + 1
-            if idx == max_doc_length_char:
+            if idx == max_doc_length:
                 break
         return sent_embed
     
